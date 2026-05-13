@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { MetroData, MetroService } from "@/data/metros";
 import { metroServiceLabels, metros } from "@/data/metros";
+import { METRO_NOINDEX_SLUGS } from "@/data/metroNoindexList";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
@@ -23,12 +24,16 @@ export function generateMetroMetadata(metro: MetroData, service: MetroService): 
   const title = `${serviceLabel} in ${metro.city}, ${metro.stateAbbr}`;
   const description = metroMetaDescriptions[service](metro.city, metro.state);
   const slug = `${service}-${metro.slug}`;
-  return {
+  const metadata: Metadata = {
     title,
     description,
     alternates: { canonical: `https://jurispage.com/${slug}/` },
     openGraph: { title, description, url: `https://jurispage.com/${slug}/` },
   };
+  if (METRO_NOINDEX_SLUGS.has(slug)) {
+    metadata.robots = { index: false, follow: true };
+  }
+  return metadata;
 }
 
 const serviceDescriptions: Record<MetroService, (city: string) => string> = {
