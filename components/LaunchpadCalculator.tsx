@@ -351,7 +351,7 @@ export default function LaunchpadCalculator() {
         {!isCustom && (
           <div>
             <p className="text-sm font-bold text-gray-800 mb-1">Optional add-ons</p>
-            <p className="text-xs text-gray-400 mb-3">Brand design, StoryBrand website, and weekly social posting are already included in your base price. Logo, typography, photography, graphics, social assets, and brand guidelines ship with every Launchpad engagement.</p>
+            <p className="text-xs text-gray-400 mb-3">Brand design, StoryBrand website, and weekly social posting are already included in your base price. Logo, typography, photography, graphics, social assets, and brand guidelines ship with every JurisPage engagement.</p>
             <div className="space-y-3">
               {[
                 {

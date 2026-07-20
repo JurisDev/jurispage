@@ -1,5 +1,7 @@
 # Launchpad — Source-of-Truth Product Spec
 
+> **Naming note (2026-07-20):** On jurispage.com this package is publicly marketed as **JurisPage** (the brand is the product). "Launchpad" remains the internal and jurisdigital.com name. Never use "Launchpad" in prospect-visible copy on jurispage.com.
+
 > **Source:** https://jurisdigital.com/services/launchpad/
 > **Pulled:** 2026-04-23
 > **Purpose:** Canonical product definition. Every JurisPage page, form, calculator, FAQ, and piece of marketing copy must align with the offering described here. JurisPage.com resells/fronts this exact product — the offer, deliverables, pricing, timeline, commitment terms, and positioning on jurispage.com must match what Juris Digital publishes at the URL above.

@@ -520,7 +520,7 @@ export default function ContentWritingB() {
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-gray-100">
-                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage Launchpad</div>
+                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage</div>
                 <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,000<span className="text-base font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">For small or startup firms with little to no online presence</div>
               </div>
@@ -535,7 +535,7 @@ export default function ContentWritingB() {
               </div>
               <div className="px-6 pb-6">
                 <Link href="/launchpad/" className="block text-center px-6 py-3 rounded-full text-white font-bold text-sm no-underline" style={{ background: O }}>
-                  See Launchpad Pricing
+                  See JurisPage Pricing
                 </Link>
               </div>
             </div>

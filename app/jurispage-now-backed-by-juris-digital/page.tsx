@@ -61,7 +61,7 @@ const standOutReasons = [
   {
     title: "No upfront setup fee",
     description:
-      "We spread costs across the 24-month Launchpad engagement so small and startup firms can afford the work without a massive day-one check.",
+      "We spread costs across the 24-month JurisPage engagement so small and startup firms can afford the work without a massive day-one check.",
   },
 ];
 

@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 
 export default function LawFirmWebsitesPage() {
   const allFaqs = [
-    { question: "How much does a custom law firm website cost?", preview: "Launchpad starts at $2,000/mo with no upfront fee. Includes brand design, StoryBrand website, content, SEO, and GBP setup.", answer: "JurisPage Launchpad starts at $2,000 per month over a 24-month engagement with no upfront setup fee. It includes brand design, a custom StoryBrand-driven WordPress website, practice area content, Google Business Profile setup, Yelp, Apple Maps, weekly social posting, and ongoing SEO. For established firms ready to invest $5,000 to $50,000+/month, [Juris Digital](https://jurisdigital.com/services/ascend/) partnerships deliver a fully bespoke design and content strategy. All Launchpad pricing is published on our website. No discovery calls required." },
-    { question: "How long does it take to design and launch a law firm website?", preview: "45 days for the full Launchpad foundation. 45-60 days for custom redesigns.", answer: "Launchpad websites go live inside the 45-day full setup window alongside brand design, GBP, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking. That includes discovery, wireframes, design, content writing, development, and launch. Custom redesigns for established firms working with [Juris Digital](https://jurisdigital.com/services/ascend/) typically take 45 to 60 days depending on content readiness and revision cycles. We build attorney review time into the timeline so publication dates don't slip." },
+    { question: "How much does a custom law firm website cost?", preview: "JurisPage starts at $2,000/mo with no upfront fee. Includes brand design, StoryBrand website, content, SEO, and GBP setup.", answer: "JurisPage starts at $2,000 per month over a 24-month engagement with no upfront setup fee. It includes brand design, a custom StoryBrand-driven WordPress website, practice area content, Google Business Profile setup, Yelp, Apple Maps, weekly social posting, and ongoing SEO. For established firms ready to invest $5,000 to $50,000+/month, [Juris Digital](https://jurisdigital.com/services/ascend/) partnerships deliver a fully bespoke design and content strategy. All JurisPage pricing is published on our website. No discovery calls required." },
+    { question: "How long does it take to design and launch a law firm website?", preview: "45 days for the full JurisPage foundation. 45-60 days for custom redesigns.", answer: "JurisPage websites go live inside the 45-day full setup window alongside brand design, GBP, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking. That includes discovery, wireframes, design, content writing, development, and launch. Custom redesigns for established firms working with [Juris Digital](https://jurisdigital.com/services/ascend/) typically take 45 to 60 days depending on content readiness and revision cycles. We build attorney review time into the timeline so publication dates don't slip." },
     { question: "Do I own the website once it's built?", preview: "Yes. 100%. Your domain, your WordPress site, your content. Take it anywhere.", answer: "Always. Your domain, your WordPress installation, your content. All 100% yours. Unlike agencies that host on proprietary platforms (Scorpion, FindLaw, Martindale), you can take your website to any hosting provider or any developer at any time. We don't hold websites hostage. If you leave, everything transfers cleanly." },
     { question: "Why WordPress instead of a proprietary platform?", preview: "Full ownership, massive developer ecosystem, and SEO control you can't get elsewhere.", answer: "WordPress powers over 40% of the web and gives you three things proprietary platforms can't: full ownership (you control the code, hosting, and content), a massive developer ecosystem (any developer can work on your site if you ever change agencies), and complete SEO control (custom schema, server-side caching, Core Web Vitals optimization). Proprietary platforms lock you into their ecosystem and limit what you can do with your own site." },
     { question: "What makes a law firm website different from a regular business website?", preview: "YMYL classification, bar advertising rules, and E-E-A-T requirements that most designers have never heard of.", answer: "Three things. First, Google classifies legal content as YMYL (Your Money or Your Life) and applies stricter quality standards. Your content needs verifiable attorney credentials and real legal expertise, not marketing copy. Second, bar advertising rules vary by state and restrict what you can say about case results, qualifications, and testimonials. Violations trigger disciplinary action. Third, E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness) must be woven into every page. Attorney bio pages, case result formatting, and practice area depth all factor into how Google evaluates your site." },
@@ -255,7 +255,7 @@ export default function LawFirmWebsitesPage() {
               {
                 num: "2",
                 title: "We Build Your Conversion Engine",
-                desc: "Custom StoryBrand-driven WordPress site designed mobile-first with attorney-reviewed content, E-E-A-T signals, and bar-compliant messaging. Live inside the 45-day Launchpad setup window.",
+                desc: "Custom StoryBrand-driven WordPress site designed mobile-first with attorney-reviewed content, E-E-A-T signals, and bar-compliant messaging. Live inside the 45-day JurisPage setup window.",
                 cta: "You review. We build.",
               },
               {
@@ -391,7 +391,7 @@ export default function LawFirmWebsitesPage() {
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden flex flex-col">
               <div className="px-5 py-4 border-b border-gray-100">
-                <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage Launchpad</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage</div>
                 <div className="font-heading font-extrabold text-gray-900 text-xl">$2,000<span className="text-sm font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">Everything included. 24-month engagement, no upfront fee.</div>
               </div>
@@ -403,7 +403,7 @@ export default function LawFirmWebsitesPage() {
               </div>
               <div className="px-5 pb-5">
                 <Link href="/launchpad/" className="block text-center px-5 py-2.5 rounded-full text-white font-bold text-xs no-underline" style={{ background: O }}>
-                  See Launchpad Pricing
+                  See JurisPage Pricing
                 </Link>
               </div>
             </div>

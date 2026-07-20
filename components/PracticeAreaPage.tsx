@@ -556,7 +556,7 @@ export default function PracticeAreaPage({ practiceArea: pa }: PracticeAreaPageP
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { color: "#EE6C13", title: "No Upfront Fee", body: "We spread costs across the 24-month Launchpad engagement, so you never pay a large setup fee up front." },
+              { color: "#EE6C13", title: "No Upfront Fee", body: "We spread costs across the 24-month JurisPage engagement, so you never pay a large setup fee up front." },
               { color: "#982A0B", title: "Published Pricing", body: "See exactly what you pay. No sales calls required." },
               { color: "#EE6C13", title: "90-Day Guarantee", body: "Results within 90 days or we work for free the next month." },
             ].map((item) => (

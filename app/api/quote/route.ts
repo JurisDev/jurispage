@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
     const internalHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px;">
         <div style="background: #1a1a1a; padding: 20px 28px;">
-          <h2 style="color: #EE6C13; margin: 0; font-size: 20px;">${isCustom ? "Juris Digital Lead: 5+ Attorneys" : "New Launchpad Pricing Request"}</h2>
+          <h2 style="color: #EE6C13; margin: 0; font-size: 20px;">${isCustom ? "Juris Digital Lead: 5+ Attorneys" : "New JurisPage Pricing Request"}</h2>
           ${isCustom ? '<p style="color: #fbbf24; margin: 8px 0 0; font-size: 14px;">⚠ JURIS DIGITAL HANDOFF (5+ attorneys)</p>' : ""}
         </div>
         <div style="padding: 24px 28px; background: #f9fafb;">
@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Slack notification
-    notifySlack(isCustom ? "Juris Digital Lead (5+ Attorneys)" : "New Launchpad Quote", {
+    notifySlack(isCustom ? "Juris Digital Lead (5+ Attorneys)" : "New JurisPage Quote", {
       Name: name,
       Email: email,
       Attorneys: String(attorneyDisplay),
@@ -140,11 +140,11 @@ export async function POST(req: NextRequest) {
       : `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #1a1a1a; padding: 24px 32px;">
-            <h1 style="color: #EE6C13; font-size: 22px; margin: 0;">Your JurisPage Launchpad Pricing</h1>
+            <h1 style="color: #EE6C13; font-size: 22px; margin: 0;">Your JurisPage Pricing</h1>
           </div>
           <div style="padding: 32px; background: #ffffff;">
             <p style="color: #374151;">Hi ${name},</p>
-            <p style="color: #555; line-height: 1.7;">Here's your personalized Launchpad pricing based on what you told us. This is your all-in monthly investment: no hidden fees, no upfront setup fee. Costs are spread across a 24-month engagement so small and startup firms can afford the work without a large day-one check.</p>
+            <p style="color: #555; line-height: 1.7;">Here's your personalized JurisPage pricing based on what you told us. This is your all-in monthly investment: no hidden fees, no upfront setup fee. Costs are spread across a 24-month engagement so small and startup firms can afford the work without a large day-one check.</p>
 
             <div style="background: #f9fafb; border-radius: 12px; padding: 24px; margin: 24px 0; border: 1px solid #e5e7eb;">
               <p style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #9ca3af; margin: 0 0 16px;">Your Pricing Details</p>
@@ -163,7 +163,7 @@ export async function POST(req: NextRequest) {
             <p style="color: #555; font-size: 14px; line-height: 1.7;">Book a strategy call to confirm this pricing matches your firm's growth goals.</p>
 
             <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0;">
-              <p style="color: #166534; font-size: 14px; font-weight: bold; margin: 0 0 4px;">What's included in Launchpad:</p>
+              <p style="color: #166534; font-size: 14px; font-weight: bold; margin: 0 0 4px;">What's included in JurisPage:</p>
               <ul style="color: #166534; font-size: 13px; margin: 0; padding-left: 18px; line-height: 1.8;">
                 <li>Brand Design: logo, typography, photography, graphics, social assets, brand guidelines</li>
                 <li>StoryBrand-driven WordPress website (live within 45 days)</li>
@@ -194,7 +194,7 @@ export async function POST(req: NextRequest) {
       to: [email],
       subject: isCustom
         ? "Your firm is ready for Juris Digital"
-        : `Your JurisPage Launchpad Pricing: $${monthlyTotal?.toLocaleString()}/mo`,
+        : `Your JurisPage Pricing: $${monthlyTotal?.toLocaleString()}/mo`,
       html: prospectHtml,
     });
 

@@ -266,7 +266,7 @@ export default function ServicePage({ service }: ServicePageProps) {
             {[
               { color: "#EE6C13", title: "100% Legal Focus", body: "We work exclusively with law firms. Every tactic is built for the legal market specifically." },
               { color: "#982A0B", title: "Transparent Pricing", body: "Our pricing is on the website. No discovery calls required to learn what anything costs." },
-              { color: "#EE6C13", title: "No Upfront Fee", body: "We spread costs across the 24-month Launchpad engagement, so you never pay a large setup fee up front." },
+              { color: "#EE6C13", title: "No Upfront Fee", body: "We spread costs across the 24-month JurisPage engagement, so you never pay a large setup fee up front." },
             ].map((item) => (
               <div key={item.title} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                 <div className="w-8 h-1 rounded mb-4" style={{ background: item.color }}></div>

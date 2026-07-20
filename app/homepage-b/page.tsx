@@ -63,7 +63,7 @@ const services = [
     statLabel: "of consumers use ChatGPT for lawyers",
   },
   {
-    title: "Launchpad",
+    title: "JurisPage",
     description: "Complete marketing package for small or startup law firms. Brand design, StoryBrand website, GBP, Yelp, Apple Maps, weekly social. Live in 45 days.",
     href: "/launchpad/",
     stat: "$2K",
@@ -247,7 +247,7 @@ export default function HomepageB() {
                 Every dollar we spend is tied to qualified leads generated, cost per lead, and cases signed. If we cannot connect our work to your intake, we have not done our job.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                No upfront setup fee. Costs are spread across a 24-month Launchpad engagement so small and startup firms can afford the work without a large day-one check. Pricing is published online. No discovery calls required.
+                No upfront setup fee. Costs are spread across a 24-month JurisPage engagement so small and startup firms can afford the work without a large day-one check. Pricing is published online. No discovery calls required.
               </p>
             </div>
           </div>
@@ -368,7 +368,7 @@ export default function HomepageB() {
               {
                 number: "02",
                 title: "No upfront fee",
-                body: "We spread costs across the 24-month Launchpad engagement instead of charging a huge day-one setup fee. Keep your cash, get your marketing live in 45 days.",
+                body: "We spread costs across the 24-month JurisPage engagement instead of charging a huge day-one setup fee. Keep your cash, get your marketing live in 45 days.",
                 link: null,
               },
               {

@@ -302,17 +302,17 @@ export default function LocalSeoPage() {
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-gray-100">
-                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>Included in Launchpad</div>
+                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>Included in JurisPage</div>
                 <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,000<span className="text-base font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">Local SEO included with website, content, and GBP</div>
               </div>
               <div className="px-6 py-5 space-y-3 text-sm">
-                {["Google Business Profile optimization", "Citation building (Yelp, Apple Maps, Bing, Avvo, and 70+ directories)", "Review generation workflow", "NAP consistency audit", "Local content pages", "No upfront setup fee. Costs spread across the 24-month Launchpad engagement."].map((f) => (
+                {["Google Business Profile optimization", "Citation building (Yelp, Apple Maps, Bing, Avvo, and 70+ directories)", "Review generation workflow", "NAP consistency audit", "Local content pages", "No upfront setup fee. Costs spread across the 24-month JurisPage engagement."].map((f) => (
                   <div key={f} className="flex items-start gap-2"><span style={{ color: G }}>&#x2713;</span> {f}</div>
                 ))}
               </div>
               <div className="px-6 pb-6">
-                <Link href="/launchpad/" className="block text-center px-6 py-3 rounded-full text-white font-bold text-sm no-underline" style={{ background: O }}>See Launchpad Pricing</Link>
+                <Link href="/launchpad/" className="block text-center px-6 py-3 rounded-full text-white font-bold text-sm no-underline" style={{ background: O }}>See JurisPage Pricing</Link>
               </div>
             </div>
           </div>

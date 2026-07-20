@@ -177,10 +177,10 @@ export default async function AdminPage() {
         </div>
       )}
 
-      {/* ── Launchpad Quotes ─────────────────────────────────────────── */}
+      {/* ── JurisPage Quotes ─────────────────────────────────────────── */}
       <div className="mt-12 mb-6">
         <h2 className="text-2xl font-bold text-gray-900 font-heading">
-          Launchpad Quotes
+          JurisPage Quotes
         </h2>
         <p className="text-sm text-gray-500 mt-1">
           {quotes.length} total quote{quotes.length !== 1 ? "s" : ""}

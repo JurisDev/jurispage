@@ -30,7 +30,7 @@ const differences = [
   },
   {
     title: "No Upfront Setup Fee",
-    body: "We don't demand a huge day-one check before your marketing has a chance to work. We front-load the work (website, brand design, GBP, citations, social, tracking all live in 45 days) but spread the cost across the 24-month Launchpad engagement.",
+    body: "We don't demand a huge day-one check before your marketing has a chance to work. We front-load the work (website, brand design, GBP, citations, social, tracking all live in 45 days) but spread the cost across the 24-month JurisPage engagement.",
   },
   {
     title: "Ethical SEO - No Shortcuts",
@@ -226,7 +226,7 @@ export default function AboutPage() {
                   ["Upfront setup fee", "$0 (costs spread over 24 months)", "Thousands before launch", "Sometimes, sometimes not"],
                   ["Law firm focus", "100% legal only", "General or 'legal team'", "Rarely specialized"],
                   ["Proven results", "113+ law firms served", "Varies by team", "Hard to verify"],
-                  ["Starting price", "$2,000/mo (Launchpad)", "$5,000 to $50,000+/mo", "Low cost, high risk"],
+                  ["Starting price", "$2,000/mo (JurisPage)", "$5,000 to $50,000+/mo", "Low cost, high risk"],
                 ].map(([feature, juris, large, free], i) => (
                   <tr key={feature} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                     <td className="p-4 font-semibold text-gray-800">{feature}</td>

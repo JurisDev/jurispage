@@ -331,12 +331,12 @@ export default function GeoPage() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading font-extrabold text-gray-900 text-3xl mb-3 text-center">Pricing</h2>
-          <p className="text-gray-500 text-center mb-10">Foundational GEO is included in Launchpad.</p>
+          <p className="text-gray-500 text-center mb-10">Foundational GEO is included in JurisPage.</p>
 
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-gray-100">
-                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>Launchpad (Foundation)</div>
+                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage (Foundation)</div>
                 <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,000<span className="text-base font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">Foundational GEO included with website and SEO</div>
               </div>
@@ -346,7 +346,7 @@ export default function GeoPage() {
                 ))}
               </div>
               <div className="px-6 pb-6">
-                <Link href="/launchpad/" className="block text-center px-6 py-3 rounded-full text-white font-bold text-sm no-underline" style={{ background: O }}>See Launchpad Pricing</Link>
+                <Link href="/launchpad/" className="block text-center px-6 py-3 rounded-full text-white font-bold text-sm no-underline" style={{ background: O }}>See JurisPage Pricing</Link>
               </div>
             </div>
           </div>

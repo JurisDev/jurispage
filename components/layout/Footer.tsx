@@ -34,7 +34,7 @@ export default function Footer() {
                 ["Google Ads for Law Firms", "/google-ads-for-law-firms/"],
                 ["Law Firm Websites", "/law-firm-websites/"],
                 ["Local SEO", "/local-seo-for-law-firms/"],
-                ["Launchpad for New Firms", "/launchpad/"],
+                ["JurisPage for New Firms", "/launchpad/"],
                 ["GEO / AI Search", "/generative-engine-optimization-legal-marketing/"],
                 ["AI Chatbot", "/ai-chatbot-for-law-firm-website/"],
                 ["Email Marketing", "/law-firm-email-marketing/"],

@@ -107,10 +107,10 @@ const wallOfProof = [
 const services = [
   { icon: "seo", title: "Law Firm SEO", description: "Rank higher in Google for the keywords that bring in qualified case inquiries. Technical, on-page, and link building done right.", href: "/law-firm-seo/" },
   { icon: "ads", title: "Google Ads", description: "Stop wasting budget on bad clicks. We build law firm PPC campaigns that convert searches into signed cases.", href: "/google-ads-for-law-firms/" },
-  { icon: "website", title: "Law Firm Websites", description: "Fast, credible, StoryBrand-driven websites built for law firms. Live in 45 days with the Launchpad package.", href: "/law-firm-websites/" },
+  { icon: "website", title: "Law Firm Websites", description: "Fast, credible, StoryBrand-driven websites built for law firms. Live in 45 days with the JurisPage package.", href: "/law-firm-websites/" },
   { icon: "local", title: "Local SEO", description: "Get into the Google map pack for searches in your market. The most cost-effective source of local legal leads.", href: "/local-seo-for-law-firms/" },
   { icon: "geo", title: "GEO / AI Search", description: "Get your firm cited inside ChatGPT, Perplexity, and AI Overviews. First-mover advantage before your competitors figure it out.", href: "/generative-engine-optimization-legal-marketing/" },
-  { icon: "launchpad", title: "Launchpad", description: "The complete marketing package for small or startup law firms. Brand design, website, GBP, Yelp, Apple Maps, and weekly social all live in 45 days.", href: "/launchpad/" },
+  { icon: "launchpad", title: "JurisPage", description: "The complete marketing package for small or startup law firms. Brand design, website, GBP, Yelp, Apple Maps, and weekly social all live in 45 days.", href: "/launchpad/" },
 ];
 
 const serviceIcons: Record<string, React.ReactNode> = {
@@ -276,7 +276,7 @@ export default function HomePage() {
             <div className="space-y-4">
               {[
                 { title: "Pricing Published Online", body: "We put our pricing on the website. No 45-minute sales call required to find out what anything costs." },
-                { title: "No Upfront Setup Fee", body: "We spread costs across the 24-month Launchpad engagement instead of charging a huge day-one fee. Keep your cash, get your marketing live in 45 days." },
+                { title: "No Upfront Setup Fee", body: "We spread costs across the 24-month JurisPage engagement instead of charging a huge day-one fee. Keep your cash, get your marketing live in 45 days." },
                 { title: "100% Legal Focus", body: "We don't do e-commerce or restaurants. Every person on our team lives in legal marketing. That specialization is what makes the difference." },
               ].map((item) => (
                 <div key={item.title} className="bg-gray-50 rounded-xl p-5 border border-gray-200">

@@ -4,15 +4,15 @@
 
 ## The offer, right now
 
-**JurisPage sells exactly one product to end clients: Launchpad.**
+**JurisPage sells exactly one product to end clients, and as of 2026-07-20 that product is publicly named "JurisPage" (the brand is the product).**
 
-Launchpad is the Juris Digital Launchpad package (jurisdigital.com/services/launchpad/) resold under the JurisPage brand. JurisPage and Juris Digital are the same company after the 2026 acquisition. JurisPage is the small-firm front door; Juris Digital is the established-firm tier.
+The product was previously marketed on jurispage.com as "Launchpad." Operator decision on 2026-07-20: all client-facing copy calls it **JurisPage** (or "the JurisPage package/plan"). Never write "Launchpad" in prospect-visible copy, emails, or metadata. Internally it is still the Juris Digital Launchpad package (jurisdigital.com/services/launchpad/) resold under the JurisPage brand, and internal plumbing keeps the old name: the `/launchpad/` route, `slug: "launchpad"` in data files, the `LaunchpadQuote` Prisma model, and the `LaunchpadCalculator` component. Do not rename routes or the DB model without an explicit operator decision (SEO and migration impact). JurisPage and Juris Digital are the same company after the 2026 acquisition. JurisPage is the small-firm front door; Juris Digital is the established-firm tier.
 
 That means:
 
-- Any pricing page, calculator, service card, or FAQ on jurispage.com that describes what a client can buy from JurisPage should describe **Launchpad** (brand design + StoryBrand website + GBP + Yelp + Apple Maps + citations + weekly social + tracking, starting at $2,000/mo over a 24-month engagement, full setup in 45 days, no upfront fee).
-- Firms whose budget or stage exceeds Launchpad get handed off to **Juris Digital** ($5,000 to $50,000+/mo). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
-- Individual service pages (`/law-firm-seo/`, `/google-ads-for-law-firms/`, `/local-seo-for-law-firms/`, `/law-firm-content-writing/`, `/law-firm-email-marketing/`, `/law-firm-websites/`, `/generative-engine-optimization-legal-marketing/`, `/ai-chatbot-for-law-firm-website/`, `/bing-ads-for-lawyers/`) exist for SEO and lead-gen, but every pricing tile on them should route to Launchpad or Juris Digital — not a standalone service SKU.
+- Any pricing page, calculator, service card, or FAQ on jurispage.com that describes what a client can buy from JurisPage should describe **the JurisPage package** (brand design + StoryBrand website + GBP + Yelp + Apple Maps + citations + weekly social + tracking, starting at $2,000/mo over a 24-month engagement, full setup in 45 days, no upfront fee).
+- Firms whose budget or stage exceeds the JurisPage package get handed off to **Juris Digital** ($5,000 to $50,000+/mo). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
+- Individual service pages (`/law-firm-seo/`, `/google-ads-for-law-firms/`, `/local-seo-for-law-firms/`, `/law-firm-content-writing/`, `/law-firm-email-marketing/`, `/law-firm-websites/`, `/generative-engine-optimization-legal-marketing/`, `/ai-chatbot-for-law-firm-website/`, `/bing-ads-for-lawyers/`) exist for SEO and lead-gen, but every pricing tile on them should route to the JurisPage package or Juris Digital — not a standalone service SKU.
 
 ## Source of truth
 
@@ -32,8 +32,8 @@ All eight resolved to "match the Juris Digital source." Do not reintroduce the o
 4. **Upper tier price:** $5,000 to $50,000+/mo (not $5K–$20K or $5K–$15K).
 5. **Website timeline:** 45 days for full setup (website + GBP + Yelp + Apple Maps + citations + social + tracking). Not 30 days.
 6. **Differentiator framing:** advertise automation + generative AI + **12 years of legal SEO expertise** as the price-justification. "12 years" is the canonical number on jurisdigital.com/services/launchpad/. Copy about Casey Meraz personally (about-us, blog bios) can use "15 years" or "16 years" since that references his individual tenure, not the Juris Digital company expertise claim.
-7. **Target buyer copy:** "small or startup law firms with little to no online presence" (not "1–4 attorneys" as a hard gate). The LaunchpadCalculator still forks 5+ attorneys to Juris Digital because the budget math exceeds Launchpad's $2K–$4K range, but copy shouldn't exclude larger firms categorically.
-8. **StoryBrand-driven design:** included on every Launchpad site. Not a premium-tier upsell.
+7. **Target buyer copy:** "small or startup law firms with little to no online presence" (not "1–4 attorneys" as a hard gate). The LaunchpadCalculator still forks 5+ attorneys to Juris Digital because the budget math exceeds the JurisPage package's $2K–$4K range, but copy shouldn't exclude larger firms categorically.
+8. **StoryBrand-driven design:** included on every JurisPage site. Not a premium-tier upsell.
 
 ## Dev/ops notes
 
@@ -47,11 +47,11 @@ All eight resolved to "match the Juris Digital source." Do not reintroduce the o
 
 - **No em dashes.** Use commas, periods, or parens.
 - **No AI-sounding filler** ("seamless," "robust," "leverage," "unlock," "in today's fast-paced world"). Prefer concrete claims.
-- **Don't invent new tier names.** JurisPage sells Launchpad. Juris Digital is the handoff for larger firms. That's the whole hierarchy.
+- **Don't invent new tier names.** JurisPage sells one package, publicly named JurisPage. Juris Digital is the handoff for larger firms. That's the whole hierarchy.
 - **Keep Juris Digital mentions minimal.** This site is for JurisPage. Mention Juris Digital only when genuinely needed:
-  - Upsell routing: a prospect's budget/stage exceeds Launchpad ($4K/mo cap).
+  - Upsell routing: a prospect's budget/stage exceeds the JurisPage package ($4K/mo cap).
   - Acquisition/trust story: "JurisPage joined the Juris Digital family," footer, about-us.
   - Specific "difference between JurisPage and Juris Digital" FAQ on /services/pricing/ and /launchpad/.
-  Avoid mentioning JD in service-page FAQ answers about operational details (website timeline, chatbot pricing, citation maintenance). Those questions are about Launchpad, not the upsell path.
+  Avoid mentioning JD in service-page FAQ answers about operational details (website timeline, chatbot pricing, citation maintenance). Those questions are about the JurisPage package, not the upsell path.
 - **Don't conflate the brands.** No "JurisPage + Juris Digital Team" sign-offs, no "from: Juris Digital <hello@jurispage.com>" email headers, no dual-brand footers. JurisPage is the site identity; Juris Digital is the parent company. Keep them visibly separate.
-- **Pricing tiles on individual service pages** (law-firm-content-writing, local-seo, email-marketing, generative-engine-optimization, law-firm-websites, bing-ads) should show **one Launchpad tile** and a compact upsell sentence below pointing to Juris Digital Ascend for bigger budgets. Do not display dual parallel tiles that imply JurisPage offers both products.
+- **Pricing tiles on individual service pages** (law-firm-content-writing, local-seo, email-marketing, generative-engine-optimization, law-firm-websites, bing-ads) should show **one JurisPage package tile** and a compact upsell sentence below pointing to Juris Digital Ascend for bigger budgets. Do not display dual parallel tiles that imply JurisPage offers both products.

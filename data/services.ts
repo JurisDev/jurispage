@@ -160,7 +160,7 @@ export const services: ServiceData[] = [
       "Monthly reporting tied to call and form conversions",
     ],
     faqs: [
-      { question: "How much does Google Ads management cost?", answer: "Our Google Ads management is available as a Launchpad add-on. Ad spend is separate and paid directly to Google - we don't mark it up." },
+      { question: "How much does Google Ads management cost?", answer: "Our Google Ads management is available as a JurisPage add-on. Ad spend is separate and paid directly to Google - we don't mark it up." },
       { question: "What's the difference between Google Ads and Local Service Ads?", answer: "Google Ads (traditional PPC) shows text ads across Google's network. Local Service Ads (LSAs) appear at the very top of results with a 'Google Screened' badge and charge per lead rather than per click. Most law firms benefit from running both." },
       { question: "How quickly do Google Ads generate leads?", answer: "Unlike SEO, Google Ads can generate calls and form submissions within 24-48 hours of launch. The first 30-60 days are typically a learning phase where we optimize bidding and targeting for your specific market." },
       { question: "Is PPC worth it for law firms?", answer: "Yes - PPC for lawyers is one of the highest-ROI channels available when managed correctly. Legal keywords are expensive ($50-$200+ per click), but the case values justify the spend: a single personal injury case can return $50,000-$500,000 in fees. The key is tight keyword targeting, aggressive negative keyword lists, and dedicated landing pages that convert clicks into consultations. Firms that run PPC without specialized legal management typically waste 40-60% of their ad spend on irrelevant clicks." },
@@ -263,17 +263,17 @@ export const services: ServiceData[] = [
       "SEO-ready architecture from day one",
       "StoryBrand-driven layouts (clear CTAs, trust signals)",
       "Law firm branding that builds recognition and trust across every touchpoint",
-      "Delivered in 45 days for Launchpad clients (website live alongside GBP, Yelp, Apple Maps, and social setup)",
+      "Delivered in 45 days for JurisPage clients (website live alongside GBP, Yelp, Apple Maps, and social setup)",
     ],
     faqs: [
       { question: "Will I own my website?", answer: "Yes, always. Your domain, your WordPress installation, your content - all 100% yours. Unlike agencies that host on proprietary platforms, you can take your website anywhere at any time." },
-      { question: "How long does a new website take?", answer: "Launchpad websites go live within 45 days alongside the full marketing foundation (Google Business Profile, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking)." },
+      { question: "How long does a new website take?", answer: "JurisPage websites go live within 45 days alongside the full marketing foundation (Google Business Profile, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking)." },
       { question: "Do you design on WordPress?", answer: "Yes. WordPress is the standard for law firm websites for good reason - it's flexible, SEO-friendly, and every developer can work with it if you ever need to change agencies." },
       { question: "Do you build landing pages for law firms?", answer: "Yes. A dedicated law firm landing page - built for a specific practice area, ad campaign, or geographic market - converts at 2-3x the rate of a generic homepage. We build landing pages as part of both website projects and Google Ads engagements, each with a single call to action, trust signals above the fold, and messaging matched to the traffic source driving visitors to it." },
     ],
     stats: [
       { value: "57%", label: "Of users abandon sites that take more than 3 seconds to load" },
-      { value: "45 days", label: "Full setup timeline for Launchpad (website, GBP, citations, social, tracking)" },
+      { value: "45 days", label: "Full setup timeline for JurisPage (website, GBP, citations, social, tracking)" },
       { value: "100%", label: "Client ownership of domain, WordPress, and content" },
       { value: "3x", label: "Average improvement in contact form submissions after redesign" },
     ],
@@ -315,11 +315,11 @@ export const services: ServiceData[] = [
     extendedFaqs: [
       {
         question: "How much does a law firm website cost?",
-        answer: "Law firm website design ranges from $3,000 for a basic WordPress site with a few practice area pages to $25,000 or more for a large multi-attorney firm with dozens of practice areas, multiple city pages, and full content writing included. The wide range comes down to page count, custom design complexity, and whether content writing is included. Our Launchpad plan delivers a professional StoryBrand-driven WordPress site at a fixed published price with the full marketing foundation live in 45 days. Proprietary platforms from vendors like Scorpion or Martindale typically charge monthly fees indefinitely, and when you cancel, you lose the site. With WordPress, you own everything from day one.",
+        answer: "Law firm website design ranges from $3,000 for a basic WordPress site with a few practice area pages to $25,000 or more for a large multi-attorney firm with dozens of practice areas, multiple city pages, and full content writing included. The wide range comes down to page count, custom design complexity, and whether content writing is included. Our JurisPage plan delivers a professional StoryBrand-driven WordPress site at a fixed published price with the full marketing foundation live in 45 days. Proprietary platforms from vendors like Scorpion or Martindale typically charge monthly fees indefinitely, and when you cancel, you lose the site. With WordPress, you own everything from day one.",
       },
       {
         question: "How long does it take to build a law firm website?",
-        answer: "A Launchpad site (homepage, up to five practice area pages, attorney bio, contact page, and SEO foundation) goes live inside the 45-day full setup window alongside GBP, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking. A full custom redesign for an established firm with 15-30 practice area pages, multiple attorney bios, location pages, and original content writing typically takes 45-60 days. The biggest variable is content readiness: firms that can provide attorney headshots, intake questionnaire answers, and case result details quickly move faster. The design and development work itself is rarely the bottleneck.",
+        answer: "A JurisPage site (homepage, up to five practice area pages, attorney bio, contact page, and SEO foundation) goes live inside the 45-day full setup window alongside GBP, Yelp, Apple Maps, citations, social profiles, weekly posting, and tracking. A full custom redesign for an established firm with 15-30 practice area pages, multiple attorney bios, location pages, and original content writing typically takes 45-60 days. The biggest variable is content readiness: firms that can provide attorney headshots, intake questionnaire answers, and case result details quickly move faster. The design and development work itself is rarely the bottleneck.",
       },
       {
         question: "What pages does a law firm website need?",
@@ -459,12 +459,12 @@ export const services: ServiceData[] = [
   {
     relatedCaseStudies: ["the-sands-law-group"],
     slug: "launchpad",
-    title: "Launchpad - Law Firm Marketing for New Attorneys",
-    heading: "JurisPage Launchpad: Marketing for New Law Firms",
+    title: "JurisPage - Law Firm Marketing for New Attorneys",
+    heading: "JurisPage: Marketing for New Law Firms",
     tagline: "Everything you need to open your doors online. Fast.",
     primaryKeyword: "startup law firm marketing",
-    description: "JurisPage Launchpad is a complete marketing package for small or startup law firms with little to no online presence. Full setup in 45 days: StoryBrand-driven website, brand design, Google Business Profile, Yelp, Apple Maps, weekly social posting, and tracking.",
-    intro: "When you open your own firm after years at a larger practice, you are starting from zero online. No Google Business Profile, no website, no reviews, and competitors who have been publishing content and building citations for a decade. Launchpad is built for that moment. Full setup lands in 45 days: a StoryBrand-driven website, complete brand design (logo, typography, photography, graphics, social assets, brand guidelines), verified Google Business Profile, listings on Yelp, Apple Maps, Bing, Avvo, and 30+ other directories, social profiles set up and posting weekly, and performance tracking live from day one. Starting at $2,000/month over a 24-month engagement with no upfront fee. This is how we keep it affordable for small and startup firms: 12 years of legal SEO expertise paired with automation and generative AI to deliver rapid results without the front-loaded billing of a traditional agency.",
+    description: "JurisPage is a complete marketing package for small or startup law firms with little to no online presence. Full setup in 45 days: StoryBrand-driven website, brand design, Google Business Profile, Yelp, Apple Maps, weekly social posting, and tracking.",
+    intro: "When you open your own firm after years at a larger practice, you are starting from zero online. No Google Business Profile, no website, no reviews, and competitors who have been publishing content and building citations for a decade. JurisPage is built for that moment. Full setup lands in 45 days: a StoryBrand-driven website, complete brand design (logo, typography, photography, graphics, social assets, brand guidelines), verified Google Business Profile, listings on Yelp, Apple Maps, Bing, Avvo, and 30+ other directories, social profiles set up and posting weekly, and performance tracking live from day one. Starting at $2,000/month over a 24-month engagement with no upfront fee. This is how we keep it affordable for small and startup firms: 12 years of legal SEO expertise paired with automation and generative AI to deliver rapid results without the front-loaded billing of a traditional agency.",
     features: [
       "Brand Design (logo, typography, photography, graphics, social assets, brand guidelines)",
       "StoryBrand-driven WordPress website, live in 45 days",
@@ -475,9 +475,9 @@ export const services: ServiceData[] = [
       "Performance tracking live from day one",
     ],
     faqs: [
-      { question: "Who is Launchpad designed for?", answer: "Small or startup law firms with little to no online presence. Attorneys opening their first firm, lawyers leaving a larger firm to go independent, and smaller practices that have been running on referrals alone and need to build an online presence. Practice-agnostic, with a typical budget range of $2,000 to $4,000 per month." },
-      { question: "What's the difference between Launchpad and DIY website builders?", answer: "DIY builders like Squarespace or Wix can look fine but are SEO nightmares for law firms. Launchpad is built on WordPress with proper SEO structure, local optimization, and the same professional foundation that larger firms pay much more for." },
-      { question: "Can I upgrade to a higher plan later?", answer: "Yes. Launchpad is designed as a foundation. Most clients move to Grow 6-12 months in once they're established and ready to add SEO and paid advertising. There's no penalty and no restart needed." },
+      { question: "Who is JurisPage designed for?", answer: "Small or startup law firms with little to no online presence. Attorneys opening their first firm, lawyers leaving a larger firm to go independent, and smaller practices that have been running on referrals alone and need to build an online presence. Practice-agnostic, with a typical budget range of $2,000 to $4,000 per month." },
+      { question: "What's the difference between JurisPage and DIY website builders?", answer: "DIY builders like Squarespace or Wix can look fine but are SEO nightmares for law firms. JurisPage is built on WordPress with proper SEO structure, local optimization, and the same professional foundation that larger firms pay much more for." },
+      { question: "Can I upgrade to a higher plan later?", answer: "Yes. JurisPage is designed as a foundation. Most clients move to Grow 6-12 months in once they're established and ready to add SEO and paid advertising. There's no penalty and no restart needed." },
     ],
     stats: [
       { value: "45 days", label: "Full marketing foundation live (website, GBP, citations, social, tracking)" },
@@ -485,11 +485,11 @@ export const services: ServiceData[] = [
       { value: "1 vendor", label: "Brand, website, GBP, citations, social, and tracking in one package" },
       { value: "$0", label: "Upfront setup fee" },
     ],
-    whyMatters: "New law firms face a hard constraint: you need cases now, but organic SEO takes 3-6 months before it produces meaningful traffic, and paid advertising requires a budget most attorneys opening their first firm are not ready to commit. What you can control immediately is your digital foundation - and that foundation determines how many of your early referrals actually convert. When a former colleague refers you to their friend, that person searches your name before they call. If your website looks half-built or your Google Business Profile shows the wrong address, that referral is gone. Launchpad closes that gap fast. A properly verified GBP in a less competitive market can appear in local map pack results within 30-60 days. Your first 10 reviews on Google can arrive in the first 90 days if you work your existing professional network correctly, and we give you the playbook to do that on day one. Every week you spend without correct citation data in the major legal directories is a week other firms are getting credit for the directory authority you have not yet claimed. The work done in month one pays dividends for years - and the mistakes made in month one (wrong address submitted to Avvo, GBP set to the wrong primary category, website with no schema markup) take months to correct. You get one launch. Do it right the first time.",
+    whyMatters: "New law firms face a hard constraint: you need cases now, but organic SEO takes 3-6 months before it produces meaningful traffic, and paid advertising requires a budget most attorneys opening their first firm are not ready to commit. What you can control immediately is your digital foundation - and that foundation determines how many of your early referrals actually convert. When a former colleague refers you to their friend, that person searches your name before they call. If your website looks half-built or your Google Business Profile shows the wrong address, that referral is gone. JurisPage closes that gap fast. A properly verified GBP in a less competitive market can appear in local map pack results within 30-60 days. Your first 10 reviews on Google can arrive in the first 90 days if you work your existing professional network correctly, and we give you the playbook to do that on day one. Every week you spend without correct citation data in the major legal directories is a week other firms are getting credit for the directory authority you have not yet claimed. The work done in month one pays dividends for years - and the mistakes made in month one (wrong address submitted to Avvo, GBP set to the wrong primary category, website with no schema markup) take months to correct. You get one launch. Do it right the first time.",
     process: [
       {
         step: "Intake and Brand Alignment",
-        detail: "We gather your practice areas, target geography, bar admissions, attorney bio information, and any existing brand assets - logo, colors, headshots. If you do not have a logo yet, we point you to fast, affordable options and hold the project open for up to 5 business days without delaying other work. Most Launchpad clients complete their intake form and send us all materials within 48 hours of signing. We use a structured intake document so nothing falls through the cracks and you do not have to repeat yourself. At the end of intake, you receive a written project schedule with exact dates for every deliverable.",
+        detail: "We gather your practice areas, target geography, bar admissions, attorney bio information, and any existing brand assets - logo, colors, headshots. If you do not have a logo yet, we point you to fast, affordable options and hold the project open for up to 5 business days without delaying other work. Most JurisPage clients complete their intake form and send us all materials within 48 hours of signing. We use a structured intake document so nothing falls through the cracks and you do not have to repeat yourself. At the end of intake, you receive a written project schedule with exact dates for every deliverable.",
       },
       {
         step: "Website Build on a Legal-Specific WordPress Foundation",
@@ -505,7 +505,7 @@ export const services: ServiceData[] = [
       },
       {
         step: "Branded Email Configuration",
-        detail: "We configure your professional email accounts through Google Workspace or Microsoft 365 so you send from yourname@yourfirm.com from day one. Emails sent from @gmail.com or @yahoo.com addresses to potential clients are frequently caught by spam filters or trigger credibility doubts that reduce response rates. For a law firm, your email domain signals to clients that you are operating an established practice. We set up your primary attorney email, configure basic email signatures, and confirm email is routing correctly before we close your Launchpad project.",
+        detail: "We configure your professional email accounts through Google Workspace or Microsoft 365 so you send from yourname@yourfirm.com from day one. Emails sent from @gmail.com or @yahoo.com addresses to potential clients are frequently caught by spam filters or trigger credibility doubts that reduce response rates. For a law firm, your email domain signals to clients that you are operating an established practice. We set up your primary attorney email, configure basic email signatures, and confirm email is routing correctly before we close your JurisPage project.",
       },
       {
         step: "Launch Walkthrough and First-90-Days Guidance",
@@ -523,7 +523,7 @@ export const services: ServiceData[] = [
     extendedFaqs: [
       {
         question: "How much should a new law firm spend on marketing in year one?",
-        answer: "Industry benchmarks suggest law firms should allocate 2-5% of gross revenue to marketing, but new firms have little revenue yet. A practical approach for year one: spend first on fixed-cost foundational assets - website, GBP, citations - that generate returns indefinitely, and hold off on paid advertising until you have 60-90 days of consistent cash flow to absorb the ramp period. Google Ads for legal keywords can cost $50-200 per click in competitive markets. That spend makes more sense once you have a verified GBP, a fast website with real conversion tracking, and at least 10 Google reviews to give visitors confidence. Launchpad is specifically priced for the first phase, before you are ready for that investment.",
+        answer: "Industry benchmarks suggest law firms should allocate 2-5% of gross revenue to marketing, but new firms have little revenue yet. A practical approach for year one: spend first on fixed-cost foundational assets - website, GBP, citations - that generate returns indefinitely, and hold off on paid advertising until you have 60-90 days of consistent cash flow to absorb the ramp period. Google Ads for legal keywords can cost $50-200 per click in competitive markets. That spend makes more sense once you have a verified GBP, a fast website with real conversion tracking, and at least 10 Google reviews to give visitors confidence. JurisPage is specifically priced for the first phase, before you are ready for that investment.",
       },
       {
         question: "Should new law firms focus on referrals instead of digital marketing?",
@@ -531,27 +531,27 @@ export const services: ServiceData[] = [
       },
       {
         question: "How long does it take for a new law firm website to rank on Google?",
-        answer: "New domains typically take 3-6 months before Google starts ranking them competitively for practice area keywords. However, a properly configured and verified Google Business Profile can appear in local map pack results much faster - sometimes within 30-60 days in less competitive markets. This is exactly why Launchpad treats GBP setup as equal in priority to the website build. The map pack is often where new firm clients find you first, especially for local searches like \'personal injury lawyer near me\' or \'criminal defense attorney [your city].\'",
+        answer: "New domains typically take 3-6 months before Google starts ranking them competitively for practice area keywords. However, a properly configured and verified Google Business Profile can appear in local map pack results much faster - sometimes within 30-60 days in less competitive markets. This is exactly why JurisPage treats GBP setup as equal in priority to the website build. The map pack is often where new firm clients find you first, especially for local searches like \'personal injury lawyer near me\' or \'criminal defense attorney [your city].\'",
       },
       {
         question: "Do I need separate vendors for my website, SEO, and Google Business Profile?",
-        answer: "You do not, and splitting these across vendors creates real problems. When your website developer, your SEO vendor, and your GBP manager are three different companies, you end up with inconsistent NAP data, conflicting keyword strategies, and no single person accountable when something is wrong. We have worked with new attorneys who spent their first 12 months bouncing between a budget website, a local SEO freelancer, and a GBP management service that had no idea what the other two had done. Launchpad handles all three as a coordinated package with a single team and a single point of contact from intake through launch.",
+        answer: "You do not, and splitting these across vendors creates real problems. When your website developer, your SEO vendor, and your GBP manager are three different companies, you end up with inconsistent NAP data, conflicting keyword strategies, and no single person accountable when something is wrong. We have worked with new attorneys who spent their first 12 months bouncing between a budget website, a local SEO freelancer, and a GBP management service that had no idea what the other two had done. JurisPage handles all three as a coordinated package with a single team and a single point of contact from intake through launch.",
       },
       {
-        question: "What comes after Launchpad - is there a next step?",
-        answer: "Launchpad is a foundation, not a long-term strategy. Most attorneys who open their firm with Launchpad grow into a full-service engagement with [Juris Digital](https://jurisdigital.com/services/ascend/) 6-12 months after launch once they have consistent case volume and cash flow. Juris Digital adds active SEO - link building, content publishing, technical monitoring - plus Google Ads management, custom web design, and a dedicated account strategist. Because your Launchpad site is built on the same technical foundation, upgrading requires no rebuild. We layer more activity on top of what is already in place.",
+        question: "What comes after JurisPage - is there a next step?",
+        answer: "JurisPage is a foundation, not a long-term strategy. Most attorneys who open their firm with JurisPage grow into a full-service engagement with [Juris Digital](https://jurisdigital.com/services/ascend/) 6-12 months after launch once they have consistent case volume and cash flow. Juris Digital adds active SEO - link building, content publishing, technical monitoring - plus Google Ads management, custom web design, and a dedicated account strategist. Because your JurisPage site is built on the same technical foundation, upgrading requires no rebuild. We layer more activity on top of what is already in place.",
       },
       {
         question: "What if I already have a website but it is not working?",
-        answer: "Launchpad includes a website build from scratch. If you already have a site built on WordPress and it is structurally sound, we can sometimes audit and improve it rather than rebuild - contact us to discuss your specific situation before purchasing. However, many DIY or budget-built law firm sites have structural problems (slow hosting, no schema markup, poor URL structure, missing local signals) that make a rebuild more cost-effective than a repair. We will tell you honestly which approach makes sense after reviewing your current site.",
+        answer: "JurisPage includes a website build from scratch. If you already have a site built on WordPress and it is structurally sound, we can sometimes audit and improve it rather than rebuild - contact us to discuss your specific situation before purchasing. However, many DIY or budget-built law firm sites have structural problems (slow hosting, no schema markup, poor URL structure, missing local signals) that make a rebuild more cost-effective than a repair. We will tell you honestly which approach makes sense after reviewing your current site.",
       },
       {
-        question: "Can I run Google Ads right after launching with Launchpad?",
-        answer: "You can, but we recommend waiting 30-60 days after launch before starting Google Ads. Google Ads sends traffic to your website immediately, and your ability to convert that traffic into consultation requests depends on having social proof in place - reviews, a detailed bio, client-focused copy. A site with zero reviews and minimal content will convert paid traffic at a very low rate, making your cost per lead high. Spend the first 30-60 days after Launchpad generating your first 5-10 Google reviews and tightening your intake process. Then paid advertising becomes significantly more efficient.",
+        question: "Can I run Google Ads right after launching with JurisPage?",
+        answer: "You can, but we recommend waiting 30-60 days after launch before starting Google Ads. Google Ads sends traffic to your website immediately, and your ability to convert that traffic into consultation requests depends on having social proof in place - reviews, a detailed bio, client-focused copy. A site with zero reviews and minimal content will convert paid traffic at a very low rate, making your cost per lead high. Spend the first 30-60 days after JurisPage generating your first 5-10 Google reviews and tightening your intake process. Then paid advertising becomes significantly more efficient.",
       },
       {
         question: "What happens if I need to change my address or phone number after launch?",
-        answer: "We update your website, Google Business Profile, and notify the major data aggregators so the correction propagates to secondary directories. Address and phone number consistency across the web is a live SEO signal, not a one-time setup task. A number that is correct on your website but wrong on Avvo is still hurting your local rankings. Launchpad includes ongoing citation monitoring across the 30+ directories we submit to during setup.",
+        answer: "We update your website, Google Business Profile, and notify the major data aggregators so the correction propagates to secondary directories. Address and phone number consistency across the web is a live SEO signal, not a one-time setup task. A number that is correct on your website but wrong on Avvo is still hurting your local rankings. JurisPage includes ongoing citation monitoring across the 30+ directories we submit to during setup.",
       },
     ],
     relatedServices: ["law-firm-websites", "local-seo-for-law-firms", "law-firm-seo"],
@@ -674,7 +674,7 @@ export const services: ServiceData[] = [
     ],
     faqs: [
       { question: "Is an AI chatbot compliant with bar advertising rules?", answer: "Properly configured, yes. We design chatbot conversations that follow bar advertising guidelines - including disclaimers that the chatbot does not create an attorney-client relationship and that information shared is for contact purposes only." },
-      { question: "How much does a law firm AI chatbot cost?", answer: "The AI chatbot is available as a Launchpad add-on for $299/month. Contact us for current pricing based on your practice area and website traffic volume." },
+      { question: "How much does a law firm AI chatbot cost?", answer: "The AI chatbot is available as a JurisPage add-on for $299/month. Contact us for current pricing based on your practice area and website traffic volume." },
       { question: "Can the chatbot handle complex legal questions?", answer: "The chatbot is designed for intake, not legal advice. It's trained to gather prospect information, answer basic FAQs about your firm, and route complex questions to a human - while keeping the conversation on track for case qualification." },
     ],
     stats: [
