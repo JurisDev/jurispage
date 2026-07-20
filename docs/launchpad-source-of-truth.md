@@ -1,6 +1,6 @@
 # Launchpad — Source-of-Truth Product Spec
 
-> **Naming note (2026-07-20):** On jurispage.com this package is publicly marketed as **JurisPage** (the brand is the product). "Launchpad" remains the internal and jurisdigital.com name. Never use "Launchpad" in prospect-visible copy on jurispage.com.
+> **Naming note (2026-07-20):** This package is publicly marketed as **JurisPage** (the brand is the product) on BOTH jurispage.com and jurisdigital.com. "Launchpad" survives only internally: URLs (/services/launchpad/, /launchpad/), slugs, DB models, and this doc's filename. Never use "Launchpad" in prospect-visible copy on either site.
 
 > **Source:** https://jurisdigital.com/services/launchpad/
 > **Pulled:** 2026-04-23
