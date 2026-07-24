@@ -43,7 +43,7 @@ const changes = [
   {
     title: "Same mindset",
     description:
-      "Transparent pricing. No upfront setup fee. Territory exclusivity. Nothing changes about how we work.",
+      "Transparent pricing. No upfront setup fee. Primary partnership commitment in your market. Nothing changes about how we work.",
   },
 ];
 

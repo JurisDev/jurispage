@@ -205,8 +205,8 @@ export default function PricingPage() {
               },
               {
                 icon: "🛡️",
-                title: "Market Exclusivity",
-                desc: "Limited partnerships per market to ensure your investment isn't competing against another client we manage. Your market is yours.",
+                title: "Primary Partnership",
+                desc: "Limited engagements per market so your investment isn't competing against another client we manage.",
               },
               {
                 icon: "📊",

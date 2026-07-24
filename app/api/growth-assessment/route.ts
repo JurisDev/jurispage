@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
               <li>Google Ads and LSA management</li>
               <li>Custom website design and development</li>
               <li>Dedicated strategist embedded with your team</li>
-              <li>Market exclusivity: limited partnerships per market</li>
+              <li>Primary partnership: limited engagements per market</li>
               <li>Advanced intake consulting and optimization</li>
             </ul>
           </div>
