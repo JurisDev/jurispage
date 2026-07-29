@@ -113,7 +113,7 @@ export async function POST(req: NextRequest) {
           <div style="padding: 32px; background: #ffffff;">
             <p style="color: #374151;">Hi ${name},</p>
             <p style="color: #555; line-height: 1.7;">Thanks for reaching out. With 5+ attorneys, your firm has outgrown a foundation package. You need a full-service growth partner that can help you dominate your market, sign more cases, and build a lasting legacy.</p>
-            <p style="color: #555; line-height: 1.7;">That's where <strong>Juris Digital</strong> comes in. Same parent company as JurisPage, same data-driven approach, but built specifically for established firms investing <strong>$5,000 to $50,000+/month</strong> in growth.</p>
+            <p style="color: #555; line-height: 1.7;">That's where <strong>Juris Digital</strong> comes in. Same parent company as JurisPage, same data-driven approach, but built specifically for established firms investing <strong>$15,000+/month</strong> in growth.</p>
             <div style="background: #f9fafb; border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid #e5e7eb;">
               <p style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #9ca3af; margin: 0 0 12px;">What Juris Digital Delivers</p>
               <ul style="color: #555; font-size: 14px; margin: 0; padding-left: 18px; line-height: 2;">

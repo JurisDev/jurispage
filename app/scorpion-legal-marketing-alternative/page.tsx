@@ -99,7 +99,7 @@ export default function ScorpionAlternativePage() {
 
       <CTASection
         heading="See Where You Stand"
-        subtext="Free competitive analysis delivered within 24 hours. Tell us about your firm and we&apos;ll show you exactly what it would take to outperform your current agency."
+        subtext="Free market gap analysis with an instant snapshot in about 60 seconds. Tell us about your firm and we&apos;ll show you exactly what it would take to outperform your current agency."
         primaryLabel="See Where You Stand"
         primaryHref="/see-my-market-gap/"
         secondaryLabel="See Pricing"

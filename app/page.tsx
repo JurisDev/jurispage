@@ -180,7 +180,7 @@ export default function HomePage() {
               className="inline-block font-heading font-bold text-white text-lg px-10 py-5 rounded-full no-underline hover:opacity-90 transition-opacity shadow-lg shadow-orange-200"
               style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}
             >
-              Get My Growth Plan
+              See My Market Gap
             </Link>
             <Link
               href="/case-studies/"
@@ -327,7 +327,7 @@ export default function HomePage() {
               className="inline-block font-heading font-bold text-white text-base px-8 py-4 rounded-full no-underline hover:opacity-90 transition-opacity shadow-lg shadow-orange-200"
               style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}
             >
-              Get My Growth Plan
+              See My Market Gap
             </Link>
           </div>
         </div>

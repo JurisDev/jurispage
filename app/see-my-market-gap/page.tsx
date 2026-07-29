@@ -66,7 +66,7 @@ const faqs = [
   {
     question: "How long does it take?",
     answer:
-      "You'll see an instant teaser snapshot in about 60 seconds after submitting the form. Your full report (with detailed competitor analysis, keyword data, and a prioritized action plan) will be delivered to your inbox within 24 hours.",
+      "You'll see an instant snapshot in about 60 seconds after submitting the form. From there, our team digs into the full analysis (detailed competitor data, keyword opportunities, and a prioritized action plan) and a real person reaches out to walk you through what we found.",
   },
   {
     question: "Is this really free?",

@@ -105,8 +105,9 @@ export default function MarketGapLoadingPage() {
             We&apos;re building your report
           </h1>
           <p className="text-gray-400 text-base leading-relaxed mb-8">
-            Your analysis is taking a bit longer than usual. We&apos;ll email
-            your full report within 24 hours. No action needed on your end.
+            Your analysis is taking a bit longer than usual. Our team has your
+            submission and will follow up personally with what we find. No
+            action needed on your end.
           </p>
 
           <a

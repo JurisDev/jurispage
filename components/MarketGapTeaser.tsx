@@ -746,11 +746,11 @@ export default function MarketGapTeaser({
             </div>
             <div>
               <p className="font-heading font-bold text-gray-900 text-base mb-1">
-                Full Report Coming Soon
+                Your Full Analysis Is In Progress
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Your full report with detailed analysis and action plan will be ready within 24 hours.
-                We&apos;ll email you as soon as it&apos;s available.
+                Our team is digging into the detailed analysis and action plan behind this snapshot.
+                A real person will reach out to walk you through what we found.
               </p>
             </div>
           </div>

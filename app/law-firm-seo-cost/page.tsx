@@ -220,7 +220,7 @@ export default function LawFirmSEOCostPage() {
             </div>
           </div>
           <p className="text-gray-600 text-sm">JurisPage costs are spread evenly across the 24-month engagement, not charged as a large day-one fee. <Link href="/services/pricing/" style={{ color: "#EE6C13" }}>See full JurisPage details and pricing →</Link></p>
-          <p className="text-gray-500 text-sm mt-4">If your firm is established and looking to invest $5,000 to $50,000+/mo, see our parent company <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: "#EE6C13" }}>Juris Digital</a> for full-service engagements.</p>
+          <p className="text-gray-500 text-sm mt-4">If your firm is established and looking to invest $15,000+/mo, see our parent company <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: "#EE6C13" }}>Juris Digital</a> for full-service engagements.</p>
         </div>
       </article>
 

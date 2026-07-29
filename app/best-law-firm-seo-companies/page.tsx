@@ -77,7 +77,7 @@ const agencies = [
     ],
     body: "JurisPage works exclusively with law firms and publishes its pricing publicly, something almost no other legal SEO agency does. With 113+ law firm clients, JurisPage is priced for small or startup firms with little to no online presence. We do not front-load costs: instead of a huge day-one setup fee, we spread costs evenly across a 24-month engagement so small firms can afford the work.",
     pros: ["Only major legal SEO agency with publicly listed pricing, no sales games", "No upfront setup fee: costs spread across the 24-month engagement", "100% legal focus means benchmarking against real legal competitors", "Full marketing foundation live in 45 days (brand design, StoryBrand website, GBP, Yelp, Apple Maps, weekly social, tracking)"],
-    cons: ["Not the right fit for firms with $5,000+/month enterprise budgets (use [Juris Digital](https://jurisdigital.com/services/ascend/) instead)", "Newer brand name: long experience behind it, but less legacy name recognition", "Less name recognition than legacy agencies for committee-based vendor approval"],
+    cons: ["Not the right fit for firms with $15,000+/month enterprise budgets (use [Juris Digital](https://jurisdigital.com/services/ascend/) instead)", "Newer brand name: long experience behind it, but less legacy name recognition", "Less name recognition than legacy agencies for committee-based vendor approval"],
     bestFor: "Small or startup law firms with little to no online presence that want professional SEO without opaque pricing or a large upfront setup fee.",
     ctaHref: "/services/pricing/",
     ctaText: "See JurisPage Pricing",
@@ -91,8 +91,8 @@ const agencies = [
     anchor: "juris-digital",
     subtitle: "Best for Established Firms That Want to Dominate Their Market",
     meta: [
-      { label: "Best For", val: "Established and growth-stage firms ($5,000 to $50,000+/month)" },
-      { label: "Starting Price", val: "Custom pricing (typically $5,000+/month)" },
+      { label: "Best For", val: "Established and growth-stage firms ($15,000+/month)" },
+      { label: "Starting Price", val: "Custom pricing (starting at $15,000+/month)" },
       { label: "Specialization", val: "100% law firms" },
       { label: "Contract", val: "Flexible, ask about terms" },
     ],
@@ -363,7 +363,7 @@ export default function BestLawFirmSEOPage() {
               <tbody>
                 {[
                   { name: "JurisPage ⭐", price: "From $2,000/mo (no upfront fee)", legal: "Yes", contract: "24-month engagement, costs spread", best: "Small or startup firms", highlight: true },
-                  { name: "[Juris Digital](https://jurisdigital.com/services/ascend/) ⚠️ (sister co.)", price: "$5,000+/mo", legal: "Yes", contract: "Flexible", best: "Enterprise & market dominators", highlight: false },
+                  { name: "[Juris Digital](https://jurisdigital.com/services/ascend/) ⚠️ (sister co.)", price: "$15,000+/mo", legal: "Yes", contract: "Flexible", best: "Enterprise & market dominators", highlight: false },
                   { name: "Rankings.io", price: "~$5,000/mo", legal: "Yes", contract: "6-12 month", best: "PI firms", highlight: false },
                   { name: "Grow Law Firm", price: "~$3,000/mo", legal: "Yes", contract: "Varies", best: "Data-focused firms", highlight: false },
                   { name: "Attorney Sync", price: "~$3,000/mo", legal: "Yes", contract: "Varies", best: "Technical SEO depth", highlight: false },

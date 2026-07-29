@@ -11,7 +11,7 @@ The product was previously marketed on jurispage.com as "Launchpad." Operator de
 That means:
 
 - Any pricing page, calculator, service card, or FAQ on jurispage.com that describes what a client can buy from JurisPage should describe **the JurisPage package** (brand design + StoryBrand website + GBP + Yelp + Apple Maps + citations + weekly social + tracking, starting at $2,000/mo over a 24-month engagement, full setup in 45 days, no upfront fee).
-- Firms whose budget or stage exceeds the JurisPage package get handed off to **Juris Digital** ($5,000 to $50,000+/mo). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
+- Firms whose budget or stage exceeds the JurisPage package get handed off to **Juris Digital** (publicly framed as "starting at $15,000+/mo" on jurispage.com since 2026-07-29; anyone under that stays JurisPage). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
 - Individual service pages (`/law-firm-seo/`, `/google-ads-for-law-firms/`, `/local-seo-for-law-firms/`, `/law-firm-content-writing/`, `/law-firm-email-marketing/`, `/law-firm-websites/`, `/generative-engine-optimization-legal-marketing/`, `/ai-chatbot-for-law-firm-website/`, `/bing-ads-for-lawyers/`) exist for SEO and lead-gen, but every pricing tile on them should route to the JurisPage package or Juris Digital — not a standalone service SKU.
 
 ## Source of truth
@@ -29,11 +29,21 @@ All eight resolved to "match the Juris Digital source." Do not reintroduce the o
 1. **Contract:** 24-month engagement (not month-to-month). Framed as "no upfront fee, costs spread across the 24 months."
 2. **Brand Design:** included in the $2,000 base (logo, typography, photography, graphics, social assets, brand guidelines). Not a $999 add-on.
 3. **Upper tier name:** Juris Digital (not "JurisPage Pro").
-4. **Upper tier price:** $5,000 to $50,000+/mo (not $5K–$20K or $5K–$15K).
+4. **Upper tier price:** ~~$5,000 to $50,000+/mo~~ **Superseded 2026-07-29 (Tom Tran + Josh funnel decisions):** all jurispage.com copy says Juris Digital is "starting at $15,000+/mo" so it hard qualifies. Never show the $5,000 number or the $5K–$50K range for JD. Anyone under $15K stays JurisPage.
 5. **Website timeline:** 45 days for full setup (website + GBP + Yelp + Apple Maps + citations + social + tracking). Not 30 days.
 6. **Differentiator framing:** advertise automation + generative AI + **12 years of legal SEO expertise** as the price-justification. "12 years" is the canonical number on jurisdigital.com/services/launchpad/. Copy about Casey Meraz personally (about-us, blog bios) can use "15 years" or "16 years" since that references his individual tenure, not the Juris Digital company expertise claim.
 7. **Target buyer copy:** "small or startup law firms with little to no online presence" (not "1–4 attorneys" as a hard gate). The LaunchpadCalculator still forks 5+ attorneys to Juris Digital because the budget math exceeds the JurisPage package's $2K–$4K range, but copy shouldn't exclude larger firms categorically.
 8. **StoryBrand-driven design:** included on every JurisPage site. Not a premium-tier upsell.
+
+## Funnel decisions (2026-07-29, Tom Tran + Josh)
+
+One report product: the **Market Gap report** (`/see-my-market-gap/`). Delivery is **human**, following the JD Market Intelligence Report (MIR) process: Steve K builds the full report for qualified leads, Armon delivers it and uses delivery to book the meeting (MQL > SAL when the report sends > SQL when they engage). Tom + Reyin own the HubSpot side (task/SLA timers keyed off `form_source`, 5-minute first-response email for Contact).
+
+- **No automated full-report delivery to leads.** The `/api/market-gap/approve/` route (Approve button + auto-email) was deleted on 2026-07-29. Do not re-add an Approve/auto-send flow. The 60-second instant teaser stays. Generating the full report internally as a draft for Steve is fine; sending it to the lead automatically is not. No "delivered to your inbox within 24 hours" promises anywhere in the market-gap funnel.
+- **Growth Report is dead as a standalone deliverable.** `/growth-report/` now sells the Market Gap report (embeds `MarketGapForm`). Its form (`GrowthReportForm`) and API route (`/api/growth-report/`, which sent a 24-hour-promise confirmation email) were deleted.
+- **Growth Assessment is dead.** `/growth-assessment/` was reframed as another Market Gap door. `GrowthAssessmentForm` and `/api/growth-assessment/` (which promised a "45-minute Growth Strategy Session") were deleted. The "Growth Strategy Session" promise and the "$5K+ to dominate" qualification framing are banned sitewide.
+- **Reframing any lead page into another door to the Market Gap funnel is always fine; new deliverable promises are not.**
+- **Contact page** (`/contact/`) is a straight consultation ask: "Ready for a change? Let's explore your options." No pre-call audit promise, no "plan tailored to you" language. Keep the form's qualification fields. Armon owns Contact leads. Contact sends the lead no email from our side (HubSpot handles first response).
 
 ## Dev/ops notes
 

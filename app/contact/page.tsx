@@ -3,8 +3,8 @@ import ContactForm from "@/components/ContactForm";
 import SchemaOrg from "@/components/SchemaOrg";
 
 export const metadata: Metadata = {
-  title: "Contact JurisPage | Free Law Firm Marketing Consultation",
-  description: "Book a free, no-obligation law firm marketing consultation with JurisPage. We'll audit your online presence, identify growth opportunities, and recommend a plan tailored to your practice area and budget.",
+  title: "Contact JurisPage | Ready for a Change?",
+  description: "Ready for a change? Let's explore your options. Tell us about your firm and book a free, no-obligation consultation with JurisPage.",
   alternates: { canonical: "https://jurispage.com/contact/" },
 };
 
@@ -14,7 +14,7 @@ const contactSchema = {
   "@id": "https://jurispage.com/contact/",
   name: "Contact JurisPage",
   url: "https://jurispage.com/contact/",
-  description: "Get a free law firm marketing consultation. No obligation.",
+  description: "Book a free, no-obligation consultation with JurisPage.",
 };
 
 export default function ContactPage() {
@@ -23,8 +23,8 @@ export default function ContactPage() {
       <SchemaOrg schema={contactSchema} />
       <section className="bg-white py-16 px-6 text-center border-b border-gray-100">
         <div className="max-w-2xl mx-auto">
-          <h1 className="font-heading font-extrabold text-gray-900 text-4xl mb-4">Get Your Free Law Firm Marketing Consultation</h1>
-          <p className="text-gray-600 text-lg leading-relaxed">Tell us about your firm and what you&apos;re trying to accomplish. We&apos;ll review your situation and come back with a clear plan - no fluff, no vague promises.</p>
+          <h1 className="font-heading font-extrabold text-gray-900 text-4xl mb-4">Ready for a Change? Let&apos;s Explore Your Options.</h1>
+          <p className="text-gray-600 text-lg leading-relaxed">Tell us about your firm and what you&apos;re trying to accomplish. We&apos;ll set up a conversation about where you are, where you want to be, and whether we&apos;re the right team to get you there.</p>
         </div>
       </section>
 
@@ -34,10 +34,10 @@ export default function ContactPage() {
             <h2 className="font-heading font-extrabold text-gray-900 text-2xl mb-6">What Happens Next</h2>
             <div className="space-y-5">
               {[
-                { step: "1", title: "You submit the form", body: "Takes 2 minutes. We'll review it before reaching out." },
-                { step: "2", title: "We audit your presence", body: "We'll look at your website, rankings, Google Business Profile, and paid ads before we talk." },
-                { step: "3", title: "Free 30-minute call", body: "We share what we found, what we recommend, and which plan fits your situation and budget." },
-                { step: "4", title: "You decide", body: "No pressure. If it's a fit, great. If not, you still got a free audit. We think that's fair." },
+                { step: "1", title: "You submit the form", body: "Takes 2 minutes. Tell us about your firm and your goals." },
+                { step: "2", title: "We reach out", body: "A member of our team contacts you to set up a time to talk." },
+                { step: "3", title: "Free 30-minute call", body: "We talk through your situation, your options, and whether JurisPage is the right fit." },
+                { step: "4", title: "You decide", body: "No pressure. If it's a fit, great. If not, no hard feelings." },
               ].map((item) => (
                 <div key={item.step} className="flex gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm text-gray-900" style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}>
@@ -62,7 +62,7 @@ export default function ContactPage() {
 
           <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
             <h2 className="font-heading font-bold text-gray-900 text-xl mb-2">Tell Us About Your Firm</h2>
-            <p className="text-gray-500 text-sm mb-6">We'll respond within one business day.</p>
+            <p className="text-gray-500 text-sm mb-6">We&apos;ll respond within one business day.</p>
             <ContactForm />
           </div>
         </div>

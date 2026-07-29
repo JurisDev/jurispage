@@ -6,7 +6,7 @@ import LaunchpadCalculator from "@/components/LaunchpadCalculator";
 
 export const metadata: Metadata = {
   title: "Pricing: Law Firm Marketing Plans for Every Stage",
-  description: "Transparent pricing for every stage of growth. JurisPage starts at $2,000/month for small or startup firms with no upfront fee. Juris Digital runs $5,000 to $50,000+/month for established firms.",
+  description: "Transparent pricing for every stage of growth. JurisPage starts at $2,000/month for small or startup firms with no upfront fee. Juris Digital starts at $15,000+/month for established firms.",
   alternates: { canonical: "https://jurispage.com/services/pricing/" },
 };
 
@@ -19,9 +19,9 @@ const faqSchema = {
     { "@type": "Question", name: "How can you offer this price and produce results quickly?", acceptedAnswer: { "@type": "Answer", text: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." } },
     { "@type": "Question", name: "How much involvement will be required from me?", acceptedAnswer: { "@type": "Answer", text: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings." } },
     { "@type": "Question", name: "How quickly can my campaign launch?", acceptedAnswer: { "@type": "Answer", text: "Full setup is completed within the first 45 days. That includes brand design, StoryBrand website, Google Business Profile, Yelp, Apple Maps, citations, social profiles with weekly posting, and performance tracking." } },
-    { "@type": "Question", name: "What's the difference between JurisPage and Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. Juris Digital is our full-service brand for established firms investing $5,000 to $50,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." } },
-    { "@type": "Question", name: "How much does Juris Digital cost?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital partnerships are fully bespoke and typically run $5,000 to $50,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Apply for a Growth Strategy Session to receive a custom proposal." } },
-    { "@type": "Question", name: "Do I need to be a certain size for Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital is typically best suited for established firms with a monthly marketing budget of at least $5,000. If you're a small or startup firm with little to no online presence, JurisPage is designed specifically for you." } },
+    { "@type": "Question", name: "What's the difference between JurisPage and Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. Juris Digital is our full-service brand for established firms investing $15,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." } },
+    { "@type": "Question", name: "How much does Juris Digital cost?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital partnerships are fully bespoke and start at $15,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Contact us to talk through whether it's the right fit." } },
+    { "@type": "Question", name: "Do I need to be a certain size for Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital is built for established firms with a monthly marketing budget of at least $15,000. If your budget is under that, JurisPage is designed specifically for you." } },
     { "@type": "Question", name: "How does the 90-day guarantee work?", acceptedAnswer: { "@type": "Answer", text: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work for free for the following month. No fine print. No arguing. We either deliver or we earn it back." } },
     { "@type": "Question", name: "Will I own my website and content?", acceptedAnswer: { "@type": "Answer", text: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave, everything transfers cleanly." } },
   ],
@@ -34,9 +34,9 @@ const faqs = [
   { question: "How much customization can I expect?", answer: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." },
   { question: "How much involvement will be required from me?", answer: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings." },
   { question: "How quickly can my campaign launch?", answer: "Full setup is completed within the first 45 days. That includes brand design, StoryBrand website, Google Business Profile, Yelp, Apple Maps, citations, social profiles with weekly posting, and performance tracking." },
-  { question: "What's the difference between JurisPage and Juris Digital?", answer: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. [Juris Digital](https://jurisdigital.com/services/ascend/) is our full-service brand for established firms investing $5,000 to $50,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." },
-  { question: "How much does Juris Digital cost?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) partnerships are fully bespoke and typically run $5,000 to $50,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Apply for a Growth Strategy Session to receive a custom proposal." },
-  { question: "Do I need to be a certain size for Juris Digital?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) is typically best suited for established firms with a monthly marketing budget of at least $5,000. If you're a small or startup firm with little to no online presence, JurisPage is designed specifically for you." },
+  { question: "What's the difference between JurisPage and Juris Digital?", answer: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. [Juris Digital](https://jurisdigital.com/services/ascend/) is our full-service brand for established firms investing $15,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." },
+  { question: "How much does Juris Digital cost?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) partnerships are fully bespoke and start at $15,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Contact us to talk through whether it's the right fit." },
+  { question: "Do I need to be a certain size for Juris Digital?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) is built for established firms with a monthly marketing budget of at least $15,000. If your budget is under that, JurisPage is designed specifically for you." },
   { question: "How does the 90-day guarantee work?", answer: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work for free for the following month. No fine print. No arguing. We either deliver or we earn it back." },
   { question: "Will I own my website and content?", answer: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave, everything transfers cleanly." },
 ];
@@ -101,7 +101,7 @@ export default function PricingPage() {
                 Market Dominance &amp; Bespoke Scale.
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                For established firms ready to invest $5,000 to $50,000+/month in full-service SEO, Google Ads, content strategy, and true market leadership.
+                For established firms ready to invest $15,000+/month in full-service SEO, Google Ads, content strategy, and true market leadership.
               </p>
               <ul className="space-y-2 text-sm text-gray-400 mb-8 flex-1">
                 {["Dedicated strategist for your firm", "Omnichannel: SEO, GEO, LSA, Ads, content", "Limited partnerships per market", "Advanced intake consulting"].map((item) => (
@@ -117,7 +117,7 @@ export default function PricingPage() {
               >
                 Explore Juris Digital
               </a>
-              <p className="text-xs text-gray-500 mt-3 text-center">$5,000 to $50,000+/month</p>
+              <p className="text-xs text-gray-500 mt-3 text-center">Starting at $15,000+/month</p>
             </div>
           </div>
         </div>
@@ -229,14 +229,14 @@ export default function PricingPage() {
               Our partnerships are fully bespoke.
             </p>
             <p className="text-gray-400 text-base mb-6 max-w-lg mx-auto">
-              Investment typically runs $5,000 to $50,000+/month and is tailored to your firm size, practice areas, competitive landscape, and growth goals.
+              Investment starts at $15,000+/month and scales with your firm size, practice areas, competitive landscape, and growth goals.
             </p>
             <Link
-              href="/growth-assessment/"
+              href="/contact/"
               className="inline-block font-heading font-bold text-white text-base px-8 py-4 rounded-[40px] no-underline transition-opacity hover:opacity-90"
               style={{ background: "#EE6C13" }}
             >
-              Apply for a Growth Strategy Session →
+              Let&apos;s Explore Your Options →
             </Link>
             <p className="text-gray-500 text-sm mt-4">Limited partnership slots available in each market.</p>
           </div>
@@ -286,7 +286,7 @@ export default function PricingPage() {
             Not Sure Which Path Is Right?
           </p>
           <p className="text-orange-100 mb-7">
-            Use our instant calculator for small or startup firms, or apply for a custom growth strategy session for established firms.
+            Use our instant calculator for small or startup firms, or reach out and we&apos;ll explore your options together.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -297,18 +297,14 @@ export default function PricingPage() {
               Get Instant Pricing
             </a>
             <Link
-              href="/growth-assessment/"
+              href="/contact/"
               className="inline-block border-2 border-white text-white font-heading font-bold py-4 px-8 rounded-[40px] no-underline"
             >
-              Apply for Growth Strategy
+              Talk to Our Team
             </Link>
           </div>
           <p className="text-orange-200 text-sm mt-5">
             <a href="tel:+18555936935" className="text-white underline">(855) 593-6935</a>
-            {" · "}
-            <Link href="/contact/" className="underline text-white">
-              Or book a strategy call
-            </Link>
           </p>
         </div>
       </section>

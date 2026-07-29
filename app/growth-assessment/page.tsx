@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import GrowthAssessmentForm from "@/components/GrowthAssessmentForm";
+import { Suspense } from "react";
 import SchemaOrg from "@/components/SchemaOrg";
+import MarketGapForm from "@/components/MarketGapForm";
 
 export const metadata: Metadata = {
-  title: "Growth Strategy Session for Established Law Firms",
-  description: "Apply for a complimentary Growth Strategy Session. Built for law firms with 5+ attorneys and $5K+ monthly marketing budgets ready to dominate their market.",
+  title: "Free Market Gap Report for Law Firms | JurisPage",
+  description:
+    "Find out where your firm is losing cases in your market. Get an instant market gap snapshot for your practice area and city. Free. No obligation.",
   alternates: { canonical: "https://jurispage.com/growth-assessment/" },
 };
 
@@ -12,9 +14,10 @@ const pageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "https://jurispage.com/growth-assessment/",
-  name: "Growth Strategy Session for Established Law Firms",
+  name: "Free Market Gap Report for Law Firms",
   url: "https://jurispage.com/growth-assessment/",
-  description: "Apply for a complimentary Growth Strategy Session with Juris Digital.",
+  description:
+    "Get a free market gap report showing search demand, competitors, and visibility gaps in your market.",
 };
 
 export default function GrowthAssessmentPage() {
@@ -26,75 +29,62 @@ export default function GrowthAssessmentPage() {
         <div className="max-w-2xl mx-auto">
           <span
             className="inline-block text-xs font-heading font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5 text-white"
-            style={{ background: "#1a1a1a" }}
+            style={{ background: "#EE6C13" }}
           >
-            <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" className="text-white no-underline">Juris Digital</a>
+            Free Market Gap Report
           </span>
           <h1 className="font-heading font-extrabold text-gray-900 text-4xl mb-4">
-            Apply for a Growth Strategy Session
+            Before You Change Your Marketing, See Your Market
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
-            For established law firms ready to invest in market leadership. Tell us about your firm and a senior strategist will build a custom growth roadmap before your first call.
+            Every good growth decision starts with the same question: where are
+            the cases going right now? Our free Market Gap report shows the
+            search demand in your market, the firms capturing it, and the gaps
+            you can close. Instant snapshot in about 60 seconds.
           </p>
         </div>
       </section>
 
+      <section className="bg-gray-50 py-14 px-6">
+        <div className="max-w-3xl mx-auto">
+          <Suspense fallback={<div className="bg-white rounded-2xl border border-gray-100 shadow-lg p-8 text-center text-gray-500">Loading form...</div>}>
+            <MarketGapForm />
+          </Suspense>
+        </div>
+      </section>
+
       <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h2 className="font-heading font-extrabold text-gray-900 text-2xl mb-6">What to Expect</h2>
-            <div className="space-y-5">
-              {[
-                { step: "1", title: "Submit your application", body: "Takes 3 minutes. We review every application personally." },
-                { step: "2", title: "We research your market", body: "Before we ever get on a call, we analyze your competitive landscape, rankings, and opportunities." },
-                { step: "3", title: "45-minute strategy session", body: "A senior strategist walks you through what we found, what we'd do differently, and how we'd structure a partnership." },
-                { step: "4", title: "You decide", body: "No pressure, no hard close. If it's a fit, great. If not, you walk away with actionable insights." },
-              ].map((item) => (
-                <div key={item.step} className="flex gap-4">
-                  <div
-                    className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm text-white"
-                    style={{ background: "#1a1a1a" }}
-                  >
-                    {item.step}
-                  </div>
-                  <div>
-                    <div className="font-heading font-semibold text-gray-900 text-base">{item.title}</div>
-                    <div className="text-gray-600 text-sm mt-1">{item.body}</div>
-                  </div>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-extrabold text-gray-900 text-2xl mb-6 text-center">
+            How It Works
+          </h2>
+          <div className="space-y-5 max-w-xl mx-auto">
+            {[
+              { step: "1", title: "Tell us about your firm", body: "Practice area, city, and a few quick details. Takes about a minute." },
+              { step: "2", title: "Get your instant snapshot", body: "Search demand, map pack competitors, and your visibility, pulled from live data in about 60 seconds." },
+              { step: "3", title: "We build the full analysis", body: "Our team digs into the detailed competitor and keyword data behind your snapshot, then a real person walks you through what we found." },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-4">
+                <div
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm text-white"
+                  style={{ background: "#EE6C13" }}
+                >
+                  {item.step}
                 </div>
-              ))}
-            </div>
-
-            <div className="mt-10 rounded-xl p-6 border border-gray-200" style={{ background: "#f9fafb" }}>
-              <h3 className="font-heading font-bold text-gray-900 mb-3">Who is this for?</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
-                {[
-                  "Law firms with 5+ attorneys",
-                  "Monthly marketing budget of $5,000+",
-                  "Goals around market leadership, case volume, or geographic expansion",
-                  "Firms tired of cookie-cutter agencies that don't deliver",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="flex-shrink-0 font-bold mt-0.5" style={{ color: "#EE6C13" }}>✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="mt-6 bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <h3 className="font-heading font-bold text-gray-900 mb-4">Prefer to call?</h3>
-              <a href="tel:+18555936935" className="font-heading font-extrabold text-2xl no-underline" style={{ color: "#EE6C13" }}>
-                (855) 593-6935
-              </a>
-              <p className="text-gray-500 text-sm mt-2">Available Mon–Fri, 9am–5pm MT</p>
-            </div>
+                <div>
+                  <div className="font-heading font-semibold text-gray-900 text-base">{item.title}</div>
+                  <div className="text-gray-600 text-sm mt-1">{item.body}</div>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
-            <h2 className="font-heading font-bold text-gray-900 text-xl mb-2">Tell Us About Your Firm</h2>
-            <p className="text-gray-500 text-sm mb-6">We&apos;ll respond within one business day.</p>
-            <GrowthAssessmentForm />
+          <div className="mt-12 bg-gray-50 rounded-xl p-6 border border-gray-200 text-center max-w-xl mx-auto">
+            <h3 className="font-heading font-bold text-gray-900 mb-3">Prefer to call?</h3>
+            <a href="tel:+18555936935" className="font-heading font-extrabold text-2xl no-underline" style={{ color: "#EE6C13" }}>
+              (855) 593-6935
+            </a>
+            <p className="text-gray-500 text-sm mt-2">Available Mon–Fri, 9am–5pm MT</p>
           </div>
         </div>
       </section>

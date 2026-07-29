@@ -65,8 +65,8 @@ export default function PpcRoiCalculatorPage() {
       <CTASection
         heading="Ready to Launch a High-ROI PPC Campaign?"
         subtext="Our team builds and manages Google Ads campaigns exclusively for law firms. Let's talk about your goals."
-        primaryLabel="Book Your Strategy Session"
-        primaryHref="/growth-assessment/"
+        primaryLabel="Let's Explore Your Options"
+        primaryHref="/contact/"
       />
     </>
   );
