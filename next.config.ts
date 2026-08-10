@@ -107,6 +107,16 @@ const nextConfig: NextConfig = {
     return [
       // ── Existing redirects ──
       {
+        source: "/optimizing-law-firm-google-business-profile-zero-click-searches/",
+        destination: "/local-seo-for-law-firms/",
+        permanent: true,
+      },
+      {
+        source: "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025/",
+        destination: "/generative-engine-optimization-legal-marketing/",
+        permanent: true,
+      },
+      {
         source: "/seo-for-family-law-firms/:path*",
         destination: "/family-law-firm-marketing/",
         permanent: true,
