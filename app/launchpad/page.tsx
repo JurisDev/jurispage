@@ -23,7 +23,6 @@ const faqSchema = {
     { "@type": "Question", name: "How much involvement will be required from me?", acceptedAnswer: { "@type": "Answer", text: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings. We designed JurisPage to require as little of your time as possible." } },
     { "@type": "Question", name: "How quickly can my campaign launch?", acceptedAnswer: { "@type": "Answer", text: "Full setup is completed within the first 45 days: brand design, StoryBrand website, GBP, Yelp, Apple Maps, citations, social profiles with weekly posting, and performance tracking." } },
     { "@type": "Question", name: "Will I own my website and content?", acceptedAnswer: { "@type": "Answer", text: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." } },
-    { "@type": "Question", name: "How does the 90-day guarantee work?", acceptedAnswer: { "@type": "Answer", text: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work for free for the following month." } },
     { "@type": "Question", name: "What if my firm's marketing budget is bigger than $4,000/month?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is priced for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. If your firm is established and ready to invest $15,000+/month, we recommend [Juris Digital](https://jurisdigital.com/services/ascend/), our sister brand. Same parent company, same team, but a full-service strategy scaled to your goals. Visit jurisdigital.com to learn more." } },
   ],
 };
@@ -77,7 +76,6 @@ const faqs = [
   { question: "How much involvement will be required from me?", answer: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings. We designed JurisPage to require as little of your time as possible." },
   { question: "Who will I be working with?", answer: "Your campaign is driven by one of our lead strategists. You have email access to them (responded to promptly), and you may always request a phone call." },
   { question: "Will I own my website and content?", answer: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." },
-  { question: "How does the 90-day guarantee work?", answer: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work free the following month. No fine print. No arguing. We either deliver or we earn it back." },
   { question: "Can I add services later?", answer: "Yes. Many JurisPage clients add Google Ads, additional content writing, or GEO optimization once their foundation is established." },
   { question: "What if my firm's marketing budget is bigger than $4,000/month?", answer: "JurisPage is priced for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. If your firm is established and ready to invest $15,000+/month, we recommend [Juris Digital](https://jurisdigital.com/services/ascend/), our sister brand. Same parent company, same team, but a full-service strategy scaled to your goals. Visit jurisdigital.com to learn more." },
 ];
@@ -111,7 +109,7 @@ export default function LaunchpadPage() {
                 {[
                   "No upfront setup fee. Costs spread across a 24-month engagement.",
                   "Full setup completed within 45 days",
-                  "90-day results guarantee. Or we work free.",
+                  "Performance tracking configured from day one",
                   "You own your website, content, and all IP we create",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
@@ -385,31 +383,6 @@ export default function LaunchpadPage() {
         </div>
       </section>
 
-      {/* ── 90-Day Guarantee ── */}
-      <section className="py-20 px-6" style={{ background: "#1a1a1a" }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <div
-            className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white"
-            style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}
-          >
-            ★
-          </div>
-          <h2 className="font-heading font-extrabold text-white text-3xl mb-5">
-            The 90-Day Guarantee
-          </h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-4">
-            Most agencies ask you to be patient for 6 to 12 months before holding them accountable. We don&apos;t. If you aren&apos;t seeing measurable movement in your rankings, traffic, or leads within 90 days, we work the following month for free.
-          </p>
-          <p className="text-gray-400 mb-8">No fine print. No arguing over definitions. We either perform or we earn it back.</p>
-          <a
-            href="#get-quote"
-            className="inline-block font-heading font-bold py-4 px-8 rounded-[40px] no-underline border-2 border-white text-white transition-opacity hover:opacity-80"
-          >
-            Get My Instant Pricing ↑
-          </a>
-        </div>
-      </section>
-
       {/* ── Larger Firms - Juris Digital ── */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -488,7 +461,7 @@ export default function LaunchpadPage() {
             </a>
           </div>
           <p className="text-orange-200 text-sm mt-5">
-            No upfront fee · 45-day setup · 90-day results guarantee ·{" "}
+            No upfront fee · 45-day setup · You own everything ·{" "}
             <Link href="/contact/" className="underline text-white">
               Or book a strategy call
             </Link>

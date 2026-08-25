@@ -420,7 +420,7 @@ export default function ContentWritingB() {
               { feature: "Matches your firm's voice and tone", us: true, them: false },
               { feature: "Bar advertising rule compliance", us: true, them: false },
               { feature: "Content brief before writing starts", us: true, them: false },
-              { feature: "90-day performance guarantee", us: true, them: false },
+              { feature: "90-day content performance reviews", us: true, them: false },
               { feature: "No upfront setup fee (costs spread over 24 months)", us: true, them: false },
               { feature: "Published pricing on website", us: true, them: false },
               { feature: "FAQ schema for rich results", us: true, them: false },
@@ -489,7 +489,7 @@ export default function ContentWritingB() {
               { value: "113+", label: "Law firms served" },
               { value: "2-5", label: "Errors caught per piece in attorney review" },
               { value: "12-18 mo", label: "Compounding organic traffic timeline" },
-              { value: "90 days", label: "Results guarantee or free month" },
+              { value: "90 days", label: "Content review cadence" },
             ].map((stat) => (
               <div key={stat.label} className="rounded-xl bg-gray-50 p-5">
                 <div className="font-heading font-extrabold text-2xl" style={{ color: O }}>{stat.value}</div>
@@ -545,7 +545,7 @@ export default function ContentWritingB() {
             Budget above $4,000/mo? Our parent company, <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: O }} className="no-underline hover:underline">Juris Digital</a>, runs full-service engagements at $5,000 to $50,000+/mo.
           </p>
           <p className="text-center text-xs text-gray-400 mt-4">
-            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 90-day results guarantee | You own everything we build
+            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 45-day setup | You own everything we build
           </p>
         </div>
       </section>
@@ -588,7 +588,7 @@ export default function ContentWritingB() {
               See Full Pricing
             </Link>
           </div>
-          <p className="text-gray-500 text-xs mt-6">24-month engagement, no upfront fee. 90-day guarantee. You own everything.</p>
+          <p className="text-gray-500 text-xs mt-6">24-month engagement, no upfront fee. You own everything.</p>
         </div>
       </section>
     </>

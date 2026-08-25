@@ -320,7 +320,7 @@ export default function LocalSeoPage() {
             Budget above $4,000/mo? Our parent company, <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: O }} className="no-underline hover:underline">Juris Digital</a>, runs full-service engagements at $5,000 to $50,000+/mo.
           </p>
           <p className="text-center text-xs text-gray-400 mt-4">
-            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 90-day results guarantee | You own everything
+            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 45-day setup | You own everything
           </p>
         </div>
       </section>

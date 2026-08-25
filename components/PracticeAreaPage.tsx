@@ -558,7 +558,7 @@ export default function PracticeAreaPage({ practiceArea: pa }: PracticeAreaPageP
             {[
               { color: "#EE6C13", title: "No Upfront Fee", body: "We spread costs across the 24-month JurisPage engagement, so you never pay a large setup fee up front." },
               { color: "#982A0B", title: "Published Pricing", body: "See exactly what you pay. No sales calls required." },
-              { color: "#EE6C13", title: "90-Day Guarantee", body: "Results within 90 days or we work for free the next month." },
+              { color: "#EE6C13", title: "Performance Tracking", body: "GA4, Search Console, and call tracking are configured from day one." },
             ].map((item) => (
               <div key={item.title} className="bg-gray-800 rounded-xl p-5">
                 <div className="w-6 h-1 rounded mb-3" style={{ background: item.color }}></div>

@@ -354,7 +354,7 @@ export default function GeoPage() {
             Need full GEO with monthly AI citation audits and digital PR? Our parent company, <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: O }} className="no-underline hover:underline">Juris Digital</a>, runs full-service engagements at $5,000 to $50,000+/mo.
           </p>
           <p className="text-center text-xs text-gray-400 mt-4">
-            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 90-day results guarantee | You own everything
+            <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 45-day setup | You own everything
           </p>
         </div>
       </section>
@@ -396,7 +396,7 @@ export default function GeoPage() {
             <a href="#ai-audit" className="px-8 py-4 rounded-full text-white font-bold text-sm no-underline transition-opacity hover:opacity-90" style={{ background: O }}>Get Your Free AI Visibility Audit</a>
             <Link href="/services/pricing/" className="px-8 py-4 rounded-full font-bold text-sm no-underline border-2 border-gray-600 text-gray-300 hover:border-white hover:text-white transition-colors">See Transparent Pricing</Link>
           </div>
-          <p className="text-gray-500 text-xs mt-6">24-month engagement, no upfront fee. 90-day guarantee. You own everything.</p>
+          <p className="text-gray-500 text-xs mt-6">24-month engagement, no upfront fee. You own everything.</p>
         </div>
       </section>
     </>

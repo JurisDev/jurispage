@@ -22,7 +22,6 @@ const faqSchema = {
     { "@type": "Question", name: "What's the difference between JurisPage and Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. Juris Digital is our full-service brand for established firms investing $15,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." } },
     { "@type": "Question", name: "How much does Juris Digital cost?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital partnerships are fully bespoke and start at $15,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Contact us to talk through whether it's the right fit." } },
     { "@type": "Question", name: "Do I need to be a certain size for Juris Digital?", acceptedAnswer: { "@type": "Answer", text: "Juris Digital is built for established firms with a monthly marketing budget of at least $15,000. If your budget is under that, JurisPage is designed specifically for you." } },
-    { "@type": "Question", name: "How does the 90-day guarantee work?", acceptedAnswer: { "@type": "Answer", text: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work for free for the following month. No fine print. No arguing. We either deliver or we earn it back." } },
     { "@type": "Question", name: "Will I own my website and content?", acceptedAnswer: { "@type": "Answer", text: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave, everything transfers cleanly." } },
   ],
 };
@@ -37,7 +36,6 @@ const faqs = [
   { question: "What's the difference between JurisPage and Juris Digital?", answer: "JurisPage is built for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. [Juris Digital](https://jurisdigital.com/services/ascend/) is our full-service brand for established firms investing $15,000+/month in SEO, Google Ads, content strategy, and market domination. Same parent company, same expertise, different scale." },
   { question: "How much does Juris Digital cost?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) partnerships are fully bespoke and start at $15,000+/month. Investment is based on your firm size, practice areas, markets, and growth goals. Contact us to talk through whether it's the right fit." },
   { question: "Do I need to be a certain size for Juris Digital?", answer: "[Juris Digital](https://jurisdigital.com/services/ascend/) is built for established firms with a monthly marketing budget of at least $15,000. If your budget is under that, JurisPage is designed specifically for you." },
-  { question: "How does the 90-day guarantee work?", answer: "If you don't see measurable progress in your rankings, traffic, or leads within 90 days, we work for free for the following month. No fine print. No arguing. We either deliver or we earn it back." },
   { question: "Will I own my website and content?", answer: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave, everything transfers cleanly." },
 ];
 
@@ -72,7 +70,7 @@ export default function PricingPage() {
                 For small or startup law firms with little to no online presence. Brand design, StoryBrand website, SEO, GBP, Yelp, Apple Maps, and weekly social posting. Transparent pricing, no upfront fee.
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-8 flex-1">
-                {["Instant transparent pricing", "Full setup in 45 days", "No upfront setup fee (costs spread over 24 months)", "90-day results guarantee"].map((item) => (
+                {["Instant transparent pricing", "Full setup in 45 days", "No upfront setup fee (costs spread over 24 months)", "StoryBrand website and brand design"].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="flex-shrink-0 font-bold" style={{ color: "#EE6C13" }}>✓</span>
                     {item}
@@ -140,7 +138,7 @@ export default function PricingPage() {
               Tell us about your firm and get transparent, itemized pricing in under a minute. No sales call needed.
             </p>
             <div className="flex flex-wrap gap-6 justify-center text-sm text-gray-500 mb-10">
-              {["No upfront fee", "45-day setup", "90-day guarantee", "You own everything"].map((item) => (
+              {["No upfront fee", "45-day setup", "Tracking from day one", "You own everything"].map((item) => (
                 <div key={item} className="flex items-center gap-1.5">
                   <span className="font-bold" style={{ color: "#EE6C13" }}>✓</span>
                   {item}
@@ -151,17 +149,6 @@ export default function PricingPage() {
 
           <div className="max-w-2xl mx-auto">
             <LaunchpadCalculator />
-          </div>
-
-          {/* Condensed 90-Day Guarantee */}
-          <div className="max-w-2xl mx-auto mt-10 rounded-xl p-6 text-center" style={{ background: "#1a1a1a" }}>
-            <p className="text-white font-heading font-bold text-lg mb-2">
-              <span className="mr-2" style={{ color: "#EE6C13" }}>★</span>
-              90-Day Results Guarantee
-            </p>
-            <p className="text-gray-400 text-sm">
-              If you don&apos;t see measurable movement in rankings, traffic, or leads within 90 days, we work the following month for free. No fine print.
-            </p>
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
