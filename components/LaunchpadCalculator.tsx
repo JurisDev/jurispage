@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 import { getHubSpotCookie } from "@/lib/hubspot-cookie";
 import TurnstileWidget from "@/components/TurnstileWidget";
 
-const BASE_PRICE = 2000;
+const BASE_PRICE = 2500;
 const PER_ATTORNEY = 500;
 const BIG_CITY_ADD = 1500;
 const PI_CITY_ADD = 1000;
@@ -50,7 +50,7 @@ function buildBreakdown(
   const items: { label: string; amount: number; recurring: boolean }[] = [];
   const baseLabel =
     attorneys <= 2
-      ? "Base rate (includes brand design, website, GBP, citations, social, tracking)"
+      ? "Base rate (includes brand design, website, GBP, citations, tracking)"
       : `Base + ${attorneys - 2} additional ${attorneys - 2 === 1 ? "attorney" : "attorneys"}`;
   const baseAmount =
     attorneys <= 2 ? BASE_PRICE : BASE_PRICE + (attorneys - 2) * PER_ATTORNEY;
@@ -130,20 +130,20 @@ export default function LaunchpadCalculator() {
             </div>
             <h3 className="font-heading font-extrabold text-white text-2xl">You&apos;re in good hands.</h3>
             <p className="text-gray-400 text-sm mt-1">
-              We&apos;ve notified the Juris Digital team. Expect a personal outreach within one business day.
+              We&apos;ve notified our team. Expect a personal outreach within one business day.
             </p>
           </div>
 
           <div className="p-8">
             <p className="text-gray-600 leading-relaxed mb-4">
-              With 5+ attorneys, your firm doesn&apos;t need a foundation. You need a full-service growth partner that can help you dominate your market, sign more cases, and build a lasting legacy.
+              With 5+ attorneys, your firm has outgrown the standard package. You need a growth partner that can help you dominate your market, sign more cases, and build a lasting legacy.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              That&apos;s exactly what <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" className="text-gray-900 font-semibold underline hover:no-underline">Juris Digital</a> does. Same ownership, same data-driven approach, but built for established firms investing $15,000+/month in growth.
+              That&apos;s what a custom JurisPage engagement delivers. Same team, same data-driven approach, scaled to your firm&apos;s size and goals.
             </p>
 
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200 mb-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">What Juris Digital Delivers</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">What a Custom Engagement Delivers</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {[
                   "Full-service SEO & content strategy",
@@ -163,13 +163,11 @@ export default function LaunchpadCalculator() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://jurisdigital.com/services/ascend/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact/"
                 className="flex-1 text-center font-heading font-bold text-white py-3.5 px-6 rounded-[40px] no-underline"
                 style={{ background: "#EE6C13" }}
               >
-                Explore Juris Digital →
+                Book a Strategy Call →
               </a>
               <a
                 href="tel:+18555936935"
@@ -285,7 +283,7 @@ export default function LaunchpadCalculator() {
           </select>
           {isCustom && (
             <p className="text-sm text-gray-500 mt-3 p-3 rounded-lg bg-gray-50">
-              With 5 or more attorneys, your firm has outgrown a foundation package. You need a full-service growth partner. Fill in your details below and our <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-semibold underline hover:no-underline">Juris Digital</a> team will reach out within one business day.
+              With 5 or more attorneys, your firm has outgrown the standard package. You need a custom engagement. Fill in your details below and our team will reach out within one business day.
             </p>
           )}
         </div>
@@ -351,7 +349,7 @@ export default function LaunchpadCalculator() {
         {!isCustom && (
           <div>
             <p className="text-sm font-bold text-gray-800 mb-1">Optional add-ons</p>
-            <p className="text-xs text-gray-400 mb-3">Brand design, StoryBrand website, and weekly social posting are already included in your base price. Logo, typography, photography, graphics, social assets, and brand guidelines ship with every JurisPage engagement.</p>
+            <p className="text-xs text-gray-400 mb-3">Brand design and your StoryBrand website are already included in your base price. Logo, typography, photography, graphics, and brand guidelines ship with every JurisPage engagement.</p>
             <div className="space-y-3">
               {[
                 {
@@ -403,11 +401,11 @@ export default function LaunchpadCalculator() {
         <div className="rounded-xl p-5 border-2 border-dashed border-gray-200 text-center">
           <div className="text-2xl mb-2">{isCustom ? "🚀" : "🔒"}</div>
           <p className="font-heading font-bold text-gray-800 text-base mb-1">
-            {isCustom ? "You're ready for Juris Digital." : "Your pricing is ready."}
+            {isCustom ? "You're ready for a custom engagement." : "Your pricing is ready."}
           </p>
           <p className="text-sm text-gray-500">
             {isCustom
-              ? "Enter your name and email below and our Juris Digital team will reach out within one business day with a custom strategy."
+              ? "Enter your name and email below and our team will reach out within one business day with a custom strategy."
               : "Enter your name and email below to reveal your price."}
           </p>
         </div>
@@ -453,7 +451,7 @@ export default function LaunchpadCalculator() {
           {status === "loading"
             ? "Sending..."
             : isCustom
-            ? "Connect with Juris Digital →"
+            ? "Request Custom Pricing →"
             : "Get My Instant Pricing →"}
         </button>
 

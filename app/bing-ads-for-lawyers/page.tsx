@@ -314,7 +314,7 @@ export default function BingAdsPage() {
             </div>
           </div>
           <p className="text-center text-sm text-gray-500 mt-8 max-w-xl mx-auto">
-            Bing Ads management is part of our parent company&apos;s full-service tier. <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: O }} className="no-underline hover:underline">Juris Digital</a> runs engagements at $5,000 to $50,000+/mo, with Bing Ads included alongside Google Ads, SEO, and content.
+            Bing Ads management is part of our custom engagements for established firms, up to $20,000/mo, alongside Google Ads, SEO, and content. <Link href="/contact/" style={{ color: O }} className="no-underline hover:underline">Contact us</Link> to scope yours.
           </p>
           <p className="text-center text-xs text-gray-400 mt-4">
             <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | You own your account | Cancel anytime

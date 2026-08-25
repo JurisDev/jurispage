@@ -8,7 +8,7 @@ import ReviewRibbon from "@/components/ReviewRibbon";
 
 export const metadata: Metadata = {
   title: "JurisPage: Law Firm Marketing Foundation Starting at $2,000/mo",
-  description: "Get instant pricing for JurisPage: brand design, StoryBrand website, SEO, GBP, Yelp, Apple Maps, and weekly social posting for small or startup law firms. Transparent pricing, no upfront fee. See your exact number now.",
+  description: "Get instant pricing for JurisPage: brand design, StoryBrand website, SEO, GBP, Yelp, and Apple Maps for small or startup law firms. Transparent pricing, no upfront fee. See your exact number now.",
   alternates: { canonical: "https://jurispage.com/launchpad/" },
 };
 
@@ -17,13 +17,13 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "How is JurisPage priced?", acceptedAnswer: { "@type": "Answer", text: "JurisPage starts at $2,000/month over a 24-month engagement, with a typical range of $2,000 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months so small and startup firms can afford the work without a large day-one check. Use the pricing calculator on this page to see your exact number in under a minute." } },
-    { "@type": "Question", name: "How long is the engagement?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, social profiles, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing." } },
+    { "@type": "Question", name: "How long is the engagement?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing." } },
     { "@type": "Question", name: "How can you offer this price and produce results quickly?", acceptedAnswer: { "@type": "Answer", text: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." } },
     { "@type": "Question", name: "How much customization can I expect?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." } },
     { "@type": "Question", name: "How much involvement will be required from me?", acceptedAnswer: { "@type": "Answer", text: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings. We designed JurisPage to require as little of your time as possible." } },
-    { "@type": "Question", name: "How quickly can my campaign launch?", acceptedAnswer: { "@type": "Answer", text: "Full setup is completed within the first 45 days: brand design, StoryBrand website, GBP, Yelp, Apple Maps, citations, social profiles with weekly posting, and performance tracking." } },
+    { "@type": "Question", name: "How quickly can my campaign launch?", acceptedAnswer: { "@type": "Answer", text: "Full setup is completed within the first 45 days: brand design, StoryBrand website, GBP, Yelp, Apple Maps, citations, and performance tracking." } },
     { "@type": "Question", name: "Will I own my website and content?", acceptedAnswer: { "@type": "Answer", text: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." } },
-    { "@type": "Question", name: "What if my firm's marketing budget is bigger than $4,000/month?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is priced for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. If your firm is established and ready to invest $15,000+/month, we recommend [Juris Digital](https://jurisdigital.com/services/ascend/), our sister brand. Same parent company, same team, but a full-service strategy scaled to your goals. Visit jurisdigital.com to learn more." } },
+    { "@type": "Question", name: "What if my firm's marketing budget is bigger than $4,000/month?", acceptedAnswer: { "@type": "Answer", text: "The standard JurisPage package is priced for small or startup law firms, with a typical budget of $2,500 to $4,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. Contact us and we'll scope a plan around your goals. Budgets above $20,000/month are best served by Juris Digital, our parent company." } },
   ],
 };
 
@@ -57,27 +57,25 @@ const includedSetup = [
   { icon: "📍", title: "Google Business Profile", href: "/local-seo-for-law-firms/", desc: "Full GBP setup and verification so you appear in local map results when clients search nearby." },
   { icon: "🔍", title: "Keyword Research & SEO Content", href: "/law-firm-content-writing/", desc: "We find exactly what your future clients search and create the content to rank for it." },
   { icon: "📋", title: "Local Ecosystem", href: "/local-seo-for-law-firms/", desc: "Your firm listed and verified on Yelp, Apple Maps, Bing, Avvo, and 30+ other directories." },
-  { icon: "📱", title: "Social Profiles", href: null, desc: "Core social profiles created and optimized, with weekly social media posting from day one." },
   { icon: "📊", title: "Performance Tracking", href: "/law-firm-seo/", desc: "GA4, Search Console, and call tracking configured from day one." },
 ];
 
 const monthlyServices = [
   "SEO content refreshes to maximize traffic and expand keyword rankings",
   "Google Business Profile management and posting",
-  "Weekly social media posting (LinkedIn, Facebook, Instagram)",
   "Monthly performance reports with rankings, traffic, and lead data",
 ];
 
 const faqs = [
-  { question: "How is JurisPage priced?", answer: "It starts at $2,000/month over a 24-month engagement, with a typical range of $2,000 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months. Use the pricing calculator on this page to get your exact number instantly." },
-  { question: "How long is the engagement?", answer: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, social profiles, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing: costs are spread evenly across the engagement instead of charged up front." },
+  { question: "How is JurisPage priced?", answer: "It starts at $2,500/month over a 24-month engagement, with a typical range of $2,500 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months. Use the pricing calculator on this page to get your exact number instantly." },
+  { question: "How long is the engagement?", answer: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing: costs are spread evenly across the engagement instead of charged up front." },
   { question: "How can you offer this price and produce results quickly?", answer: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." },
   { question: "How much customization can I expect?", answer: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." },
   { question: "How much involvement will be required from me?", answer: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings. We designed JurisPage to require as little of your time as possible." },
   { question: "Who will I be working with?", answer: "Your campaign is driven by one of our lead strategists. You have email access to them (responded to promptly), and you may always request a phone call." },
   { question: "Will I own my website and content?", answer: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." },
   { question: "Can I add services later?", answer: "Yes. Many JurisPage clients add Google Ads, additional content writing, or GEO optimization once their foundation is established." },
-  { question: "What if my firm's marketing budget is bigger than $4,000/month?", answer: "JurisPage is priced for small or startup law firms with little to no online presence, with a typical budget of $2,000 to $4,000/month. If your firm is established and ready to invest $15,000+/month, we recommend [Juris Digital](https://jurisdigital.com/services/ascend/), our sister brand. Same parent company, same team, but a full-service strategy scaled to your goals. Visit jurisdigital.com to learn more." },
+  { question: "What if my firm's marketing budget is bigger than $4,000/month?", answer: "The standard JurisPage package is priced for small or startup law firms, with a typical budget of $2,500 to $4,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. [Contact us](/contact/) and we'll scope a plan around your goals. Budgets above $20,000/month are best served by [Juris Digital](https://jurisdigital.com/services/ascend/), our parent company." },
 ];
 
 export default function LaunchpadPage() {
@@ -103,7 +101,7 @@ export default function LaunchpadPage() {
                 <span style={{ color: "#EE6C13" }}>Instant, Transparent Pricing.</span>
               </h1>
               <p className="text-gray-600 text-xl leading-relaxed mb-8">
-                Brand design, StoryBrand website, SEO, Google Business Profile, Yelp, Apple Maps, weekly social posting, and ongoing management. Built specifically for small or startup firms with little to no online presence. Answer a few questions and see your exact pricing in under a minute.
+                Brand design, StoryBrand website, SEO, Google Business Profile, Yelp, Apple Maps, and ongoing management. Built specifically for small or startup firms with little to no online presence. Answer a few questions and see your exact pricing in under a minute.
               </p>
               <div className="space-y-3 mb-8">
                 {[
@@ -306,7 +304,7 @@ export default function LaunchpadPage() {
                 step: "01",
                 title: "Campaign Setup",
                 desc: "We build your website, optimize your Google Business Profile, research your keywords, produce your content, build local citations, and configure tracking. All within the first 45 days.",
-                detail: "Website · GBP · Keywords · Content · Citations · Social profiles · Tracking",
+                detail: "Website · GBP · Keywords · Content · Citations · Tracking",
               },
               {
                 step: "02",
@@ -383,23 +381,23 @@ export default function LaunchpadPage() {
         </div>
       </section>
 
-      {/* ── Larger Firms - Juris Digital ── */}
+      {/* ── Larger Firms - Custom Engagements ── */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span
             className="inline-block text-xs font-heading font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5 text-white"
             style={{ background: "#EE6C13" }}
           >
-            Outgrown JurisPage?
+            Beyond the Standard Package
           </span>
           <h2 className="font-heading font-extrabold text-gray-900 text-3xl md:text-4xl mb-5">
             Your Firm Is Ready for More Than a Foundation.
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            If your firm is already established and ready to invest $15,000+/month, you don&apos;t need a foundation. You need a full-service growth partner built for market domination.
+            If your firm is established, already owns a website, and has a budget above $4,000/month, you don&apos;t need a foundation. You need a custom engagement scaled to your market and your growth goals. We build them up to $20,000/month.
           </p>
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 text-left max-w-lg mx-auto mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3"><a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" className="text-gray-400 no-underline hover:underline">Juris Digital</a> Delivers</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">A Custom Engagement Delivers</p>
             <div className="space-y-2">
               {[
                 "Full-service SEO & content strategy",
@@ -417,16 +415,14 @@ export default function LaunchpadPage() {
             </div>
           </div>
           <a
-            href="https://jurisdigital.com/services/ascend/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact/"
             className="inline-block font-heading font-bold text-white text-base px-8 py-4 rounded-[40px] no-underline transition-opacity hover:opacity-90"
             style={{ background: "#EE6C13" }}
           >
-            Explore Juris Digital →
+            Book a Strategy Call →
           </a>
           <p className="text-gray-400 text-sm mt-4">
-            Or scroll up to get instant JurisPage pricing for small or startup firms.
+            Or scroll up to get instant pricing for the standard package.
           </p>
         </div>
       </section>

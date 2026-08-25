@@ -15,7 +15,7 @@ const metroMetaDescriptions: Record<MetroService, (city: string, state: string) 
   "law-firm-seo": (city, state) => `Rank higher on Google and sign more cases with law firm search engine optimization (SEO) in ${city}, ${state}. No upfront fee, transparent pricing, 113+ firms served. Free ${city} market audit.`,
   "google-ads-lawyers": (city, state) => `Stop wasting ad spend. Google Ads management for ${city}, ${state} law firms that turns clicks into signed cases. No upfront fee. Get a free campaign audit.`,
   "law-firm-website-design": (city, state) => `Convert more visitors into clients with a law firm website built for ${city}, ${state} attorneys. Fast, mobile-first, conversion-optimized. Live in 45 days.`,
-  "law-firm-marketing": (city, state) => `Full-service law firm marketing in ${city}, ${state}. Search engine optimization, Google Ads, local search, weekly social posting, and AI visibility. See your market gaps.`,
+  "law-firm-marketing": (city, state) => `Full-service law firm marketing in ${city}, ${state}. Search engine optimization, Google Ads, local search, and AI visibility. See your market gaps.`,
 };
 
 export function generateMetroMetadata(metro: MetroData, service: MetroService): Metadata {
@@ -105,7 +105,7 @@ export default function MetroPage({ metro, service }: MetroPageProps) {
       { question: `How quickly can Google Ads generate cases in ${metro.city}?`, answer: `Paid search can generate qualified case inquiries within 24-48 hours of launch. However, it typically takes 2-4 weeks of data and optimization to reach peak campaign efficiency. We structure campaigns by practice area with dedicated landing pages and extensive negative keyword lists to minimize wasted spend from day one.` },
     ],
     "law-firm-website-design": [
-      { question: `How long does it take to build a law firm website for a ${metro.city} practice?`, answer: `Our standard timeline is 45 days from kickoff to full marketing launch with our JurisPage package (website, Google Business Profile, Yelp, Apple Maps, citations, social profiles, and tracking all live). Every site is mobile-first, fast-loading, StoryBrand-driven, and built to convert visitors into consultation requests from day one.` },
+      { question: `How long does it take to build a law firm website for a ${metro.city} practice?`, answer: `Our standard timeline is 45 days from kickoff to full marketing launch with our JurisPage package (website, Google Business Profile, Yelp, Apple Maps, citations, and tracking all live). Every site is mobile-first, fast-loading, StoryBrand-driven, and built to convert visitors into consultation requests from day one.` },
       { question: `Will my new website help me rank in ${metro.city}?`, answer: `Yes. Every website we build includes on-page search engine optimization (SEO) foundations: optimized title tags, proper heading structure, schema markup, fast load times, and mobile responsiveness. These are the technical signals Google needs to consider ranking your site. For ongoing ranking improvements, we recommend pairing your new site with our SEO services.` },
     ],
     "law-firm-marketing": [
@@ -119,7 +119,7 @@ export default function MetroPage({ metro, service }: MetroPageProps) {
     { question: `How competitive is the legal market in ${metro.city}?`, answer: metro.legalMarketNote + " JurisPage analyzes your specific competitive landscape before recommending a strategy." },
     ...serviceFaqs[service],
     { question: `What does ${serviceLabel.toLowerCase()} cost for ${metro.city} law firms?`, answer: `Our pricing starts at $2,000/month. We'll give you a straight answer on cost during your first conversation. No runaround, no mystery packages. We'll recommend the right plan after a free consultation.` },
-    { question: "How long is the engagement?", answer: "JurisPage is a 24-month engagement. We front-load the work (website, Google Business Profile, Yelp, Apple Maps, citations, social profiles, content foundation, and tracking all live in 45 days) but spread the cost across the full term so you never pay a large upfront fee." },
+    { question: "How long is the engagement?", answer: "JurisPage is a 24-month engagement. We front-load the work (website, Google Business Profile, Yelp, Apple Maps, citations, content foundation, and tracking all live in 45 days) but spread the cost across the full term so you never pay a large upfront fee." },
     { question: "What makes JurisPage different from other legal marketing agencies?", answer: "Three things: we work exclusively with law firms (100% legal focus), we publish our pricing online (no mystery sales calls), and we charge no upfront setup fee (costs spread across the 24-month engagement). We have served 113+ law firms, with 12 years of legal SEO expertise paired with automation and generative AI to deliver rapid results at this price." },
   ];
 
@@ -196,7 +196,7 @@ export default function MetroPage({ metro, service }: MetroPageProps) {
               { step: "1", title: "We audit your current presence", body: "Before recommending a strategy, we analyze your website, Google Business Profile (GBP), current rankings, and competitive landscape in the " + metro.city + " market." },
               { step: "2", title: "We build a plan for your market", body: "Based on your practice area, budget, and competitive context in " + metro.city + ", we recommend the plan tier and tactics most likely to drive results for you specifically." },
               { step: "3", title: "We execute with full transparency", body: "Monthly reporting shows exactly what was done, what changed, and what we're doing next. You own every asset we build." },
-              { step: "4", title: "You see results, month over month", body: "No upfront fee. Costs spread across the 24-month engagement. Weekly social posting, monthly content refreshes, and ongoing local SEO keep your pipeline compounding." },
+              { step: "4", title: "You see results, month over month", body: "No upfront fee. Costs spread across the 24-month engagement. Monthly content refreshes and ongoing local SEO keep your pipeline compounding." },
             ].map((item) => (
               <div key={item.step} className="flex gap-5">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-heading font-extrabold text-white" style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}>

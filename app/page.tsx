@@ -110,7 +110,7 @@ const services = [
   { icon: "website", title: "Law Firm Websites", description: "Fast, credible, StoryBrand-driven websites built for law firms. Live in 45 days with the JurisPage package.", href: "/law-firm-websites/" },
   { icon: "local", title: "Local SEO", description: "Get into the Google map pack for searches in your market. The most cost-effective source of local legal leads.", href: "/local-seo-for-law-firms/" },
   { icon: "geo", title: "GEO / AI Search", description: "Get your firm cited inside ChatGPT, Perplexity, and AI Overviews. First-mover advantage before your competitors figure it out.", href: "/generative-engine-optimization-legal-marketing/" },
-  { icon: "launchpad", title: "JurisPage", description: "The complete marketing package for small or startup law firms. Brand design, website, GBP, Yelp, Apple Maps, and weekly social all live in 45 days.", href: "/launchpad/" },
+  { icon: "launchpad", title: "JurisPage", description: "The complete marketing package for small or startup law firms. Brand design, website, GBP, Yelp, and Apple Maps all live in 45 days.", href: "/launchpad/" },
 ];
 
 const serviceIcons: Record<string, React.ReactNode> = {

@@ -10,8 +10,8 @@ The product was previously marketed on jurispage.com as "Launchpad." Operator de
 
 That means:
 
-- Any pricing page, calculator, service card, or FAQ on jurispage.com that describes what a client can buy from JurisPage should describe **the JurisPage package** (brand design + StoryBrand website + GBP + Yelp + Apple Maps + citations + weekly social + tracking, starting at $2,000/mo over a 24-month engagement, full setup in 45 days, no upfront fee).
-- Firms whose budget or stage exceeds the JurisPage package get handed off to **Juris Digital** (publicly framed as "starting at $15,000+/mo" on jurispage.com since 2026-07-29; anyone under that stays JurisPage). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
+- Any pricing page, calculator, service card, or FAQ on jurispage.com that describes what a client can buy from JurisPage should describe **the JurisPage package** (brand design + StoryBrand website + GBP + Yelp + Apple Maps + citations + tracking, starting at $2,500/mo over a 24-month engagement, full setup in 45 days, no upfront fee). **No social media deliverables** (see 2026-08-25 decisions below).
+- **JurisPage serves budgets from $2,500 up to $20,000/mo** (2026-08-25 decision). The standard package covers the $2,500–$4,000/mo band. Established firms that already own a website with budgets above $4,000/mo get a **custom JurisPage engagement**, routed to `/contact/`, not a Juris Digital handoff. Only budgets of **$20,000+/mo** hand off to **Juris Digital** ("starting at $20,000+/mo" everywhere on jurispage.com; supersedes the 2026-07-29 $15K framing). On jurisdigital.com, this upper-tier product is specifically called **Ascend** (at `/services/ascend/`), but on jurispage.com we refer to it generically as "Juris Digital" per decision #3 below. Don't rename to "Ascend" on jurispage.com without an explicit product decision from the operator. We do not sell a "JurisPage Pro" tier. If you see that name anywhere, it's stale.
 - Individual service pages (`/law-firm-seo/`, `/google-ads-for-law-firms/`, `/local-seo-for-law-firms/`, `/law-firm-content-writing/`, `/law-firm-email-marketing/`, `/law-firm-websites/`, `/generative-engine-optimization-legal-marketing/`, `/ai-chatbot-for-law-firm-website/`, `/bing-ads-for-lawyers/`) exist for SEO and lead-gen, but every pricing tile on them should route to the JurisPage package or Juris Digital — not a standalone service SKU.
 
 ## Source of truth
@@ -27,13 +27,22 @@ The companion audit report at [`docs/offer-audit-report.md`](./docs/offer-audit-
 All eight resolved to "match the Juris Digital source." Do not reintroduce the old positioning without the user explicitly changing the product.
 
 1. **Contract:** 24-month engagement (not month-to-month). Framed as "no upfront fee, costs spread across the 24 months."
-2. **Brand Design:** included in the $2,000 base (logo, typography, photography, graphics, social assets, brand guidelines). Not a $999 add-on.
+2. **Brand Design:** included in the base price (logo, typography, photography, graphics, social assets, brand guidelines). Not a $999 add-on. ("Social assets" here means design files only; there is no social media service, see 2026-08-25.)
 3. **Upper tier name:** Juris Digital (not "JurisPage Pro").
-4. **Upper tier price:** ~~$5,000 to $50,000+/mo~~ **Superseded 2026-07-29 (Tom Tran + Josh funnel decisions):** all jurispage.com copy says Juris Digital is "starting at $15,000+/mo" so it hard qualifies. Never show the $5,000 number or the $5K–$50K range for JD. Anyone under $15K stays JurisPage.
-5. **Website timeline:** 45 days for full setup (website + GBP + Yelp + Apple Maps + citations + social + tracking). Not 30 days.
+4. **Upper tier price:** ~~$5,000 to $50,000+/mo~~ ~~$15,000+/mo (2026-07-29)~~ **Superseded 2026-08-25 (Casey):** all jurispage.com copy says Juris Digital is "starting at $20,000+/mo". Never show the $5K, $5K–$50K, or $15K figures for JD. Anyone under $20K stays JurisPage (custom engagements cover $4K–$20K).
+5. **Website timeline:** 45 days for full setup (website + GBP + Yelp + Apple Maps + citations + tracking). Not 30 days.
 6. **Differentiator framing:** advertise automation + generative AI + **12 years of legal SEO expertise** as the price-justification. "12 years" is the canonical number on jurisdigital.com/services/launchpad/. Copy about Casey Meraz personally (about-us, blog bios) can use "15 years" or "16 years" since that references his individual tenure, not the Juris Digital company expertise claim.
-7. **Target buyer copy:** "small or startup law firms with little to no online presence" (not "1–4 attorneys" as a hard gate). The LaunchpadCalculator still forks 5+ attorneys to Juris Digital because the budget math exceeds the JurisPage package's $2K–$4K range, but copy shouldn't exclude larger firms categorically.
+7. **Target buyer copy:** "small or startup law firms with little to no online presence" (not "1–4 attorneys" as a hard gate). The LaunchpadCalculator forks 5+ attorneys to a **JurisPage custom engagement lead** (since 2026-08-25; it previously forked to Juris Digital) because the budget math exceeds the standard package's $2.5K–$4K range, but copy shouldn't exclude larger firms categorically.
 8. **StoryBrand-driven design:** included on every JurisPage site. Not a premium-tier upsell.
+
+## Pricing and offer decisions (2026-08-25, Casey)
+
+1. **Floor price is $2,500/mo** (raised from $2,000 at the start of 2026; site copy updated 2026-08-25). Typical standard-package band is $2,500–$4,000/mo. `BASE_PRICE` in `LaunchpadCalculator.tsx` is 2500.
+2. **Social media is out of the offer entirely.** No social profile setup, no weekly/regular posting, anywhere: deliverable lists, FAQs, schema, quote email, metro pages. "Social assets" survives only as a design-file item inside the Brand Design bundle. Do not reintroduce social deliverables without an explicit operator decision.
+3. **JurisPage spans $2,500 to $20,000/mo.** Established firms that already own a website with budgets above $4,000/mo are pitched a custom JurisPage engagement and routed to `/contact/`. The launchpad "More Than a Foundation" CTA, the service-page upsell sentences, and the calculator/quote-email 5+ attorney fork all follow this rule.
+4. **Juris Digital floor is $20,000+/mo** sitewide (supersedes the $15K framing from 2026-07-29). JD is mentioned only for $20K+ budgets, the acquisition/trust story, and the pricing-page comparison.
+5. **90-day results guarantee is removed** (commit 23a9cd7, 2026-08-25). Do not re-add outcome guarantees.
+6. **Repo home:** github.com/JurisDev/jurispage (transferred from caseymeraz/jurispage on 2026-08-25). Vercel still auto-deploys from `main`.
 
 ## Funnel decisions (2026-07-29, Tom Tran + Josh)
 
@@ -59,9 +68,9 @@ One report product: the **Market Gap report** (`/see-my-market-gap/`). Delivery 
 - **No AI-sounding filler** ("seamless," "robust," "leverage," "unlock," "in today's fast-paced world"). Prefer concrete claims.
 - **Don't invent new tier names.** JurisPage sells one package, publicly named JurisPage. Juris Digital is the handoff for larger firms. That's the whole hierarchy.
 - **Keep Juris Digital mentions minimal.** This site is for JurisPage. Mention Juris Digital only when genuinely needed:
-  - Upsell routing: a prospect's budget/stage exceeds the JurisPage package ($4K/mo cap).
+  - Upsell routing: a prospect's budget exceeds what JurisPage serves ($20K/mo). Budgets of $4K–$20K stay JurisPage (custom engagement via /contact/).
   - Acquisition/trust story: "JurisPage joined the Juris Digital family," footer, about-us.
   - Specific "difference between JurisPage and Juris Digital" FAQ on /services/pricing/ and /launchpad/.
   Avoid mentioning JD in service-page FAQ answers about operational details (website timeline, chatbot pricing, citation maintenance). Those questions are about the JurisPage package, not the upsell path.
 - **Don't conflate the brands.** No "JurisPage + Juris Digital Team" sign-offs, no "from: Juris Digital <hello@jurispage.com>" email headers, no dual-brand footers. JurisPage is the site identity; Juris Digital is the parent company. Keep them visibly separate.
-- **Pricing tiles on individual service pages** (law-firm-content-writing, local-seo, email-marketing, generative-engine-optimization, law-firm-websites, bing-ads) should show **one JurisPage package tile** and a compact upsell sentence below pointing to Juris Digital Ascend for bigger budgets. Do not display dual parallel tiles that imply JurisPage offers both products.
+- **Pricing tiles on individual service pages** (law-firm-content-writing, local-seo, email-marketing, generative-engine-optimization, law-firm-websites, bing-ads) should show **one JurisPage package tile** and a compact upsell sentence below pointing to a custom JurisPage engagement (up to $20K/mo) via /contact/. Do not display dual parallel tiles, and do not route sub-$20K budgets to Juris Digital.

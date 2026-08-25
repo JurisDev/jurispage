@@ -64,9 +64,9 @@ const services = [
   },
   {
     title: "JurisPage",
-    description: "Complete marketing package for small or startup law firms. Brand design, StoryBrand website, GBP, Yelp, Apple Maps, weekly social. Live in 45 days.",
+    description: "Complete marketing package for small or startup law firms. Brand design, StoryBrand website, GBP, Yelp, Apple Maps. Live in 45 days.",
     href: "/launchpad/",
-    stat: "$2K",
+    stat: "$2.5K",
     statLabel: "/mo starting price",
   },
 ];

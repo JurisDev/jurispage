@@ -21,7 +21,7 @@ const practiceAreas = [
 ];
 
 const budgets = [
-  "$2,000–$3,500/month",
+  "$2,500–$3,500/month",
   "$3,500–$5,000/month",
   "$5,000+/month",
 ];

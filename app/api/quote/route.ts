@@ -62,8 +62,8 @@ export async function POST(req: NextRequest) {
     const internalHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px;">
         <div style="background: #1a1a1a; padding: 20px 28px;">
-          <h2 style="color: #EE6C13; margin: 0; font-size: 20px;">${isCustom ? "Juris Digital Lead: 5+ Attorneys" : "New JurisPage Pricing Request"}</h2>
-          ${isCustom ? '<p style="color: #fbbf24; margin: 8px 0 0; font-size: 14px;">⚠ JURIS DIGITAL HANDOFF (5+ attorneys)</p>' : ""}
+          <h2 style="color: #EE6C13; margin: 0; font-size: 20px;">${isCustom ? "JurisPage Custom Lead: 5+ Attorneys" : "New JurisPage Pricing Request"}</h2>
+          ${isCustom ? '<p style="color: #fbbf24; margin: 8px 0 0; font-size: 14px;">⚠ CUSTOM ENGAGEMENT LEAD (5+ attorneys)</p>' : ""}
         </div>
         <div style="padding: 24px 28px; background: #f9fafb;">
           <table style="border-collapse: collapse; width: 100%;">
@@ -87,13 +87,13 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: "JurisPage Pricing <leads@jurispage.com>",
       to: ["cmeraz@jurisdigital.com", "ahatcher@jurisdigital.com", "jmeans@jurisdigital.com"],
-      subject: `New Pricing Request: ${name} - ${isCustom ? "Juris Digital Lead (5+ attorneys)" : `$${monthlyTotal?.toLocaleString()}/mo`} | ${practiceArea}`,
+      subject: `New Pricing Request: ${name} - ${isCustom ? "Custom Engagement Lead (5+ attorneys)" : `$${monthlyTotal?.toLocaleString()}/mo`} | ${practiceArea}`,
       html: internalHtml,
       replyTo: email,
     });
 
     // Slack notification
-    notifySlack(isCustom ? "Juris Digital Lead (5+ Attorneys)" : "New JurisPage Quote", {
+    notifySlack(isCustom ? "JurisPage Custom Lead (5+ Attorneys)" : "New JurisPage Quote", {
       Name: name,
       Email: email,
       Attorneys: String(attorneyDisplay),
@@ -108,14 +108,14 @@ export async function POST(req: NextRequest) {
       ? `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #1a1a1a; padding: 24px 32px;">
-            <h1 style="color: #EE6C13; font-size: 22px; margin: 0;">Your firm deserves more than a foundation.</h1>
+            <h1 style="color: #EE6C13; font-size: 22px; margin: 0;">Your firm needs more than a foundation.</h1>
           </div>
           <div style="padding: 32px; background: #ffffff;">
             <p style="color: #374151;">Hi ${name},</p>
-            <p style="color: #555; line-height: 1.7;">Thanks for reaching out. With 5+ attorneys, your firm has outgrown a foundation package. You need a full-service growth partner that can help you dominate your market, sign more cases, and build a lasting legacy.</p>
-            <p style="color: #555; line-height: 1.7;">That's where <strong>Juris Digital</strong> comes in. Same parent company as JurisPage, same data-driven approach, but built specifically for established firms investing <strong>$15,000+/month</strong> in growth.</p>
+            <p style="color: #555; line-height: 1.7;">Thanks for reaching out. With 5+ attorneys, your firm has outgrown our standard package. You need a growth partner that can help you dominate your market, sign more cases, and build a lasting legacy.</p>
+            <p style="color: #555; line-height: 1.7;">That's what a custom <strong>JurisPage</strong> engagement delivers. Same team, same data-driven approach, scaled to your firm's size and goals.</p>
             <div style="background: #f9fafb; border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid #e5e7eb;">
-              <p style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #9ca3af; margin: 0 0 12px;">What Juris Digital Delivers</p>
+              <p style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #9ca3af; margin: 0 0 12px;">What a Custom Engagement Delivers</p>
               <ul style="color: #555; font-size: 14px; margin: 0; padding-left: 18px; line-height: 2;">
                 <li>Full-service SEO & content strategy</li>
                 <li>Google Ads management</li>
@@ -125,9 +125,9 @@ export async function POST(req: NextRequest) {
                 <li>Comprehensive monthly reporting</li>
               </ul>
             </div>
-            <p style="color: #555; line-height: 1.7;">A member of the Juris Digital team will reach out within one business day to discuss your firm's goals and build a custom strategy.</p>
+            <p style="color: #555; line-height: 1.7;">A member of our team will reach out within one business day to discuss your firm's goals and build a custom strategy.</p>
             <div style="margin: 28px 0;">
-              <a href="https://jurisdigital.com/services/ascend/" style="display: inline-block; background: #EE6C13; color: white; font-weight: bold; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 15px;">Explore Juris Digital →</a>
+              <a href="https://jurispage.com/contact/" style="display: inline-block; background: #EE6C13; color: white; font-weight: bold; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 15px;">Book a Strategy Call →</a>
             </div>
             <p style="color: #6b7280; font-size: 14px;">Or call us directly: <a href="tel:+18555936935" style="color: #EE6C13;">(855) 593-6935</a></p>
             <p style="color: #555; font-size: 14px; margin-top: 24px;">The JurisPage Team</p>
@@ -158,7 +158,7 @@ export async function POST(req: NextRequest) {
               </div>
             </div>
 
-            <p style="color: #555; font-size: 14px; line-height: 1.7;">How we keep the price this low: 12 years of legal SEO expertise paired with automation and generative AI. We front-load the work (not the billing) so your website, GBP, citations, social profiles, and tracking are all live inside 45 days. Client time commitment: a 30-minute kickoff call plus roughly a few hours across the first 45 days to sign off on designs and content topics.</p>
+            <p style="color: #555; font-size: 14px; line-height: 1.7;">How we keep the price this low: 12 years of legal SEO expertise paired with automation and generative AI. We front-load the work (not the billing) so your website, GBP, citations, and tracking are all live inside 45 days. Client time commitment: a 30-minute kickoff call plus roughly a few hours across the first 45 days to sign off on designs and content topics.</p>
             <p style="color: #555; font-size: 14px; line-height: 1.7;">You will own everything we build. All IP we create for you is owned by you.</p>
             <p style="color: #555; font-size: 14px; line-height: 1.7;">Book a strategy call to confirm this pricing matches your firm's growth goals.</p>
 
@@ -169,7 +169,6 @@ export async function POST(req: NextRequest) {
                 <li>StoryBrand-driven WordPress website (live within 45 days)</li>
                 <li>Google Business Profile setup, verification, and optimization</li>
                 <li>Local ecosystem: Yelp, Apple Maps, Bing, Avvo, and 30+ directory listings</li>
-                <li>Social profile setup and weekly social media posting</li>
                 <li>Keyword research and content production for target practice areas</li>
                 <li>Performance tracking from day one</li>
                 <li>Monthly content refreshes and reporting</li>
@@ -193,7 +192,7 @@ export async function POST(req: NextRequest) {
       from: "JurisPage <hello@jurispage.com>",
       to: [email],
       subject: isCustom
-        ? "Your firm is ready for Juris Digital"
+        ? "Your custom JurisPage strategy is on its way"
         : `Your JurisPage Pricing: $${monthlyTotal?.toLocaleString()}/mo`,
       html: prospectHtml,
     });

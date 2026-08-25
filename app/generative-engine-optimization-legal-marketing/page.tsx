@@ -337,7 +337,7 @@ export default function GeoPage() {
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-gray-100">
                 <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage (Foundation)</div>
-                <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,000<span className="text-base font-normal text-gray-400">/mo</span></div>
+                <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,500<span className="text-base font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">Foundational GEO included with website and SEO</div>
               </div>
               <div className="px-6 py-5 space-y-3 text-sm">
@@ -351,7 +351,7 @@ export default function GeoPage() {
             </div>
           </div>
           <p className="text-center text-sm text-gray-500 mt-8 max-w-xl mx-auto">
-            Need full GEO with monthly AI citation audits and digital PR? Our parent company, <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: O }} className="no-underline hover:underline">Juris Digital</a>, runs full-service engagements at $5,000 to $50,000+/mo.
+            Need full GEO with monthly AI citation audits and digital PR? We build custom engagements for established firms, up to $20,000/mo. <Link href="/contact/" style={{ color: O }} className="no-underline hover:underline">Contact us</Link> to scope yours.
           </p>
           <p className="text-center text-xs text-gray-400 mt-4">
             <Link href="/services/pricing/" className="no-underline hover:underline" style={{ color: O }}>See full pricing breakdown</Link> | 45-day setup | You own everything
