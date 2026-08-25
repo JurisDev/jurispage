@@ -24,7 +24,7 @@ const itemListSchema = {
   numberOfItems: 11,
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "JurisPage", url: "https://jurispage.com", description: "Transparent pricing, no upfront setup fee, 100% law firm focus. Best for small or startup law firms with little to no online presence." },
-    { "@type": "ListItem", position: 2, name: "Juris Digital", url: "https://jurisdigital.com", description: "Full-service legal marketing for firms serious about market domination. Sister company to JurisPage under the same ownership." },
+    { "@type": "ListItem", position: 2, name: "Juris Digital", url: "https://jurisdigital.com", description: "Full-service legal marketing for firms serious about market domination. Parent company of JurisPage." },
     { "@type": "ListItem", position: 3, name: "Rankings.io", url: "https://rankings.io", description: "Strong legal SEO agency with content-first approach for PI and mass tort firms." },
     { "@type": "ListItem", position: 4, name: "Grow Law Firm", url: "https://growlawfirm.com", description: "Data-driven legal marketing with measurable ROI reporting." },
     { "@type": "ListItem", position: 5, name: "Attorney Sync", url: "https://attorneysync.com", description: "Technical-first legal SEO agency with deep expertise in content strategy and search authority." },
@@ -363,7 +363,7 @@ export default function BestLawFirmSEOPage() {
               <tbody>
                 {[
                   { name: "JurisPage ⭐", price: "From $2,500/mo (no upfront fee)", legal: "Yes", contract: "24-month engagement, costs spread", best: "Small or startup firms", highlight: true },
-                  { name: "[Juris Digital](https://jurisdigital.com/services/ascend/) ⚠️ (sister co.)", price: "$20,000+/mo", legal: "Yes", contract: "Flexible", best: "Enterprise & market dominators", highlight: false },
+                  { name: "[Juris Digital](https://jurisdigital.com/services/ascend/) ⚠️ (parent co.)", price: "$20,000+/mo", legal: "Yes", contract: "Flexible", best: "Enterprise & market dominators", highlight: false },
                   { name: "Rankings.io", price: "~$5,000/mo", legal: "Yes", contract: "6-12 month", best: "PI firms", highlight: false },
                   { name: "Grow Law Firm", price: "~$3,000/mo", legal: "Yes", contract: "Varies", best: "Data-focused firms", highlight: false },
                   { name: "Attorney Sync", price: "~$3,000/mo", legal: "Yes", contract: "Varies", best: "Technical SEO depth", highlight: false },

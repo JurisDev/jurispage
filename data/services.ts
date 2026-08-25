@@ -129,7 +129,7 @@ export const services: ServiceData[] = [
       },
       {
         question: "How much does law firm SEO cost?",
-        answer: "Typically $2,000-$10,000+ per month depending on market, practice area, and competition. A solo family law attorney in a mid-size city: $2,000-$3,500. A personal injury firm in a top-20 metro: proportionally more. Our pricing is published, and you can see exactly what is included without scheduling a call or sitting through a pitch. The real question is ROI (return on investment): if a signed case generates $8,000 in fees and SEO brings in 5 new cases per month at maturity, the math is straightforward. We model this out with every prospective client during the initial consultation so you make the decision on numbers, not promises.",
+        answer: "Typically $2,000-$10,000+ per month depending on market, practice area, and competition. A solo family law attorney in a mid-size city: $2,500-$3,500. A personal injury firm in a top-20 metro: proportionally more. Our pricing is published, and you can see exactly what is included without scheduling a call or sitting through a pitch. The real question is ROI (return on investment): if a signed case generates $8,000 in fees and SEO brings in 5 new cases per month at maturity, the math is straightforward. We model this out with every prospective client during the initial consultation so you make the decision on numbers, not promises.",
       },
       {
         question: "How does AI search (ChatGPT, Perplexity, Google AI Overviews) affect law firm SEO?",

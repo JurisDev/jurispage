@@ -7,7 +7,7 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 import ReviewRibbon from "@/components/ReviewRibbon";
 
 export const metadata: Metadata = {
-  title: "JurisPage: Law Firm Marketing Foundation Starting at $2,000/mo",
+  title: "JurisPage: Law Firm Marketing Foundation Starting at $2,500/mo",
   description: "Get instant pricing for JurisPage: brand design, StoryBrand website, SEO, GBP, Yelp, and Apple Maps for small or startup law firms. Transparent pricing, no upfront fee. See your exact number now.",
   alternates: { canonical: "https://jurispage.com/launchpad/" },
 };
@@ -16,7 +16,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How is JurisPage priced?", acceptedAnswer: { "@type": "Answer", text: "JurisPage starts at $2,000/month over a 24-month engagement, with a typical range of $2,000 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months so small and startup firms can afford the work without a large day-one check. Use the pricing calculator on this page to see your exact number in under a minute." } },
+    { "@type": "Question", name: "How is JurisPage priced?", acceptedAnswer: { "@type": "Answer", text: "JurisPage starts at $2,500/month over a 24-month engagement, with a typical range of $2,500 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months so small and startup firms can afford the work without a large day-one check. Use the pricing calculator on this page to see your exact number in under a minute." } },
     { "@type": "Question", name: "How long is the engagement?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing." } },
     { "@type": "Question", name: "How can you offer this price and produce results quickly?", acceptedAnswer: { "@type": "Answer", text: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." } },
     { "@type": "Question", name: "How much customization can I expect?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." } },
@@ -182,7 +182,7 @@ export default function LaunchpadPage() {
             </div>
             <div className="space-y-4">
               {[
-                { problem: "Paid $5,000+/mo for minimal results", fix: "Transparent pricing starting at $2,000/mo, scaled to your firm size" },
+                { problem: "Paid $5,000+/mo for minimal results", fix: "Transparent pricing starting at $2,500/mo, scaled to your firm size" },
                 { problem: "Hit with a huge upfront setup fee", fix: "No upfront fee. Costs spread evenly across the 24-month engagement." },
                 { problem: "Lost the website when you switched agencies", fix: "You own your site, content, and all IP we create. Always." },
                 { problem: "Waited months just to find out the price", fix: "Instant, transparent pricing in under 60 seconds" },
@@ -259,7 +259,7 @@ export default function LaunchpadPage() {
               How We Keep the Price This Low
             </p>
             <p className="text-gray-800 text-base leading-relaxed mb-3">
-              Two things make $2,000/mo possible for a service that would cost five times as much at a traditional agency. First, we don&apos;t front-load costs. We spread them across your 24-month engagement instead of charging a large upfront fee, so you keep your cash when you need it most.
+              Two things make $2,500/mo possible for a service that would cost five times as much at a traditional agency. First, we don&apos;t front-load costs. We spread them across your 24-month engagement instead of charging a large upfront fee, so you keep your cash when you need it most.
             </p>
             <p className="text-gray-800 text-base leading-relaxed">
               Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service. Client time commitment: a 30-minute kickoff call plus a few hours spread across the first 45 days.
