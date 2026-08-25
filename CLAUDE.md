@@ -42,7 +42,7 @@ All eight resolved to "match the Juris Digital source." Do not reintroduce the o
 3. **JurisPage spans $2,500 to $20,000/mo.** Established firms that already own a website with budgets above $4,000/mo are pitched a custom JurisPage engagement and routed to `/contact/`. The launchpad "More Than a Foundation" CTA, the service-page upsell sentences, and the calculator/quote-email 5+ attorney fork all follow this rule.
 4. **Juris Digital floor is $20,000+/mo** sitewide (supersedes the $15K framing from 2026-07-29). JD is mentioned only for $20K+ budgets, the acquisition/trust story, and the pricing-page comparison.
 5. **90-day results guarantee is removed** (commit 23a9cd7, 2026-08-25). Do not re-add outcome guarantees.
-6. **Repo home:** github.com/JurisDev/jurispage (transferred from caseymeraz/jurispage on 2026-08-25). Vercel still auto-deploys from `main`.
+6. **Repo home:** github.com/JurisDev/jurispage (transferred from caseymeraz/jurispage on 2026-08-25). **Vercel auto-deploy is BROKEN until the Vercel GitHub App is installed on the JurisDev org** (github.com/apps/vercel → Configure → JurisDev, then `vercel git connect https://github.com/JurisDev/jurispage` from the repo, or reconnect in project settings → Git). Until then, deploy manually with `vercel deploy --prod` from the repo root (CLI is authenticated). The 2026-08-25 changes went live via a manual CLI deploy.
 
 ## Funnel decisions (2026-07-29, Tom Tran + Josh)
 
