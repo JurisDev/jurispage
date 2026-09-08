@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { services } from "@/data/services";
 import { practiceAreas } from "@/data/practiceAreas";
 import { metroServiceCombos } from "@/data/metros";
+import { METRO_NOINDEX_SLUGS } from "@/data/metroNoindexList";
 import { intersections } from "@/data/intersections";
 import { getAllPosts } from "@/lib/blog";
 import fs from "fs";
@@ -45,12 +46,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const metroPages: MetadataRoute.Sitemap = metroServiceCombos.map((m) => ({
-    url: BASE_URL + "/" + m.pageSlug + "/",
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  const metroPages: MetadataRoute.Sitemap = metroServiceCombos
+    .filter((m) => !METRO_NOINDEX_SLUGS.has(m.pageSlug))
+    .map((m) => ({
+      url: BASE_URL + "/" + m.pageSlug + "/",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
 
   const intersectionPages: MetadataRoute.Sitemap = intersections.map((i) => ({
     url: BASE_URL + "/" + i.practiceAreaSlug + "/" + i.serviceSlug + "/",
