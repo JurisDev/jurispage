@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import type { Redirect } from "next/dist/lib/load-custom-routes";
 import path from "path";
+import { backlinkRecoveryRedirects } from "./data/backlinkRecoveryRedirects";
 
 /* ── Suburb → metro redirect generator ── */
 const suburbToMetro: Record<string, string> = {
@@ -105,6 +106,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── Legacy jurispage.io host migration (2026-10-07) ──
+      // Host-conditioned to (www.)jurispage.io only; listed first so the .io
+      // mappings win over the unconditioned .com catch-alls below.
+      ...backlinkRecoveryRedirects,
+
       // ── Legacy URLs with GSC impressions, remapped to the closest topic (2026-10-07) ──
       // Listed first so they win over the broader /law-firm-marketing/:path* and
       // /seo-for-lawyers/:path* catch-alls below.
