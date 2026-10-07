@@ -1,4 +1,18 @@
-# JurisPage backlink recovery, October 7, 2026
+# JurisPage .io → .com migration, October 7, 2026
+
+## Corrected scope
+
+Casey clarified that the requested change is migration of broken jurispage.io URLs to relevant LIVE jurispage.com destinations. The initial .com-only proposal was the wrong scope and was never merged or deployed. This PR now adds ONLY host-conditioned .io rules; .com routing remains unchanged. The earlier .com audit below remains historical research, not the current implementation.
+
+The .io inventory has 49 Ahrefs URL records, normalized to 39 distinct paths. Thirty-two have verified relevant current .com replacements, including /landing-page-portfolio/ → https://jurispage.com/law-firm-websites/. Seven do not have a suitable live counterpart. A final .io-only permanent redirect preserves other paths and query strings to the same .com path; it does not assert that an unknown path or those seven cases has an appropriate live replacement. All explicit destinations use HTTPS and the canonical non-www .com host. Both bare and www .io hosts are matched.
+
+Current validation: production build passed; 126 .io host/slash variants passed in the built app; eight .com page checks remain HTTP 200 without migration redirects; the fallback preserves the exact unknown path, trailing slash and query string. Evidence: io-route-checks.json and io-http-qa.json.
+
+io-migration.json is the CURRENT mapping. url-audit.json, url-audit.csv and the previous local-http-qa.json describe the superseded .com research. No .com content paths are changed by the current redirect module.
+
+Completion still requires deploying these rules and configuring Namecheap DNS/forwarding so the .io host reaches Vercel with working HTTPS. Namecheap currently shows a logged-out login screen in Chrome; user sign-in was requested. No registrar or Vercel domain settings have been changed.
+
+## Superseded .com proposal and broader research
 
 Canonical repository: https://github.com/JurisDev/jurispage. Base: b87fa40. Isolated branch: codex/backlink-recovery-20261007. Production has not been changed by this work.
 
