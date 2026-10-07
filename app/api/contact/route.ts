@@ -1,13 +1,79 @@
-import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import { after, NextRequest, NextResponse } from "next/server";
 import { submitToHubSpot } from "@/lib/hubspot";
 import { notifySlack } from "@/lib/slack";
 import { prisma } from "@/lib/db";
 import { verifyTurnstile } from "@/lib/turnstile";
 
+type DeliveryStatus = {
+  status: "delivered" | "failed" | "skipped";
+  durationMs: number;
+  error?: string;
+};
+
+function safeError(error: unknown) {
+  return error instanceof Error ? error.message.slice(0, 300) : "Unknown error";
+}
+
+async function sendLeadEmail(
+  payload: {
+    from: string;
+    to: string[];
+    subject: string;
+    html: string;
+    replyTo: string;
+  },
+  idempotencyKey: string
+) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return "skipped" as const;
+
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+      "Idempotency-Key": idempotencyKey,
+    },
+    body: JSON.stringify({
+      from: payload.from,
+      to: payload.to,
+      subject: payload.subject,
+      html: payload.html,
+      reply_to: payload.replyTo,
+    }),
+    signal: AbortSignal.timeout(8_000),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Lead email failed (${response.status})`);
+  }
+
+  return "delivered" as const;
+}
+
+async function trackDelivery(
+  name: string,
+  task: () => Promise<"delivered" | "skipped">
+): Promise<[string, DeliveryStatus]> {
+  const startedAt = Date.now();
+  try {
+    const status = await task();
+    return [name, { status, durationMs: Date.now() - startedAt }];
+  } catch (error) {
+    return [
+      name,
+      {
+        status: "failed",
+        durationMs: Date.now() - startedAt,
+        error: safeError(error),
+      },
+    ];
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const requestStartedAt = Date.now();
     const body = await req.json();
     const { firstName, lastName, email, phone, website, practiceArea, budget, growthGoal, casesWanted, referral, message } = body;
     const attribution = JSON.parse(JSON.stringify({
@@ -27,35 +93,47 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    const turnstileStartedAt = Date.now();
     if (!body.turnstileToken || !(await verifyTurnstile(body.turnstileToken))) {
       return NextResponse.json({ error: "Spam verification failed" }, { status: 403 });
     }
+    const turnstileDurationMs = Date.now() - turnstileStartedAt;
 
-    // Save to DB
-    try {
-      await prisma.formSubmission.create({
+    const submissionData = {
+      firstName,
+      lastName,
+      website,
+      practiceArea,
+      budget,
+      growthGoal,
+      casesWanted,
+      referral,
+      message,
+      attribution,
+    };
+
+    const databaseStartedAt = Date.now();
+    const submission = await prisma.formSubmission
+      .create({
         data: {
           type: "contact",
           name: `${firstName} ${lastName || ""}`.trim(),
           email,
           phone,
-          data: {
-            firstName,
-            lastName,
-            website,
-            practiceArea,
-            budget,
-            growthGoal,
-            casesWanted,
-            referral,
-            message,
-            attribution,
-          },
+          data: submissionData,
         },
+      })
+      .catch((dbError) => {
+        console.error("FormSubmission save error:", dbError);
+        return null;
       });
-    } catch (dbError) {
-      console.error("FormSubmission save error:", dbError);
+    if (!submission) {
+      return NextResponse.json(
+        { error: "We could not save your request. Please try again." },
+        { status: 503 }
+      );
     }
+    const databaseDurationMs = Date.now() - databaseStartedAt;
 
     const isJurisDigitalFit = budget === "$20,000+/month";
 
@@ -76,16 +154,7 @@ export async function POST(req: NextRequest) {
       </table>
     `;
 
-    await resend.emails.send({
-      from: "JurisPage Leads <leads@jurispage.com>",
-      to: ["cmeraz@jurisdigital.com", "ahatcher@jurisdigital.com", "jmeans@jurisdigital.com"],
-      subject: `${isJurisDigitalFit ? "⭐ JURIS DIGITAL FIT" : "New JurisPage Lead"}: ${firstName} ${lastName} - ${practiceArea || "Law Firm"}`,
-      html: emailHtml,
-      replyTo: email,
-    });
-
-    // Slack notification
-    notifySlack(isJurisDigitalFit ? "⭐ Juris Digital Fit" : "New JurisPage Contact Lead", {
+    const slackFields = {
       "Law Firm": website || "N/A",
       "First Name": firstName || "N/A",
       "Last Name": lastName || "N/A",
@@ -103,38 +172,88 @@ export async function POST(req: NextRequest) {
       "First-touch source": body.firstTouch?.source || "N/A",
       "Last-touch source": body.lastTouch?.source || body.utmSource || "N/A",
       "Last-touch campaign": body.lastTouch?.campaign || body.utmCampaign || "N/A",
-    }, "new-leads");
+    };
 
-    // HubSpot submission (awaited so it completes before serverless function exits)
     const formGuid = process.env.HUBSPOT_FORM_GUID;
-    console.log("[Contact] HUBSPOT_FORM_GUID:", formGuid ? "set" : "MISSING");
-    if (formGuid) {
-      try {
-        await submitToHubSpot(
-          formGuid,
-          [
-            { name: "firstname", value: firstName },
-            { name: "lastname", value: lastName },
-            { name: "email", value: email },
-            { name: "phone", value: phone || "" },
-            { name: "practice_area", value: practiceArea || "" },
-            { name: "monthly_budget", value: budget || "" },
-            { name: "website", value: website || "" },
-            { name: "growth_goal", value: growthGoal || "" },
-            { name: "how_many_cases_do_you_want_to_generate_from_marketing_per_month", value: casesWanted || "" },
-            { name: "how_did_you_hear_about_us_", value: referral || "" },
-            { name: "message", value: message || "" },
-            { name: "form_source", value: "contact-page" },
-          ],
-          { hutk: body.hutk, pageUri: body.pageUri, pageName: body.pageName }
-        );
-        console.log("[Contact] HubSpot submission succeeded");
-      } catch (err) {
-        console.error("[Contact] HubSpot submission failed:", err);
-      }
-    }
 
-    return NextResponse.json({ success: true });
+    after(async () => {
+      const deliveryEntries = await Promise.all([
+        trackDelivery("email", async () => {
+          return sendLeadEmail(
+            {
+              from: "JurisPage Leads <leads@jurispage.com>",
+              to: ["cmeraz@jurisdigital.com", "ahatcher@jurisdigital.com", "jmeans@jurisdigital.com"],
+              subject: `${isJurisDigitalFit ? "⭐ JURIS DIGITAL FIT" : "New JurisPage Lead"}: ${firstName} ${lastName} - ${practiceArea || "Law Firm"}`,
+              html: emailHtml,
+              replyTo: email,
+            },
+            `jurispage-contact-${submission.id}`
+          );
+        }),
+        trackDelivery("slack", async () => {
+          const result = await notifySlack(
+            isJurisDigitalFit ? "⭐ Juris Digital Fit" : "New JurisPage Contact Lead",
+            slackFields,
+            "new-leads"
+          );
+          if (result.skipped) return "skipped";
+          if (!result.delivered) throw new Error("Slack notification failed");
+          return "delivered";
+        }),
+        trackDelivery("hubspot", async () => {
+          if (!formGuid) return "skipped";
+          await submitToHubSpot(
+            formGuid,
+            [
+              { name: "firstname", value: firstName },
+              { name: "lastname", value: lastName },
+              { name: "email", value: email },
+              { name: "phone", value: phone || "" },
+              { name: "practice_area", value: practiceArea || "" },
+              { name: "monthly_budget", value: budget || "" },
+              { name: "website", value: website || "" },
+              { name: "growth_goal", value: growthGoal || "" },
+              { name: "how_many_cases_do_you_want_to_generate_from_marketing_per_month", value: casesWanted || "" },
+              { name: "how_did_you_hear_about_us_", value: referral || "" },
+              { name: "message", value: message || "" },
+              { name: "form_source", value: "contact-page" },
+            ],
+            { hutk: body.hutk, pageUri: body.pageUri, pageName: body.pageName }
+          );
+          return "delivered";
+        }),
+      ]);
+
+      const delivery = Object.fromEntries(deliveryEntries);
+      console.log("[Contact] delivery", JSON.stringify({ submissionId: submission.id, delivery }));
+
+      try {
+        await prisma.formSubmission.update({
+          where: { id: submission.id },
+          data: {
+            data: {
+              ...submissionData,
+              delivery,
+              deliveryCompletedAt: new Date().toISOString(),
+            },
+          },
+        });
+      } catch (error) {
+        console.error("[Contact] delivery status save failed", {
+          submissionId: submission.id,
+          error: safeError(error),
+        });
+      }
+    });
+
+    console.log("[Contact] accepted", JSON.stringify({
+      submissionId: submission.id,
+      durationMs: Date.now() - requestStartedAt,
+      turnstileDurationMs,
+      databaseDurationMs,
+    }));
+
+    return NextResponse.json({ success: true, submissionId: submission.id });
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
