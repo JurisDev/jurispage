@@ -18,47 +18,42 @@ function getNewsSlugs(): string[] {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL + "/", lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
-    { url: BASE_URL + "/about-us/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: BASE_URL + "/contact/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: BASE_URL + "/services/pricing/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: BASE_URL + "/best-law-firm-seo-companies/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: BASE_URL + "/blog/", lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
-    { url: BASE_URL + "/law-firm-seo-cost/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: BASE_URL + "/scorpion-legal-marketing-alternative/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: BASE_URL + "/practice-areas/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: BASE_URL + "/services/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: BASE_URL + "/jurispage-now-backed-by-juris-digital/", lastModified: new Date(), changeFrequency: "yearly", priority: 0.6 },
-    { url: BASE_URL + "/growth-report/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: BASE_URL + "/see-my-market-gap/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: BASE_URL + "/ai-search-report/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: BASE_URL + "/secret-shop/", lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: BASE_URL + "/", changeFrequency: "weekly", priority: 1.0 },
+    { url: BASE_URL + "/about-us/", changeFrequency: "monthly", priority: 0.8 },
+    { url: BASE_URL + "/contact/", changeFrequency: "monthly", priority: 0.9 },
+    { url: BASE_URL + "/services/pricing/", changeFrequency: "monthly", priority: 0.9 },
+    { url: BASE_URL + "/best-law-firm-seo-companies/", changeFrequency: "monthly", priority: 0.8 },
+    { url: BASE_URL + "/blog/", changeFrequency: "weekly", priority: 0.7 },
+    { url: BASE_URL + "/law-firm-seo-cost/", changeFrequency: "monthly", priority: 0.8 },
+    { url: BASE_URL + "/scorpion-legal-marketing-alternative/", changeFrequency: "monthly", priority: 0.7 },
+    { url: BASE_URL + "/practice-areas/", changeFrequency: "monthly", priority: 0.8 },
+    { url: BASE_URL + "/services/", changeFrequency: "monthly", priority: 0.8 },
+    { url: BASE_URL + "/jurispage-now-backed-by-juris-digital/", changeFrequency: "yearly", priority: 0.6 },
+    { url: BASE_URL + "/see-my-market-gap/", changeFrequency: "monthly", priority: 0.9 },
+    { url: BASE_URL + "/ai-search-report/", changeFrequency: "monthly", priority: 0.7 },
+    { url: BASE_URL + "/secret-shop/", changeFrequency: "monthly", priority: 0.6 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = services.map((s) => ({
     url: BASE_URL + "/" + s.slug + "/",
-    lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const practiceAreaPages: MetadataRoute.Sitemap = practiceAreas.map((p) => ({
     url: BASE_URL + "/" + p.slug + "/",
-    lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const metroPages: MetadataRoute.Sitemap = metroServiceCombos.map((m) => ({
     url: BASE_URL + "/" + m.pageSlug + "/",
-    lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.6,
   }));
 
   const intersectionPages: MetadataRoute.Sitemap = intersections.map((i) => ({
     url: BASE_URL + "/" + i.practiceAreaSlug + "/" + i.serviceSlug + "/",
-    lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -78,10 +73,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const caseStudyPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL + "/case-studies/", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: BASE_URL + "/case-studies/", changeFrequency: "monthly" as const, priority: 0.8 },
     ...caseStudies.map(({ slug }) => ({
       url: BASE_URL + "/case-studies/" + slug + "/",
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

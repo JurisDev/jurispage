@@ -1,23 +1,57 @@
-// Client-side analytics helper: fires to window.dataLayer (GA4) or window.posthog
-// Safe to import in client components
+"use client";
 
+type AnalyticsValue = string | number | boolean | null | undefined;
+type AnalyticsProperties = Record<string, AnalyticsValue>;
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+const BLOCKED_PROPERTIES = new Set([
+  "email",
+  "phone",
+  "first_name",
+  "last_name",
+  "full_name",
+  "firm_name",
+  "address",
+  "website",
+  "website_url",
+]);
+
+function safeProperties(properties: AnalyticsProperties): Record<string, string | number | boolean> {
+  return Object.fromEntries(
+    Object.entries(properties).filter(
+      ([key, value]) =>
+        value !== undefined &&
+        value !== null &&
+        value !== "" &&
+        !BLOCKED_PROPERTIES.has(key.toLowerCase())
+    )
+  ) as Record<string, string | number | boolean>;
+}
+
+/**
+ * Sends a GA4 event directly through the site's gtag implementation.
+ * Sensitive fields are dropped defensively so form PII never reaches GA4.
+ */
 export function trackClientEvent(
   event: string,
-  properties?: Record<string, unknown>
+  properties: AnalyticsProperties = {}
 ) {
   if (typeof window === "undefined") return;
 
-  // GA4 via dataLayer
-  const w = window as unknown as { dataLayer?: Array<Record<string, unknown>> };
-  if (w.dataLayer) {
-    w.dataLayer.push({ event, ...properties });
+  const payload = safeProperties(properties);
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", event, payload);
+    return;
   }
 
-  // PostHog
-  const ph = window as unknown as {
-    posthog?: { capture: (event: string, props?: Record<string, unknown>) => void };
-  };
-  if (ph.posthog) {
-    ph.posthog.capture(event, properties);
-  }
+  // GTM can consume this fallback if an interaction happens before gtag loads.
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, ...payload });
 }

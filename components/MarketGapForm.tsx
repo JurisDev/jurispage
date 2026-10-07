@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import {
   loadGoogleMapsScript,
   extractPlaceDetails,
   type PlaceResult,
 } from "@/lib/google-places";
 import { trackClientEvent } from "@/lib/analytics";
+import { getAttributionPayload } from "@/lib/attribution";
 import TurnstileWidget, { type TurnstileWidgetHandle } from "@/components/TurnstileWidget";
 
 /* ------------------------------------------------------------------ */
@@ -102,7 +103,6 @@ const LABEL_CLS = "block text-sm font-medium text-gray-700 mb-1";
 
 export default function MarketGapForm() {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   /* ----- state ------------------------------------------------------ */
 
@@ -145,24 +145,18 @@ export default function MarketGapForm() {
   const firmInputRef = useRef<HTMLInputElement>(null);
   const autocompleteRef = useRef<google.maps.places.Autocomplete | null>(null);
   const turnstileRef = useRef<TurnstileWidgetHandle>(null);
+  const hasTrackedStart = useRef(false);
 
-  /* ----- UTM capture ------------------------------------------------ */
+  /* ----- Attribution and funnel measurement ------------------------ */
 
-  const getUtmParams = useCallback(() => {
-    const mapping: Record<string, string> = {
-      utm_source: "utmSource",
-      utm_medium: "utmMedium",
-      utm_campaign: "utmCampaign",
-      utm_term: "utmTerm",
-      utm_content: "utmContent",
-    };
-    const utms: Record<string, string> = {};
-    for (const [param, key] of Object.entries(mapping)) {
-      const val = searchParams.get(param);
-      if (val) utms[key] = val;
-    }
-    return utms;
-  }, [searchParams]);
+  function handleFormStart() {
+    if (hasTrackedStart.current) return;
+    hasTrackedStart.current = true;
+    trackClientEvent("market_gap_started", {
+      form_source: "market_gap",
+      step_number: 1,
+    });
+  }
 
   /* ----- Google Places ---------------------------------------------- */
 
@@ -232,8 +226,7 @@ export default function MarketGapForm() {
       }));
 
       trackClientEvent("market_gap_place_selected", {
-        placeId: details.placeId,
-        firmName: details.name,
+        selection_method: "google_places",
       });
     });
 
@@ -291,7 +284,7 @@ export default function MarketGapForm() {
           city: step2.targetCity,
           state: step2.targetState,
           turnstileToken,
-          ...getUtmParams(),
+          ...getAttributionPayload(),
         }),
       });
       const data = await res.json();
@@ -302,8 +295,10 @@ export default function MarketGapForm() {
       turnstileRef.current?.reset();
 
       trackClientEvent("market_gap_step_1_complete", {
-        firmName: step1.firmName,
-        email: step1.email,
+        form_source: "market_gap",
+        step_number: 1,
+        has_website: Boolean(step1.website && step1.website !== "https://"),
+        has_phone: Boolean(step1.phone),
       });
 
       setErrors({});
@@ -324,9 +319,10 @@ export default function MarketGapForm() {
     if (!validateStep2()) return;
 
     trackClientEvent("market_gap_step_2_complete", {
-      practiceArea: step2.primaryPracticeArea,
-      targetCity: step2.targetCity,
-      targetState: step2.targetState,
+      form_source: "market_gap",
+      step_number: 2,
+      practice_area: step2.primaryPracticeArea,
+      firm_stage: step2.isNewFirm ? "new" : "established",
     });
 
     setErrors({});
@@ -369,7 +365,7 @@ export default function MarketGapForm() {
           afterHours: step3.afterHoursCoverage,
           crmService: step3.crmService,
         }),
-        ...getUtmParams(),
+        ...getAttributionPayload(),
         pageUri: window.location.href,
       };
 
@@ -383,6 +379,12 @@ export default function MarketGapForm() {
       if (!res.ok) throw new Error(data.error ?? "Failed to generate report.");
 
       const reportId = data.reportId ?? data.id;
+      trackClientEvent("market_gap_submitted", {
+        form_source: "market_gap",
+        practice_area: step2.primaryPracticeArea,
+        firm_stage: step2.isNewFirm ? "new" : "established",
+        step_3_skipped: skipStep3,
+      });
       router.push(`/market-gap/loading/${reportId}`);
     } catch (err) {
       setErrors({
@@ -1006,7 +1008,7 @@ export default function MarketGapForm() {
   /* ----- Main render ------------------------------------------------ */
 
   return (
-    <div className="w-full max-w-lg mx-auto">
+    <div className="w-full max-w-lg mx-auto" onFocusCapture={handleFormStart}>
       <div className="bg-white rounded-2xl border border-gray-100 shadow-lg p-6 sm:p-8">
         {renderProgressBar()}
 

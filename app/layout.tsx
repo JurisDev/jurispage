@@ -7,6 +7,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SchemaOrg from "@/components/SchemaOrg";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import AttributionCapture from "@/components/AttributionCapture";
+import ConversionClickTracking from "@/components/ConversionClickTracking";
 import { ogBase } from "@/lib/og";
 
 const quicksand = Quicksand({
@@ -86,6 +88,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
       </head>
       <body className="bg-white text-gray-900 font-body antialiased">
+        <AttributionCapture />
+        <ConversionClickTracking />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-53WNLQH5"
@@ -101,9 +105,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-FQJLT879FN" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-FQJLT879FN');
+          window.gtag = function(){window.dataLayer.push(arguments);}
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-FQJLT879FN', { send_page_view: true });
         `}</Script>
         <Script id="hs-script-loader" strategy="afterInteractive" src="//js.hs-scripts.com/50142530.js" />
         <Script id="clarity" strategy="afterInteractive">{`

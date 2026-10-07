@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "How Much Does Law Firm SEO Cost? (2026 Pricing Guide)",
+  title: "Law Firm SEO Cost: 2026 Pricing Guide",
   description: "The honest guide to law firm SEO costs in 2026. Typical price ranges by market and practice area, what's included, and how to evaluate if you're getting value.",
   alternates: { canonical: "https://jurispage.com/law-firm-seo-cost/" },
   openGraph: { ...ogBase, url: "https://jurispage.com/law-firm-seo-cost/" },
@@ -43,7 +43,8 @@ export default function LawFirmSEOCostPage() {
             <Link href="/" className="hover:text-gray-900 no-underline">Home</Link> / <span className="text-gray-700">Law Firm SEO Cost</span>
           </nav>
           <h1 className="font-heading font-extrabold text-gray-900 text-4xl mb-4">How Much Does Law Firm SEO Cost in 2026?</h1>
-          <p className="text-gray-600 text-lg">The honest, complete guide to law firm SEO pricing - with no sales agenda.</p>
+          <p className="text-gray-600 text-lg">Current price ranges, cost drivers, expected deliverables, and the math to decide what your firm can responsibly invest.</p>
+          <p className="text-gray-400 text-sm mt-3">Updated October 2026</p>
         </div>
       </section>
 

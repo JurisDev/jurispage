@@ -1,6 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { getHubSpotCookie } from "@/lib/hubspot-cookie";
+import { trackClientEvent } from "@/lib/analytics";
+import { getAttributionPayload } from "@/lib/attribution";
 import TurnstileWidget from "@/components/TurnstileWidget";
 
 const practiceAreas = [
@@ -22,8 +24,9 @@ const practiceAreas = [
 
 const budgets = [
   "$2,500–$3,500/month",
-  "$3,500–$5,000/month",
-  "$5,000+/month",
+  "$3,500–$7,999/month",
+  "$8,000–$19,999/month",
+  "$20,000+/month",
 ];
 
 const growthGoals = [
@@ -37,6 +40,7 @@ const growthGoals = [
 const casesWantedOptions = ["1-2 Cases", "3-10 Cases", "10-20 Cases", "20+ Cases"];
 
 export default function ContactForm() {
+  const hasTrackedStart = useRef(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [turnstileToken, setTurnstileToken] = useState("");
   const [formData, setFormData] = useState({
@@ -70,16 +74,36 @@ export default function ContactForm() {
           hutk: getHubSpotCookie(),
           pageUri: window.location.href,
           pageName: document.title,
+          ...getAttributionPayload(),
         }),
       });
       if (res.ok) {
+        trackClientEvent("contact_submitted", {
+          form_source: "contact_page",
+          practice_area: formData.practiceArea,
+          budget_band: formData.budget,
+        });
         setStatus("success");
       } else {
+        trackClientEvent("form_error", {
+          form_source: "contact_page",
+          error_type: "server_response",
+        });
         setStatus("error");
       }
     } catch {
+      trackClientEvent("form_error", {
+        form_source: "contact_page",
+        error_type: "network_error",
+      });
       setStatus("error");
     }
+  };
+
+  const handleFormStart = () => {
+    if (hasTrackedStart.current) return;
+    hasTrackedStart.current = true;
+    trackClientEvent("contact_started", { form_source: "contact_page" });
   };
 
   if (status === "success") {
@@ -93,7 +117,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} onFocus={handleFormStart} className="space-y-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-1.5">First Name *</label>
@@ -107,11 +131,10 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-1.5">Last Name *</label>
+          <label className="block text-sm font-semibold text-gray-700 mb-1.5">Last Name</label>
           <input
             type="text"
             name="lastName"
-            required
             value={formData.lastName}
             onChange={handleChange}
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400"
@@ -184,10 +207,9 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1.5">Primary Growth Goal *</label>
+          <label className="block text-sm font-semibold text-gray-700 mb-1.5">Primary Growth Goal</label>
         <select
           name="growthGoal"
-          required
           value={formData.growthGoal}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"
@@ -199,10 +221,9 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1.5">How many cases per month? *</label>
+        <label className="block text-sm font-semibold text-gray-700 mb-1.5">How many additional cases would you like per month?</label>
         <select
           name="casesWanted"
-          required
           value={formData.casesWanted}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"
@@ -269,7 +290,7 @@ export default function ContactForm() {
         <span>· 27 Google reviews</span>
       </a>
       <TurnstileWidget onVerify={setTurnstileToken} />
-      <p className="text-xs text-gray-500 text-center">No spam. No obligation to have a conversation.</p>
+      <p className="text-xs text-gray-500 text-center">No spam. We use these details only to understand fit and prepare for the conversation.</p>
     </form>
   );
 }
