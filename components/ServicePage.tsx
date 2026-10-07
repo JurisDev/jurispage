@@ -39,7 +39,19 @@ export function generateServiceMetadata(service: ServiceData): Metadata {
   };
 }
 
+// "law firm SEO" -> "Law Firm SEO" for headings; keeps acronyms and brand casing.
+const SMALL_WORDS = new Set(["a", "an", "and", "for", "in", "of", "on", "or", "the", "to"]);
+function toHeadingCase(text: string): string {
+  return text
+    .split(" ")
+    .map((word, i) =>
+      i > 0 && SMALL_WORDS.has(word) ? word : word.charAt(0).toUpperCase() + word.slice(1),
+    )
+    .join(" ");
+}
+
 export default function ServicePage({ service }: ServicePageProps) {
+  const headingKeyword = toHeadingCase(service.primaryKeyword);
   const allFaqs = [
     ...service.faqs,
     ...(service.extendedFaqs ?? []),
@@ -107,7 +119,7 @@ export default function ServicePage({ service }: ServicePageProps) {
                 {service.slug === "law-firm-seo" ? "Predictable Case Generation" : service.primaryKeyword}
               </span>
               <h1 className="font-heading font-extrabold text-gray-900 text-4xl md:text-5xl leading-tight mb-4">
-                {service.slug === "law-firm-seo" ? "Law Firm SEO Built for Trackable Revenue, Not Just Traffic." : service.heading}
+                {service.slug === "law-firm-seo" ? "Law Firm SEO Services Built for Trackable Revenue, Not Just Traffic." : service.heading}
               </h1>
               <p className="text-gray-600 text-xl leading-relaxed mb-6">{service.tagline}</p>
               {service.slug === "law-firm-seo" && (
@@ -201,7 +213,7 @@ export default function ServicePage({ service }: ServicePageProps) {
         <section className="py-16 px-6 bg-[#FEF3EC]">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-gray-900 text-3xl mb-6">
-              Why {service.primaryKeyword} Matters
+              Why {headingKeyword} Matters
             </h2>
             <div className="space-y-4">
               {service.whyMatters.split("\n\n").map((paragraph, i) => (
@@ -237,7 +249,7 @@ export default function ServicePage({ service }: ServicePageProps) {
         <section className="py-16 px-6 bg-[#1a1a1a]">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-white text-3xl mb-10">
-              How {service.primaryKeyword} Works at JurisPage
+              How {headingKeyword} Works at JurisPage
             </h2>
             <ol className="space-y-8">
               {service.process.map((item, index) => (
@@ -262,7 +274,7 @@ export default function ServicePage({ service }: ServicePageProps) {
       {/* Why JurisPage */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading font-extrabold text-gray-900 text-3xl mb-8">Why JurisPage for {service.primaryKeyword}?</h2>
+          <h2 className="font-heading font-extrabold text-gray-900 text-3xl mb-8">Why JurisPage for {headingKeyword}?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { color: "#EE6C13", title: "100% Legal Focus", body: "We work exclusively with law firms. Every tactic is built for the legal market specifically." },
@@ -284,7 +296,7 @@ export default function ServicePage({ service }: ServicePageProps) {
         <section className="py-16 px-6 bg-[#FEF3EC]">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-gray-900 text-3xl mb-8">
-              Signs Your Firm Needs {service.primaryKeyword}
+              Signs Your Firm Needs {headingKeyword}
             </h2>
             <ul className="space-y-4">
               {service.signs.map((sign) => (
@@ -328,7 +340,7 @@ export default function ServicePage({ service }: ServicePageProps) {
         <section className="py-16 px-6 bg-[#FEF3EC]">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading font-extrabold text-gray-900 text-2xl mb-6">
-              {service.primaryKeyword} for These Practice Areas
+              {headingKeyword} for These Practice Areas
             </h2>
             <div className="flex flex-wrap gap-3">
               {service.relatedPracticeAreas!.map((slug) => {

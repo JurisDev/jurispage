@@ -105,6 +105,20 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── Legacy URLs with GSC impressions, remapped to the closest topic (2026-10-07) ──
+      // Listed first so they win over the broader /law-firm-marketing/:path* and
+      // /seo-for-lawyers/:path* catch-alls below.
+      { source: "/law-firm-marketing/law-firm-marketing-plan/:path*", destination: "https://jurisdigital.com/guides/law-firm-marketing-plan/", permanent: true },
+      { source: "/seo-for-lawyers/link-building/:path*", destination: "https://jurisdigital.com/guides/link-building/", permanent: true },
+      { source: "/seo-for-lawyers/keyword-research/:path*", destination: "https://jurisdigital.com/guides/keyword-research-for-attorneys/", permanent: true },
+      { source: "/seo-for-lawyers/local-seo/:path*", destination: "/local-seo-for-law-firms/", permanent: true },
+      { source: "/seo-for-lawyers/content-marketing/:path*", destination: "/law-firm-content-writing/", permanent: true },
+      { source: "/seo-for-lawyers/measuring-seo-success/:path*", destination: "https://jurisdigital.com/guides/measure-seo-qualified-inquiries/", permanent: true },
+      { source: "/lsas-versus-google-ads-legal-marketing/:path*", destination: "https://jurisdigital.com/guides/google-local-services-ads-get-top-spot-only-pay-for-leads/", permanent: true },
+      { source: "/local-services-ads-automated-lead-crediting-system/:path*", destination: "https://jurisdigital.com/news/google-lsa-lead-dispute-update/", permanent: true },
+      // Consolidated duplicate technical SEO post
+      { source: "/blog/lawyer-seo-technical-seo/:path*", destination: "/blog/technical-seo-for-law-firms/", permanent: true },
+
       // ── Existing redirects ──
       {
         source: "/optimizing-law-firm-google-business-profile-zero-click-searches/",
@@ -177,7 +191,7 @@ const nextConfig: NextConfig = {
       // ── High-priority backlink recovery (DR 50+) ──
       {
         source: "/law-firm-marketing/law-firm-marketing-strategy/:path*",
-        destination: "/",
+        destination: "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
         permanent: true,
       },
       {
@@ -187,12 +201,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/law-firm-marketing-strategy/:path*",
-        destination: "/",
+        destination: "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
         permanent: true,
       },
       {
         source: "/video-marketing-for-lawyers-goes-mainstream",
-        destination: "/",
+        destination: "https://jurisdigital.com/guides/video-marketing-for-lawyers/",
         permanent: true,
       },
       {
@@ -271,7 +285,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/facebook-advertising-for-lawyers/:path*",
-        destination: "/google-ads-for-law-firms/",
+        destination: "https://jurisdigital.com/guides/facebook-for-lawyers/",
         permanent: true,
       },
       {
@@ -452,7 +466,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/feature-client-reviews-on-your-law-firms-website/:path*",
-        destination: "/law-firm-seo/",
+        destination: "https://jurisdigital.com/guides/reviews-pr-social-proof-growth/",
         permanent: true,
       },
       {
@@ -925,7 +939,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/google-local-services-ads-update-lawyers-october-2024/:path*",
-        destination: "/google-ads-for-law-firms/",
+        destination: "https://jurisdigital.com/news/google-lsa-lead-dispute-update/",
         permanent: true,
       },
       {
