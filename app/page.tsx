@@ -172,12 +172,12 @@ export default function HomePage() {
           </h1>
 
           <p className="text-gray-600 text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-10">
-            We build and market law firm websites that actually bring in clients. No jargon. No guesswork. Just cases.
+            A complete website and marketing system for small and growing law firms—built to turn searches into qualified client inquiries.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
             <Link
-              href="/growth-report/"
+              href="/see-my-market-gap/"
               className="inline-block font-heading font-bold text-white text-lg px-10 py-5 rounded-full no-underline hover:opacity-90 transition-opacity shadow-lg shadow-orange-200"
               style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}
             >
@@ -324,7 +324,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-12">
             <Link
-              href="/growth-report/"
+              href="/see-my-market-gap/"
               className="inline-block font-heading font-bold text-white text-base px-8 py-4 rounded-full no-underline hover:opacity-90 transition-opacity shadow-lg shadow-orange-200"
               style={{ background: "linear-gradient(135deg, #EE6C13, #982A0B)" }}
             >
@@ -460,7 +460,7 @@ export default function HomePage() {
               Everything Your Law Firm Needs to Grow Online
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              All services available individually or bundled. Transparent pricing on every one.
+              SEO, paid media, websites, local visibility, and AI search working together in one accountable growth engagement.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
