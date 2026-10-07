@@ -3,11 +3,13 @@ import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "How Much Does Law Firm SEO Cost? (2026 Pricing Guide)",
   description: "The honest guide to law firm SEO costs in 2026. Typical price ranges by market and practice area, what's included, and how to evaluate if you're getting value.",
   alternates: { canonical: "https://jurispage.com/law-firm-seo-cost/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/law-firm-seo-cost/" },
 };
 
 const faqSchema = {

@@ -5,6 +5,8 @@ export interface CaseStudy {
   location: string;
   type: "seo" | "ppc" | "seo-ppc";
   heroStat: string;
+  /** Short stat for the <title>; falls back to heroStat. */
+  metaStat?: string;
   stats: { label: string; value: string }[];
   challenge: string;
   solution: string;
@@ -23,6 +25,7 @@ export const caseStudies: CaseStudy[] = [
     location: "Canada",
     type: "seo",
     heroStat: "10x Firm Growth from Organic Search",
+    metaStat: "10x Growth From SEO",
     stats: [
       { label: "Firm Revenue Growth", value: "10x" },
       { label: "Organic Case Inquiries", value: "+1,851%" },
@@ -48,6 +51,7 @@ export const caseStudies: CaseStudy[] = [
     location: "Los Angeles, CA",
     type: "seo-ppc",
     heroStat: "200+ Monthly Qualified Leads",
+    metaStat: "200+ Leads a Month",
     stats: [
       { label: "Monthly Qualified Leads", value: "200+" },
       { label: "Ad ROI Improvement", value: "+60%" },
@@ -73,6 +77,7 @@ export const caseStudies: CaseStudy[] = [
     location: "United States",
     type: "ppc",
     heroStat: "100+ Monthly Qualified Leads via Google Ads",
+    metaStat: "100+ Leads a Month",
     stats: [
       { label: "Monthly Qualified Leads", value: "100+" },
       { label: "Client Close Rate", value: "Higher than ever" },
@@ -98,6 +103,7 @@ export const caseStudies: CaseStudy[] = [
     location: "San Jose, CA",
     type: "seo",
     heroStat: "3x Increase in Qualified Case Inquiries",
+    metaStat: "3x More Case Inquiries",
     stats: [
       { label: "Case Inquiry Volume", value: "3x" },
       { label: "Signed Cases from Organic", value: "40+/mo" },

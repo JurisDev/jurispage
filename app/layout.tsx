@@ -7,6 +7,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SchemaOrg from "@/components/SchemaOrg";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { ogBase } from "@/lib/og";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -34,18 +35,12 @@ const orgSchema = {
   telephone: "+1-855-593-6935",
   email: "hello@jurispage.com",
   areaServed: { "@type": "Country", name: "United States" },
-  serviceType: "Law Firm Digital Marketing",
   priceRange: "$$$",
   sameAs: [
     "https://www.linkedin.com/company/jurispage",
     "https://www.facebook.com/p/JurisPage-61567289636310/",
     "https://x.com/JurisPage",
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "47",
-  },
 };
 
 const websiteSchema = {
@@ -53,11 +48,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "JurisPage",
   url: "https://jurispage.com",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://jurispage.com/blog?q={q}",
-    "query-input": "required name=q",
-  },
+  publisher: { "@id": "https://jurispage.com/#organization" },
 };
 
 
@@ -67,15 +58,11 @@ export const metadata: Metadata = {
     default: "JurisPage - Law Firm Marketing That Gets Cases, Not Just Clicks",
     template: "%s | JurisPage",
   },
-  description: "JurisPage provides transparent, ethical digital marketing for law firms. SEO, Google Ads, website design, and GEO optimization. No upfront fee, pricing published online.",
+  description: "Transparent, ethical digital marketing for law firms. SEO, Google Ads, website design, and GEO optimization. No upfront fee, pricing published online.",
   keywords: ["law firm marketing", "law firm SEO", "legal marketing agency", "attorney marketing", "lawyer SEO"],
   authors: [{ name: "JurisPage" }],
   creator: "JurisPage",
-  openGraph: {
-    type: "website",
-    siteName: "JurisPage",
-    locale: "en_US",
-  },
+  openGraph: ogBase,
   twitter: {
     card: "summary_large_image",
   },

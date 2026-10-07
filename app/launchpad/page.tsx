@@ -5,11 +5,13 @@ import FAQAccordion from "@/components/FAQAccordion";
 import LaunchpadCalculator from "@/components/LaunchpadCalculator";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import ReviewRibbon from "@/components/ReviewRibbon";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "JurisPage: Law Firm Marketing Foundation Starting at $2,500/mo",
-  description: "Get instant pricing for JurisPage: brand design, StoryBrand website, SEO, GBP, Yelp, and Apple Maps for small or startup law firms. Transparent pricing, no upfront fee. See your exact number now.",
+  title: "Law Firm Marketing Package From $2,500/mo",
+  description: "Get instant JurisPage pricing: brand design, StoryBrand website, SEO, GBP, Yelp, and Apple Maps for small firms. No upfront fee. See your number now.",
   alternates: { canonical: "https://jurispage.com/launchpad/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/launchpad/" },
 };
 
 const faqSchema = {

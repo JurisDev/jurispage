@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { practiceAreas } from "@/data/practiceAreas";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Practice Areas",
   description:
     "JurisPage provides specialized marketing for every legal practice area. Explore our practice-area-specific strategies for SEO, Google Ads, websites, and more.",
   alternates: { canonical: "https://jurispage.com/practice-areas/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/practice-areas/" },
 };
 
 export default function PracticeAreasPage() {

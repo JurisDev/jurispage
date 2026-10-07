@@ -9,6 +9,7 @@ import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
 import CaseStudyPreview from "@/components/CaseStudyPreview";
 import PpcRoiCalculator from "@/components/PpcRoiCalculator";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("google-ads-for-law-firms")!;
 
@@ -17,7 +18,7 @@ export function generateMetadata(): Metadata {
     title: service.title,
     description: service.description,
     alternates: { canonical: "https://jurispage.com/google-ads-for-law-firms/" },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: service.title,
       description: service.description,
       url: "https://jurispage.com/google-ads-for-law-firms/",

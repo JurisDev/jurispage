@@ -5,6 +5,7 @@ import { metroServiceLabels, metros } from "@/data/metros";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 interface MetroPageProps {
   metro: MetroData;
@@ -12,22 +13,22 @@ interface MetroPageProps {
 }
 
 const metroMetaDescriptions: Record<MetroService, (city: string, state: string) => string> = {
-  "law-firm-seo": (city, state) => `Rank higher on Google and sign more cases with law firm search engine optimization (SEO) in ${city}, ${state}. No upfront fee, transparent pricing, 113+ firms served. Free ${city} market audit.`,
-  "google-ads-lawyers": (city, state) => `Stop wasting ad spend. Google Ads management for ${city}, ${state} law firms that turns clicks into signed cases. No upfront fee. Get a free campaign audit.`,
-  "law-firm-website-design": (city, state) => `Convert more visitors into clients with a law firm website built for ${city}, ${state} attorneys. Fast, mobile-first, conversion-optimized. Live in 45 days.`,
-  "law-firm-marketing": (city, state) => `Full-service law firm marketing in ${city}, ${state}. Search engine optimization, Google Ads, local search, and AI visibility. See your market gaps.`,
+  "law-firm-seo": (city, state) => `Law firm SEO in ${city}, ${state}: rank higher on Google and sign more cases. No upfront fee, transparent pricing, 113+ firms served. Free market audit.`,
+  "google-ads-lawyers": (city, state) => `Google Ads for ${city}, ${state} law firms that turns clicks into signed cases. Stop wasting ad spend. No upfront fee. Get a free campaign audit.`,
+  "law-firm-website-design": (city, state) => `Law firm website design in ${city}, ${state} that turns visitors into clients. Fast, mobile friendly, built to convert. Live in 45 days.`,
+  "law-firm-marketing": (city, state) => `Law firm marketing in ${city}, ${state}: SEO, Google Ads, local search, and AI visibility in one plan. See your market gaps.`,
 };
 
 export function generateMetroMetadata(metro: MetroData, service: MetroService): Metadata {
   const serviceLabel = metroServiceLabels[service];
   const title = `${serviceLabel} in ${metro.city}, ${metro.stateAbbr}`;
-  const description = metroMetaDescriptions[service](metro.city, metro.state);
+  const description = metroMetaDescriptions[service](metro.city, metro.stateAbbr);
   const slug = `${service}-${metro.slug}`;
   return {
     title,
     description,
     alternates: { canonical: `https://jurispage.com/${slug}/` },
-    openGraph: { title, description, url: `https://jurispage.com/${slug}/` },
+    openGraph: { ...ogBase, title, description, url: `https://jurispage.com/${slug}/` },
   };
 }
 

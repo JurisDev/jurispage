@@ -4,11 +4,13 @@ import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
 import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Law Firm Marketing Blog",
   description: "Actionable guides on law firm SEO, Google Ads, website design, and digital marketing for attorneys. No fluff, no vague advice - just what actually works.",
   alternates: { canonical: "https://jurispage.com/blog/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/blog/" },
 };
 
 export default function BlogIndex() {

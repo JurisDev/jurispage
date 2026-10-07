@@ -20,6 +20,7 @@ import HeroForm from "@/components/HeroForm";
 import AiSearchReportForm from "@/components/AiSearchReportForm";
 import CompetitorGapForm from "@/components/CompetitorGapForm";
 import { caseStudies } from "@/data/caseStudies";
+import { ogBase } from "@/lib/og";
 
 interface ServicePageProps {
   service: ServiceData;
@@ -30,7 +31,7 @@ export function generateServiceMetadata(service: ServiceData): Metadata {
     title: service.title,
     description: service.description,
     alternates: { canonical: `https://jurispage.com/${service.slug}/` },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: service.title,
       description: service.description,
       url: `https://jurispage.com/${service.slug}/`,

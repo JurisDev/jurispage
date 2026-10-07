@@ -9,6 +9,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
 import { mdxComponents } from "@/components/blog/MDXComponents";
 import TableOfContents from "@/components/blog/TableOfContents";
+import { ogBase } from "@/lib/og";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -59,13 +60,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.description,
     alternates: { canonical: `https://jurispage.com/blog/${slug}/` },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: post.title,
       description: post.description,
       type: "article",
+      url: `https://jurispage.com/blog/${slug}/`,
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
       authors: [AUTHOR.name],

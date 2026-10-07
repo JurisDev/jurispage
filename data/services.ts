@@ -32,7 +32,7 @@ export const services: ServiceData[] = [
     heading: "Predictable Case Generation Built on Data, Not Empty Promises",
     tagline: "We don't guarantee overnight rankings because no honest agency can. We build the technical foundation and authoritative content that turns your website into your firm's most reliable referral source.",
     primaryKeyword: "law firm SEO",
-    description: "Law firm SEO that measures success by cases signed, not rankings reported. JurisPage builds the technical foundation, bar-compliant content, and authoritative backlink profile that turns your website into a predictable source of qualified consultations: through Google organic results, the local map pack, and AI search tools like ChatGPT and Perplexity. No upfront fee. Transparent pricing. Every dollar tied to case inquiries.",
+    description: "Law firm SEO built to sign cases, not report rankings. Technical SEO, bar compliant content, and backlinks. No upfront fee. Transparent pricing.",
     intro: "You have probably been pitched by a dozen SEO agencies this year. They all showed you the same slides: keyword rankings going up and to the right, traffic charts with impressive curves, vague promises about 'dominating your market.'\n\nWhat none of them answered clearly is the only question that matters: how many cases did SEO actually generate, and what did each one cost?\n\nThat is the problem with most law firm SEO: it is sold on vanity metrics and measured on activity reports, not on signed retainers.\n\nSEO for lawyers works when it is built on three things: a technically sound website that Google trusts enough to rank, authoritative backlinks from sources that matter in the legal vertical, and bar-compliant content that matches how real people search when they need an attorney.\n\nSEO for attorneys also now means showing up when someone asks ChatGPT or Perplexity to recommend a lawyer. That channel is growing fast.\n\nWe measure our work by your cost per acquired case, not by how many pages we published or how many keywords moved. If we cannot tie our work to consultations and signed clients, we have not done our job. And if you are considering <a href=\"/blog/ai-content-without-seo-strategy/\">publishing AI content without an SEO strategy</a>, the data shows that approach consistently backfires after Google core updates.",
     features: [
       "We fix the hidden technical errors that are turning away potential clients before they ever see your phone number",
@@ -150,7 +150,7 @@ export const services: ServiceData[] = [
     heading: "Google Ads for Law Firms That Actually Convert",
     tagline: "Pay for clients, not just clicks.",
     primaryKeyword: "Google Ads for lawyers",
-    description: "Google Ads management for law firms that turns clicks into signed cases. Practice-area targeting, negative keyword lists, landing page optimization. No upfront fee. Get a free campaign audit.",
+    description: "Google Ads management for law firms that turns clicks into signed cases. Negative keyword lists and landing page work. No upfront fee. Free campaign audit.",
     intro: "Google Ads for law firms - formerly Google AdWords - is one of the fastest ways to put your practice in front of someone actively searching for a lawyer right now, not weeks from now. Legal is one of the most expensive paid search categories on the planet, with cost-per-click ranging from $50 to over $200 for competitive practice areas like personal injury and criminal defense. That price reflects the value of the cases, but it also means there is very little margin for a sloppy account. Specialized management for law firm PPC (pay-per-click) matters because the keyword targeting, ad copy rules, negative keyword structure, and landing page requirements in legal are different from any other industry. Whether you are running traditional PPC for lawyers, Google Local Service Ads for lawyers, or both, a well-built campaign can produce qualified consultation requests within 24-48 hours of launch; a poorly managed one burns through your budget without generating a single signed client.",
     features: [
       "Campaign setup and full account audit",
@@ -349,12 +349,12 @@ export const services: ServiceData[] = [
     relatedServices: ["law-firm-seo", "local-seo-for-law-firms", "ai-chatbot-for-law-firm-website"],
     relatedPracticeAreas: ["solo-attorney-marketing", "small-law-firm-marketing", "startup-law-firm-marketing"],
     portfolio: [
-      { name: "Karns Law Firm", image: "/images/portfolio/karns-law-firm.png" },
-      { name: "Noland Law Firm", image: "/images/portfolio/noland-law-firm.png" },
-      { name: "Hunt Legal Group", image: "/images/portfolio/hunt-legal-group.png" },
-      { name: "Richard Hauchhauser", image: "/images/portfolio/richard-hauchhauser.png" },
-      { name: "Trey Porter Law", image: "/images/portfolio/trey-porter-law.png" },
-      { name: "Oykhman Criminal Defence Law", image: "/images/portfolio/oykhman-criminal-defence.png", practiceArea: "Criminal Defence" },
+      { name: "Karns Law Firm", image: "/images/portfolio/karns-law-firm.webp" },
+      { name: "Noland Law Firm", image: "/images/portfolio/noland-law-firm.webp" },
+      { name: "Hunt Legal Group", image: "/images/portfolio/hunt-legal-group.webp" },
+      { name: "Richard Hauchhauser", image: "/images/portfolio/richard-hauchhauser.webp" },
+      { name: "Trey Porter Law", image: "/images/portfolio/trey-porter-law.webp" },
+      { name: "Oykhman Criminal Defence Law", image: "/images/portfolio/oykhman-criminal-defence.webp", practiceArea: "Criminal Defence" },
     ],
   },
   {
@@ -662,7 +662,7 @@ export const services: ServiceData[] = [
     heading: "AI Chatbot for Law Firms: Capture Leads at 2am",
     tagline: "Your firm is open 24/7. Your intake shouldn't stop when you do.",
     primaryKeyword: "AI chatbot for law firm website",
-    description: "Capture the 40% of case inquiries that come after hours. AI chatbots for law firm websites that qualify prospects, collect intake info, and notify your team instantly. Custom-trained for your practice area.",
+    description: "AI chatbot for law firm websites that captures the 40% of case inquiries that come after hours, collects intake info, and alerts your team instantly.",
     intro: "40% of legal case inquiries come outside business hours. If your website has no way to respond, you lose those potential clients to whoever answers first. An AI chatbot captures them, qualifies them, and gets their information into your intake system before morning.",
     features: [
       "Custom-trained chatbot for your practice area",

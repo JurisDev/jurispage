@@ -4,6 +4,7 @@ import { getServiceBySlug } from "@/data/services";
 import FAQAccordion from "@/components/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("law-firm-email-marketing")!;
 const O = "#EE6C13";
@@ -11,9 +12,10 @@ const D = "#1a1a2e";
 const G = "#27ae60";
 
 export const metadata: Metadata = {
-  title: "Law Firm Email Marketing: Turn Past Clients Into Your Best Referral Source",
-  description: "Email marketing for law firms that turns dormant contact lists into a steady referral pipeline. Bar-compliant campaigns. $36 return per $1 spent. No upfront fee.",
+  title: "Law Firm Email Marketing That Drives Referrals",
+  description: "Email marketing for law firms that turns dormant contact lists into a referral pipeline. Bar compliant campaigns, $36 return per $1 spent. No upfront fee.",
   alternates: { canonical: "https://jurispage.com/law-firm-email-marketing/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/law-firm-email-marketing/" },
 };
 
 export default function EmailMarketingPage() {

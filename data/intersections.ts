@@ -18,7 +18,7 @@ export const intersections: IntersectionData[] = [
     heading: "Law Firm SEO for Personal Injury Attorneys",
     metaTitle: "SEO for Personal Injury Lawyers",
     metaDescription:
-      "More signed personal injury cases from organic search, not more traffic reports. SEO strategy built for PI firms that need to lower cost per case and stop paying $200 per click.",
+      "Personal injury SEO that brings more signed cases, not traffic reports. Built for PI firms that need to lower cost per case and stop paying $200 per click.",
     whyMatters:
       "You already know personal injury search is expensive. 'Car accident lawyer near me' runs $50–$200 per click on Google Ads. What that price tag actually tells you is what a top-three organic ranking is worth: the same traffic, without the per-click cost. For a PI firm spending $15,000–$30,000 a month on paid search, organic rankings represent the single largest opportunity to reduce your cost per signed case.\n\nThe challenge is that Google applies its highest level of scrutiny to legal content, particularly personal injury, which falls under its Your Money or Your Life guidelines. Your pages need to demonstrate real attorney expertise, not just keyword placement. That means content your attorneys actually reviewed, structured data that reflects your case results, and backlinks from credible legal and local sources. Anything less gets filtered out by the same algorithm updates that have buried firms relying on thin content and paid link schemes.",
     tactics: [
@@ -69,7 +69,7 @@ export const intersections: IntersectionData[] = [
     heading: "Google Ads for Personal Injury Lawyers",
     metaTitle: "Google Ads for Personal Injury Lawyers",
     metaDescription:
-      "Run profitable Google Ads campaigns for your personal injury firm. JurisPage manages bidding, ad copy, and landing pages built to convert injured clients into signed cases.",
+      "Google Ads for personal injury firms. JurisPage manages bidding, ad copy, and landing pages built to turn injured clients into signed cases.",
     whyMatters:
       "Personal injury is among the most expensive advertising categories on Google. Average CPCs range from $50 to $300 depending on market size, and major metros routinely push bids even higher. That cost is a reflection of value: a single signed auto accident case can generate $15,000 to $100,000 or more in attorney fees. When managed correctly, Google Ads for personal injury firms can still deliver a strong return; the problem is that most campaigns are not managed correctly.\n\nThe most common failure pattern is sending paid traffic to a generic homepage or a practice area page that was not designed to convert. Every click costs real money, so every landing page needs a single job: convert an injured visitor into a phone call or form submission. That means a compelling headline, case results, trust indicators, a simple form, and a prominent phone number, above the fold, every time.\n\nJurisPage builds PI Google Ads campaigns from the ground up with conversion as the primary metric. We structure campaigns by case type so you can allocate budget toward your most profitable work, use negative keyword lists to block irrelevant traffic, and continuously test ad copy variations. The goal is not impressions or clicks; it is signed cases at an acceptable cost per acquisition.",
     tactics: [
@@ -120,7 +120,7 @@ export const intersections: IntersectionData[] = [
     heading: "Local SEO for Personal Injury Law Firms",
     metaTitle: "Local SEO for Personal Injury Lawyers",
     metaDescription:
-      "Dominate Google Maps and local search for personal injury queries in your city. JurisPage builds the local SEO presence that puts your firm in front of injured clients nearby.",
+      "Local SEO for personal injury lawyers. Get your firm onto Google Maps and in front of injured clients nearby with a stronger local search presence.",
     whyMatters:
       "When someone is injured and needs a lawyer, their first instinct is to search Google and call one of the first three firms they see. Those three firms are in the Map Pack, the local results block that appears at the top of nearly every 'personal injury lawyer near me' search. Securing a Map Pack position is the single highest-leverage action a PI firm can take in local markets because it generates calls without ongoing ad spend.\n\nLocal SEO for personal injury firms has several distinct components. Your Google Business Profile must be fully built out with the correct primary category, complete service listings, regular posts, and a steady stream of Google reviews with authentic responses. Citations (your firm's name, address, and phone number across directories like Avvo, Justia, FindLaw, and local Chamber sites) must be consistent across the web. And your website needs location-specific pages that signal relevance for the communities you serve.\n\nJurisPage runs local SEO campaigns that address all three pillars simultaneously. We know the citation sources that matter most for legal, the review generation workflows that work without violating bar rules, and the content patterns that win local pack rankings for practice-specific queries.",
     tactics: [
@@ -171,7 +171,7 @@ export const intersections: IntersectionData[] = [
     heading: "Personal Injury Law Firm Website Design",
     metaTitle: "Personal Injury Law Firm Website Design",
     metaDescription:
-      "High-converting websites for personal injury attorneys. JurisPage designs sites built to turn injured visitors into consultation requests: fast, credible, and CRO-optimized.",
+      "Personal injury law firm websites that turn injured visitors into consultation requests. JurisPage builds fast, credible sites designed to convert.",
     whyMatters:
       "A personal injury firm's website is not a brochure; it is a 24/7 intake machine. Every design decision, from the placement of your phone number to the length of your contact form, affects whether an injured visitor converts into a consultation request or clicks back to Google and calls your competitor.\n\nPersonal injury clients make decisions quickly and emotionally. They have just been through a stressful event, they are in pain or worried about bills, and they need to feel confident in their choice of attorney immediately. Your website needs to establish trust in the first five seconds: clear proof of results, a credible attorney bio, genuine client reviews, and a frictionless path to contact. A slow site, an outdated design, or a buried phone number can cost you cases even if your rankings are strong.\n\nJurisPage designs personal injury websites with conversion rate optimization built into every element. We study the specific objections PI clients have ('will this cost me anything upfront?', 'can they handle my specific case type?', 'do they win?') and structure your site to answer them before the visitor has to ask.",
     tactics: [
@@ -275,7 +275,7 @@ export const intersections: IntersectionData[] = [
     heading: "Law Firm SEO for Criminal Defense Attorneys",
     metaTitle: "SEO for Criminal Defense Lawyers",
     metaDescription:
-      "More retained criminal defense clients from organic search, not vanity rankings. SEO built for the urgency of criminal defense, where your ranking at the moment of arrest is what matters.",
+      "Criminal defense SEO that brings retained clients from organic search, not vanity rankings. Built for the urgency of the moment someone is arrested.",
     whyMatters:
       "When someone gets arrested, they search for a lawyer immediately, from a jail waiting room, a courthouse hallway, or their car outside the police station. They're not comparing five firms. They're calling the first credible attorney they find. Your organic ranking at that moment is either producing a retained client or handing one to a competitor.\n\nThe firms that dominate criminal defense search don't rely on a single 'criminal defense lawyer' page. DUI, drug possession, assault, domestic violence, and white collar charges each have distinct keyword clusters with different search volumes and case values. A charge-specific page architecture captures two to three times the traffic of a generic approach, and attracts clients with a specific situation your content already addresses.",
     tactics: [
@@ -326,7 +326,7 @@ export const intersections: IntersectionData[] = [
     heading: "Google Ads for Criminal Defense Lawyers",
     metaTitle: "Google Ads for Criminal Defense Attorneys",
     metaDescription:
-      "Drive immediate calls from defendants and families with Google Ads campaigns built for criminal defense. JurisPage manages bidding, ads, and landing pages that convert urgent searchers.",
+      "Google Ads for criminal defense firms that drive immediate calls from defendants and families. JurisPage manages bidding, ads, and landing pages.",
     whyMatters:
       "When someone is arrested, they or their family members often search for an attorney within hours. Google Ads places your firm at the top of those urgent searches immediately, with no months-long SEO runway required. For criminal defense practices, this immediacy is not just convenient; it is aligned with how clients in this market actually hire attorneys.\n\nThe challenge with Google Ads for criminal defense is managing costs in an exceptionally competitive market. CPCs for terms like 'DUI lawyer' and 'criminal defense attorney' commonly exceed $50–$150 in mid-sized metros. Every click that doesn't convert is money wasted. That makes landing page quality and campaign structure the critical variables separating profitable campaigns from expensive ones.\n\nJurisPage builds criminal defense Google Ads campaigns around fast, credibility-first landing pages and tight campaign structures that minimize wasted spend. We separate charge types into distinct campaign groups, write ad copy that speaks to the specific concern of someone facing each charge, and continuously test messaging to improve conversion rates.",
     tactics: [
@@ -377,7 +377,7 @@ export const intersections: IntersectionData[] = [
     heading: "Local SEO for Criminal Defense Law Firms",
     metaTitle: "Local SEO for Criminal Defense Lawyers",
     metaDescription:
-      "Get your criminal defense firm into the Google Map Pack for urgent local searches. JurisPage builds the local signals that put you in front of defendants and families in your area.",
+      "Local SEO for criminal defense firms. Get into the Google Map Pack for urgent local searches and reach defendants and families in your area.",
     whyMatters:
       "Criminal defense clients hire locally, virtually without exception. When someone needs a defense attorney, they are not considering firms in other states. They are searching '[charge type] lawyer [their city]' and calling whoever appears first. The Google Map Pack dominates these local search results, sitting above organic listings and generating the majority of clicks and calls for local legal queries.\n\nGetting into the Map Pack for criminal defense requires a combination of GBP optimization, review authority, and local content signals that most firms have not systematically built. Firms that appear in the Map Pack for high-intent terms like 'DUI attorney [city]' or 'drug charges lawyer [city]' report that a significant portion of their new cases now originate from local search, without any paid advertising.\n\nJurisPage's local SEO program for criminal defense firms targets Map Pack placement as the primary outcome, building the profile authority, citation consistency, and review velocity that Google's local algorithm uses to select the three firms that earn that coveted position.",
     tactics: [
@@ -428,7 +428,7 @@ export const intersections: IntersectionData[] = [
     heading: "Criminal Defense Law Firm Website Design",
     metaTitle: "Criminal Defense Law Firm Website Design",
     metaDescription:
-      "Websites built to convert defendants and families into consultation requests. JurisPage designs criminal defense firm sites that are fast, credible, and built for urgent conversions.",
+      "Criminal defense law firm websites that turn defendants and families into consultation requests. Fast, credible, and built for urgent conversions.",
     whyMatters:
       "A criminal defense website has one job above all others: convert a scared, urgent visitor into a phone call or form submission as fast as possible. The people who land on your site are often in crisis. They or someone they love has been arrested or charged. They need to feel immediately that they found the right attorney, someone experienced, accessible, and ready to help them now.\n\nDesign choices that might work fine for estate planning or real estate firms fail criminal defense clients. Buried phone numbers, complex navigation, and dense content walls create friction that sends urgent prospects to the next result on Google. A criminal defense site needs a prominent phone number visible immediately, a clear statement of who you help and what you do, credibility signals that load fast, and a contact path that takes under 60 seconds to complete.\n\nJurisPage designs criminal defense websites with this urgency psychology built in. We map the emotional state of your ideal visitor and design the site experience to match: acknowledging the stress of the situation, building confidence quickly, and removing every obstacle between a visitor's first click and their first call to your firm.",
     tactics: [
@@ -479,7 +479,7 @@ export const intersections: IntersectionData[] = [
     heading: "Content Writing for Criminal Defense Law Firms",
     metaTitle: "Content Writing for Criminal Defense Lawyers",
     metaDescription:
-      "SEO-optimized criminal defense content that ranks and converts. JurisPage produces charge-specific pages, defense strategy guides, and FAQ articles that put your firm in front of urgent searchers.",
+      "Criminal defense SEO content that ranks and converts. Charge specific pages, defense strategy guides, and FAQ articles that reach urgent searchers.",
     whyMatters:
       "Criminal defense is a practice area where content depth directly correlates with search visibility. Google's algorithm rewards sites that comprehensively cover a topic area, and criminal defense has an extensive universe of charge types, defense strategies, court procedures, and client questions, each representing a keyword cluster that generates real searches from real potential clients.\n\nMost criminal defense sites underinvest in content. They have a generic 'criminal defense' page, maybe a few charge-specific pages, and little else. This creates an enormous opportunity for firms willing to build a comprehensive content library. A site with detailed, attorney-reviewed pages covering every charge type you handle, combined with informational articles answering the questions defendants and their families search, can dominate a local market's organic search results.\n\nJurisPage produces criminal defense content that is both SEO-optimized and genuinely useful to people facing serious legal situations. Our legal content writers understand criminal procedure, can articulate defense strategies clearly without violating privilege or making inappropriate outcome promises, and know how to write content that ranks in Google while converting visitors into consultation requests.",
     tactics: [
@@ -583,7 +583,7 @@ export const intersections: IntersectionData[] = [
     heading: "Google Ads for Family Law Firms",
     metaTitle: "Google Ads for Family Law Attorneys",
     metaDescription:
-      "Drive consultation requests from divorcing spouses, custody disputes, and other family law clients with Google Ads campaigns built to convert. JurisPage manages your campaigns end-to-end.",
+      "Google Ads for family law firms that drive consultation requests from divorcing spouses and custody clients. JurisPage manages your campaigns end to end.",
     whyMatters:
       "Family law clients often make their hiring decision quickly, under emotional duress, and without comparison shopping in the traditional sense. When a separation becomes a divorce filing, or when a custody dispute becomes urgent, Google Ads can place your firm directly in front of people who need representation immediately. Unlike SEO, which takes months to build, a well-structured Google Ads campaign can start generating consultation requests within days of launch.\n\nThe challenge in family law advertising is balancing urgency with empathy. Ad copy that is too aggressive ('Fight for your rights!' 'Win your custody battle!') can actually alienate the clients who are most valuable: reasonable, reasonable people facing difficult situations who want a competent attorney, not a combative one. The best family law Google Ads strike a tone of compassionate competence.\n\nJurisPage designs family law Google Ads campaigns that speak appropriately to where clients are emotionally while driving them efficiently to a consultation request. We test messaging across practice sub-types, optimize landing pages for each specific family law scenario, and track results to cost per consultation and, where possible, cost per retained client.",
     tactics: [
@@ -634,7 +634,7 @@ export const intersections: IntersectionData[] = [
     heading: "Local SEO for Family Law Firms",
     metaTitle: "Local SEO for Family Law Attorneys",
     metaDescription:
-      "Get your family law firm into the Google Map Pack for divorce, custody, and family law searches in your area. JurisPage builds local SEO presence that generates consultation requests.",
+      "Local SEO for family law firms. Get into the Google Map Pack for divorce and custody searches in your area and turn local searches into consultations.",
     whyMatters:
       "Family law is inherently local. Every client hires an attorney licensed in their state who knows their local courthouse, judges, and procedures. This locality creates both a constraint and an opportunity: the right local SEO strategy can make your firm the obvious choice for family law clients in your geographic market.\n\nThe Google Map Pack is the primary battleground for local family law search. When someone in your city searches 'divorce attorney near me' or 'child custody lawyer [city],' the Map Pack results appear at the top of the page and generate the majority of the phone calls. Firms that consistently appear in the Map Pack for family law queries can build a steady consultation pipeline from organic local search alone.\n\nJurisPage's local SEO program for family law firms builds the three pillars of Map Pack ranking: a fully optimized Google Business Profile, consistent and comprehensive local citations, and a growing review presence that signals trust and activity to Google's local algorithm. We also build location-specific website content that reinforces geographic relevance for the communities you serve.",
     tactics: [
@@ -685,7 +685,7 @@ export const intersections: IntersectionData[] = [
     heading: "Family Law Firm Website Design",
     metaTitle: "Family Law Firm Website Design",
     metaDescription:
-      "Websites for family law attorneys that convert consultation requests. JurisPage designs family law firm sites that balance warmth and professionalism to connect with clients in difficult situations.",
+      "Law firm websites for family law attorneys that convert consultation requests, balancing warmth and professionalism for clients in difficult situations.",
     whyMatters:
       "A family law firm's website must accomplish something uniquely difficult: it must feel approachable and human while also projecting the legal competence that clients need to trust you with one of the most important legal matters of their life. Too cold and institutional, you lose the client who needs to feel heard. Too casual, you lose the one who needs to be sure you can win.\n\nThe design solution is not a single tone; it is a structured trust journey. Visitors arrive in different emotional states and with different primary questions. Some need to know you are experienced and capable first. Others need to know you are compassionate and accessible first. Great family law web design anticipates both and serves both in the first screen.\n\nJurisPage designs family law websites that are conversion-optimized without sacrificing warmth. We use photography, typography, and content architecture that communicate the professional-and-human balance that family law clients respond to, and we build the intake path to minimize friction at every step from first visit to consultation scheduled.",
     tactics: [
@@ -736,7 +736,7 @@ export const intersections: IntersectionData[] = [
     heading: "Content Writing for Family Law Firms",
     metaTitle: "Content Writing for Family Law Attorneys",
     metaDescription:
-      "SEO content for family law firms that ranks and builds trust. JurisPage produces divorce guides, custody articles, and practice area pages that attract clients and earn Google visibility.",
+      "SEO content for family law firms that ranks and builds trust. Divorce guides, custody articles, and practice pages that attract clients and earn visibility.",
     whyMatters:
       "Family law is one of the most content-rich practice areas in the legal field. The questions that divorcing spouses, parents in custody disputes, and individuals navigating family court searches are virtually endless: how assets are divided, how custody schedules work, what determines alimony, how long a divorce takes, whether an order can be modified. Each of these questions represents a keyword that real clients are searching, and content that answers them comprehensively can earn consistent organic traffic for years.\n\nBeyond search visibility, family law content serves a critical trust-building function. A client considering whether to retain your firm will often read several of your articles before making a decision. Content that is accurate, empathetic, and genuinely informative signals that your firm understands their situation and can be trusted to handle it. The quality of your content is, in a real sense, a preview of the quality of your representation.\n\nJurisPage produces family law content that serves both purposes: earning Google rankings for the queries your ideal clients search, and building the trust that converts a reader into a consultation request. Our writers specialize in family law topics and understand how to explain complex legal processes in terms that clients, not lawyers, can understand and act on.",
     tactics: [
@@ -840,7 +840,7 @@ export const intersections: IntersectionData[] = [
     heading: "Google Ads for DUI Lawyers",
     metaTitle: "Google Ads for DUI Attorneys",
     metaDescription:
-      "Capture DUI defendants searching for help in your market with Google Ads built for urgency and conversion. JurisPage manages DUI ad campaigns that deliver qualified consultations.",
+      "Google Ads for DUI lawyers built for urgency. JurisPage runs DUI campaigns that capture defendants searching for help and deliver qualified consultations.",
     whyMatters:
       "No practice area in law has a tighter urgency window than DUI. A defendant who was arrested last night is searching for an attorney this morning. The DMV hearing deadline (typically 7 to 10 days after a DUI arrest in most states) creates a hard deadline that compresses the hiring decision dramatically. Google Ads can capture these defendants at peak urgency in a way that no other marketing channel can match.\n\nThe DUI Google Ads market is competitive, but it is also highly quantifiable. You can calculate precisely how many DUI charges occur in your county each month, estimate what fraction search for an attorney online, and project what percentage of those searches you can capture at a given budget level. DUI is one of the practice areas where Google Ads ROI can be tracked most directly from ad spend to signed case to attorney fees.\n\nJurisPage builds DUI Google Ads campaigns engineered for the urgency and decision speed of this practice area. We use bid adjustments for the peak search hours following typical DUI arrest times, write ad copy that speaks directly to the defendant's immediate concerns, and design landing pages that convert the urgent searcher into a consultation call within minutes.",
     tactics: [
@@ -891,7 +891,7 @@ export const intersections: IntersectionData[] = [
     heading: "Local SEO for DUI Law Firms",
     metaTitle: "Local SEO for DUI Lawyers",
     metaDescription:
-      "Get your DUI firm into the Google Map Pack for local DUI searches. JurisPage builds the local signals that put your firm in front of defendants in your county and city.",
+      "Local SEO for DUI firms. Get into the Google Map Pack for local DUI searches and put your firm in front of defendants in your county and city.",
     whyMatters:
       "DUI defense is strictly local in almost every case. Defendants hire attorneys licensed in their state who know the judges, prosecutors, and procedures in the specific court where their case will be heard. Local search is not just one channel for DUI attorneys; it is the dominant channel. And within local search, the Google Map Pack is the position that generates the most calls.\n\nSeminar participants, referral networks, and Yellow Pages ads all delivered DUI clients in previous eras. Today, the Map Pack is the equivalent of that prime visibility, except it is available to any firm willing to build the local search presence that earns a position there. The three firms in the Map Pack for 'DUI lawyer [city]' or 'DUI attorney near me' in any market receive a disproportionate share of the consultation requests, and firms outside the Pack compete for the remainder.\n\nJurisPage builds local SEO programs specifically for DUI attorneys that target Map Pack positioning as the primary outcome. We understand the local signals (GBP optimization, citation coverage, review velocity, and local content) that Google's algorithm weights most heavily for DUI practice area searches.",
     tactics: [
@@ -942,7 +942,7 @@ export const intersections: IntersectionData[] = [
     heading: "DUI Law Firm Website Design",
     metaTitle: "DUI Law Firm Website Design",
     metaDescription:
-      "High-converting websites for DUI attorneys. JurisPage designs DUI firm sites built for urgent conversions: fast, credible, and structured for defendants who need help now.",
+      "DUI law firm websites built for urgent conversions. JurisPage designs fast, credible sites for defendants who need help now and want a consultation.",
     whyMatters:
       "A DUI attorney's website has one primary job: convert a defendant who is under stress and time pressure into a scheduled consultation before they call someone else. Every second a visitor spends trying to find your phone number, read through dense text, or navigate a confusing menu is a second they might click back to Google. DUI website design is fundamentally conversion design under urgency conditions.\n\nDefendants visiting DUI attorney websites have predictable concerns: Are you experienced with DUI specifically? Have you handled cases at my local court? What does representation cost and how does payment work? Can I reach you now, today? A well-designed DUI site anticipates these questions and answers them immediately, in the first visible section of every page.\n\nJurisPage designs DUI attorney websites with conversion as the primary design constraint. We structure every page element (hero section, credibility indicators, contact form, page load speed, mobile layout) to serve the urgent, decision-making visitor who arrived from a Google search 30 seconds ago and needs to feel confident enough to call.",
     tactics: [
@@ -993,7 +993,7 @@ export const intersections: IntersectionData[] = [
     heading: "Content Writing for DUI Law Firms",
     metaTitle: "Content Writing for DUI Attorneys",
     metaDescription:
-      "SEO-optimized DUI content that ranks and converts. JurisPage writes charge-specific pages, DMV guides, state law articles, and FAQ content that attracts DUI defendants searching for help.",
+      "DUI SEO content that ranks and converts. Charge specific pages, DMV guides, state law articles, and FAQs for DUI defendants searching for help.",
     whyMatters:
       "DUI is a content-rich legal niche with a vast landscape of search queries: charge variations, state-specific laws, BAC limits, breathalyzer accuracy questions, field sobriety test challenges, DMV hearing procedures, ignition interlock requirements, expungement eligibility, and more. Each of these represents real searches from real defendants and their families, and a content library that covers them comprehensively can capture significant organic traffic with high commercial intent.\n\nDUI content must navigate a specific technical challenge: it needs to be accurate enough to establish expertise but broad enough to serve the range of defendants who read it, without providing individualized legal advice that creates professional responsibility concerns. Our DUI content writers understand this balance. They produce content that demonstrates deep knowledge of DUI law and procedure, speaks directly to defendants' specific concerns, and consistently routes readers toward scheduling a consultation.\n\nJurisPage builds DUI content libraries that establish your firm as the most knowledgeable DUI resource in your market. When a defendant spends 20 minutes reading your articles before calling you, they arrive at the consultation already convinced of your expertise, and conversion from that consultation to a retained client is substantially higher.",
     tactics: [
@@ -1046,7 +1046,7 @@ export const intersections: IntersectionData[] = [
     heading: "Law Firm SEO for Workers' Compensation Attorneys",
     metaTitle: "SEO for Workers' Comp Lawyers",
     metaDescription:
-      "More retained workers' comp clients from organic search, especially claim denials and workplace injuries where urgency drives fast retention. SEO built for workers' comp intake.",
+      "Workers' comp SEO that brings retained clients from organic search, especially claim denials and workplace injuries where urgency drives fast retention.",
     whyMatters:
       "An injured worker who can't work, who's fighting an insurance carrier, or who just had a claim denied is searching for an attorney right now. That urgency is your intake engine. Organic search is the primary driver of new consultations for most workers' comp practices, and the firms that rank for the right queries at the right moment sign cases their competitors never see.\n\nThe real opportunity isn't just the broad 'workers compensation attorney [city]' keyword. It's the specific searches ('denied workers comp claim attorney,' 'workers comp for construction injury,' 'can I sue my employer for workplace injury') where the searcher has a defined problem and is ready to act. These queries convert at two to three times the rate of generic practice-area terms, and most workers' comp sites don't have dedicated content for them.",
     tactics: [
@@ -1097,7 +1097,7 @@ export const intersections: IntersectionData[] = [
     heading: "Google Ads for Workers' Compensation Lawyers",
     metaTitle: "Google Ads for Workers' Comp Attorneys",
     metaDescription:
-      "Drive injured workers to your practice with Google Ads built for workers' comp. JurisPage manages campaigns that convert denied claims, workplace injuries, and comp disputes into signed cases.",
+      "Google Ads for workers' comp firms that turn denied claims, workplace injuries, and comp disputes into signed cases. JurisPage manages your campaigns.",
     whyMatters:
       "Injured workers searching for legal help online have high intent and often make hiring decisions quickly, particularly when they are dealing with a denied claim, an insurance carrier dispute, or a workplace injury that is preventing them from working. Google Ads places your workers' comp practice in front of these high-intent searchers at the exact moment they are searching, with no months-long wait for SEO to produce results.\n\nWorkers' comp is a practice area where the economics of Google Ads can be particularly strong. Many workers' comp cases are taken on contingency, with attorney fees coming from the settlement or award. This means client acquisition cost can be evaluated against a fee that, on a successful complex case, can be substantial. When the math works (and with a well-managed campaign, it typically does), Google Ads is one of the most efficient growth levers available to workers' comp practices.\n\nJurisPage designs workers' comp Google Ads campaigns that target the highest-urgency and highest-value segments: denied claims, serious injuries, and employer retaliation cases. We build the ad copy, landing pages, and bidding structure that convert these searchers into consultation requests at the lowest achievable cost per lead.",
     tactics: [
@@ -1148,7 +1148,7 @@ export const intersections: IntersectionData[] = [
     heading: "Local SEO for Workers' Compensation Law Firms",
     metaTitle: "Local SEO for Workers' Comp Attorneys",
     metaDescription:
-      "Get your workers' comp firm into the Google Map Pack for local injury and compensation searches. JurisPage builds the local presence that turns injured workers into consultations.",
+      "Local SEO for workers' comp firms. Get into the Google Map Pack for local injury and compensation searches and turn injured workers into consultations.",
     whyMatters:
       "Workers' compensation clients, like most legal clients, hire locally. They want an attorney who knows their state's workers' comp system, who has appeared before the local workers' comp appeals board, and who is accessible for in-person meetings when their physical condition allows. Local search, and specifically the Google Map Pack, is the primary discovery channel for workers' comp attorneys in most markets.\n\nThe Map Pack position for 'workers comp lawyer near me' or 'workers compensation attorney [city]' generates a majority of the calls in most markets. Firms that appear in the Pack report significant consultation volume from local search alone, without paid advertising. The challenge is earning and maintaining that position in the face of established local competition.\n\nJurisPage's local SEO program for workers' comp firms builds Map Pack positioning systematically. We optimize Google Business Profiles, build citation coverage across workers' comp relevant directories, develop a review generation workflow that produces consistent new reviews, and create local content that strengthens geographic relevance signals for the communities where your clients work.",
     tactics: [
@@ -1199,7 +1199,7 @@ export const intersections: IntersectionData[] = [
     heading: "Workers' Compensation Law Firm Website Design",
     metaTitle: "Workers' Comp Law Firm Website Design",
     metaDescription:
-      "Websites for workers' comp attorneys that convert injured workers into consultations. JurisPage designs sites that build trust and generate contact from clients dealing with workplace injuries and denied claims.",
+      "Law firm websites for workers' comp attorneys that turn injured workers into consultations, built to earn trust after workplace injuries and denied claims.",
     whyMatters:
       "A workers' compensation attorney's website must accomplish something subtle but important: it must make an injured, financially stressed worker feel that they are being taken seriously and that help is accessible and affordable. Workers' comp clients often delay seeking legal help because they assume it is expensive and complicated. A website that fails to immediately address these barriers loses a significant portion of its visitors to inaction, not to competitors, but to non-conversion.\n\nThe most common workers' comp website failure is leading with legal credentials and firm history when the visitor's first need is to understand that legal help is available on contingency, that the consultation is free, and that you handle cases like theirs. Trust signals matter, but in this practice area, accessibility and approachability matter as much as authority.\n\nJurisPage designs workers' comp websites that balance these demands. We lead with the client's situation and concerns, address the cost objection prominently and early, establish attorney credibility in a context that connects to the client's specific experience, and build a contact path that is low-friction and reassuring at every step.",
     tactics: [
@@ -1250,7 +1250,7 @@ export const intersections: IntersectionData[] = [
     heading: "Content Writing for Workers' Compensation Law Firms",
     metaTitle: "Content Writing for Workers' Comp Attorneys",
     metaDescription:
-      "SEO content for workers' comp attorneys that ranks and converts. JurisPage writes injury-specific guides, claim process articles, and practice pages that attract injured workers searching for help.",
+      "SEO content for workers' comp attorneys that ranks and converts. Injury guides, claim process articles, and practice pages for injured workers.",
     whyMatters:
       "Workers' compensation is a practice area with an unusually deep content opportunity. The workers' comp system is complex, involving employers, insurance carriers, state agencies, administrative hearings, and appeals, and injured workers generate a vast number of specific searches as they navigate it. 'What are my rights after a workplace injury?' 'Can my employer fire me for filing a workers comp claim?' 'How long does workers comp last?' 'What if my claim is denied?' Each of these questions represents a real search from a real potential client.\n\nMost workers' comp websites underserve this content opportunity. They have a practice page and perhaps a few blog posts, but nothing approaching the comprehensive content library that would establish them as the definitive local resource on workers' comp law. This gap is an opportunity for firms willing to invest in content. The sites that comprehensively answer workers' comp questions earn rankings and trust that convert readers into retained clients.\n\nJurisPage produces workers' comp content that is accurate, accessible, and optimized for the specific searches that injured workers perform at each stage of the claims process. We write for workers, not lawyers, using plain language that makes complex procedures understandable and that positions your firm as the trusted guide through a confusing system.",
     tactics: [

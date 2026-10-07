@@ -5,6 +5,8 @@ import matter from "gray-matter";
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Shorter <title> override; the H1 still uses `title`. */
+  seoTitle?: string;
   description: string;
   datePublished: string;
   dateModified?: string;
@@ -27,6 +29,7 @@ export function getAllPosts(): BlogPost[] {
       return {
         slug,
         title: data.title || slug,
+        seoTitle: data.seoTitle,
         description: data.description || "",
         datePublished: data.datePublished || "2026-01-01",
         dateModified: data.dateModified,
@@ -47,6 +50,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
   return {
     slug,
     title: data.title || slug,
+    seoTitle: data.seoTitle,
     description: data.description || "",
     datePublished: data.datePublished || "2026-01-01",
     dateModified: data.dateModified,

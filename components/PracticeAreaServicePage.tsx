@@ -10,6 +10,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import HeroForm from "@/components/HeroForm";
 import PortfolioShowcase from "@/components/PortfolioShowcase";
+import { ogBase } from "@/lib/og";
 
 interface PracticeAreaServicePageProps {
   intersection: IntersectionData;
@@ -26,7 +27,7 @@ export function generateIntersectionMetadata(
     alternates: {
       canonical: `https://jurispage.com/${intersection.practiceAreaSlug}/${intersection.serviceSlug}/`,
     },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: intersection.metaTitle,
       description: intersection.metaDescription,
       url: `https://jurispage.com/${intersection.practiceAreaSlug}/${intersection.serviceSlug}/`,

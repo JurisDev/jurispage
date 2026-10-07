@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import SchemaOrg from "@/components/SchemaOrg";
 import MarketGapForm from "@/components/MarketGapForm";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "Free Market Gap Report for Law Firms | JurisPage",
+  title: "Free Market Gap Report for Law Firms",
   description:
     "See exactly where your firm is losing cases in your market. Get an instant market gap snapshot for your practice area and city. Free. No obligation.",
   alternates: { canonical: "https://jurispage.com/growth-report/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/growth-report/" },
 };
 
 const schema = {

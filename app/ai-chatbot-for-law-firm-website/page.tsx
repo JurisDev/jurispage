@@ -4,6 +4,7 @@ import { getServiceBySlug } from "@/data/services";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("ai-chatbot-for-law-firm-website")!;
 
@@ -12,7 +13,7 @@ export function generateMetadata(): Metadata {
     title: service.title,
     description: service.description,
     alternates: { canonical: "https://jurispage.com/ai-chatbot-for-law-firm-website/" },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: service.title,
       description: service.description,
       url: "https://jurispage.com/ai-chatbot-for-law-firm-website/",
@@ -28,13 +29,7 @@ const softwareSchema = {
   operatingSystem: "Web (WordPress plugin)",
   description:
     "AI-powered WordPress plugin that replaces live chat on law firm websites. Answers visitor questions instantly, pre-qualifies leads, and captures intake information 24/7.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    description: "Flat monthly fee included with JurisPage service plans",
-  },
-  provider: {
+  publisher: {
     "@type": "Organization",
     name: "JurisPage",
     url: "https://jurispage.com",

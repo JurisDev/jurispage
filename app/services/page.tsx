@@ -3,11 +3,13 @@ import Link from "next/link";
 import { services } from "@/data/services";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Law Firm Marketing Services",
   description: "SEO, Google Ads, web design, content writing, and more. Explore JurisPage's full suite of digital marketing services built exclusively for law firms.",
   alternates: { canonical: "https://jurispage.com/services/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/services/" },
 };
 
 export default function ServicesPage() {

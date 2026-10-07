@@ -5,6 +5,7 @@ import Image from "next/image";
 import { caseStudies } from "@/data/caseStudies";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 export function generateStaticParams() {
   return caseStudies.map((cs) => ({ slug: cs.slug }));
@@ -15,9 +16,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const cs = caseStudies.find((c) => c.slug === slug);
   if (!cs) return {};
   return {
-    title: `${cs.client} Case Study: ${cs.heroStat}`,
+    title: `${cs.client} Case Study: ${cs.metaStat ?? cs.heroStat}`,
     description: `How JurisPage helped ${cs.client} achieve ${cs.heroStat} through ${cs.type === "seo" ? "law firm SEO" : cs.type === "ppc" ? "Google Ads for lawyers" : "SEO and Google Ads"}.`,
     alternates: { canonical: `https://jurispage.com/case-studies/${cs.slug}/` },
+    openGraph: { ...ogBase, url: `https://jurispage.com/case-studies/${cs.slug}/` },
   };
 }
 

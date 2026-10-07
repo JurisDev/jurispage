@@ -4,12 +4,13 @@ import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import { renderLinkedText } from "@/lib/renderLinkedText";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Best Law Firm SEO Companies in 2026 (Ranked & Reviewed)",
   description: "We ranked and reviewed the 8 best law firm SEO companies for 2026. Transparent pricing, honest pros/cons, and a clear breakdown of who each agency is right for.",
   alternates: { canonical: "https://jurispage.com/best-law-firm-seo-companies/" },
-  openGraph: {
+  openGraph: { ...ogBase,
     title: "Best Law Firm SEO Companies in 2026 (Ranked & Reviewed)",
     description: "Honest rankings of the top 8 law firm SEO agencies for 2026 - with pros, cons, pricing, and who each is best for.",
     url: "https://jurispage.com/best-law-firm-seo-companies/",

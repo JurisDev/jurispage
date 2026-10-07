@@ -3,12 +3,14 @@ import { Suspense } from "react";
 import SchemaOrg from "@/components/SchemaOrg";
 import GrowthPathForm from "@/components/GrowthPathForm";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "Growth Path | Free Law Firm Growth Diagnosis | JurisPage",
+  title: "Growth Path | Free Law Firm Growth Diagnosis",
   description:
     "See what your market looks like, where your firm may be losing ground, and what to fix first. Free, personalized, built for law firms only.",
   alternates: { canonical: "https://jurispage.com/growth-path/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/growth-path/" },
 };
 
 const whatYouGet = [

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "Contact JurisPage | Ready for a Change?",
+  title: "Contact Us | Ready for a Change?",
   description: "Ready for a change? Let's explore your options. Tell us about your firm and book a free, no-obligation consultation with JurisPage.",
   alternates: { canonical: "https://jurispage.com/contact/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/contact/" },
 };
 
 const contactSchema = {
