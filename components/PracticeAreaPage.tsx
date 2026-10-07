@@ -16,6 +16,7 @@ import CompetitorGapForm from "@/components/CompetitorGapForm";
 import PpcRoiCalculator from "@/components/PpcRoiCalculator";
 import { caseStudies } from "@/data/caseStudies";
 import { renderLinkedText, stripMarkdownLinks } from "@/lib/renderLinkedText";
+import { ogBase } from "@/lib/og";
 
 function UniqueSection({ section }: { section: NonNullable<PracticeAreaData["uniqueSections"]>[number] }) {
   return (
@@ -323,7 +324,7 @@ export function generatePracticeAreaMetadata(pa: PracticeAreaData): Metadata {
     title: pa.title,
     description: pa.description,
     alternates: { canonical: `https://jurispage.com/${pa.slug}/` },
-    openGraph: {
+    openGraph: { ...ogBase,
       title: pa.title,
       description: pa.description,
       url: `https://jurispage.com/${pa.slug}/`,

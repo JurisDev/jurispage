@@ -12,18 +12,19 @@ import CaseStudyPreview from "@/components/CaseStudyPreview";
 import HeroForm from "@/components/HeroForm";
 import WebsiteGrader from "@/components/WebsiteGrader";
 import { caseStudies } from "@/data/caseStudies";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("law-firm-websites")!;
 const O = "#EE6C13";
 const D = "#1a1a2e";
 
 export const metadata: Metadata = {
-  title: "Law Firm Website Design That Wins Cases, Not Just Compliments",
-  description: "Custom StoryBrand-driven law firm websites that rank in Google, convert visitors into consultations, and make your phone ring. Live in 45 days. No upfront fee. You own everything.",
+  title: "Law Firm Website Design That Wins Cases",
+  description: "Law firm websites that rank in Google and turn visitors into consultations. StoryBrand design, live in 45 days, no upfront fee. You own everything.",
   alternates: { canonical: "https://jurispage.com/law-firm-websites/" },
-  openGraph: {
-    title: "Law Firm Website Design That Wins Cases, Not Just Compliments",
-    description: "Custom StoryBrand-driven law firm websites that rank in Google, convert visitors into consultations, and make your phone ring. Live in 45 days. No upfront fee. You own everything.",
+  openGraph: { ...ogBase,
+    title: "Law Firm Website Design That Wins Cases",
+    description: "Law firm websites that rank in Google and turn visitors into consultations. StoryBrand design, live in 45 days, no upfront fee. You own everything.",
     url: "https://jurispage.com/law-firm-websites/",
   },
 };

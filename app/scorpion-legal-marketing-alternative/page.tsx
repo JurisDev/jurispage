@@ -3,11 +3,13 @@ import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "Scorpion Legal Marketing Alternative - JurisPage",
+  title: "Scorpion Legal Marketing Alternative",
   description: "Looking for a Scorpion alternative for your law firm? JurisPage offers transparent pricing, no upfront setup fee, and you own your website. See how we compare.",
   alternates: { canonical: "https://jurispage.com/scorpion-legal-marketing-alternative/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/scorpion-legal-marketing-alternative/" },
 };
 
 const faqs = [

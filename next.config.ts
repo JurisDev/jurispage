@@ -999,6 +999,25 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // ── Legacy WP posts with live backlinks (Ahrefs broken backlinks, 2026-10-07) ──
+      // Each goes to the closest topical match. When jurispage.com has nothing
+      // close, the target is the matching Juris Digital guide.
+      { source: "/2016/internet-marketing/new-change-to-adwords-can-mean-higher-click-through-rates", destination: "/google-ads-for-law-firms/", permanent: true },
+      { source: "/2016/website-development/why-do-so-many-law-firm-websites-look-the-same", destination: "/law-firm-websites/", permanent: true },
+      { source: "/2019/website-development/modern-law-firm-website-design-in-2019-7-things-your-website-needs", destination: "/law-firm-websites/", permanent: true },
+      { source: "/services/attorney-website-design-for-new-practices", destination: "/law-firm-websites/", permanent: true },
+      { source: "/services/local-search-for-attorneys", destination: "/local-seo-for-law-firms/", permanent: true },
+      { source: "/2017/internet-marketing/email-marketing-for-lawyers-a-legal-marketing-guide", destination: "/law-firm-email-marketing/", permanent: true },
+      { source: "/2019/email-marketing/email-marketing-for-lawyers-101-email-workflow-tips", destination: "/law-firm-email-marketing/", permanent: true },
+      { source: "/2017/internet-marketing/write-a-killer-law-firm-marketing-plan", destination: "https://jurisdigital.com/guides/law-firm-marketing-plan/", permanent: true },
+      { source: "/anatomy-of-a-perfect-law-firm-landing-page", destination: "https://jurisdigital.com/guides/landing-page-ppc-for-attorneys/", permanent: true },
+      { source: "/facebook-advertising-lawyers", destination: "https://jurisdigital.com/guides/facebook-for-lawyers/", permanent: true },
+      { source: "/2016/seo/blogging-and-seo-for-lawyers-video", destination: "https://jurisdigital.com/guides/blogging-for-attorneys/", permanent: true },
+      { source: "/2019/law-firm-internet-marketing/law-firm-marketing-2019", destination: "https://jurisdigital.com/guides/marketing-trends-report-law-firms/", permanent: true },
+      // Portfolio screenshots moved from PNG to WebP (2026-10-07)
+      { source: "/images/portfolio/:name.png", destination: "/images/portfolio/:name.webp", permanent: true },
+      { source: "/lead-generation-for-lawyers", destination: "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/", permanent: true },
+
       // ── Suburb → parent metro redirects (auto-generated) ──
       // These suburb pages were linked from metro pages but never created.
       // Redirect each suburb to its parent metro's equivalent service page.

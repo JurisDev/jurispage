@@ -7,6 +7,7 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -18,7 +19,7 @@ function getNewsBySlug(slug: string) {
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
   return { slug, ...data, content } as {
-    slug: string; title: string; description: string; datePublished: string;
+    slug: string; title: string; seoTitle?: string; description: string; datePublished: string;
     dateModified?: string; content: string;
   };
 }
@@ -38,9 +39,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getNewsBySlug(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.description,
     alternates: { canonical: `https://jurispage.com/news/${slug}/` },
+    openGraph: { ...ogBase, url: `https://jurispage.com/news/${slug}/` },
   };
 }
 

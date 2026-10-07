@@ -10,6 +10,7 @@ import LocalSeoScorecard from "@/components/LocalSeoScorecard";
 import ReviewRibbon from "@/components/ReviewRibbon";
 import CaseStudyPreview from "@/components/CaseStudyPreview";
 import { caseStudies } from "@/data/caseStudies";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("local-seo-for-law-firms")!;
 const O = "#EE6C13";
@@ -20,8 +21,9 @@ const R = "#c0392b";
 
 export const metadata: Metadata = {
   title: "Local SEO for Law Firms: Dominate the Map Pack in 2026",
-  description: "Get your law firm into the Google map pack and AI Local Pack. GBP optimization, review generation, citation building, and proximity strategies. 44% of local clicks go to the map pack.",
+  description: "Local SEO for law firms: get into the Google map pack with GBP optimization, review generation, and citation building. 44% of local clicks go to the map pack.",
   alternates: { canonical: "https://jurispage.com/local-seo-for-law-firms/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/local-seo-for-law-firms/" },
 };
 
 export default function LocalSeoPage() {

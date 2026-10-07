@@ -8,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import BingBidEstimator from "@/components/BingBidEstimator";
 import CaseStudyPreview from "@/components/CaseStudyPreview";
 import { caseStudies } from "@/data/caseStudies";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("bing-ads-for-lawyers")!;
 const O = "#EE6C13";
@@ -16,9 +17,10 @@ const G = "#27ae60";
 const B = "#0f4c81";
 
 export const metadata: Metadata = {
-  title: "Bing Ads for Lawyers: Capture High-Asset Cases at 40% Lower Cost",
-  description: "Microsoft Advertising for law firms. 30-50% lower CPCs than Google, LinkedIn audience targeting, and Copilot AI integration. No upfront fee. You own your account.",
+  title: "Bing Ads for Lawyers: Win Cases at 40% Lower Cost",
+  description: "Bing Ads for lawyers: Microsoft Advertising with 30% to 50% lower CPCs than Google, LinkedIn targeting, and Copilot. No upfront fee. You own your account.",
   alternates: { canonical: "https://jurispage.com/bing-ads-for-lawyers/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/bing-ads-for-lawyers/" },
 };
 
 export default function BingAdsPage() {

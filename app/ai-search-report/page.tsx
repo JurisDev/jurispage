@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import AiSearchReportForm from "@/components/AiSearchReportForm";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title:
-    "Is AI Search Recommending Your Law Firm? Free AI Visibility Check | JurisPage",
+    "Free AI Search Visibility Check for Law Firms",
   description:
-    "Find out if Google AI Overviews and AI-powered search engines are citing your law firm. Enter your info, pick a practice area, and see which firms AI is recommending, instantly and free.",
+    "Find out if Google AI Overviews and AI search engines cite your law firm. Pick a practice area and see which firms AI recommends, instantly and free.",
   alternates: { canonical: "https://jurispage.com/ai-search-report/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/ai-search-report/" },
 };
 
 const steps = [

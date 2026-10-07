@@ -3,13 +3,14 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
 import SecretShopAudit from "@/components/SecretShopAudit";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Law Firm Intake Audit: The Secret Shop",
   description:
     "Find out how much revenue your law firm is losing from slow intake. The Secret Shop calculator shows the real cost of being second to respond.",
   alternates: { canonical: "https://jurispage.com/secret-shop/" },
-  openGraph: {
+  openGraph: { ...ogBase,
     title: "Law Firm Intake Audit: The Secret Shop",
     description:
       "Find out how much revenue your law firm is losing from slow intake. The Secret Shop calculator shows the real cost of being second to respond.",

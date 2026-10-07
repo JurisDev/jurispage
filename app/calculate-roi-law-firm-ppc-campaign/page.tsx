@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import PpcRoiCalculator from "@/components/PpcRoiCalculator";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "PPC ROI Calculator for Law Firms | JurisPage",
+  title: "PPC ROI Calculator for Law Firms",
   description:
-    "Estimate your return on investment from a law firm PPC campaign. Enter your practice area, budget, and average case value to see projected leads, cases, and revenue.",
+    "Estimate your law firm PPC return on investment. Enter your practice area, budget, and average case value to see projected leads, cases, and revenue.",
   alternates: {
     canonical: "https://jurispage.com/calculate-roi-law-firm-ppc-campaign/",
   },
+  openGraph: { ...ogBase, url: "https://jurispage.com/calculate-roi-law-firm-ppc-campaign/" },
 };
 
 const pageSchema = {

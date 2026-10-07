@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Thank You for Reaching Out | JurisPage",
+  title: "Thank You for Reaching Out",
   description:
     "We received your message and will be in touch within 24 hours.",
   robots: { index: false, follow: false },

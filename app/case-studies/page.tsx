@@ -3,11 +3,13 @@ import { caseStudies } from "@/data/caseStudies";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import CTASection from "@/components/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Law Firm Marketing Success Stories | Case Studies",
-  description: "See how JurisPage helped law firms achieve +1,851% more traffic, +200 monthly leads, and 10x business growth. Real results from real law firm marketing campaigns.",
+  description: "Law firm marketing case studies: JurisPage helped firms reach +1,851% more traffic, +200 monthly leads, and 10x growth. See the real results.",
   alternates: { canonical: "https://jurispage.com/case-studies/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/case-studies/" },
 };
 
 export default function CaseStudiesPage() {

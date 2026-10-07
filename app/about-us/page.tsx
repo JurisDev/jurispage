@@ -3,11 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "About JurisPage | Law Firm Marketing Agency Built on Ethics",
-  description: "JurisPage is a law firm marketing agency with 15+ years of legal SEO experience, 113+ clients served, and a mission to make enterprise-quality digital marketing accessible to small law firms.",
+  title: "About Us | Ethical Law Firm Marketing Agency",
+  description: "JurisPage is a law firm marketing agency with 12 years of legal SEO expertise and 113+ clients served, bringing enterprise quality marketing to small firms.",
   alternates: { canonical: "https://jurispage.com/about-us/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/about-us/" },
 };
 
 const aboutSchema = {

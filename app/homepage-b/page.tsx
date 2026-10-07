@@ -9,9 +9,9 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 import { caseStudies } from "@/data/caseStudies";
 
 export const metadata: Metadata = {
-  title: "Law Firm Marketing Agency | JurisPage",
+  title: "Law Firm Marketing Agency",
   description:
-    "Law firm marketing that measures success by cases signed, not rankings reported. SEO, Google Ads, websites, and AI search for attorneys. No upfront fee. Pricing published online.",
+    "Law firm marketing measured by cases signed, not rankings reported. SEO, Google Ads, websites, and AI search for attorneys. No upfront fee.",
   robots: { index: false, follow: false },
 };
 

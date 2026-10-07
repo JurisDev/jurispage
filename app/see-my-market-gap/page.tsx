@@ -3,12 +3,14 @@ import { Suspense } from "react";
 import SchemaOrg from "@/components/SchemaOrg";
 import MarketGapForm from "@/components/MarketGapForm";
 import CTASection from "@/components/CTASection";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "See My Market Gap | Free Law Firm Market Analysis",
   description:
     "Get a personalized market-gap analysis for your practice area and city. See how many potential clients are searching, who's winning, and how to close the gap.",
   alternates: { canonical: "https://jurispage.com/see-my-market-gap/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/see-my-market-gap/" },
 };
 
 const whatYouGet = [

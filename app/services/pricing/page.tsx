@@ -3,11 +3,13 @@ import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import FAQAccordion from "@/components/FAQAccordion";
 import LaunchpadCalculator from "@/components/LaunchpadCalculator";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Pricing: Law Firm Marketing Plans for Every Stage",
-  description: "Transparent pricing for every stage of growth. JurisPage starts at $2,500/month for small or startup firms with no upfront fee, with custom engagements up to $20,000/month. Juris Digital starts at $20,000+/month.",
+  description: "JurisPage pricing starts at $2,500/mo with no upfront fee, with custom engagements up to $20,000/mo. Juris Digital starts at $20,000+/mo.",
   alternates: { canonical: "https://jurispage.com/services/pricing/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/services/pricing/" },
 };
 
 const faqSchema = {

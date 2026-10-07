@@ -8,13 +8,14 @@ import ReviewRibbon from "@/components/ReviewRibbon";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import CountUpStats from "@/components/CountUpStats";
 import { caseStudies } from "@/data/caseStudies";
+import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Law Firm Marketing | Get More Cases | JurisPage",
   description:
-    "We help law firms show up online and get more cases. SEO, Google Ads, websites, and AI search built exclusively for attorneys. No upfront fee. Pricing published online.",
+    "Law firm marketing that gets you found online and signs more cases. SEO, Google Ads, websites, and AI search for attorneys. No upfront fee, pricing online.",
   alternates: { canonical: "https://jurispage.com/" },
-  openGraph: {
+  openGraph: { ...ogBase,
     title: "Law Firm Marketing | Get More Cases | JurisPage",
     description:
       "We help law firms show up online and get more cases. SEO, Google Ads, websites, and AI search built exclusively for attorneys.",

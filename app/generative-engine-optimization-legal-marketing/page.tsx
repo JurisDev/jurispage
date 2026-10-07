@@ -8,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import AiVisibilitySimulator from "@/components/AiVisibilitySimulator";
 import AiSearchReportForm from "@/components/AiSearchReportForm";
 import { Suspense } from "react";
+import { ogBase } from "@/lib/og";
 
 const service = getServiceBySlug("generative-engine-optimization-legal-marketing")!;
 const O = "#EE6C13";
@@ -17,9 +18,10 @@ const B = "#0f4c81";
 const R = "#c0392b";
 
 export const metadata: Metadata = {
-  title: "Generative Engine Optimization for Law Firms: Get Cited in ChatGPT, Perplexity, and AI Overviews",
-  description: "GEO for law firms. Get your firm cited by name in ChatGPT, Perplexity, Google AI Overviews, and Claude. Schema optimization, E-E-A-T content, and AI citation strategy.",
+  title: "Generative Engine Optimization for Law Firms",
+  description: "Generative engine optimization for law firms. Get cited by name in ChatGPT, Perplexity, Google AI Overviews, and Claude with schema and AI citation strategy.",
   alternates: { canonical: "https://jurispage.com/generative-engine-optimization-legal-marketing/" },
+  openGraph: { ...ogBase, url: "https://jurispage.com/generative-engine-optimization-legal-marketing/" },
 };
 
 export default function GeoPage() {
