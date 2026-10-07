@@ -35,21 +35,18 @@ export async function submitToHubSpot(
   if (Object.keys(ctx).length > 0) payload.context = ctx;
 
   const url = `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${formGuid}`;
-  console.log("[HubSpot] Submitting to:", url);
-  console.log("[HubSpot] Payload:", JSON.stringify(payload, null, 2));
 
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(8_000),
   });
 
   const text = await res.text();
-  console.log("[HubSpot] Response status:", res.status);
-  console.log("[HubSpot] Response body:", text);
 
   if (!res.ok) {
-    throw new Error(`HubSpot submission failed (${res.status}): ${text}`);
+    throw new Error(`HubSpot submission failed (${res.status})`);
   }
 
   return JSON.parse(text);
