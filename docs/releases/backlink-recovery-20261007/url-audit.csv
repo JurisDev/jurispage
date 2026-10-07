@@ -1,0 +1,641 @@
+old_path,current_status,existing_destination,proposed_destination,decision,reason,highest_referring_domain_DR
+/,200,,,retain-working-page,Current content returns 200,100
+/seo-for-lawyers,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,97
+/law-firm-marketing-strategy,308,/,/small-law-firm-marketing/,redirect,Manual reader-task match,93
+/2015/law-practice-management/clio-practice-management-review-taking-clio-for-a-test-drive,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/2013/website-development/scales-of-justice-gavel-done-avoiding-a-cliche-law-firm-logo,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",95
+/2017/law-firm-internet-marketing/write-a-killer-law-firm-marketing-plan,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/lawyer-statistics,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",88
+/2014/timekeeping-and-billing-software/comparing-law-firm-timekeeping-and-billing-software,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",86
+/2013/law-practice-management/free-law-firm-software-and-legal-research-tools-for-solo-practitioners-and-small-law-firms,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/law-firm-seo,200,,,retain-working-page,Current content returns 200,93
+/2014/timekeeping-and-billing-software/bill4time-timekeeping-and-billing-software-for-law-firms-review,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",72
+/2013/law-practice-management/the-best-law-firm-case-management-software-an-in-depth-comparison,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/2014/timekeeping-and-billing-software/ebillity-law-firm-timekeeping-and-billing-attorney-tested-review,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",49
+/2017/seo/ppc-seo-or-both-legal-marketing-strategy-demystified,404,,/small-law-firm-marketing/,redirect,Marketing strategy and SEO/PPC channel selection,87
+/2016/law-practice-management/how-to-have-a-professional-email-address,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/services/law-firm-web-design-overview,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,95
+/pricing,308,/services/pricing/,/services/pricing/,retain-existing-redirect,Existing scoped redirect preserved,74
+/2013/law-practice-management/mycase-law-practice-management-review-taking-mycase-for-a-test-drive,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",83
+/best-law-firm-websites,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,93
+/2016/practice-management-reviews/cosmolex-review-a-lawyers-practice-management-trial,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2019/seo/law-firm-seo,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,91
+/blog,200,,,retain-working-page,Current content returns 200,100
+/law-firm-marketing/law-firm-marketing-strategy,308,/,/small-law-firm-marketing/,redirect,Manual reader-task match,91
+/2014/timekeeping-and-billing-software/timeslips-billing-and-timekeeping-software-review,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",85
+/2019/tools/clio-grow-review-client-intake-and-crm-for-lawyers,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",95
+/2017/internet-marketing/write-a-killer-law-firm-marketing-plan,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/2015/law-practice-management/crms-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2015/law-practice-management/what-can-your-law-firm-outsource-to-a-virtual-assistant,308,/,,needs-content-review,No sufficiently relevant current replacement identified,95
+/resources,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/2013/law-practice-management/attorney-review-of-rocketmatter-law-firm-practice-and-case-management-software,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",95
+/2015/law-firm-internet-marketing/whats-in-the-avvo-rating,308,/,,needs-content-review,No sufficiently relevant current replacement identified,96
+/2015/law-practice-management/xero-review-is-cloud-accounting-worth-it,308,/,,needs-content-review,No sufficiently relevant current replacement identified,92
+/portfolio,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,77
+/2013/law-practice-management/solo-lawyers-should-you-use-a-virtual-office-for-your-law-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,95
+/2013/law-practice-management/testing-amicus-cloud-web-based-law-firm-management-software,308,/,,needs-content-review,No sufficiently relevant current replacement identified,51
+/contact-us,308,/contact/,/contact/,retain-existing-redirect,Existing scoped redirect preserved,91
+/2014/law-practice-management/meruscase-review-youve-never-seen-law-firm-case-management-software-do-this,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/2013/law-practice-management/houdiniesq-review-a-lawyer-looks-at-law-practice-management-software,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2014/law-practice-management/casetext-free-legal-research-and-online-lawyer-community,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",95
+/2014/law-practice-management/free-legal-research-with-google-scholar,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",95
+/2014/law-practice-management/the-completely-virtual-lawyer-can-it-be-done,308,/,,needs-content-review,No sufficiently relevant current replacement identified,100
+/elevate-law-firm-seo/law-firm-copywriting,404,,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",69
+/2014/law-practice-management/5-clio-case-management-features-youre-missing-out-on,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",50
+/2019/law-firm-internet-marketing/law-firm-internet-marketing-strategies,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/services/law-firm-ppc,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/services/seo-for-law-firms,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,74
+/social-media-for-lawyers,308,/law-firm-content-writing/,/law-firm-content-writing/,retain-existing-redirect,Existing scoped redirect preserved,73
+/2013/website-development/what-does-your-font-say-about-your-firm-the-best-law-firm-logo-fonts,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",60
+/2015/practice-management-reviews/cosmolex-review-a-lawyers-practice-management-trial,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",43
+/2019/law-firm-internet-marketing/law-firm-marketing-101-email-marketing,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2019/law-firm-internet-marketing/law-firm-marketing-2019,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,91
+/2013/law-practice-management/fastcase-free-online-legal-research-software-review,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/2015/tools/managing-workflows-in-your-law-practice-with-process-street,308,/,,needs-content-review,No sufficiently relevant current replacement identified,95
+/2017/law-firm-internet-marketing/email-marketing-for-lawyers-a-legal-marketing-guide,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,50
+/2014/law-firm-internet-marketing/%E2%80%8Beffective-email-marketing-for-law-firms,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,74
+/2015/internet-marketing/whats-in-the-avvo-rating,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2018/seo/top-family-law-marketing-strategies-for-2018,308,/,/family-law-firm-marketing/,redirect,Family-law marketing,77
+/2013/law-practice-management/should-your-law-firm-accept-bitcoin-an-interview-with-larry-donahue-of-lawyers-4-small-business,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2014/website-development/5-tips-to-writing-better-attorney-website-copy-why-no-one-wants-to-read-your-resume,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",85
+/2019/website-development/ada-compliance-in-law-firm-websites-what-do-you-need,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/category/practice-management-reviews,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",33
+/services/law-firm-seo,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,91
+/google-advertising-lawyers,308,/google-ads-for-law-firms/,/google-ads-for-law-firms/,retain-existing-redirect,Existing scoped redirect preserved,81
+/2014/seo/search-engine-optimization-vs-internet-marketing-google-adwords-for-law-firms,308,/,/small-law-firm-marketing/,redirect,Marketing strategy and SEO/PPC channel selection,91
+/law-firm-websites,200,,,retain-working-page,Current content returns 200,93
+/resources/law-firm-marketing-plan-template,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/results,404,,/case-studies/,redirect,Manual reader-task match,61
+/thank-you-for-reaching-out,200,,,retain-working-page,Current content returns 200,86
+/2014/website-development/scorpion-design-law-firm-website-design-internet-marketing-and-seo-review,308,/,/scorpion-legal-marketing-alternative/,redirect,Scorpion agency comparison,91
+/law-firm-seo-cost,200,,,retain-working-page,Current content returns 200,96
+/services/attorney-logo-design,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",74
+/services/website-design-for-attorneys,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",52
+/criminal-defense-law-firm-website-statistics,308,/practice-areas/,/practice-areas/,retain-existing-redirect,Existing scoped redirect preserved,91
+/email-marketing-for-law-firms,308,/law-firm-email-marketing/,/law-firm-email-marketing/,retain-existing-redirect,Existing scoped redirect preserved,82
+/2013/internet-marketing/how-do-google-adwords-and-search-engine-ads-work-a-walkthrough-for-beginners,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,51
+/2014/internet-marketing/%E2%80%8Beffective-email-marketing-for-law-firms,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,82
+/2018/law-practice-management/sales-for-lawyers-a-professional-obligation,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/resources/redesign-your-law-firm-website-guide,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/2015/law-practice-management/law-firm-holiday-cards-everything-you-need-to-know,308,/,,needs-content-review,No sufficiently relevant current replacement identified,90
+/2019/email-marketing/email-marketing-for-lawyers-101-campaign-logistics,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2019/email-marketing/email-marketing-for-lawyers-101-email-software,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,51
+/lawyer-website-case-studies/newly-solo,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,51
+/services/email-marketing,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,51
+/best-crm-law-firms,308,/,,needs-content-review,No sufficiently relevant current replacement identified,64
+/2014/internet-marketing/questions-to-ask-your-attorney-ppc-firm,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,83
+/2014/law-practice-management/running-a-virtual-law-practice,308,/,,needs-content-review,No sufficiently relevant current replacement identified,82
+/2014/practice-management-reviews/law-firm-practice-and-case-management-software-comparison-chart,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2018/law-firm-internet-marketing/email-marketing-software-for-lawyers,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2019/email-marketing/email-marketing-for-lawyers-101-email-lists-and-segments,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2019/website-development/modern-law-firm-website-design-in-2019-7-things-your-website-needs,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/services/attorney-website-design-for-new-practices,404,,/launchpad/,redirect,Manual reader-task match,74
+/2013/law-practice-management/clio-practice-management-review-taking-clio-for-a-test-drive,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/2013/seo/7-website-mistakes-law-firms-make,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",66
+/2013/timekeeping-and-billing-software/freshbooks-review-cloud-based-billing-and-invoicing,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",45
+/2014/practice-management-reviews/clio-chrome-extension-integrates-your-gmail-and-clio-accounts,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",50
+/2016/website-development/lawyer-website-design-cost,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",74
+/2017/events/join-us-as-we-share-our-secrets-of-legal-marketing,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2017/events/reflections-on-the-2017-clio-cloud-conference,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",86
+/2017/internet-marketing/2017-legal-marketing-guide,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/2017/law-firm-internet-marketing/how-to-win-at-legal-marketing,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",0
+/category/timekeeping-and-billing-software,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",33
+/library/the-ultimate-guide-to-trackable-law-firm-marketing,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/resources/software-tools-for-a-successful-law-practice,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/services,200,,,retain-working-page,Current content returns 200,74
+/internet-marketing-for-estate-planning-lawyers,308,/estate-planning-lawyer-marketing/,/estate-planning-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,60
+/ppc-for-lawyers,308,/google-ads-for-law-firms/,/google-ads-for-law-firms/,retain-existing-redirect,Existing scoped redirect preserved,86
+/2013/law-practice-management/start-your-law-practice-from-scratch-with-the-best-resources-and-tools,308,/,,needs-content-review,No sufficiently relevant current replacement identified,51
+/2013/website-development/how-bad-is-your-law-firm-website-shocking-new-statistics,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2014/website-development/setting-up-your-law-firm-email-from-scratch-a-step-by-step-guide,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",85
+/2017/internet-marketing/how-to-win-at-legal-marketing,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",0
+/2019/email-marketing/email-marketing-for-lawyers-101-email-workflow-tips,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/client-testimonials,404,,/case-studies/,redirect,Manual reader-task match,74
+/legal,308,/,,needs-content-review,No sufficiently relevant current replacement identified,74
+/library/how-to-successfully-redesign-your-law-firm-website-white-paper,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/services/attorney-marketing-campaign-management,404,,/services/,redirect,Manual reader-task match,91
+/google-adwords-lawyers,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,81
+/how-many-hours-do-lawyers-work,308,/,,needs-content-review,No sufficiently relevant current replacement identified,87
+/keyboard-shortcuts-legal-symbols-section-symbol,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",91
+/law-firm-marketing-budget,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,81
+/law-firms-online-presence,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,96
+/local-service-ads-lawyers,308,/google-ads-for-law-firms/,/google-ads-for-law-firms/,retain-existing-redirect,Existing scoped redirect preserved,56
+/2013/law-firm-internet-marketing/how-do-google-adwords-and-search-engine-ads-work-a-walkthrough-for-beginners,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,23
+/2013/law-practice-management/wordrake-review-helping-lawyers-simplify-legal-writing,308,/,,needs-content-review,No sufficiently relevant current replacement identified,50
+/2013/seo/law-firm-seo-getting-to-the-top-of-google-search-results-for-your-law-firm,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,64
+/2014/law-practice-management/outsource-your-law-firm-bookkeeping-and-accounting-with-kahuna-accounting,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2016/law-firm-internet-marketing/reasons-why-your-web-marketing-campaign-is-failing,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",89
+/2016/practice-management-reviews/cosmolex-adds-new-email-integration-to-law-practice-management-platform,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",51
+/2017/law-practice-management/how-well-do-lawyers-practice-data-from-the-legal-trends-report,404,,,needs-content-review,No sufficiently relevant current replacement identified,28
+/2017/practice-management-reviews/cosmolex-adds-bank-feeds-to-its-app,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2017/website-development/should-you-build-your-law-firm-website-with-a-do-it-yourself-builder-or-a-web-design-agency,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",81
+/2019/email-marketing/email-marketing-for-lawyers-101-why-email-marketing,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,50
+/category/email-marketing,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,50
+/partners,404,,,needs-content-review,No sufficiently relevant current replacement identified,52
+/resources/email-marketing-for-lawyers,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/services/local-search-for-attorneys,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",91
+/avvo-lawyer-marketing-guide,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,96
+/how-to-start-a-law-firm,308,/,/startup-law-firm-marketing/,redirect,Manual reader-task match,51
+/2014/events/reflections-on-the-2014-clio-cloud-conference-cliocloud9,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",88
+/2014/law-tech-startups/kunvay-allows-freelancers-and-businesses-to-easily-transfer-intellectual-property-rights,308,/,,needs-content-review,No sufficiently relevant current replacement identified,50
+/2014/seo/creating-a-law-firm-website-that-brings-in-new-clients,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",33
+/2014/seo/new-tools-for-lawyers-attorney-and-lawyer-become-available,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,91
+/2014/website-development/ilawyermarketing-law-firm-marketing-review,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",50
+/2015/law-firm-internet-marketing/avvo-advertising-review-worth-it-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2015/law-firm-internet-marketing/avvo-advertising-reviewing-after-3-months,308,/,,needs-content-review,No sufficiently relevant current replacement identified,28
+/2015/law-practice-management/does-mac-vs-pc-matter-for-lawyers-in-2015,308,/,,needs-content-review,No sufficiently relevant current replacement identified,83
+/2016/law-practice-management/level-up-your-law-practice-with-mastermind-groups,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/website-development/mobile-is-not-a-trend-its-here-to-stay,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2017/internet-marketing/how-will-the-latest-google-giraffe-update-affect-your-firms-search-rankings,404,,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",74
+/2017/law-firm-internet-marketing/2017-legal-marketing-guide,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/2017/law-firm-internet-marketing/google-adwords-gets-a-new-update-how-will-this-affect-law-firm-marketing,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,0
+/2017/law-firm-internet-marketing/is-your-law-firm-website-built-in-flash-if-so-redesign-it-now,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2018/law-firm-internet-marketing/law-firm-email-newsletter-marketing,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,4
+/2018/website-development/making-one-of-the-best-law-firm-websites-an-interview-with-enright-law,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",14
+/2019/law-practice-management/tiger-tactics-book-review-powerful-strategies-for-winning-law-firms,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/lawyer-website-case-studies,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,74
+/library/attorney-ppc-ebook,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/services/attorney-website-redesign-service,404,,/law-firm-websites/,redirect,Manual reader-task match,74
+/12-must-have-pages-on-your-law-firm-website,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,54
+/best-criminal-defense-lawyer-websites,308,/criminal-defense-lawyer-marketing/,/criminal-defense-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,53
+/marketing-agency-for-law-firm,308,/,/services/,redirect,Manual reader-task match,59
+/video-marketing-for-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,51
+/2014/law-tech-startups/lexicata-client-intake-and-crm-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,43
+/2014/law-tech-startups/meddle-review-a-new-platform-that-reinvents-blogging,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",83
+/2014/timekeeping-and-billing-software/pclaw-review-law-firm-billing-and-timekeeping-software,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",83
+/2015/law-practice-management/4-benefits-of-online-intake-forms-for-law-firms,308,/,,needs-content-review,No sufficiently relevant current replacement identified,39
+/2015/weekly-edge/weekly-edge-5-starting-and-running-a-virtual-law-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,50
+/2016/ethics/couple-sues-lawyer-for-using-aol-email-getting-hacked,404,,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",51
+/2016/law-practice-management/how-to-have-a-professional-email-address/embed,404,,,needs-content-review,No sufficiently relevant current replacement identified,4
+/2016/law-practice-management/quora-lawyers-jennifer-ellis,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/weekly-edge/effective-contact-forms-and-contact-pages,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2017/events/webinar-marketing-a-family-law-practice-in-2017,404,,/family-law-firm-marketing/,redirect,Family-law marketing,3
+/2017/internet-marketing/email-marketing-for-lawyers-a-legal-marketing-guide,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,74
+/2017/internet-marketing/is-your-law-firm-website-built-in-flash-if-so-redesign-it-now,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2018/law-firm-internet-marketing/how-to-create-an-amazing-law-firm-marketing-plan-webinar,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",4
+/2019/email-marketing/email-marketing-for-lawyers-101-content,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2019/law-practice-management/4legalleads-review,404,,,needs-content-review,No sufficiently relevant current replacement identified,73
+/affiliate-program,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/category/law-tech-startups,308,/,,needs-content-review,No sufficiently relevant current replacement identified,76
+/law-firm-marketing,308,/,/small-law-firm-marketing/,redirect,Manual reader-task match,93
+/lawyer-website-case-studies/migrating-from-findlaw,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,51
+/lawyer-website-case-studies/optimizing-your-website,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,74
+/lawyer-website-case-studies/website-redesign,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,74
+/local-seo-for-law-firms,200,,,retain-working-page,Current content returns 200,43
+/resources/15-proven-marketing-strategies-for-law-firms,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/resources/cloud-based-legal-practice-management-software-comparison-chart,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,43
+/resources/email-marketing-for-law-firms-proven-tips-for-success,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/services/attorney-website-optimization,404,,/law-firm-websites/,redirect,Manual reader-task match,74
+/services/branding-for-attorneys,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",74
+/services/clio-integrated-attorney-websites,404,,/law-firm-websites/,redirect,Manual reader-task match,86
+/services/law-firm-boost-marketing,404,,/services/,redirect,Manual reader-task match,74
+/facebook-advertising-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,53
+/law-firm-branding,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,59
+/lawyer-law-domain-names,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,71
+/local-citations-law-firms,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",1
+/marketing-for-criminal-defense-lawyers,308,/criminal-defense-lawyer-marketing/,/criminal-defense-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,68
+/platform,404,,/launchpad/,redirect,Manual reader-task match,40
+/seo-for-family-law,404,,/family-law-firm-marketing/,redirect,Family-law marketing,51
+/2013/law-practice-management/expand-your-network-and-interact-with-other-lawyers-join-the-lawyers-subreddit,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.8
+/2013/law-practice-management/urban-dictionary-in-the-courtroom,308,/,,needs-content-review,No sufficiently relevant current replacement identified,8
+/2014/law-firm-internet-marketing/questions-to-ask-your-attorney-ppc-firm,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,26
+/2014/law-practice-management/dropbox-for-lawyers-and-law-firms-everything-you-wanted-to-know,308,/,,needs-content-review,No sufficiently relevant current replacement identified,45
+/2014/law-practice-management/give-me-the-microphone-why-lawyers-should-explore-podcasting,308,/,,needs-content-review,No sufficiently relevant current replacement identified,48
+/2014/law-tech-startups/vizibid-a-platform-for-attorneys-to-share-documents,308,/,,needs-content-review,No sufficiently relevant current replacement identified,26
+/2014/seo/how-lawyers-are-using-google-and-hangouts-and-why-you-should-too,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",100
+/2015/law-practice-management/7-year-end-purchases-to-reduce-your-firms-taxes,308,/,,needs-content-review,No sufficiently relevant current replacement identified,4
+/2015/law-practice-management/contactually-review-a-user-friendly-and-surprisingly-fun-crm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,51
+/2015/law-practice-management/fundbox-review-helping-businesses-get-cash-quicker,308,/,,needs-content-review,No sufficiently relevant current replacement identified,8
+/2015/law-practice-management/how-to-sell-your-legal-services-ethically,308,/,,needs-content-review,No sufficiently relevant current replacement identified,37
+/2015/law-practice-management/the-secret-hack-to-hiring-for-your-law-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,4
+/2015/law-practice-management/your-attorney-biography-the-most-important-argument-you-will-make,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",91
+/2016/events/legal-conferences-to-attend,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",75
+/2016/internet-marketing/appearance-and-presentation-for-lawyers-what-our-data-showed,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/internet-marketing/new-change-to-adwords-can-mean-higher-click-through-rates,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/2016/internet-marketing/reasons-why-your-web-marketing-campaign-is-failing,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",89
+/2016/law-practice-management/how-better-bookkeeping-can-accelerate-your-law-firm,404,,,needs-content-review,No sufficiently relevant current replacement identified,25
+/2016/law-practice-management/practicing-law-in-2017,404,,,needs-content-review,No sufficiently relevant current replacement identified,64
+/2016/tools/communication-tools-for-your-law-firm-review,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/website-development/3-reasons-your-law-firm-needs-a-good-website,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",40
+/2016/website-development/should-i-trust-a-lawyer-that-does-not-have-a-website,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",74
+/2016/website-development/what-makes-one-website-the-best-lawyer-website,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2016/website-development/why-do-so-many-law-firm-websites-look-the-same,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2016/weekly-edge/android-for-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/weekly-edge/facebook-ads-for-lawyers-5-tips-on-how-to-build-a-strong-campaign,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/weekly-edge/lawyer-technology-competence,404,,,needs-content-review,No sufficiently relevant current replacement identified,64
+/2017/internet-marketing/google-adwords-gets-a-new-update-how-will-this-affect-law-firm-marketing,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,0
+/2017/internet-marketing/its-a-trap-legal-marketing-pitfalls-to-avoid,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",74
+/2017/internet-marketing/what-a-law-firm-needs-to-know-about-their-website-interview-at-aba-techshow,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",74
+/2017/law-firm-internet-marketing/how-will-the-latest-google-giraffe-update-affect-your-firms-search-rankings,404,,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",26
+/2017/law-firm-internet-marketing/its-a-trap-legal-marketing-pitfalls-to-avoid,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",0
+/2017/law-firm-internet-marketing/what-a-law-firm-needs-to-know-about-their-website-interview-at-aba-techshow,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2017/practice-management-reviews/rocket-matter-announces-atlas-2-0-upgrade,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2018/internet-marketing/law-firm-internet-marketing,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",77
+/2018/law-firm-internet-marketing/what-does-it-mean-when-avvo-says-no-concern-in-their-rating,308,/,,needs-content-review,No sufficiently relevant current replacement identified,60
+/bankruptcy-lawyer-websites,404,,/bankruptcy-lawyer-marketing/,redirect,Bankruptcy practice marketing,64
+/category/law-firm-internet-marketing,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",1.3
+/library/create-a-webinar-guide,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/library/law-firm-case-management-comparison-chart-download,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,51
+/library/tools-to-start-and-grow-your-law-firm,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,89
+/practice-areas,200,,,retain-working-page,Current content returns 200,91
+/pricing/seo,404,,/law-firm-seo-cost/,redirect,Manual reader-task match,0
+/resources/get-more-referrals-course,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/how-to-create-your-own-webinar,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/resources/law-firm-seo-guide-download,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/webinar-how-to-create-an-amazing-law-firm-marketing-plan,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/services/blogging-for-lawyers,404,,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",74
+/services/pricing,200,,,retain-working-page,Current content returns 200,57
+/best-law-firm-practice-management-software,404,,,needs-content-review,No sufficiently relevant current replacement identified,53
+/best-live-chat-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,63
+/design-portfolio,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,86
+/how-marketing-helps-law-firms-succeed,308,/,/small-law-firm-marketing/,redirect,Manual reader-task match,91
+/local-seo-for-lawyers,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",76
+/marketing-for-family-lawyers,308,/family-law-firm-marketing/,/family-law-firm-marketing/,retain-existing-redirect,Existing scoped redirect preserved,51
+/online-marketing-for-lawyers,308,/,/small-law-firm-marketing/,redirect,Manual reader-task match,76
+/types-of-keywords-law-firm-seo,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,73
+/2013/law-firm-internet-marketing/review-of-lawdingo-a-surprisingly-effective-way-for-clients-and-attorneys-to-meet-online,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2013/law-practice-management/clio-practice-management-updates,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",11
+/2014/events/google-hangouts-office-hours-event-on-september-12,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",37
+/2014/internet-marketing/does-pay-per-click-advertising-make-sense-for-my-law-firm,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,78
+/2014/law-practice-management/apple-in-law-offices-survey-conducted-by-clio,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",61
+/2014/law-tech-startups/law-genius-a-wiki-like-platform-for-legal-texts,308,/,,needs-content-review,No sufficiently relevant current replacement identified,28
+/2014/seo/7-ways-for-attorneys-to-use-google-hangouts,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",61
+/2014/tools/automate-your-business-with-zapier-and-if-this-then-that,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2014/tools/scheduleonce-effortlessly-set-meetings-and-appointments,308,/,,needs-content-review,No sufficiently relevant current replacement identified,75
+/2014/website-development/why-image-sliders-are-terrible-for-your-law-firm-website,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",66
+/2015/internet-marketing/avvo-advertising-review-worth-it-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2015/law-practice-management/dont-get-hacked-4-step-computer-security-upgrade-by-sam-glover,308,/,,needs-content-review,No sufficiently relevant current replacement identified,72
+/2015/law-tech-startups/lawgeex-an-app-that-analyzes-legal-documents,308,/,,needs-content-review,No sufficiently relevant current replacement identified,61
+/2015/seo/reasons-not-to-feature-a-badge-on-your-law-firm-website,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",50
+/2015/weekly-edge/accounting-and-bookkeeping-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,85
+/2015/weekly-edge/legal-edge-2-can-linkedin-help-grow-your-law-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,42
+/2015/weekly-edge/weekly-edge-26-customer-service-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,37
+/2016/ethics/blogging-legally-2016-ethics-issues-in-law-blogs,404,,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",74
+/2016/law-practice-management/a-partner-by-any-other-name-is-confusing,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/law-practice-management/why-tech-wont-save-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,4
+/2016/law-tech-startups/why-i-am-not-a-recovering-lawyer,404,,,needs-content-review,No sufficiently relevant current replacement identified,72
+/2016/seo/blogging-and-seo-for-lawyers-video,404,,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",74
+/2016/seo/i-can-get-you-to-page-1-of-google-is-a-lie,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,91
+/2016/website-development/why-your-law-firm-needs-a-mobile-website,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",86
+/2016/weekly-edge/going-solo,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/weekly-edge/networking-ideas-and-tips-for-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,96
+/2017/practice-management-reviews/clio-unveils-new-features-at-the-2017-clio-cloud-conference,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",57
+/2017/practice-management-reviews/cosmolex-gets-an-interface-upgrade-and-some-new-features,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",17
+/2018/internet-marketing/email-marketing-software-for-lawyers,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2018/internet-marketing/law-firm-email-newsletter-marketing,308,/,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,28
+/2018/internet-marketing/law-firm-marketing-101-the-basics,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/category/events,308,/,,needs-content-review,No sufficiently relevant current replacement identified,17
+/criminal-defense-lawyer-marketing,200,,,retain-working-page,Current content returns 200,68
+/estate-planning-lawyer-marketing,200,,,retain-working-page,Current content returns 200,60
+/feed,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,6
+/google-ads-for-law-firms,200,,,retain-working-page,Current content returns 200,54
+/google-hangouts-for-lawyers-webinar,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",37
+/law-firm-content-writing,200,,,retain-working-page,Current content returns 200,32
+/lawyer-website-case-studies/building-traffic-and-clients,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,51
+/lawyer-website-case-studies/online-lawyer-marketing-seo-and-ppc,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,5
+/library,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,72
+/library/google-hangouts-for-lawyers-webinar,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,51
+/library/questions-to-ask-before-hiring-your-law-firm-web-designer,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,60
+/real-estate-attorney-websites,404,,/real-estate-lawyer-marketing/,redirect,Real-estate practice marketing,53
+/resources/law-firm-seo-course,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,91
+/resources/marketing-plan-ebook,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,52
+/resources/webinar-secrets-of-legal-marketing,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,52
+/scorpion-legal-marketing-alternative,200,,,retain-working-page,Current content returns 200,63
+/10-ways-differentiate-law-firm-examples,404,,/law-firm-websites/,redirect,Manual reader-task match,51
+/anatomy-of-a-perfect-law-firm-landing-page,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",58
+/best-books-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,51
+/best-gifts-lawyers-law-students,404,,,needs-content-review,No sufficiently relevant current replacement identified,83
+/free-consultation,404,,/contact/,redirect,Manual reader-task match,54
+/google-my-business-law-firms,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",1
+/how-to-get-more-clients-for-your-law-firm,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",1
+/how-to-leave-findlaw,308,/scorpion-legal-marketing-alternative/,/scorpion-legal-marketing-alternative/,retain-existing-redirect,Existing scoped redirect preserved,51
+/internet-marketing-for-personal-injury-lawyers,308,/personal-injury-lawyer-marketing/,/personal-injury-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,26
+/law-firm-website-design-cost,404,,/law-firm-websites/,redirect,Manual reader-task match,53
+/marketing-for-bankruptcy-attorneys,308,/bankruptcy-lawyer-marketing/,/bankruptcy-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,19
+/seo-criminal-defense-lawyers,404,,/criminal-defense-lawyer-marketing/,redirect,Criminal-defense marketing,4.7
+/video-marketing-for-lawyers-goes-mainstream,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/website-design-for-lawyers,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,81
+/2013/ethics/is-your-law-firm-website-legal-comply-with-new-york-state-ethics,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",96
+/2013/internet-marketing/what-is-a-responsive-website,308,/,,needs-content-review,No sufficiently relevant current replacement identified,40
+/2013/internet-marketing/when-law-firm-advertising-goes-wrong,308,/,,needs-content-review,No sufficiently relevant current replacement identified,95
+/2013/law-firm-internet-marketing/how-to-find-a-lawyer-with-a-lawyer-referral-service,308,/,,needs-content-review,No sufficiently relevant current replacement identified,20
+/2013/law-practice-management/solo-lawyers-should-you-use-a-virtual-office-for-your-law-firm/embed,308,/,,needs-content-review,No sufficiently relevant current replacement identified,1.7
+/2013/seo/buried-website-increase-your-search-engine-visibility-with-these-seo-tools,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,25
+/2013/seo/fake-positive-reviews-on-yelp-and-google-violate-ethics-rules-state-laws,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",12
+/2013/seo/get-new-clients-now-sign-up-for-an-attorney-directory-service-for-your-law-firm,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,0.8
+/2013/seo/is-your-content-protected-copyright-for-website,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",11
+/2013/seo/seo-expert-improve-your-law-firm-seo-google-local-and-avoiding-ethics-issues-with-fake-reviews,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",85
+/2013/seo/seo-expert-using-getlisted-to-increase-your-visibility-with-local-seo,308,/,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",17
+/2013/website-development/5-internet-marketing-tips-your-law-firm-needs,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",33
+/2014/ethics/internet-legal-ethics-lawyers-dont-email-the-judge-when-youre-on-the-jury,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",85
+/2014/internet-marketing/survey-how-clients-use-online-lawyer-reviews,308,/,,needs-content-review,No sufficiently relevant current replacement identified,48
+/2014/law-firm-internet-marketing/does-pay-per-click-advertising-make-sense-for-my-law-firm,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,1.1
+/2014/law-firm-internet-marketing/survey-how-clients-use-online-lawyer-reviews,308,/,,needs-content-review,No sufficiently relevant current replacement identified,48
+/2014/law-practice-management/the-lawyer-sleep-hacking-experiment-week-3-review-done,308,/,,needs-content-review,No sufficiently relevant current replacement identified,4
+/2014/law-tech-startups/shake-review-an-app-to-create-legally-binding-contracts-and-agreements,308,/,,needs-content-review,No sufficiently relevant current replacement identified,64
+/2014/seo/seo-expert-law-firm-tips-to-better-search-engine-optimization,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,85
+/2014/the-lawyer-sleep-experiment/bill-more-and-sleep-less-hack-your-sleep-cycle-and-lawyer-effectively,308,/,,needs-content-review,No sufficiently relevant current replacement identified,50
+/2014/uncategorized/search-engine-optimization-vs-internet-marketing-google-adwords-for-law-firms,308,/,/small-law-firm-marketing/,redirect,Marketing strategy and SEO/PPC channel selection,0
+/2015/events/reflections-on-the-2015-clio-cloud-conference,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",88
+/2015/events/see-you-at-the-clio-cloud-conference-2015,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",88
+/2015/law-firm-internet-marketing/avvo-advertising-month-2-review,308,/,,needs-content-review,No sufficiently relevant current replacement identified,1.1
+/2015/law-practice-management/crms-for-lawyers/embed,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.5
+/2015/law-tech-startups/plainlegal-is-now-alt-legal-with-some-new-features,308,/,,needs-content-review,No sufficiently relevant current replacement identified,50
+/2015/social-media/you-should-be-on-social-media-because-your-clients-are-blabbing,308,/,,needs-content-review,No sufficiently relevant current replacement identified,53
+/2015/website-development/finding-the-best-free-images-for-your-blog-posts,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",79
+/2015/weekly-edge/1-how-to-write-a-great-law-blog,308,/,,needs-content-review,No sufficiently relevant current replacement identified,28
+/2016/events/iltacon-2016-reflections-legal-conference-meets-truman-show,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2016/internet-marketing/google-removes-ads-from-the-search-sidebar,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/2016/internet-marketing/how-to-market-your-law-practice-with-webinars,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/internet-marketing/law-blog-writing,404,,/law-firm-content-writing/,redirect,Manual reader-task match,74
+/2016/internet-marketing/new-changes-in-google-ads-may-affect-your-clicks-and-spend,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/2016/internet-marketing/video-on-law-blogging,404,,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",74
+/2016/law-firm-internet-marketing/appearance-and-presentation-for-lawyers-what-our-data-showed,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/law-firm-internet-marketing/google-removes-ads-from-the-search-sidebar,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/2016/law-firm-internet-marketing/new-change-to-adwords-can-mean-higher-click-through-rates,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,91
+/2016/law-practice-management/5-ways-to-protect-yourself-from-ransomware,404,,,needs-content-review,No sufficiently relevant current replacement identified,5
+/2016/practice-management-reviews/rocket-matter-gets-a-facelift-and-matter-templates,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",61
+/2016/weekly-edge/how-to-present-a-cle,404,,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2016/weekly-edge/using-data-to-drive-decision-making-in-your-law-firm,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2017/events/announcing-law-launcher-2017,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",28
+/2017/events/jurispage-at-the-clio-cloud-conference-2017,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",0
+/2017/internet-marketing/google-again-makes-it-harder-to-distinguish-ads-from-organic-results,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,74
+/2017/internet-marketing/write-a-killer-law-firm-marketing-plan/embed,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",1.7
+/2018/internet-marketing/rebranding-for-your-law-firm,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",2
+/2018/internet-marketing/what-does-it-mean-when-avvo-says-no-concern-in-their-rating,308,/,,needs-content-review,No sufficiently relevant current replacement identified,60
+/2018/internet-marketing/youtube-director-for-lawyers-get-an-amazing-video-for-your-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2018/law-firm-internet-marketing/law-firm-marketing-101-the-basics,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2018/law-firm-internet-marketing/youtube-director-for-lawyers-get-an-amazing-video-for-your-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2019/law-firm-internet-marketing/15-law-firm-internet-marketing,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",33
+/2019/law-firm-marketing-101/law-firm-marketing-101,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,33
+/2019/seo/seo-guide-for-law-firms,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,29
+/2019/tools/unbundled-attorney-review,404,,,needs-content-review,No sufficiently relevant current replacement identified,23
+/author/dennis-dimkauptimelegal-com,404,,,needs-content-review,No sufficiently relevant current replacement identified,40
+/best-law-firm-seo-companies,200,,,retain-working-page,Current content returns 200,43
+/category/jurispage-news,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/category/law-practice-management,308,/,,needs-content-review,No sufficiently relevant current replacement identified,28
+/category/practice-management-reviews/page/2,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",0.4
+/category/website-development,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",0.4
+/family-lawyer-websites,404,,/family-law-firm-marketing/,redirect,Manual reader-task match,5
+/free-law-firm-website-analysis,308,/see-my-market-gap/,/see-my-market-gap/,retain-existing-redirect,Existing scoped redirect preserved,2.1
+/generative-engine-optimization-legal-marketing,200,,,retain-working-page,Current content returns 200,47
+/home,404,,/,redirect,Manual reader-task match,23
+/portfolio-jp-classic/law-office-of-mitchell-khosrova-jurispage-law-firm-website-design-portfolio,404,,/law-firm-websites/,redirect,Historical website-design portfolio,0.4
+/pricing/email-marketing,404,,/law-firm-email-marketing/,redirect,Manual reader-task match,50
+/resources/family-law-marketing-strategies-ebook,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/webinar-family-law-marketing-101,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/video-production,404,,,needs-content-review,No sufficiently relevant current replacement identified,57
+/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025,308,/generative-engine-optimization-legal-marketing/,/generative-engine-optimization-legal-marketing/,retain-existing-redirect,Existing scoped redirect preserved,91
+/about-us,200,,,retain-working-page,Current content returns 200,48
+/best-family-lawyer-websites,308,/family-law-firm-marketing/,/family-law-firm-marketing/,retain-existing-redirect,Existing scoped redirect preserved,51
+/best-law-firm-logo-designs,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,51
+/chatgpt-for-law-firm-marketing-a-blueprint,308,/blog/ai-content-without-seo-strategy/,/blog/ai-content-without-seo-strategy/,retain-existing-redirect,Existing scoped redirect preserved,39
+/clio-grow-review,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",51
+/criminal-defense-lawyer-seo,308,/criminal-defense-lawyer-marketing/,/criminal-defense-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,39
+/elevate-law-firm-seo,404,,/law-firm-seo/,redirect,Manual reader-task match,9
+/google-algorithm-updates-impact-on-law-firm-websites,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,72
+/google-reviews-law-firms,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",51
+/how-to-get-clients-as-a-lawyer,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/keyword-research-for-lawyers,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,91
+/kickstart-legal-marketing,308,/,,needs-content-review,No sufficiently relevant current replacement identified,45
+/landing-page-portfolio,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,86
+/law-firm-billing,404,,,needs-content-review,No sufficiently relevant current replacement identified,45
+/law-firm-marketing-plan-pdf,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",0.5
+/law-firm-marketing-services,308,/services/pricing/,/services/pricing/,retain-existing-redirect,Existing scoped redirect preserved,9
+/legal-content,404,,/law-firm-content-writing/,redirect,Manual reader-task match,51
+/legal-fonts,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,2.3
+/local-seo-important-law-firms,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",91
+/local-seo-worth-it,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",91
+/marketing-for-employment-law-firms,404,,/employment-lawyer-marketing/,redirect,Employment practice marketing,51
+/seo-for-personal-injury-law-firms,308,/personal-injury-lawyer-marketing/,/personal-injury-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,9
+/tiktok-for-lawyers,308,/law-firm-content-writing/,/law-firm-content-writing/,retain-existing-redirect,Existing scoped redirect preserved,75
+/webinar-top-strategies-for-improving-your-firms-client-intake,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2013/internet-marketing/two-of-the-six-most-expensive-google-keywords-are-lawyer-and-attorney,308,/,,needs-content-review,No sufficiently relevant current replacement identified,10
+/2013/law-firm-internet-marketing/when-law-firm-advertising-goes-wrong,308,/,,needs-content-review,No sufficiently relevant current replacement identified,27
+/2013/law-practice-management/best-law-blogs-of-2013,308,/,,needs-content-review,No sufficiently relevant current replacement identified,11
+/2013/law-practice-management/free-law-firm-software-and-legal-research-tools-for-solo-practitioners-and-small-law-firms/embed,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",0.5
+/2013/law-practice-management/houdiniesq-review-a-lawyer-looks-at-law-practice-management-software/embed,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.3
+/2013/law-practice-management/launching-a-successful-law-practice-free-udemy-course-review,308,/,,needs-content-review,No sufficiently relevant current replacement identified,16
+/2013/law-practice-management/save-get-law-firm-discounts-from-your-local-bar-association-and-the-aba,308,/,,needs-content-review,No sufficiently relevant current replacement identified,11
+/2013/law-practice-management/the-best-law-firm-case-management-software-an-in-depth-comparison/embed,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",0
+/2013/seo/is-your-law-firm-in-google-boost-your-lawyer-seo-with-these-tips,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,0.5
+/2013/seo/seo-what-a-user-friendly-glossary-of-search-engine-optimization-terms,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,0
+/2013/website-development/what-does-your-font-say-about-your-firm-the-best-law-firm-logo-fonts/embed,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2013/website-development/why-your-law-firm-needs-a-great-website-today,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2014/events/jurispage-to-present-live-cle,308,/,,needs-content-review,No sufficiently relevant current replacement identified,82
+/2014/events/legaltech-2014-new-york-city-best-free-giveaways-edition,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.3
+/2014/internet-marketing/discover-your-new-client-referral-sources-with-call-tracking,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",33
+/2014/internet-marketing/doing-law-firm-ppc-right-part-1-7-ways-that-lose-prospective-clients,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,0
+/2014/internet-marketing/jurispage-launches-new-attorney-internet-marketing-website,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.3
+/2014/law-firm-internet-marketing/discover-your-new-client-referral-sources-with-call-tracking,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/2014/law-firm-internet-marketing/jurispage-launches-new-attorney-internet-marketing-website,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.3
+/2014/law-practice-management/bill-more-and-sleep-less-hack-your-sleep-cycle-and-lawyer-effectively,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/2014/law-practice-management/clio-launches-new-smart-tasks-feature,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",12
+/2014/law-practice-management/tinylaw-the-long-tail-of-the-legal-marketplace,308,/,,needs-content-review,No sufficiently relevant current replacement identified,64
+/2014/law-tech-startups/lawkick-an-online-marketplace-connecting-lawyers-and-clients,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2014/law-tech-startups/lawtrades-review-connecting-lawyers-and-clients,308,/,,needs-content-review,No sufficiently relevant current replacement identified,23
+/2014/law-tech-startups/priori-legal-helping-you-find-discounted-flat-fee-legal-services,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2014/seo/what-is-google-hangouts-and-why-should-lawyers-care,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",37
+/2014/timekeeping-and-billing-software/camparing-law-firm-timekeeping-and-billing-software,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",86
+/2014/timekeeping-and-billing-software/comparing-law-firm-timekeeping-and-billing-software/embed,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",0
+/2014/tools/how-productive-are-you-rescuetime-knows,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2014/tools/manage-your-email-inbox-with-boomerang,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.5
+/2014/tools/reducing-stress-and-boosting-mental-clarity-with-headspace,308,/,,needs-content-review,No sufficiently relevant current replacement identified,82
+/2014/uncategorized/setting-up-your-law-firm-email-from-scratch-a-step-by-step-guide,308,/,,needs-content-review,No sufficiently relevant current replacement identified,4.8
+/2014/website-development/10-questions-to-ask-before-hiring-a-law-firm-website-designer,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2014/website-development/5-tips-to-writing-better-attorney-website-copy-why-no-one-wants-to-read-your-resume/embed,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",0
+/2014/website-development/why-submit-is-terrible-for-contact-forms,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",40
+/2015/internet-marketing/avvo-advertising-month-2-review,308,/,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2015/internet-marketing/avvo-advertising-reviewing-after-3-months,308,/,,needs-content-review,No sufficiently relevant current replacement identified,23
+/2015/law-practice-management/avvo-review-week-1-results,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0.2
+/2015/law-practice-management/avvo-review-week-2-results,308,/,,needs-content-review,No sufficiently relevant current replacement identified,51
+/2015/seo/law-blogging-when-other-lawyers-are-your-target-audience,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",27
+/2015/seo/seo-for-lawyers-interview-with-top-seo-expert,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,9
+/2015/tools/managing-workflows-in-your-law-practice-with-process-street/),308,/,,needs-content-review,No sufficiently relevant current replacement identified,35
+/2015/website-development/how-your-law-firm-website-is-leaking-traffic-and-how-to-fix-it,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",95
+/2015/website-development/is-your-website-bio-hurting-your-business,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",0.3
+/2015/weekly-edge/facebook-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,45
+/2015/weekly-edge/getting-paid-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,3.2
+/2015/weekly-edge/hiring-tips-for-law-firms,308,/,,needs-content-review,No sufficiently relevant current replacement identified,54
+/2015/weekly-edge/how-to-project-a-professional-image-as-a-lawyer,308,/,,needs-content-review,No sufficiently relevant current replacement identified,89
+/2015/weekly-edge/sales-for-lawyers-how-to-close-and-make-it-rain,308,/,,needs-content-review,No sufficiently relevant current replacement identified,43
+/2015/weekly-edge/should-you-get-a-mac-or-pc-for-your-law-firm,308,/,,needs-content-review,No sufficiently relevant current replacement identified,81
+/2015/weekly-edge/weekly-edge-28-holidays-for-lawyers,308,/,,needs-content-review,No sufficiently relevant current replacement identified,12
+/2015/weekly-edge/weekly-edge-29-legal-industry-trends-you-need-to-know-for-2016,308,/,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2015/weekly-edge/weekly-edge-6-law-firm-logos,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",50
+/2015/weekly-edge/weekly-edge-7-seo-resources-for-lawyers,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,43
+/2015/weekly-edge/weekly-edge15-roi-and-metrics-for-lawyers,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",10
+/2016/events/law-launcher-virtual-summit-for-lawyers,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",74
+/2016/events/new-york-cle-ethics-soclai-media-online-advertising-event,404,,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",74
+/2016/internet-marketing/3-reasons-other-than-marketing-to-have-a-great-looking-law-firm-website,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2016/internet-marketing/automated-law-firm-email-marketing-video,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,74
+/2016/internet-marketing/building-a-lawyer-ppc-campaign-that-gets-you-clients,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,74
+/2016/internet-marketing/is-ppc-the-most-predictable-medium-for-lawyer-marketing,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,74
+/2016/internet-marketing/save-your-attorney-ppc-campaign,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,74
+/2016/jurispage-news/jurispage-announces-launch-of-badlawyerwebsites-com,404,,,needs-content-review,No sufficiently relevant current replacement identified,33
+/2016/jurispage-news/jurispage-publishes-new-video,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/law-firm-internet-marketing/how-to-market-your-law-practice-with-webinars,404,,,needs-content-review,No sufficiently relevant current replacement identified,52
+/2016/law-firm-internet-marketing/save-your-attorney-ppc-campaign,404,,/google-ads-for-law-firms/,redirect,Paid search campaigns,0.1
+/2016/law-practice-management/expert-law-firm-growth-advice,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",74
+/2016/law-practice-management/new-years-resolutions-for-lawyers-2016,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/law-practice-management/the-25-most-common-passwords-of-2015-aka-stop-using-password-and-123456,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/seo/law-firm-seo-competition,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,74
+/2016/seo/online-reviews-for-lawyers-video,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",74
+/2016/social-media/facebook-for-lawyers-2,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/website-development/4-reasons-your-mid-sized-law-firm-needs-a-better-web-presence,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2016/website-development/6-elements-your-law-firm-website-needs,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",40
+/2016/website-development/how-to-make-your-law-firm-website-productive,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",91
+/2016/weekly-edge/5-tips-to-ace-local-lawyer-marketing,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",74
+/2016/weekly-edge/analytics-for-lawyers-5-areas-to-focus-on,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",74
+/2016/weekly-edge/crafting-great-landing-pages-for-your-law-firm,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",0
+/2016/weekly-edge/for-lawyers-publishing-content-this-is-why-no-ones-reading-it,404,,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",74
+/2016/weekly-edge/legal-marketing-mistakes-to-avoid,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",91
+/2016/weekly-edge/legal-research-with-zero-budget,404,,,needs-content-review,"No relevant current replacement for historical software, event or tool",72
+/2016/weekly-edge/lost-in-transition-how-to-not-screw-up-at-your-new-law-firm,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/weekly-edge/seo-for-lawyers-link-building-101,404,,/blog/linkable-assets-for-law-firms/,redirect,Link earning and linkable assets,74
+/2016/weekly-edge/smartphones-for-lawyers-better-lawyering-with-better-tools,404,,,needs-content-review,No sufficiently relevant current replacement identified,3.1
+/2016/weekly-edge/social-media-best-practices,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/weekly-edge/video-marketing-for-law-firms,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/2016/weekly-edge/wearable-technology-and-the-practice-of-law,404,,,needs-content-review,No sufficiently relevant current replacement identified,0.9
+/2016/weekly-edge/weekly-edge-39-social-media-advertising,404,,,needs-content-review,No sufficiently relevant current replacement identified,0
+/2016/weekly-edge/what-law-firms-can-learn-from-these-5-unusual-marketing-campaigns,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2016/weekly-edge/why-firms-who-do-email-marketing-well-are-winning,404,,/law-firm-email-marketing/,redirect,Email marketing campaigns and referral communication,91
+/2017/events/aba-techshow-2017-review-and-recap,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2017/jurispage-news/jurispage-gives-law-firms-a-boost-with-new-legal-marketing-service,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/2017/seo/ppc-seo-or-both-legal-marketing-strategy-demystified/%C2%A0for,404,,/small-law-firm-marketing/,redirect,Marketing strategy and SEO/PPC channel selection,72
+/2018/internet-marketing/law-firm-marketing-in-house-vs-agency,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",2
+/2018/internet-marketing/summer-2018-changes-coming-to-google-adwords,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,2
+/2018/internet-marketing/your-law-firms-summer-marketing-list,308,/,,needs-content-review,No sufficiently relevant current replacement identified,77
+/2018/law-firm-internet-marketing/law-firm-internet-marketing,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",28
+/2018/law-firm-internet-marketing/law-firm-marketing-in-house-vs-agency,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",2
+/2018/law-firm-internet-marketing/rebranding-for-your-law-firm,308,/,/law-firm-websites/,redirect,"Website design, conversion and brand design",2
+/2018/law-firm-internet-marketing/summer-2018-changes-coming-to-google-adwords,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,2
+/2018/seo/top-family-law-marketing-strategies-for-2018/embed,308,/,/family-law-firm-marketing/,redirect,Family-law marketing,25
+/2019/law-firm-internet-marketing/law-firm-internet-marketing-strategies/feed,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",0
+/2019/seo/law-firm-seo-5-things-you-can-do-to-build-traffic-to-your-website,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,29
+/2019/tools/lawyers-com-review,404,,,needs-content-review,No sufficiently relevant current replacement identified,0
+/2019/website-development/how-to-choose-a-law-firm-website-designer-in-2019,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",3.1
+/2019/website-development/scales-of-justice-gavel-done-avoiding-a-cliche-law-firm-logo,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",0.1
+/2023/content-marketing-for-law-firms-the-ultimate-guide,308,/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",52
+/2023/internet-marketing/legal-marketing-kpis-to-track-for-law-firms,308,/,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",47
+/author/andrewjurispage-com,404,,,needs-content-review,No sufficiently relevant current replacement identified,40
+/author/andrewjurispage-com/page/2,404,,,needs-content-review,No sufficiently relevant current replacement identified,25
+/author/andrewjurispage-com/page/5,404,,,needs-content-review,No sufficiently relevant current replacement identified,1.1
+/bankruptcy-lawyer-marketing,200,,,retain-working-page,Current content returns 200,29
+/blog/ai-content-without-seo-strategy,200,,,retain-working-page,Current content returns 200,29
+/blog/juris-digital-acquires-jurispage,200,,,retain-working-page,Current content returns 200,71
+/blog/technical-seo-for-law-firms,200,,,retain-working-page,Current content returns 200,51
+/category/ask-uptime,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/category/ethics,308,/,,needs-content-review,"No equivalent current content for this specific legal, ethics or historical claim",0
+/category/google-hangouts,308,/,,needs-content-review,"No relevant current replacement for historical software, event or tool",0
+/category/law-firm-marketing-101,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/category/law-practice-management/page/3,308,/,,needs-content-review,No sufficiently relevant current replacement identified,1.1
+/category/seo,308,/,/law-firm-seo/,redirect,Search optimization and keyword strategy,0
+/category/social-media,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/category/the-lawyer-sleep-experiment,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/category/tools,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/category/weekly-edge,308,/,,needs-content-review,No sufficiently relevant current replacement identified,0
+/comments/feed,404,,,needs-content-review,No sufficiently relevant current replacement identified,0
+/contact-us/schedule,404,,/contact/,redirect,Manual reader-task match,29
+/contact,200,,,retain-working-page,Current content returns 200,74
+/content-marketing-law-firms,308,/law-firm-content-writing/,/law-firm-content-writing/,retain-existing-redirect,Existing scoped redirect preserved,0
+/contribute,404,,,needs-content-review,No sufficiently relevant current replacement identified,51
+/criminal-defense-lawyer-marketing/google-ads-for-law-firms,200,,,retain-working-page,Current content returns 200,31
+/estate-planning-attorney-websites,404,,/estate-planning-lawyer-marketing/,redirect,Estate-planning practice marketing,5
+/facebook-advertising-for-lawyers,308,/google-ads-for-law-firms/,/google-ads-for-law-firms/,retain-existing-redirect,Existing scoped redirect preserved,54
+/family-law-firm-marketing,200,,,retain-working-page,Current content returns 200,2.5
+/how-important-seo-local-service-companies,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,29
+/j-traub-legal,404,,,needs-content-review,No sufficiently relevant current replacement identified,0.4
+/jurispage-amicus-attorney-law-firm-internet-marketing-webinar,404,,,needs-content-review,No sufficiently relevant current replacement identified,1.1
+/launchpad,200,,,retain-working-page,Current content returns 200,66
+/law-firm-marketing/law-firm-seo,308,/,/law-firm-seo/,redirect,Manual reader-task match,43
+/law-firm-website-design,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,52
+/lead-generation-for-lawyers,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,9
+/library/create-a-webinar-guide-1,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,0.2
+/library/seo-for-lawyers-ebook,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,51
+/local-seo-benefit-law-firm,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",9
+/login,404,,,needs-content-review,No sufficiently relevant current replacement identified,74
+/personal-injury-lawyer-marketing,200,,,retain-working-page,Current content returns 200,0
+/portfolio-jp-classic/law-office-of-crystal-huff,404,,/law-firm-websites/,redirect,Historical website-design portfolio,45
+/portfolio/broadband-law-group,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,33
+/portfolio/charis-lex-p-c,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,11
+/portfolio/footman-law-firm,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,33
+/portfolio/henneman-rau-llp,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,27
+/portfolio/law-office-jamie-roth,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,33
+/portfolio/law-office-of-rebecca-medina,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,1.1
+/pricing/boost,404,,/services/pricing/,redirect,Manual reader-task match,0.4
+/real-estate-lawyer-marketing,200,,,retain-working-page,Current content returns 200,4.8
+/resources/how-to-hire-the-right-marketing-firm,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/law-firm-live-chat,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,25
+/resources/proven-dui-defense-law-firm-marketing-strategies,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/proven-family-law-marketing-strategies-for-2018,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,3
+/resources/questions-to-ask-your-web-designer-whitepaper,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/webinar-boost-your-law-firms-marketing,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/resources/webinar-mastering-the-client-intake-process,308,/blog/,/blog/,retain-existing-redirect,Existing scoped redirect preserved,40
+/schema-law-firm-seo,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,22
+/security,404,,,needs-content-review,No sufficiently relevant current replacement identified,63
+/seo-for-bankruptcy-lawyers,308,/bankruptcy-lawyer-marketing/,/bankruptcy-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,29
+/seo-for-lawyers/content-marketing,308,/law-firm-seo/,/law-firm-content-writing/,redirect,"Law-firm copy, blogs and practice-area content",8
+/seo-for-real-estate-law-firms,308,/real-estate-lawyer-marketing/,/real-estate-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,4.8
+/services/increase-attorney-website-traffic,404,,/law-firm-seo/,redirect,Manual reader-task match,51
+/surowitz-law-group,404,,,needs-content-review,No sufficiently relevant current replacement identified,0.8
+/tour,404,,,needs-content-review,No sufficiently relevant current replacement identified,0
+/uptime-promo,404,,,needs-content-review,No sufficiently relevant current replacement identified,0.3
+/websites-for-criminal-lawyers,404,,/criminal-defense-lawyer-marketing/,redirect,Manual reader-task match,23
+/20-bizarre-law-firm-ads,308,/,,needs-content-review,No sufficiently relevant current replacement identified,1
+/attorney-marketing,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,3.5
+/best-form-advertising-lawyer,404,,/google-ads-for-law-firms/,redirect,Manual reader-task match,91
+/best-law-firm-landing-pages,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,25
+/best-law-firm-websites-that-nail-design-trust-and-conversion,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,60
+/blog/how-to-grow-your-law-firm-with-business-development-strategies,404,,,needs-content-review,No sufficiently relevant current replacement identified,0.6
+/can-law-firms-advertise-social-media,404,,,needs-content-review,No sufficiently relevant current replacement identified,91
+/category/google-ads/feed,308,/,/google-ads-for-law-firms/,redirect,Paid search campaigns,39
+/category/reviews/feed,308,/,,needs-content-review,No sufficiently relevant current replacement identified,39
+/chatgpt-for-lawyers,404,,,needs-content-review,No sufficiently relevant current replacement identified,43
+/divorce-lawyer-seo,404,,/family-law-firm-marketing/,redirect,Family-law marketing,9
+/future-trends-in-seo-for-legal-marketing,404,,/generative-engine-optimization-legal-marketing/,redirect,AI search visibility,9
+/google-screened-for-lawyers,404,,/google-ads-for-law-firms/,redirect,Manual reader-task match,79
+/how-much-law-firm-seo-cost,404,,/law-firm-seo-cost/,redirect,SEO investment and pricing,9
+/how-much-pay-someone-seo,404,,/law-firm-seo-cost/,redirect,SEO investment and pricing,91
+/how-to-build-criminal-law-practice,308,/criminal-defense-lawyer-marketing/,/criminal-defense-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,0
+/infographics,404,,,needs-content-review,No sufficiently relevant current replacement identified,9
+/is-it-worth-hiring-seo-company,404,,/law-firm-seo/,redirect,Search optimization and keyword strategy,0.6
+/landing-page-design-for-lawyers,404,,/law-firm-websites/,redirect,"Website design, conversion and brand design",9
+/law-firm-business-cards,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,24
+/law-firm-marketing-plan-template,404,,/small-law-firm-marketing/,redirect,"Small-firm marketing strategy, budgets and measurement",90
+/law-firm-microsites,404,,/law-firm-websites/,redirect,Manual reader-task match,51
+/lawyer-advertising-rules,308,/,,needs-content-review,No sufficiently relevant current replacement identified,4.2
+/lawyer-marketing,404,,/small-law-firm-marketing/,redirect,Manual reader-task match,3.5
+/local-landing-pages-law-firms,308,/local-seo-for-law-firms/,/local-seo-for-law-firms/,retain-existing-redirect,Manual reader-task match,91
+/marketing-for-immigration-lawyers,404,,/immigration-lawyer-marketing/,redirect,Immigration practice marketing,9
+/our-team,404,,/about-us/,redirect,Manual reader-task match,9
+/portfolio/affordable-defence,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/brenton-legal-adwords,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/calvin-barry,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/colorado-legal-group-seo,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/dennis-and-king,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/houston-alexander-pllc,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/new-mexico-legal-group,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/oykhman-criminal-defence-seo-results,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/spectrum-family-law,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/taylor-janis-employment-law,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/trey-porter-dwi-law,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/tucson-law-center,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/vogel-verjee-adwords,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/portfolio/wilson-criminal-defence-seo,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/practice-area-guides,404,,/practice-areas/,redirect,Manual reader-task match,9
+/practice-area-power-pages,404,,/law-firm-content-writing/,redirect,Manual reader-task match,26
+/ranking-factors-local-seo-lawyers,404,,/local-seo-for-law-firms/,redirect,"Local search, business profiles and reviews",91
+/seo-for-immigration-law-firms,308,/immigration-lawyer-marketing/,/immigration-lawyer-marketing/,retain-existing-redirect,Existing scoped redirect preserved,39
+/seo-for-lawyers/organic-ranking-factors,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,0
+/social-media-criminal-defense-law-firms,404,,,needs-content-review,No sufficiently relevant current replacement identified,3.1
+/success-stories,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,9
+/tools,404,,,needs-content-review,No sufficiently relevant current replacement identified,9
+/videos,404,,,needs-content-review,No sufficiently relevant current replacement identified,9
+/feature-client-reviews-on-your-law-firms-website,308,/law-firm-seo/,/law-firm-websites/,redirect,Manual reader-task match,91
+/portfolio/kazarian-law,308,/case-studies/,/case-studies/,retain-existing-redirect,Existing scoped redirect preserved,90
+/prove-law-firm-marketing-roi,308,/law-firm-seo/,/small-law-firm-marketing/,redirect,Manual reader-task match,91
+/seo-for-family-law-firms,308,/family-law-firm-marketing/,/family-law-firm-marketing/,retain-existing-redirect,Existing scoped redirect preserved,0.7
+/seo-for-lawyers/keyword-research,308,/law-firm-seo/,/law-firm-seo/,retain-existing-redirect,Existing scoped redirect preserved,36
+/small-law-firms-can-use-digital-marketing-to-compete,308,/small-law-firm-marketing/,/small-law-firm-marketing/,retain-existing-redirect,Existing scoped redirect preserved,91
+/why-most-law-firm-websites-fail,308,/law-firm-websites/,/law-firm-websites/,retain-existing-redirect,Existing scoped redirect preserved,91
