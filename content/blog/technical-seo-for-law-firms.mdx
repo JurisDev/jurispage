@@ -1,8 +1,8 @@
 ---
 title: "Technical SEO for Law Firms: The Complete Guide"
-description: "A practical guide to technical SEO for law firms covering site speed, crawlability, schema markup, Core Web Vitals, and AI bot management for attorney websites."
+description: "Technical SEO for law firms: crawling, rendering, indexation, sitemaps, redirects, Core Web Vitals, schema, multiple office sites, AI crawlers, and monitoring."
 datePublished: "2026-04-04"
-dateModified: "2026-04-04"
+dateModified: "2026-10-07"
 author: "Casey Meraz"
 category: "Law Firm SEO"
 excerpt: "Technical SEO is the invisible foundation that determines whether Google can find, crawl, and rank your law firm's website. Here's how to get it right."
@@ -12,37 +12,45 @@ Your law firm can have the best content on the internet, but if Google can't cra
 
 Most law firm SEO conversations focus on keywords, content, and links. Those are important. But they're built on top of a technical foundation, and if that foundation has cracks, everything above it underperforms. A slow site loses visitors before they ever read your practice area page. A misconfigured robots.txt can hide entire sections of your site from Google. Missing schema markup means you're leaving rich result opportunities on the table.
 
-This guide covers the technical SEO fundamentals that matter most for law firm websites, with specific examples and code you can actually use.
+This guide covers every layer of that foundation for law firm websites: crawling, rendering, indexation, sitemaps and status codes, speed, mobile, security, structured data, site architecture, firms with multiple offices, AI crawlers, and the monitoring cadence that keeps it all from breaking again. Attorney websites fail in patterns that generic technical SEO advice never mentions, so each section focuses on those patterns, with specific examples and code you can actually use.
 
 <div className="not-prose blog-tldr">
   <p className="blog-tldr-title">
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1L13 7H19L14 11L16 18L10 14L4 18L6 11L1 7H7L10 1Z" fill="#F59E0B" stroke="#D97706" strokeWidth="1"/></svg>
     TL;DR for Busy Attorneys
   </p>
-  <p style={{ margin: "0 0 8px", fontWeight: 600, color: "#92400E", fontSize: "15px" }}>The 3 things you need to do right now:</p>
+  <p style={{ margin: "0 0 8px", fontWeight: 600, color: "#92400E", fontSize: "15px" }}>The checks worth running this week:</p>
   <ol>
+    <li><strong>Read your robots.txt.</strong> A staging <code>Disallow: /</code> that survives a redesign takes the whole site out of Google, and the symptom looks like a penalty.</li>
+    <li><strong>Test a practice area page with Search Console's live URL tool.</strong> If your case type copy is missing from the rendered HTML, your content is fine and your rendering is the problem.</li>
     <li><strong>Check your page size.</strong> Google only crawls the first ~2MB of HTML. If your pages are bloated with inline scripts, your contact form may be invisible to Google.</li>
     <li><strong>Lazy-load your chat widget.</strong> That live chat tool is loading 300-500KB of JavaScript before your content even renders. Defer it until the user scrolls or moves their mouse.</li>
     <li><strong>Test your INP score.</strong> FID is dead. Google now measures every click on your site, not just the first one. If your settlement calculator takes over 200ms to respond, your rankings suffer.</li>
+    <li><strong>Validate your schema against the visible page.</strong> An address or phone number in the markup that doesn't match the page quietly suppresses the office it describes.</li>
   </ol>
-  <p className="blog-tldr-footer">This guide includes an interactive audit checklist, copy-paste schema code, and a section on AI bot management that almost no other guide covers. Use the table of contents to jump to what matters most for your firm.</p>
+  <p className="blog-tldr-footer">This guide walks crawlability, rendering, indexation, sitemaps and status codes, Core Web Vitals, mobile, HTTPS, schema code you can copy and adapt, technical hygiene for firms with multiple offices, AI bot management, and a monitoring cadence, then closes with an interactive audit checklist. Use the table of contents to jump to what matters most for your firm.</p>
 </div>
 
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
 ## What Is Technical SEO for Law Firms?
 
-Technical SEO is the practice of optimizing the infrastructure of your website so that search engines can efficiently crawl, index, and render your pages. It's distinct from on-page SEO (content, keywords, title tags) and off-page SEO (backlinks, citations, reviews).
+Technical SEO is the practice of optimizing the infrastructure of your website so that search engines can efficiently crawl, render, and index your pages, and pull a trustworthy answer out of them. It's distinct from on-page SEO (content, keywords, title tags) and off-page SEO (backlinks, citations, reviews). You can have the best car accident page in your market and still lose to a weaker firm because their site is technically clean and yours is not.
 
 For law firms specifically, technical SEO covers:
 
-- **Site speed and Core Web Vitals** so pages load fast on any device
 - **Crawlability** so Google can discover all your practice area and location pages
-- **Schema markup** so search engines understand your firm's attorneys, services, and locations
+- **Rendering** so the content Google receives matches what a visitor sees in the browser
+- **Indexation** so the pages Google crawls actually make it into the index
+- **Sitemaps and status codes** so redesigns, removed pages, and migrations don't leak rankings
+- **Site speed and Core Web Vitals** so pages load fast on any device
 - **Mobile optimization** since the majority of legal searches happen on phones
 - **Security (HTTPS)** which is both a ranking signal and a trust signal for potential clients
+- **Schema markup** so search engines understand your firm's attorneys, services, and locations
 - **Site architecture** so your content is logically organized and internally linked
+- **Location page hygiene** so each office of a firm with more than one location stands on its own
 - **AI bot management** so you control how large language models access and cite your content
+- **Monitoring** so regressions get caught before they cost a quarter of rankings
 
 If your firm has more than a handful of pages, or if you serve multiple practice areas across multiple locations, technical SEO isn't optional. It's what keeps the whole operation running.
 
@@ -56,7 +64,7 @@ That heightened scrutiny extends to technical signals. A legal website with slow
 
 **Three reasons technical SEO is especially important for law firms:**
 
-1. **Crawl budget matters when you scale.** A personal injury firm with location pages for 15 cities, practice area pages for 8 case types, and attorney bio pages is looking at 100+ URLs before blog content even enters the picture. If your site has crawl inefficiencies, Google may not discover or refresh all of those pages regularly.
+1. **Crawl budget matters when you scale.** A personal injury firm with location pages for 15 cities, practice area pages for 8 case types, and attorney bio pages is looking at 100+ URLs before blog content even enters the picture. If your site has crawl inefficiencies, Google may not discover or refresh all of those pages regularly. Every one of those pages depends on the same plumbing, so when the plumbing leaks, it does not leak on one page. It leaks everywhere at once.
 
 2. **E-E-A-T starts with trust signals.** Google's quality raters evaluate Experience, Expertise, Authoritativeness, and Trustworthiness. A site that loads slowly, serves mixed HTTP/HTTPS content, or has broken internal links undermines the "trust" component before the content even gets evaluated.
 
@@ -64,136 +72,48 @@ That heightened scrutiny extends to technical signals. A legal website with slow
 
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
-## Site Speed and Core Web Vitals
+## Crawlability: Can Google Reach Every Page?
 
-Google uses three Core Web Vitals as ranking signals. Here's what they measure and what law firms should target:
-
-| Metric | What It Measures | Good | Needs Work | Poor |
-|--------|-----------------|------|------------|------|
-| **LCP** (Largest Contentful Paint) | How fast the main content loads | Under 2.5s | 2.5-4.0s | Over 4.0s |
-| **CLS** (Cumulative Layout Shift) | How much the page layout shifts during load | Under 0.1 | 0.1-0.25 | Over 0.25 |
-| **INP** (Interaction to Next Paint) | How quickly the page responds to every user interaction | Under 200ms | 200-500ms | Over 500ms |
-
-### INP Replaced FID in 2024
-
-FID (First Input Delay) is dead. Google replaced it with INP (Interaction to Next Paint) as an official Core Web Vital. The difference matters:
-
-| | FID (Retired) | INP (Current) |
-|---|---|---|
-| **What it measures** | Delay of the first interaction only | Delay of every interaction on the page |
-| **Reported value** | Single measurement | Worst interaction across the session |
-| **Why it changed** | A fast first click doesn't mean the 10th click is fast | Users interact with pages throughout their visit |
-| **Impact on law firms** | Could pass with a slow calculator if first click was fast | Settlement calculators and multi-step forms now exposed |
-
-**Why this hits law firms hard:** Many firms use interactive tools like settlement calculators, lead qualification forms, or complex intake wizards. If any of those tools take more than 200ms to respond to a click, your INP score drops to "Poor" and your rankings suffer.
-
-**The fix: yield to the main thread.** Break up long-running JavaScript tasks into smaller chunks so the browser can remain responsive to user clicks between them. If you're using a settlement calculator or multi-step form, ensure each step transition completes in under 200ms. Test with Chrome DevTools' Performance panel to identify long tasks.
-
-### Smart Loading for Third-Party Scripts
-
-Law firm sites are often weighed down by marketing bloat that kills both LCP and INP:
-
-- **Live chat widgets** (Ngage, Intaker, Smith.ai) loading 300-500KB of JavaScript on every page
-- **Call tracking** (CallRail, WhatConverts) adding inline scripts to the `<head>`
-- **Heatmaps and session recording** (Hotjar, CrazyEgg, Microsoft Clarity) capturing every mouse movement
-- **Render-blocking CSS and JavaScript** from heavy WordPress themes with 15+ plugins
-
-**The fix: lazy-load all non-critical scripts.** Don't allow the chat widget to load until the user scrolls 20% down the page or moves their mouse. This prevents the widget from stealing resources from LCP. Here's the pattern:
-
-```js
-// Lazy-load chat widget on user interaction
-let chatLoaded = false;
-function loadChat() {
-  if (chatLoaded) return;
-  chatLoaded = true;
-  const s = document.createElement('script');
-  s.src = 'https://chat-provider.com/widget.js';
-  s.async = true;
-  document.body.appendChild(s);
-}
-window.addEventListener('scroll', loadChat, { once: true });
-window.addEventListener('mousemove', loadChat, { once: true });
-```
-
-Apply the same pattern to heatmap scripts, call tracking pixels, and any other third-party tool that isn't needed for the initial page render.
-
-**Other common speed killers:**
-
-- **Unoptimized hero images.** That full-width photo of your office or city skyline is often 2-5MB. Compress it, serve it in WebP or AVIF format, and add explicit width/height attributes to prevent layout shift.
-- **No CDN.** If your hosting serves from a single server location, visitors in other regions wait longer. A CDN (Cloudflare, Fastly, or your host's built-in CDN) distributes your content across edge servers globally.
-
-**How to check:** Run your homepage and a practice area page through [Google PageSpeed Insights](https://pagespeed.web.dev). Focus on the field data (real user metrics), not just the lab data. If you don't have enough field data, the lab scores give you a starting point.
-
-<div className="not-prose blog-cta blog-cta-orange">
-  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" stroke="#EE6C13" strokeWidth="2"/><path d="M14 8V16M14 19V20" stroke="#EE6C13" strokeWidth="2.5" strokeLinecap="round"/></svg>
-  <p>
-    <strong>Is your firm failing INP or LCP?</strong> We can run a free Core Web Vitals diagnostic and show you exactly what's slowing your site down.
-    <br/>
-    <a href="/contact/" className="blog-cta-btn">Get Your Free Speed Report</a>
-  </p>
-</div>
-
-<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
-
-## Mobile Optimization for Law Firm Sites
-
-Google uses mobile-first indexing, meaning it primarily uses the mobile version of your site for ranking and indexing. If your site looks great on desktop but has issues on mobile, those issues affect your rankings everywhere.
-
-**Why this matters for law firms:** Legal searches skew heavily toward mobile. Someone searching "car accident lawyer near me" at 11pm is almost certainly on their phone. If your site is hard to use on that device, they're hitting the back button.
-
-**Common mobile issues on law firm sites:**
-
-- **Tap targets too close together.** Phone numbers, navigation links, and CTA buttons need adequate spacing. Google flags elements smaller than 48x48 pixels or closer than 8 pixels apart.
-- **Text too small to read.** Body text should be at least 16px on mobile. Many law firm sites drop to 12-14px, forcing users to pinch and zoom.
-- **Horizontal scrolling.** Often caused by fixed-width tables, oversized images without max-width constraints, or desktop-only layouts that don't collapse properly.
-- **Intrusive interstitials.** Full-screen popups that cover the content on mobile can trigger a ranking penalty. If you use popups for lead capture, make sure they're easily dismissible and don't cover the primary content on mobile devices.
-- **Slow mobile load times.** Mobile connections are slower than desktop. Everything in the site speed section above applies double for mobile users.
-
-**How to check:** Use Google Search Console's Mobile Usability report. It flags specific pages with mobile issues. You can also use Chrome DevTools' device emulation to manually test your site on various screen sizes.
-
-<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
-
-## Crawlability and Indexing
-
-If Google can't crawl a page, it can't rank it. This sounds obvious, but crawlability issues are surprisingly common on law firm websites, especially after site redesigns or CMS migrations.
+If Google can't crawl a page, it can't rank it. This sounds obvious, but crawlability issues are surprisingly common on law firm websites, especially after site redesigns or CMS migrations. On attorney websites the failures cluster in a handful of predictable places.
 
 ### Robots.txt Configuration
 
-Your robots.txt file tells search engines which parts of your site they can and can't crawl. It lives at `yoursite.com/robots.txt`.
+Your robots.txt file tells search engines which parts of your site they can and can't crawl. It lives at `yoursite.com/robots.txt`. It is also the single most destructive file on the site, because one wrong line disables everything.
 
-A basic robots.txt for a law firm site:
+A correct baseline for a law firm site:
 
 ```
 User-agent: *
 Allow: /
-Disallow: /admin/
+Disallow: /wp-admin/
 Disallow: /api/
 Disallow: /thank-you/
+Disallow: /*?fbclid=
 
 Sitemap: https://www.yourfirm.com/sitemap.xml
 ```
 
-**Common mistakes:**
+You allow the site, block the paths that have no search value (admin, conversion thank you pages, tracking parameter URLs), and point crawlers at your XML sitemap.
 
-- Accidentally blocking entire directories (like `/blog/` or `/practice-areas/`) after a site migration
-- Leaving `Disallow: /` from a staging environment, which blocks the entire site
-- Not referencing your XML sitemap in robots.txt
+**The staging block that takes a firm offline.** The classic version: a firm rebuilds the site, the new build ships with the staging server's robots.txt, and that file still says:
 
-### XML Sitemaps for Multi-Location Firms
+```
+User-agent: *
+Disallow: /
+```
 
-Your XML sitemap is a roadmap for search engines. For law firms with multiple locations or practice areas, a well-structured sitemap helps Google discover and prioritize your most important pages.
+That blocks the entire site. Organic traffic falls off two weeks later, the firm assumes Google applied a penalty, and the real cause is a single line nobody read at launch. A close cousin is a directory level block that survives a migration, something like `Disallow: /practice-areas/` or `Disallow: /blog/` left in from a staging exclusion, which silently removes every case type page from search while the homepage keeps ranking and hides the problem.
 
-**Best practices:**
-
-- Include all indexable pages (practice areas, locations, attorney bios, blog posts)
-- Exclude pages you don't want indexed (thank-you pages, internal tools, duplicate content)
-- Use `lastmod` dates and keep them accurate. Don't set every page to today's date.
-- For large sites (200+ pages), consider splitting into multiple sitemaps: one for practice areas, one for locations, one for blog content
-- Submit your sitemap in Google Search Console
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>The single most expensive mistake we see after a firm changes site builders or hosts is a staging <code>Disallow: /</code> that nobody removed on launch day. Before you touch anything else, open the live robots.txt in a browser and read it. If it disallows the root or your practice area folder, that is the entire problem, and fixing it recovers traffic faster than any content project ever will.</p>
+</div>
 
 ### Crawl Budget Management
 
-Crawl budget is the number of pages Google will crawl on your site within a given time period. For most small to mid-size law firm sites (under 500 pages), crawl budget isn't a concern. But if your site generates dynamic URLs, has a large blog archive, or creates paginated results, you might be wasting crawl budget on low-value pages.
+Crawl budget is the number of pages Google will crawl on your site within a given time period. For most small to mid-size law firm sites (under 500 pages), crawl budget isn't a concern. But a firm generating location and practice area combinations can manufacture thousands of low value URLs that burn the budget before the pages that earn cases get refreshed.
+
+The usual sources of waste on attorney sites are calendar archives, tag and author archives from a blog, internal search result pages that get indexed, paginated results, and parameter URLs from filters or tracking. Every one of those is a URL a crawler spends a fetch on instead of spending it on your motorcycle accident page.
 
 **Signs of crawl budget issues:**
 
@@ -201,7 +121,13 @@ Crawl budget is the number of pages Google will crawl on your site within a give
 - Google Search Console shows a large gap between "discovered" and "indexed" pages
 - Server logs show Googlebot repeatedly crawling low-value pages (tag archives, parameter URLs)
 
-**How to check indexation:** In Google Search Console, go to Pages > Indexed pages. Compare the number of indexed pages to the number you expect. If there's a large gap, investigate which pages are being excluded and why.
+You control this three ways. Keep low value templates out of the index with a `noindex` directive and out of crawl paths by not linking to them. Consolidate parameter URLs to a single canonical form. And keep the internal link graph tight, so the pages that matter are reachable in a few clicks from the homepage while the junk is not reachable at all.
+
+### Crawl Traps and Orphan Pages
+
+Two opposite failures show up on the same sites. A crawl trap is a place where the crawler can generate endless URLs, usually a faceted filter on a "find an attorney" page or blog index that produces `?sort=`, `?page=`, and `?practice=` combinations without limit. An orphan page is the reverse: a real page with no internal links pointing to it. If Google can only find a page through the sitemap and no other page links to it, that's a signal the page isn't very important.
+
+Location pages are the most common orphans on law firm sites, and the problem usually shows up after a redesign. A developer builds 15 city pages, links to four of them in the footer, and leaves 11 stranded. To find orphans, crawl the site with Screaming Frog or Sitebulb, export the URL list, and compare it against the sitemap and the internal link report. Anything in the sitemap with zero inbound internal links is an orphan, and it needs a real link from a relevant parent page.
 
 ### The 2MB HTML Cutoff
 
@@ -265,6 +191,198 @@ In 2026, Googlebot has tightened its efficiency. Google now only crawls and inde
 
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
+## Rendering: What Google Actually Receives
+
+A page can be crawlable and still arrive at the index nearly empty. That happens when the content depends on JavaScript that the crawler does not execute the way your browser does.
+
+Plenty of law firm sites built on heavy page builders, certain website builders, or single page JavaScript frameworks render practice area copy client side. You open the page and it looks complete. The raw HTML the crawler fetches first is a shell with a loading state, and the detailed content about truck accident liability arrives only after scripts run. Google can render JavaScript, but it does so on a delay and not always completely, so the firm ends up with a page that reads as thin or empty in the index while looking full to every human who visits. Practice area descriptions, attorney bios, and FAQ sections are the content most often lost this way.
+
+**The test takes two minutes.** In Google Search Console, run URL Inspection on a practice area page, choose Test Live URL, and view the rendered HTML and screenshot. If your case type copy, your internal links, and your contact form are present in that rendered output, rendering is fine. If they are missing, the content is not your problem. The delivery is.
+
+**The durable fix is to serve the content in the initial HTML response.** Server rendering or static generation for the pages that earn cases (practice areas, location pages, attorney bios) removes the dependency entirely. If the platform cannot do that, the content for those templates needs to live in the HTML rather than being injected after load.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>From our experience auditing firm sites, the rendering problem hides behind good looking pages, so it survives for years. The tell is a Search Console "Crawled, currently not indexed" status on detailed pages that obviously have plenty of content when you visit them. When the rendered HTML is thin but the live page is rich, you have found it.</p>
+</div>
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## Indexation: Crawled Is Not the Same as Indexed
+
+Indexation is where the page either enters Google's index or gets excluded. The Pages report in Google Search Console is the instrument. Go to Indexing > Pages, compare the number of pages you expect to be indexed against the number that are, then read the exclusion reasons one by one. A large gap tells you where to look.
+
+### Crawled, Currently Not Indexed
+
+This status on a stack of similar pages usually means Google fetched them, decided they were near copies of each other or too thin to store, and declined. The textbook law firm version is a set of city pages built by swapping the city name into one template. Twenty pages that say the same thing with "Phoenix" swapped for "Tucson" do not get twenty rankings. They get one or none.
+
+The fix is not more pages. It is fewer pages that are genuinely distinct. A location page earns its index slot when it carries something only that location has: the local courthouse and filing specifics, real case results from that venue, the actual office and staff, jurisdiction specific procedure, and community involvement. If you cannot make a location page genuinely different, do not publish it. Thin location sprawl drags down the pages around it.
+
+### Discovered, Currently Not Indexed
+
+This one means Google knows the URL exists and has not bothered to crawl it yet. At scale it is a crawl budget and internal linking signal: the page is not important enough in the site's link graph for Google to prioritize. The answer is a stronger internal link from a relevant, already indexed page, and fewer low value URLs competing for the same crawl attention.
+
+### Noindex and Canonical Mistakes
+
+Two tags quietly cause most of the self inflicted indexation damage on law firm sites.
+
+A `noindex` left on a template after launch keeps an entire section out of search for months. It happens constantly when a staging environment is set to noindex globally and the production launch does not strip it from every template. A canonical tag pointing the wrong way is subtler: paginated blog pages or filtered listings that all canonicalize back to page one tell Google to ignore everything past the first page, and a location page that canonicalizes to the homepage removes itself.
+
+Here is the hygiene rule. Every indexable page should have a canonical tag that points to its own clean URL. Pages you do not want indexed should carry a `noindex` and should not be in the sitemap. Those two states should never contradict each other, and a page should never both be in the sitemap and carry a `noindex`.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>The fastest ranking recovery we ever deliver is almost never a content project. It is finding a leftover <code>noindex</code> or a bad canonical that has been suppressing a page that should be earning cases. Those pages often come back within days of the fix, because Google already knows them and only needed permission to show them again.</p>
+</div>
+
+### Index Bloat and Soft 404s
+
+Index bloat is the opposite of thin indexation: too many low value URLs in the index diluting the site's perceived quality. Tag archives, attachment pages, internal search results, and old campaign landing pages are the usual offenders on attorney sites.
+
+A soft 404 is a page that returns a 200 status while showing a "nothing here" experience, which confuses Google about what is real. Empty location pages for cities a firm no longer serves, or a practice area that was removed but still resolves to a stub, both qualify. Decide per URL: make it genuinely useful, return a real 404 or 410 if it should be gone, or 301 it to the closest relevant page.
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## XML Sitemaps and Status Code Hygiene
+
+Your XML sitemap is a roadmap for search engines. For law firms with multiple locations or practice areas, a well structured sitemap helps Google discover and prioritize your most important pages, and it should be accurate and honest.
+
+**Sitemap best practices:**
+
+- Include all indexable pages (practice areas, locations, attorney bios, blog posts)
+- Exclude pages you don't want indexed (thank you pages, internal tools, tag archives, parameter URLs, duplicate content)
+- Never list a URL that carries a `noindex`, redirects, or returns a 404
+- Use `lastmod` dates and keep them accurate. Don't set every page to today's date, because a sitemap that claims the entire site changed this morning is a sitemap Google learns to distrust.
+- For large sites (200+ pages), split into child sitemaps (practice areas, locations, attorneys, blog) and reference them from a sitemap index
+- Submit the sitemap index in Google Search Console and watch the gap between submitted and indexed URLs for each child sitemap, because that gap tells you exactly which template has an indexation problem
+
+**Status codes are the other half of this.** After a redesign or CMS migration the URL structure usually changes (for example, `/practice-areas/personal-injury/` becomes `/services/personal-injury/`). Before launch, crawl the existing site and build a complete map from every old URL to its closest new equivalent, then set up a 301 for each one. After launch, monitor Google Search Console for 404 errors and add redirects for any URLs you missed.
+
+The common failures are predictable:
+
+- **Redirect chains.** An old URL that 301s to a second URL that 301s again wastes crawl equity and slows everything down. Collapse every chain to a single hop.
+- **Internal links that rely on redirects.** Update internal links to point at the final URL directly.
+- **Pages that should be gone returning the wrong code.** Removed pages should return 404 or 410, not a 200 stub, and a permanent move should be a 301, not a 302.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>The mistake we see most often on a relaunch is mapping the homepage and the top five pages, then sending everything else to the homepage with a blanket redirect. Every one of those becomes a soft 404 in Google's eyes, and the firm loses the rankings those deeper pages held. Map every old URL to a real, relevant destination, or let it 410. A blanket redirect to the homepage is a slow leak.</p>
+</div>
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## Site Speed and Core Web Vitals
+
+Google uses three Core Web Vitals as ranking signals. Here's what they measure and what law firms should target:
+
+| Metric | What It Measures | Good | Needs Work | Poor |
+|--------|-----------------|------|------------|------|
+| **LCP** (Largest Contentful Paint) | How fast the main content loads | Under 2.5s | 2.5-4.0s | Over 4.0s |
+| **CLS** (Cumulative Layout Shift) | How much the page layout shifts during load | Under 0.1 | 0.1-0.25 | Over 0.25 |
+| **INP** (Interaction to Next Paint) | How quickly the page responds to every user interaction | Under 200ms | 200-500ms | Over 500ms |
+
+### INP Replaced FID in 2024
+
+FID (First Input Delay) is dead. Google replaced it with INP (Interaction to Next Paint) as an official Core Web Vital. The difference matters:
+
+| | FID (Retired) | INP (Current) |
+|---|---|---|
+| **What it measures** | Delay of the first interaction only | Delay of every interaction on the page |
+| **Reported value** | Single measurement | Worst interaction across the session |
+| **Why it changed** | A fast first click doesn't mean the 10th click is fast | Users interact with pages throughout their visit |
+| **Impact on law firms** | Could pass with a slow calculator if first click was fast | Settlement calculators and multi-step forms now exposed |
+
+**Why this hits law firms hard:** Many firms use interactive tools like settlement calculators, lead qualification forms, "do I have a case" quizzes, or complex intake wizards. If any of those tools take more than 200ms to respond to a click, your INP score drops to "Poor" and your rankings suffer.
+
+**The fix: yield to the main thread.** Break up long-running JavaScript tasks into smaller chunks so the browser can remain responsive to user clicks between them. If you're using a settlement calculator or multi-step form, ensure each step transition completes in under 200ms. Test with Chrome DevTools' Performance panel to identify long tasks.
+
+### Smart Loading for Third-Party Scripts
+
+The weight on a law firm site is rarely the content. It is the marketing stack bolted on top, and that bloat kills both LCP and INP:
+
+- **Live chat widgets** (Ngage, Intaker, Smith.ai) loading 300-500KB of JavaScript on every page
+- **Call tracking** (CallRail, WhatConverts) adding inline scripts to the `<head>`
+- **Heatmaps and session recording** (Hotjar, CrazyEgg, Microsoft Clarity) capturing every mouse movement, often two or three at once because nobody removed the old tool when they added the new one
+- **Render-blocking CSS and JavaScript** from heavy WordPress themes with 15+ plugins
+
+**The fix: lazy-load all non-critical scripts.** Nothing that is not needed for the first paint should load before it. Don't allow the chat widget to load until the user scrolls 20% down the page or moves their mouse. That still loads it for every real prospect while keeping it from stealing resources from LCP. Here's the pattern:
+
+```js
+// Lazy-load chat widget on user interaction
+let chatLoaded = false;
+function loadChat() {
+  if (chatLoaded) return;
+  chatLoaded = true;
+  const s = document.createElement('script');
+  s.src = 'https://chat-provider.com/widget.js';
+  s.async = true;
+  document.body.appendChild(s);
+}
+window.addEventListener('scroll', loadChat, { once: true });
+window.addEventListener('mousemove', loadChat, { once: true });
+```
+
+Apply the same thinking to the rest of the stack. Call tracking and analytics can load asynchronously, and heatmap tools can wait for idle time.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>At JurisPage we defer the chat widget until the first scroll or mouse move on every site we run. The widget still appears for every genuine prospect, just not before the headline and phone number. On a typical firm site that one change moves LCP out of the red without editing a single word of copy, and it usually improves the conversion rate too because the page becomes usable sooner.</p>
+</div>
+
+### Images, Layout Shift, and Delivery
+
+- **Unoptimized hero images.** That full width photo of your office, courthouse, or city skyline is often 2 to 5MB. Compress it, serve it in WebP or AVIF format, and add explicit width/height attributes to prevent layout shift.
+- **Elements that load without reserved space.** CLS comes from images with no dimensions, chat or ad containers that push content down when they appear, and web fonts that reflow text after they load. Reserve space for anything that arrives late.
+- **No CDN.** If your hosting serves from a single server location, visitors in other regions wait longer. A CDN (Cloudflare, Fastly, or your host's built-in CDN) distributes your content across edge servers globally.
+
+**How to check:** Run your homepage and a practice area page through [Google PageSpeed Insights](https://pagespeed.web.dev). Focus on the field data (real user metrics), not just the lab data. The lab score is a starting point, and the field data is what Google acts on. If you don't have enough field data yet, the lab scores give you a baseline.
+
+<div className="not-prose blog-cta blog-cta-orange">
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" stroke="#EE6C13" strokeWidth="2"/><path d="M14 8V16M14 19V20" stroke="#EE6C13" strokeWidth="2.5" strokeLinecap="round"/></svg>
+  <p>
+    <strong>Is your firm failing INP or LCP?</strong> We can run a free Core Web Vitals diagnostic and show you exactly what's slowing your site down.
+    <br/>
+    <a href="/contact/" className="blog-cta-btn">Get Your Free Speed Report</a>
+  </p>
+</div>
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## Mobile Optimization for Law Firm Sites
+
+Google uses mobile-first indexing, meaning it primarily uses the mobile version of your site for ranking and indexing. If your site looks great on desktop but has issues on mobile, those issues affect your rankings everywhere.
+
+**Why this matters for law firms:** Legal searches skew heavily toward mobile. Someone searching "car accident lawyer near me" at 11pm is almost certainly on their phone. If your site is hard to use on that device, they're hitting the back button.
+
+**Common mobile issues on law firm sites:**
+
+- **Tap targets too close together.** Phone numbers, navigation links, and CTA buttons need adequate spacing. Google flags elements smaller than 48x48 pixels or closer than 8 pixels apart.
+- **Text too small to read.** Body text should be at least 16px on mobile. Many law firm sites drop to 12-14px, forcing users to pinch and zoom.
+- **Horizontal scrolling.** Often caused by fixed-width tables, oversized images without max-width constraints, or desktop-only layouts that don't collapse properly.
+- **Content parity failures.** The mobile template hides sections the desktop version shows, so Google never indexes the hidden content at all.
+- **Intrusive interstitials.** Full-screen popups that cover the content on mobile can trigger a ranking penalty. If you use popups for lead capture, make sure they're easily dismissible and don't cover the primary content on mobile devices.
+- **Slow mobile load times.** Mobile connections are slower than desktop. Everything in the site speed section above applies double for mobile users.
+
+**Content parity is the one firms miss most.** If your mobile template collapses the practice area detail behind a tab that loads empty, or drops the FAQ entirely on small screens, that content does not exist as far as mobile first indexing is concerned. Check the rendered mobile HTML, not just the desktop view.
+
+**How to check:** Use Google Search Console's Mobile Usability report. It flags specific pages with mobile issues. You can also use Chrome DevTools' device emulation to manually test your site on various screen sizes.
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## HTTPS and Security
+
+HTTPS has been a confirmed Google ranking signal since 2014. In 2026, there's no excuse for a law firm website not running HTTPS on every page.
+
+Beyond rankings, HTTPS is a trust signal. A "Not Secure" warning in the browser bar is devastating for a law firm. Potential clients are about to share sensitive information about their legal situation, sometimes a criminal or family matter, through your contact form. If your site can't even secure a basic web connection, why would they trust you with their case?
+
+**Common HTTPS issues on law firm sites:**
+
+- **Mixed content warnings.** Your site is HTTPS, but some images, scripts, or stylesheets load over HTTP. This triggers browser warnings and can prevent resources from loading entirely. Audit your site for mixed content and update all internal references to use HTTPS or protocol-relative URLs.
+- **Expired or misconfigured SSL certificates.** If your certificate expires, the entire site shows a security warning. Turn on automatic renewal through your hosting provider or use Let's Encrypt for free certificates that renew themselves, and monitor the certificate rather than relying on a calendar reminder.
+- **HTTP to HTTPS redirect gaps.** Every HTTP URL should 301 redirect to its HTTPS equivalent. Check that `http://yoursite.com`, `http://www.yoursite.com`, and the HTTPS variant without www all redirect to a single canonical HTTPS URL, so authority does not split four ways.
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
 ## Schema Markup for Attorneys
 
 Schema markup (structured data) helps search engines understand the entities on your page: your firm, your attorneys, your services, your locations. It can also unlock rich results like FAQ dropdowns, review stars, and enhanced business listings.
@@ -274,6 +392,8 @@ Schema markup (structured data) helps search engines understand the entities on 
 Search engines in 2026 no longer just match keywords. They identify **entities**: the firm, the attorney, the case result, the practice area. Your schema markup needs to reflect this shift.
 
 The most important change: use `LegalService` schema instead of generic `LocalBusiness`. And use the `sameAs` property to connect your attorneys to their official State Bar profiles, LinkedIn, and Avvo listings. This "closes the loop" for Google's E-E-A-T algorithms by proving your attorneys are real, credentialed professionals.
+
+Use `BreadcrumbList` markup that matches the visible breadcrumb on every page, and keep `FAQPage` markup limited to questions that genuinely appear on the page.
 
 Most law firm SEO guides say "add schema markup" but never show you the actual code. Here are the JSON-LD examples you can adapt for your site.
 
@@ -439,8 +559,6 @@ Place this on any page with a frequently asked questions section:
 
 If your firm has multiple offices, each location page should have its own `LocalBusiness` or `LegalService` schema with unique address, phone number, and geo coordinates. Link them together using the `parentOrganization` property pointing to your main firm entity.
 
-**How to validate:** Use [Google's Rich Results Test](https://search.google.com/test/rich-results) to check any page for valid structured data. Fix errors before deploying.
-
 ### Case Results Schema
 
 Case results are one of the most powerful trust signals a law firm can display. Use `ItemList` markup to help AI Overviews cite your firm as a successful authority in specific litigation:
@@ -495,6 +613,19 @@ Case results are one of the most powerful trust signals a law firm can display. 
 
 This structured markup gives AI systems specific, citable data about your firm's track record rather than relying on them to extract it from unstructured text.
 
+### Keep Your Schema in Sync With the Page
+
+The error we find most is not missing schema. It is schema that disagrees with the page. The address in the markup does not match the address in the footer. The phone number was updated on the site and never in the JSON-LD. The firm name in the schema is the old name from before a merger. Mismatched structured data is worse than none, because you are handing a machine confident, wrong facts about your firm.
+
+**How to validate:** Use [Google's Rich Results Test](https://search.google.com/test/rich-results) to check any page for valid structured data. Fix errors before deploying, not after.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>Run every template through Google's Rich Results Test before launch, not after. We have seen one office with a transposed postal code in the markup quietly undercut visibility for that location for an entire quarter, because the page looked perfect to every human who opened it and only the machine saw the wrong number.</p>
+</div>
+
+Validate it, then keep validating it. Schema breaks the same way robots.txt breaks: a developer ships an unrelated change, the markup falls out of sync with reality, and the regression hides until something surfaces it. Treat structured data as code that needs a test, not as a one time setup.
+
 <div className="not-prose blog-cta blog-cta-orange">
   <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 7L14 3L23 7V14C23 19.5 19 24 14 26C9 24 5 19.5 5 14V7Z" stroke="#EE6C13" strokeWidth="2"/><path d="M10 14L13 17L18 11" stroke="#EE6C13" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
   <p>
@@ -503,20 +634,6 @@ This structured markup gives AI systems specific, citable data about your firm's
     <a href="/contact/" className="blog-cta-btn">Schedule a Schema Audit</a>
   </p>
 </div>
-
-<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
-
-## HTTPS and Security
-
-HTTPS has been a confirmed Google ranking signal since 2014. In 2026, there's no excuse for a law firm website not running HTTPS on every page.
-
-Beyond rankings, HTTPS is a trust signal. A "Not Secure" warning in the browser bar is devastating for a law firm. Potential clients are about to share sensitive information about their legal situation. If your site can't even secure a basic web connection, why would they trust you with their case?
-
-**Common HTTPS issues on law firm sites:**
-
-- **Mixed content warnings.** Your site is HTTPS, but some images, scripts, or stylesheets load over HTTP. This triggers browser warnings and can prevent resources from loading entirely. Audit your site for mixed content and update all internal references to use HTTPS or protocol-relative URLs.
-- **Expired or misconfigured SSL certificates.** If your certificate expires, the entire site shows a security warning. Set up auto-renewal through your hosting provider or use Let's Encrypt for free certificates with automatic renewal.
-- **HTTP to HTTPS redirect gaps.** Every HTTP URL should 301 redirect to its HTTPS equivalent. Check that `http://yoursite.com`, `http://www.yoursite.com`, and the HTTPS non-www variant all redirect to a single canonical HTTPS URL.
 
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
@@ -561,7 +678,19 @@ Homepage
 - Attorney bio pages should link to the practice areas they handle
 - No page should be more than 3 clicks from the homepage
 
-**Orphan pages** (pages with no internal links pointing to them) are a common problem after site redesigns. If Google can only find a page through the sitemap but no other page links to it, that's a signal the page isn't very important. Run a crawl with Screaming Frog or Sitebulb to identify orphan pages and add appropriate internal links.
+A hierarchy like this is also what prevents the orphan pages and crawl traps covered in the crawlability section. When every location and practice area page has a clear parent that links to it, nothing gets stranded, and the pages that earn cases stay a few clicks from the homepage.
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## Technical Hygiene for Firms With Multiple Offices
+
+A firm with more than one office multiplies every technical concern above, and adds a few of its own. This section is about the crawl, canonical, and markup mechanics of location pages, not the off site work.
+
+- **Unique content and its own canonical.** Each office gets its own location page with genuinely unique content and a canonical tag pointing to itself. Never point a location page's canonical at a single flagship office, which collapses them into one.
+- **Its own structured data.** Each location page carries its own markup with that office's exact address, phone, and coordinates, matched to what the page displays and to what the firm publishes elsewhere. A mismatch between the schema on the page and the firm's listed details is a contradiction a machine cannot resolve in your favor. The schema section above shows how to connect each office to the parent firm with `parentOrganization`.
+- **More than the city name.** If two offices serve overlapping areas, the pages must differ on more than the city name, or Google will treat them as the duplicate template pattern from the indexation section and index one or none.
+
+Firms operating across more than one state face a jurisdiction issue on top of that. A divorce procedure page that is accurate in one state and wrong in another is not just a content issue. When the same template is reused across state pages with only the state name changed, it becomes a duplicate and contradiction issue. Distinct, state correct pages with clean canonicals avoid both the thin duplicate trap and the accuracy problem at once.
 
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
@@ -584,7 +713,7 @@ Several AI companies use web crawlers to train their models or power their searc
 
 ### The Strategic Decision: Block or Allow?
 
-This is where law firms need to make a conscious choice rather than just accepting defaults.
+This is where law firms need to make a conscious choice rather than just accepting defaults. The choice is made in a technical file, it has consequences for whether your firm appears in AI answers about legal questions, and most firms have never opened that file to look.
 
 **Arguments for allowing AI crawlers:**
 - Your content can be cited in AI-generated answers, driving brand visibility
@@ -620,7 +749,7 @@ User-agent: Bytespider
 Disallow: /
 ```
 
-This approach lets your content appear in AI search results (where you get attribution and traffic) while blocking crawlers that only use your content for model training (where you get nothing).
+This approach lets your content appear in AI search results (where you get attribution and traffic) while blocking crawlers that only use your content for model training (where you get nothing). Whatever split you choose, treat AI crawler access as a setting you control, the same way you control robots.txt for traditional crawlers, and revisit it as the answer engines change.
 
 ### Optimizing for AI Overview Citations
 
@@ -679,6 +808,26 @@ Google has increasingly signaled that page experience includes usability for all
 - **Alt text on all images.** Attorney headshots, office photos, and infographics all need descriptive alt text. This helps screen readers *and* gives Google additional context about your page content.
 - **Proper heading hierarchy.** Don't skip heading levels (jumping from H1 to H4). Use H1 for the page title, H2 for main sections, H3 for subsections. This is both an accessibility requirement and an SEO best practice.
 
+The work you do for accessibility is not separate from technical SEO. It is part of it.
+
+<div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
+
+## A Monitoring Cadence That Catches Regressions
+
+Technical SEO is not a one time cleanup. It is a system that breaks every time someone deploys, swaps a plugin, or relaunches, so the real discipline is catching the regression before it costs a quarter of rankings. Get the plumbing right and it stays right with maintenance, not heroics.
+
+A workable cadence for a firm site:
+
+- **Weekly:** Scan Google Search Console for new crawl errors, indexation drops, and Core Web Vitals changes. Search Console is the early warning system, and it is free.
+- **Monthly:** Run a full crawl with Screaming Frog or Sitebulb and compare it against last month. Look for new orphans, new redirect chains, new `noindex` tags, new 404s, and schema that stopped validating.
+- **Quarterly:** Do a deeper pass that includes server log analysis, where you watch what Googlebot actually fetches and how often. Logs are the only place you see crawl budget waste with certainty rather than inference.
+- **After every meaningful change:** A redesign, a migration, a platform change, or a bulk content move gets a focused technical audit immediately after launch, because that is when robots.txt, `noindex` tags, canonicals, and redirects break, all at once and all silently.
+
+<div className="not-prose" style={{ margin: "28px 0", background: "#F8F8F8", borderLeft: "4px solid #14EEEE", borderRadius: "8px", padding: "16px 20px" }}>
+  <p style={{ margin: "0 0 6px", fontWeight: 700, fontSize: "13px", letterSpacing: "0.04em", textTransform: "uppercase", color: "#0b8c8c" }}>JurisPage Tip</p>
+  <p style={{ margin: 0, color: "#374151", lineHeight: 1.6 }}>The pattern we see across firm after firm is that the damage does not happen during the audit. It happens three weeks later when a developer ships an unrelated change and nobody checks the technical baseline again. Put a technical check after every deploy on the calendar as a standing item, not a reaction. The firms that do this stop having mystery traffic drops.</p>
+</div>
+
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
 ## Technical SEO Audit Checklist for Law Firms
@@ -690,7 +839,33 @@ Google has increasingly signaled that page experience includes usability for all
   </p>
 </div>
 
-Use this checklist to audit your law firm's technical SEO. Work through it systematically. The items are grouped by category and ordered by impact.
+Use this checklist to audit your law firm's technical SEO. Start with the short check below, because those items decide whether you appear at all. Then work through the full audit, which is grouped by category and ordered by impact.
+
+### The Technical Check You Can Run This Week
+
+- [ ] Live robots.txt does not disallow the root, the practice area folder, or the blog
+- [ ] Search Console "Test Live URL" shows your practice area copy, internal links, and contact form in the rendered HTML
+- [ ] No production page carries a leftover `noindex`, and every indexable page has a canonical pointing to itself
+- [ ] Every old URL from the last redesign 301s to a relevant destination, with no blanket redirect to the homepage
+- [ ] LegalService and Attorney schema validate, and the address and phone in the markup match the visible page
+
+### Crawlability and Indexing
+
+- [ ] Robots.txt references the XML sitemap and blocks only paths with no search value
+- [ ] XML sitemap exists, is accurate, and submitted to Search Console
+- [ ] Sitemap lists no URLs that carry a `noindex`, redirect, or return 404
+- [ ] `lastmod` dates reflect real changes (not every page set to today)
+- [ ] Search Console Pages report reviewed: no large gap between submitted and indexed, and top exclusion reasons read
+- [ ] No crawl traps from faceted filters, internal search results, or parameter URLs
+- [ ] No soft 404s (empty stubs returning a 200 status)
+- [ ] 100% of desktop content visible on mobile version (no hidden mobile content)
+
+### Redirects and Status Codes
+
+- [ ] No important pages returning 404 or 5xx errors
+- [ ] Redirect chains resolved (no redirect pointing to another redirect)
+- [ ] Internal links point at final URLs, not at redirects
+- [ ] Removed pages return 404 or 410, and permanent moves use 301 (not 302)
 
 ### Site Speed and Performance
 
@@ -706,35 +881,6 @@ Use this checklist to audit your law firm's technical SEO. Work through it syste
 - [ ] Call tracking scripts deferred or loaded async
 - [ ] CDN configured and serving static assets
 
-### Crawlability and Indexing
-
-- [ ] Robots.txt reviewed and not blocking important content
-- [ ] XML sitemap exists, is accurate, and submitted to Search Console
-- [ ] No important pages returning 404 or 5xx errors
-- [ ] Redirect chains resolved (no redirect pointing to another redirect)
-- [ ] Canonical tags present and correct on all pages
-- [ ] No accidental noindex tags on pages that should be indexed
-- [ ] Search Console coverage report reviewed for errors
-- [ ] 100% of desktop content visible on mobile version (no hidden mobile content)
-
-### Schema and Entity Markup
-
-- [ ] LegalService schema on homepage (not generic LocalBusiness)
-- [ ] Attorney schema on each attorney bio page with `sameAs` links to State Bar profiles
-- [ ] FAQPage schema on pages with FAQ sections
-- [ ] Case results marked up with ItemList/CreativeWork schema
-- [ ] BreadcrumbList schema matching visible breadcrumbs
-- [ ] All schema validated with Google's Rich Results Test
-- [ ] Multi-location firms have unique schema per location page
-
-### Security
-
-- [ ] HTTPS active on all pages
-- [ ] No mixed content warnings
-- [ ] SSL certificate valid and auto-renewing
-- [ ] All HTTP URLs 301 redirect to HTTPS
-- [ ] Single canonical domain (www vs. non-www resolved)
-
 ### Mobile
 
 - [ ] No mobile usability issues in Search Console
@@ -744,14 +890,22 @@ Use this checklist to audit your law firm's technical SEO. Work through it syste
 - [ ] Forms usable on mobile (proper input types, adequate field sizes)
 - [ ] No intrusive interstitials blocking content on mobile
 
-### Semantic HTML and Accessibility
+### Security
 
-- [ ] Pages use `<article>`, `<section>`, `<main>`, `<nav>` (not all `<div>`s)
-- [ ] Heading hierarchy is correct (H1 > H2 > H3, no skipped levels)
-- [ ] All images have descriptive alt text
-- [ ] Focus states visible on all interactive elements
-- [ ] Aria-labels on all action buttons ("Call Now," "Submit," chat triggers)
-- [ ] Text-to-background contrast at least 4.5:1
+- [ ] HTTPS active on all pages
+- [ ] No mixed content warnings
+- [ ] SSL certificate valid and auto-renewing
+- [ ] All HTTP URLs 301 redirect to HTTPS
+- [ ] Single canonical domain (www vs. non-www resolved)
+
+### Schema and Entity Markup
+
+- [ ] LegalService schema on homepage (not generic LocalBusiness)
+- [ ] Attorney schema on each attorney bio page with `sameAs` links to State Bar profiles
+- [ ] FAQPage schema on pages with FAQ sections
+- [ ] Case results marked up with ItemList/CreativeWork schema
+- [ ] BreadcrumbList schema matching visible breadcrumbs
+- [ ] All schema validated with Google's Rich Results Test
 
 ### Architecture and Internal Links
 
@@ -762,17 +916,43 @@ Use this checklist to audit your law firm's technical SEO. Work through it syste
 - [ ] Breadcrumb navigation present and accurate
 - [ ] No page more than 3 clicks from homepage
 
+### Multiple Offices
+
+- [ ] Each office has its own location page with content that goes beyond the city name
+- [ ] Each location page has a canonical pointing to itself, not to a flagship office
+- [ ] Each location page has its own schema with that office's exact address, phone, and coordinates
+
+### AI Crawlers
+
+- [ ] Robots.txt makes a deliberate choice for each AI crawler (search crawlers versus training crawlers)
+
+### Semantic HTML and Accessibility
+
+- [ ] Pages use `<article>`, `<section>`, `<main>`, `<nav>` (not all `<div>`s)
+- [ ] Heading hierarchy is correct (H1 > H2 > H3, no skipped levels)
+- [ ] All images have descriptive alt text
+- [ ] Focus states visible on all interactive elements
+- [ ] Aria-labels on all action buttons ("Call Now," "Submit," chat triggers)
+- [ ] Text-to-background contrast at least 4.5:1
+
+### Monitoring
+
+- [ ] Search Console reviewed weekly
+- [ ] Full crawl run monthly and compared against the previous crawl
+- [ ] Server logs reviewed quarterly
+- [ ] Technical check scheduled after every deploy, redesign, or migration
+
 <div style={{ height: 1, background: "linear-gradient(to right, #EE6C13, transparent)", margin: "48px 0 40px", borderRadius: 1 }} />
 
 ## Common Technical SEO Mistakes Law Firms Make
 
 ### JavaScript-Rendered Content Not Being Indexed
 
-**Symptoms:** Pages look complete when you view them in a browser, but Google Search Console shows thin or empty content. Rankings are poor despite having detailed content.
+**Symptoms:** Pages look complete when you view them in a browser, but Google Search Console shows thin or empty content, or a "Crawled, currently not indexed" status. Rankings are poor despite having detailed content.
 
-**Cause:** Some law firm websites (especially those built on certain website builders or heavy JavaScript frameworks) render content client-side. Google can render JavaScript, but it's slower and less reliable than server-rendered HTML. Critical content like practice area descriptions, attorney bios, or FAQ sections may not be indexed if they depend entirely on JavaScript to appear.
+**Cause:** Content that only appears after client side JavaScript runs, so Googlebot receives a near empty shell.
 
-**Fix:** Verify your pages render correctly using Google's URL Inspection tool (click "Test Live URL" and view the rendered HTML). If content is missing, work with your developer to implement server-side rendering or static site generation for important pages.
+**Fix:** Run the live URL test described in the rendering section above, and move the content of your practice area, location, and attorney bio templates into the initial HTML response.
 
 ### Duplicate Location Pages
 
@@ -780,15 +960,15 @@ Use this checklist to audit your law firm's technical SEO. Work through it syste
 
 **Cause:** Generating a page for every city in your service area with only the city name changed. Google recognizes this as thin, duplicated content.
 
-**Fix:** Create unique location pages only for areas where you have a genuine presence or significant case history. Each page needs unique content: local court information, jurisdiction-specific legal nuances, local case results, and community involvement. If you can't make a location page genuinely unique, don't create it.
+**Fix:** Create unique location pages only for areas where you have a genuine presence or significant case history, and give each one content only that location has. The indexation section above lists what that looks like. If you can't make a location page genuinely unique, don't create it.
 
 ### Broken Internal Links After Site Redesigns
 
 **Symptoms:** 404 errors in Google Search Console spike after launching a new website. Organic traffic drops sharply.
 
-**Cause:** URL structures change during a redesign (for example, `/practice-areas/personal-injury/` becomes `/services/personal-injury/`), but 301 redirects aren't set up for every old URL.
+**Cause:** URL structures change during a redesign, but 301 redirects aren't set up for every old URL, or everything beyond the top pages gets a blanket redirect to the homepage.
 
-**Fix:** Before launching a redesign, crawl the existing site and create a complete URL map. Set up 301 redirects from every old URL to its new equivalent. After launch, monitor Google Search Console for 404 errors and fix redirects for any URLs you missed. Also update all internal links to point to the new URLs directly rather than relying on redirect chains.
+**Fix:** Build the complete URL map described in the sitemaps and status codes section before launch, redirect every old URL to its real equivalent, and update internal links to point at the new URLs directly.
 
 ### Missing or Duplicate Title Tags
 
@@ -836,7 +1016,7 @@ Use this checklist to audit your law firm's technical SEO. Work through it syste
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
     </summary>
     <div className="faq-answer">
-      Run a comprehensive technical audit quarterly. Between audits, monitor Google Search Console weekly for new crawl errors, indexation drops, or Core Web Vitals regressions. Any time you make significant changes to your site (redesign, CMS migration, adding a new section), run a focused audit immediately after.
+      Run a comprehensive technical audit quarterly. Between audits, monitor Google Search Console weekly for new crawl errors, indexation drops, or Core Web Vitals regressions, and run a full site crawl monthly. Any time you make significant changes to your site (redesign, CMS migration, adding a new section), run a focused audit immediately after.
     </div>
   </details>
 </div>

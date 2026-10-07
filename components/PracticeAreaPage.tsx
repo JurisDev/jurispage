@@ -588,7 +588,7 @@ export default function PracticeAreaPage({ practiceArea: pa }: PracticeAreaPageP
                     {index + 1}
                   </span>
                   <h3 className="font-heading font-bold text-white text-lg mb-2">{item.step}</h3>
-                  <p className="text-gray-400 leading-relaxed text-sm">{item.detail}</p>
+                  <p className="text-gray-400 leading-relaxed text-sm">{renderLinkedText(item.detail)}</p>
                 </div>
               ))}
             </div>
