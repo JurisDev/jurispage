@@ -1,0 +1,1014 @@
+{
+  "ioVariants": [
+    {
+      "oldPath": "/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-seo",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-seo",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-seo/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-seo/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/blog",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/blog",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/blog/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/blog/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing/law-firm-marketing-strategy",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing/law-firm-marketing-strategy",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing/law-firm-marketing-strategy/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing/law-firm-marketing-strategy/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-websites",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-websites",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-websites/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-websites/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/google-algorithm-updates-impact-on-law-firm-websites",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/google-algorithm-updates-impact-on-law-firm-websites",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/google-algorithm-updates-impact-on-law-firm-websites/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/google-algorithm-updates-impact-on-law-firm-websites/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/landing-page-portfolio",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/landing-page-portfolio",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/landing-page-portfolio/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/landing-page-portfolio/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/about-us",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/about-us/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/about-us",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/about-us/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/about-us/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/about-us/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/about-us/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/about-us/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/chatgpt-for-law-firm-marketing-a-blueprint",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/ai-content-without-seo-strategy/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/chatgpt-for-law-firm-marketing-a-blueprint",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/ai-content-without-seo-strategy/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/chatgpt-for-law-firm-marketing-a-blueprint/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/ai-content-without-seo-strategy/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/chatgpt-for-law-firm-marketing-a-blueprint/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/ai-content-without-seo-strategy/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/contact",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/contact/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/contact",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/contact/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/contact/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/contact/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/contact/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/contact/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/criminal-defense-lawyer-seo",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/criminal-defense-lawyer-seo",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/criminal-defense-lawyer-seo/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/criminal-defense-lawyer-seo/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/design-portfolio",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/design-portfolio",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/design-portfolio/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/design-portfolio/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/feature-client-reviews-on-your-law-firms-website",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/feature-client-reviews-on-your-law-firms-website",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/feature-client-reviews-on-your-law-firms-website/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/feature-client-reviews-on-your-law-firms-website/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/feed",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/feed",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/feed/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/feed/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/blog/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-seo-cost",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo-cost/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-seo-cost",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo-cost/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-seo-cost/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo-cost/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-seo-cost/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo-cost/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/portfolio/kazarian-law",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/case-studies/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/portfolio/kazarian-law",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/case-studies/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/portfolio/kazarian-law/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/case-studies/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/portfolio/kazarian-law/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/case-studies/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/prove-law-firm-marketing-roi",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/prove-law-firm-marketing-roi",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/prove-law-firm-marketing-roi/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/prove-law-firm-marketing-roi/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-bankruptcy-lawyers",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-bankruptcy-lawyers",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-bankruptcy-lawyers/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-bankruptcy-lawyers/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-family-law-firms",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/family-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-family-law-firms",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/family-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-family-law-firms/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/family-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-family-law-firms/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/family-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/content-marketing",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-content-writing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/content-marketing",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-content-writing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/content-marketing/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-content-writing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/content-marketing/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-content-writing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/keyword-research",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/keyword-research",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/keyword-research/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/keyword-research/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/organic-ranking-factors",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/organic-ranking-factors",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-lawyers/organic-ranking-factors/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-lawyers/organic-ranking-factors/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-seo/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-real-estate-law-firms",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/real-estate-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-real-estate-law-firms",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/real-estate-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/seo-for-real-estate-law-firms/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/real-estate-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/seo-for-real-estate-law-firms/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/real-estate-lawyer-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/services/email-marketing",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-email-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/services/email-marketing",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-email-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/services/email-marketing/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-email-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/services/email-marketing/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-email-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/small-law-firms-can-use-digital-marketing-to-compete",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/small-law-firms-can-use-digital-marketing-to-compete",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/small-law-firms-can-use-digital-marketing-to-compete/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/small-law-firms-can-use-digital-marketing-to-compete/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/why-most-law-firm-websites-fail",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/why-most-law-firm-websites-fail",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/why-most-law-firm-websites-fail/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/why-most-law-firm-websites-fail/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/best-law-firm-websites",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/best-law-firm-websites",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/best-law-firm-websites/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/best-law-firm-websites/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/law-firm-websites/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing-strategy",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing-strategy",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/law-firm-marketing-strategy/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/law-firm-marketing-strategy/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/small-law-firm-marketing/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/platform",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/launchpad/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/platform",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/launchpad/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 2
+    },
+    {
+      "oldPath": "/platform/",
+      "oldHost": "jurispage.io",
+      "destination": "https://jurispage.com/launchpad/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    },
+    {
+      "oldPath": "/platform/",
+      "oldHost": "www.jurispage.io",
+      "destination": "https://jurispage.com/launchpad/",
+      "status": 308,
+      "queryPreserved": true,
+      "hopsToCom": 1
+    }
+  ],
+  "comPageChecks": 8,
+  "unknownPathAndQueryPreserved": true
+}

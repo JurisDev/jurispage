@@ -6,12 +6,13 @@ import assert from 'node:assert/strict';
 // Config contains only erasable type annotations; use Node's native TS stripper.
 import { stripTypeScriptTypes } from 'node:module';
 const configText = fs.readFileSync('next.config.ts', 'utf8');
-const code = stripTypeScriptTypes(configText).replace('import path from "path";', '').replace('export default nextConfig;', 'globalThis.auditConfig = nextConfig;');
+const recovery = stripTypeScriptTypes(fs.readFileSync('data/backlinkRecoveryRedirects.ts', 'utf8')).replace('export const backlinkRecoveryRedirects', 'const backlinkRecoveryRedirects');
+const code = recovery + '\n' + stripTypeScriptTypes(configText).replace('import path from "path";', '').replace('import { backlinkRecoveryRedirects } from "./data/backlinkRecoveryRedirects";', '').replace('export default nextConfig;', 'globalThis.auditConfig = nextConfig;');
 const context = { path, __dirname: process.cwd() };
 vm.runInNewContext(code, context);
 const redirects = await context.auditConfig.redirects();
 const firstMatch = new Map();
-for (const r of redirects) if (!firstMatch.has(r.source)) firstMatch.set(r.source, r);
+for (const r of redirects) if (!r.has && !firstMatch.has(r.source)) firstMatch.set(r.source, r);
 const inventory = JSON.parse(fs.readFileSync('docs/sitewide-audit-2026-10-07/crawl.json'));
 const metroSource = fs.readFileSync('data/metros.ts', 'utf8');
 const cities = [...metroSource.matchAll(/\{ slug: "([^"]+)", city:/g)].map(m => m[1]);

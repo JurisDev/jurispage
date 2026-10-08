@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import type { Redirect } from "next/dist/lib/load-custom-routes";
 import path from "path";
+import { backlinkRecoveryRedirects } from "./data/backlinkRecoveryRedirects";
 
 /* ── Suburb → metro redirect generator ── */
 const suburbToMetro: Record<string, string> = {
@@ -122,6 +123,9 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Preserve host-scoped .io migrations before any .com consolidation rules.
+      ...backlinkRecoveryRedirects,
+
       // Same-intent pages consolidated October 8, 2026. Explicit 301s preserve
       // incoming links; query parameters (including attribution) pass through.
       ...["", "/"].flatMap((slash) => [

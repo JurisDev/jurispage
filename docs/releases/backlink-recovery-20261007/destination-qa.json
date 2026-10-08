@@ -1,0 +1,299 @@
+[
+  {
+    "destination": "/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/",
+    "title": "Law Firm Marketing | Get More Cases | JurisPage",
+    "canonical": "https://jurispage.com/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/about-us/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/about-us/",
+    "title": "About JurisPage | Law Firm Marketing Agency Built on Ethics | JurisPage",
+    "canonical": "https://jurispage.com/about-us/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/bankruptcy-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+    "title": "Bankruptcy Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/bankruptcy-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/blog/linkable-assets-for-law-firms/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/blog/linkable-assets-for-law-firms/",
+    "title": "9 Linkable Assets a Small Law Firm Can Build Without a Huge Budget | JurisPage",
+    "canonical": "https://jurispage.com/blog/linkable-assets-for-law-firms/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/case-studies/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/case-studies/",
+    "title": "Law Firm Marketing Success Stories | Case Studies | JurisPage",
+    "canonical": "https://jurispage.com/case-studies/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/contact/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/contact/",
+    "title": "Contact JurisPage | Ready for a Change? | JurisPage",
+    "canonical": "https://jurispage.com/contact/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/criminal-defense-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+    "title": "Criminal Defense Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/criminal-defense-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/employment-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/employment-lawyer-marketing/",
+    "title": "Employment Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/employment-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/estate-planning-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/estate-planning-lawyer-marketing/",
+    "title": "Estate Planning Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/estate-planning-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/family-law-firm-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/family-law-firm-marketing/",
+    "title": "Family Law Firm Marketing | JurisPage",
+    "canonical": "https://jurispage.com/family-law-firm-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/generative-engine-optimization-legal-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+    "title": "Generative Engine Optimization for Law Firms: Get Cited in ChatGPT, Perplexity, and AI Overviews | JurisPage",
+    "canonical": "https://jurispage.com/generative-engine-optimization-legal-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/google-ads-for-law-firms/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/google-ads-for-law-firms/",
+    "title": "Google Ads for Law Firms | JurisPage",
+    "canonical": "https://jurispage.com/google-ads-for-law-firms/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/immigration-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/immigration-lawyer-marketing/",
+    "title": "Immigration Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/immigration-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/launchpad/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/launchpad/",
+    "title": "JurisPage: Law Firm Marketing Foundation Starting at $2,500/mo | JurisPage",
+    "canonical": "https://jurispage.com/launchpad/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/law-firm-content-writing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/law-firm-content-writing/",
+    "title": "Law Firm Content Writing That Converts Visitors Into Cases | JurisPage",
+    "canonical": "https://jurispage.com/law-firm-content-writing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/law-firm-email-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/law-firm-email-marketing/",
+    "title": "Law Firm Email Marketing: Turn Past Clients Into Your Best Referral Source | JurisPage",
+    "canonical": "https://jurispage.com/law-firm-email-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/law-firm-seo-cost/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/law-firm-seo-cost/",
+    "title": "How Much Does Law Firm SEO Cost? (2026 Pricing Guide) | JurisPage",
+    "canonical": "https://jurispage.com/law-firm-seo-cost/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/law-firm-seo/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/law-firm-seo/",
+    "title": "Law Firm SEO Services | Rank Higher, Sign More Cases | JurisPage",
+    "canonical": "https://jurispage.com/law-firm-seo/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/law-firm-websites/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/law-firm-websites/",
+    "title": "Law Firm Website Design That Wins Cases, Not Just Compliments | JurisPage",
+    "canonical": "https://jurispage.com/law-firm-websites/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/local-seo-for-law-firms/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/local-seo-for-law-firms/",
+    "title": "Local SEO for Law Firms: Dominate the Map Pack in 2026 | JurisPage",
+    "canonical": "https://jurispage.com/local-seo-for-law-firms/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/practice-areas/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/practice-areas/",
+    "title": "Practice Areas | JurisPage",
+    "canonical": "https://jurispage.com/practice-areas/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/real-estate-lawyer-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/real-estate-lawyer-marketing/",
+    "title": "Real Estate Lawyer Marketing | JurisPage",
+    "canonical": "https://jurispage.com/real-estate-lawyer-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/scorpion-legal-marketing-alternative/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/scorpion-legal-marketing-alternative/",
+    "title": "Scorpion Legal Marketing Alternative - JurisPage | JurisPage",
+    "canonical": "https://jurispage.com/scorpion-legal-marketing-alternative/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/services/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/services/",
+    "title": "Law Firm Marketing Services | JurisPage",
+    "canonical": "https://jurispage.com/services/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/services/pricing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/services/pricing/",
+    "title": "Pricing: Law Firm Marketing Plans for Every Stage | JurisPage",
+    "canonical": "https://jurispage.com/services/pricing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/small-law-firm-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/small-law-firm-marketing/",
+    "title": "Small Law Firm Marketing | JurisPage",
+    "canonical": "https://jurispage.com/small-law-firm-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  },
+  {
+    "destination": "/startup-law-firm-marketing/",
+    "status": 200,
+    "effectiveUrl": "https://jurispage.com/startup-law-firm-marketing/",
+    "title": "Startup Law Firm Marketing | JurisPage",
+    "canonical": "https://jurispage.com/startup-law-firm-marketing/",
+    "robots": [
+      "index, follow"
+    ],
+    "error": null
+  }
+]
