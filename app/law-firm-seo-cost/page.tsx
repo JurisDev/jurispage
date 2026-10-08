@@ -3,6 +3,8 @@ import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
+import CaseStudyPreview from "@/components/CaseStudyPreview";
+import { caseStudies } from "@/data/caseStudies";
 import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -12,25 +14,23 @@ export const metadata: Metadata = {
   openGraph: { ...ogBase, url: "https://jurispage.com/law-firm-seo-cost/" },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    { "@type": "Question", name: "How much does law firm SEO cost per month?", acceptedAnswer: { "@type": "Answer", text: "Law firm SEO typically costs $2,000 to $10,000+ per month depending on market competitiveness, practice area, and scope. Most small and mid-market firms see solid results in the $2,000–$4,500/month range." } },
-    { "@type": "Question", name: "Why does law firm SEO cost more than regular SEO?", acceptedAnswer: { "@type": "Answer", text: "Legal is a YMYL (Your Money or Your Life) category. Google applies stricter quality standards. The content requirements, E-E-A-T standards, and competitive landscape in legal all require more specialized expertise than typical SEO." } },
-    { "@type": "Question", name: "What's included in a typical law firm SEO package?", acceptedAnswer: { "@type": "Answer", text: "A complete law firm SEO package typically includes: technical SEO audit and fixes, on-page optimization, keyword research, content creation (blog posts + practice area pages), link building from legal/local sources, Google Business Profile optimization, and monthly reporting." } },
-    { "@type": "Question", name: "Is law firm SEO worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, for most law firms. The cost per acquired client through SEO is significantly lower than paid advertising over the long term, and unlike PPC, the rankings compound over time. A single PI case that pays $50,000+ makes a few months of SEO investment trivially justified." } },
-  ],
-};
-
 const faqs = [
   { question: "How much does law firm SEO cost per month?", answer: "Law firm SEO typically costs $2,000 to $10,000+ per month depending on market competitiveness, practice area, and scope. Most small and mid-market firms see solid results in the $2,000–$4,500/month range. Highly competitive markets like PI in Los Angeles or New York can require $7,000–$15,000+/month to compete seriously." },
   { question: "Why does law firm SEO cost more than regular SEO?", answer: "Legal is a YMYL (Your Money or Your Life) category. Google applies stricter quality standards to legal content, requiring higher E-E-A-T signals. The competitive landscape in legal is also more intense than most industries, and the content requirements (practice area pages, FAQ content, local pages) are more extensive." },
   { question: "What's included in a typical law firm SEO package?", answer: "A complete law firm SEO package typically includes: technical SEO audit and ongoing fixes, on-page optimization for all key pages, keyword research and competitive analysis, content creation (blog posts and practice area pages), link building from legal-relevant and local sources, Google Business Profile optimization, citation building, and monthly reporting tied to rankings and lead flow." },
   { question: "Is there a setup fee for law firm SEO?", answer: "Many agencies charge a one-time setup fee (often thousands) that covers the initial audit, keyword research, and onboarding. JurisPage charges no upfront setup fee. Costs are spread across a 24-month engagement so small and startup firms can afford the work without a large day-one check. JurisPage starts at $2,500/month, with custom engagements up to $20,000/month for established firms. For budgets above that, [Juris Digital](https://jurisdigital.com/services/ascend/) provides full-service engagements at $20,000+/month with no upfront setup fees." },
   { question: "How do I know if I'm paying a fair price for law firm SEO?", answer: "Ask for a specific list of deliverables: what gets published each month, how many links are built, what technical work gets done, and exactly how results are measured. If an agency gives vague answers or only shows traffic graphs in reporting, you're likely not getting value for the cost." },
-  { question: "Is law firm SEO worth the cost?", answer: "Yes, for most law firms. The cost per acquired client through SEO is significantly lower than paid advertising over time, and unlike PPC, rankings compound. A single PI case paying $50,000+ makes even several months of SEO investment trivially justified. The ROI question is really 'how long until I recoup the cost' - for most practices, the answer is 6-18 months." },
+  { question: "Is law firm SEO worth the cost?", answer: "It depends on the qualified clients it brings, their collected fees, your margins, and the time required to acquire them. Compare total SEO investment with attributable signed clients, not traffic alone. Include the initial ramp-up period and intake costs. Rankings and returns are not guaranteed; review progress against agreed milestones before increasing investment." },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ question, answer }) => ({
+    "@type": "Question", name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") },
+  })),
+};
 
 export default function LawFirmSEOCostPage() {
   return (
@@ -50,7 +50,7 @@ export default function LawFirmSEOCostPage() {
 
       <article className="py-12 px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">Law firm SEO costs typically range from <strong>$2,000 to $10,000+ per month</strong>. That&apos;s a wide range, and the average cited by industry surveys ($7,500/month) is misleading for most firms. What you actually need depends on three things: your market, your practice area, and your growth goals. This guide explains all of it.</p>
+          <p className="text-gray-700 text-lg leading-relaxed mb-6">This guide uses a planning range of <strong>$2,000 to $10,000+ per month</strong>, not a verified industry-wide average. What you actually need depends on your market, your practice area, and your growth goals. Compare written proposals with the same scope; JurisPage&apos;s current plans start at $2,500/month.</p>
 
           <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">What Drives Law Firm SEO Costs</h2>
           <p className="text-gray-700 mb-5">Understanding the pricing drivers is more useful than any single number. Here are the factors that will determine what you should actually pay:</p>
@@ -209,9 +209,9 @@ export default function LawFirmSEOCostPage() {
           </div>
 
           <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">Is Law Firm SEO Worth the Cost?</h2>
-          <p className="text-gray-700 mb-4">For most law firms, yes. The ROI math is straightforward when you know your average case value. A personal injury firm with an average case value of $30,000 needs to sign one additional client per month from SEO to generate $360,000 in revenue. At $3,000/month in SEO spend, that&apos;s a 10:1 return.</p>
+          <p className="text-gray-700 mb-4">Start with collected legal fees, not the settlement value of a case. For illustration, 12 additional clients producing $30,000 each in collected fees would mean $360,000 in revenue against $36,000 in annual marketing spend. That is a 10:1 revenue-to-spend ratio, not profit or a forecast. Delivery costs, margins, collection delays, and the time needed to build visibility change the actual return.</p>
           <p className="text-gray-700 mb-4">Unlike paid advertising, SEO rankings compound over time. A firm that invests consistently for 12-24 months builds an asset that continues generating leads even if monthly spend is reduced. PPC stops generating leads the day you pause campaigns.</p>
-          <p className="text-gray-700 mb-8">The honest answer to &quot;is it worth it&quot; is: it depends on whether your agency is actually building rankings that generate leads. Track cost-per-lead from organic search at the 6-month and 12-month marks. For most practice areas in most markets, the cost-per-lead from SEO is 40-70% lower than from paid search after 12 months of consistent investment.</p>
+          <p className="text-gray-700 mb-8">Review qualified inquiries, consultations, signed clients, and cost per acquired client together. Compare equivalent time windows and include the ramp-up investment. A lower cost per form submission is not an improvement if those inquiries are outside your practice area or never become clients.</p>
 
           <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">JurisPage Pricing: What We Charge</h2>
           <p className="text-gray-700 mb-4">We publish our pricing because opacity in this industry is a problem. Here is what we charge:</p>
@@ -238,6 +238,15 @@ export default function LawFirmSEOCostPage() {
         </div>
       </section>
 
+      <section className="py-12 px-6 bg-orange-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-extrabold text-2xl mb-4">Judge the Budget by Clients, Not Traffic Alone</h2>
+          <p className="text-gray-700 mb-4">Work backward from your actual economics: monthly marketing investment divided by new clients attributed to that investment gives you acquisition cost. Compare that with collected fees and the cost of serving those clients—not the headline value of a settlement.</p>
+          <p className="text-gray-700 mb-4">For illustration, $3,000 in monthly investment and three attributable new clients equals $1,000 per acquired client. That is a planning example, not a promised result. SEO also has a ramp-up period; track investment and results over a consistent time window.</p>
+          <p className="text-gray-700">The case study below describes a specific firm&apos;s experience with content and SEO. Results vary by market, starting point, budget, and intake performance.</p>
+        </div>
+      </section>
+      <CaseStudyPreview caseStudies={caseStudies.filter((study) => study.slug === "wilson-criminal-defence")} heading="What an SEO Investment Looked Like for One Firm" />
       <FAQAccordion faqs={faqs} heading="Law Firm SEO Cost: FAQs" />
 
       <CTASection

@@ -27,8 +27,8 @@ export const caseStudies: CaseStudy[] = [
     heroStat: "10x Firm Growth from Organic Search",
     metaStat: "10x Growth From SEO",
     stats: [
-      { label: "Firm Revenue Growth", value: "10x" },
-      { label: "Organic Case Inquiries", value: "+1,851%" },
+      { label: "Reported Firm Growth", value: "10x" },
+      { label: "Organic Website Traffic", value: "+1,851%" },
       { label: "Lead Source", value: "100% SEO" },
       { label: "Time to Results", value: "18 mo" },
     ],

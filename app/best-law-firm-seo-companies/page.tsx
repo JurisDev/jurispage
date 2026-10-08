@@ -311,6 +311,10 @@ export default function BestLawFirmSEOPage() {
             <span className="text-gray-700"> JurisPage is ranked #1 on this list and <a href="https://jurisdigital.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 font-semibold underline hover:no-underline">Juris Digital</a> is ranked #2. We wrote this article and we own both companies. They operate under the same parent. That&apos;s an obvious conflict of interest, and we&apos;re disclosing it upfront. We&apos;ve done our best to give honest assessments of every company on this list, including their real weaknesses.</span>
           </div>
 
+          <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">How to use this shortlist</h2>
+          <p className="text-gray-700 mb-4">This is an agency-authored editorial shortlist, not an independent test or a measured ranking of client outcomes. Compare legal-market experience, scope, asset ownership, reporting, and fit for your budget. Competitor price estimates and contract descriptions are not binding quotes; confirm current terms directly with each provider.</p>
+          <p className="text-gray-700 mb-6">Start with the <Link href="/law-firm-seo-cost/" className="text-orange-700 underline">SEO budgeting guide</Link>, compare our <Link href="/services/pricing/" className="text-orange-700 underline">published packages</Link>, and review <Link href="/case-studies/" className="text-orange-700 underline">named client case studies</Link>. Ask every shortlisted agency for an example matching your practice area and market, including the timeframe and how a lead was qualified.</p>
+
           <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">What to Look For in a Law Firm SEO Company</h2>
           <p className="text-gray-700 mb-6">Most attorneys evaluate law firm SEO agencies the wrong way. They look at agency size, brand name recognition, or a sales pitch deck. What actually predicts results is different. Here is what to evaluate before signing anything.</p>
           <div className="space-y-5 mb-10">

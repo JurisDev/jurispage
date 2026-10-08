@@ -12,20 +12,21 @@ export async function notifySlack(
   if (!webhookUrl) return { delivered: false, skipped: true };
 
   const fieldBlocks = Object.entries(fields).map(([key, value]) => ({
-    type: "mrkdwn" as const,
-    text: `*${key}:*\n${value}`,
+    type: "plain_text" as const,
+    text: `${key}:\n${value}`.slice(0, 2000),
   }));
 
   const payload = {
     blocks: [
       {
         type: "header",
-        text: { type: "plain_text", text: title },
+        text: { type: "plain_text", text: title.slice(0, 150) },
       },
-      {
+      // Slack permits at most 10 fields per section. Contact leads have 17.
+      ...Array.from({ length: Math.ceil(fieldBlocks.length / 10) }, (_, index) => ({
         type: "section",
-        fields: fieldBlocks,
-      },
+        fields: fieldBlocks.slice(index * 10, index * 10 + 10),
+      })),
     ],
   };
 

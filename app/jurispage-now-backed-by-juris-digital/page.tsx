@@ -129,6 +129,15 @@ export default function JurispageNowBackedPage() {
         </div>
       </section>
 
+      <section className="bg-white py-12 px-6 border-t border-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-bold text-2xl text-gray-900 mb-4">What the acquisition means for current clients</h2>
+          <p className="text-gray-600 mb-4">Juris Digital acquired JurisPage from Uptime Legal in February 2026. The combination brings website development, SEO, content, and paid search into a coordinated legal-marketing team. The focus remains law firms, with strategy measured against qualified inquiries and signed clients.</p>
+          <p className="text-gray-600 mb-4">For questions about your existing agreement, deliverables, or account contact, <Link href="/contact/" className="text-orange-700 underline">contact our team</Link>. Do not assume that a new package shown on this website changes your existing agreement.</p>
+          <p className="text-gray-600">Read the <Link href="/news/jurispage-acquired-by-juris-digital-2026/" className="text-orange-700 underline">dated acquisition announcement</Link>, explore our <Link href="/services/" className="text-orange-700 underline">marketing services</Link>, or see <Link href="/case-studies/" className="text-orange-700 underline">law-firm case studies</Link>.</p>
+        </div>
+      </section>
+
       {/* ───────── 2. What Changed ───────── */}
       <section className="bg-gray-50 py-20 px-6">
         <div className="max-w-5xl mx-auto">

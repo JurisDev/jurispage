@@ -57,21 +57,38 @@ const suburbToMetro: Record<string, string> = {
 };
 
 const metroServices = ["law-firm-seo", "law-firm-marketing", "law-firm-website-design", "google-ads-lawyers"];
+const serviceDestinations: Record<string, string> = {
+  "law-firm-seo": "/law-firm-seo/",
+  "law-firm-marketing": "/services/",
+  "law-firm-website-design": "/law-firm-websites/",
+  "google-ads-lawyers": "/google-ads-for-law-firms/",
+};
+
+// Exact historic city URLs only: never capture SEO-cost or unrelated service pages.
+function generateMetroRedirects(): Redirect[] {
+  return [...new Set(Object.values(suburbToMetro))].flatMap((metro) =>
+    metroServices.flatMap((service) => ["", "/"].map((slash) => ({
+      source: `/${service}-${metro}${slash}`,
+      destination: serviceDestinations[service],
+      statusCode: 301,
+    })))
+  );
+}
 
 function generateSuburbRedirects(): Redirect[] {
   const redirects: Redirect[] = [];
-  for (const [suburb, metro] of Object.entries(suburbToMetro)) {
+  for (const suburb of Object.keys(suburbToMetro)) {
     for (const service of metroServices) {
-      // Both with and without trailing slash to avoid chain via trailingSlash: true
+      // Preserve both spellings. Next's slash normalization runs before custom rules.
       redirects.push({
         source: `/${service}-${suburb}`,
-        destination: `/${service}-${metro}/`,
-        permanent: true,
+        destination: serviceDestinations[service],
+        statusCode: 301,
       });
       redirects.push({
         source: `/${service}-${suburb}/`,
-        destination: `/${service}-${metro}/`,
-        permanent: true,
+        destination: serviceDestinations[service],
+        statusCode: 301,
       });
     }
   }
@@ -105,6 +122,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Same-intent pages consolidated October 8, 2026. Explicit 301s preserve
+      // incoming links; query parameters (including attribution) pass through.
+      ...["", "/"].flatMap((slash) => [
+        { source: `/growth-assessment${slash}`, destination: "/see-my-market-gap/", statusCode: 301 as const },
+        { source: `/blog/juris-digital-acquires-jurispage${slash}`, destination: "/jurispage-now-backed-by-juris-digital/", statusCode: 301 as const },
+      ]),
       // ── Legacy URLs with GSC impressions, remapped to the closest topic (2026-10-07) ──
       // Listed first so they win over the broader /law-firm-marketing/:path* and
       // /seo-for-lawyers/:path* catch-alls below.
@@ -1046,9 +1069,9 @@ const nextConfig: NextConfig = {
       { source: "/images/portfolio/:name.png", destination: "/images/portfolio/:name.webp", permanent: true },
       { source: "/lead-generation-for-lawyers", destination: "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/", permanent: true },
 
-      // ── Suburb → parent metro redirects (auto-generated) ──
-      // These suburb pages were linked from metro pages but never created.
-      // Redirect each suburb to its parent metro's equivalent service page.
+      // Consolidated cities and legacy suburbs go straight to the final service.
+      // Keep these permanent mappings indefinitely to preserve old inbound links.
+      ...generateMetroRedirects(),
       ...generateSuburbRedirects(),
     ];
   },

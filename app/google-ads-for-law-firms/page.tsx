@@ -398,11 +398,11 @@ export default function GoogleAdsForLawFirmsPage() {
             Estimate Your Return on Ad Spend
           </h2>
           <p className="text-gray-400 text-lg mb-10">
-            Based on industry benchmarks across 113+ law firm campaigns.
+            Explore an illustrative scenario before discussing your market and budget.
           </p>
           <PpcRoiCalculator />
           <p className="text-gray-500 text-xs mt-6">
-            Estimates based on industry averages. Actual results depend on market, landing pages, and intake process.
+            Media spend is separate from management fees. Actual results depend on market, landing pages, and intake. Review our <Link href="/services/pricing/" className="underline">service pricing</Link> and the <Link href="/calculate-roi-law-firm-ppc-campaign/" className="underline">standalone PPC calculator</Link>.
           </p>
         </div>
       </section>

@@ -1,0 +1,312 @@
+{
+  "sitemap": 179,
+  "metroPages": 100,
+  "intersectionPages": 25,
+  "missingMetadata": [],
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "noindex": [],
+  "orphanInCrawl": [],
+  "fewInlinks": [
+    {
+      "url": "https://jurispage.com/ai-search-report/",
+      "count": 2
+    },
+    {
+      "url": "https://jurispage.com/blog/juris-digital-acquires-jurispage/",
+      "count": 2
+    },
+    {
+      "url": "https://jurispage.com/blog/law-firm-seo-guide-2026/",
+      "count": 1
+    },
+    {
+      "url": "https://jurispage.com/blog/linkable-assets-for-law-firms/",
+      "count": 2
+    },
+    {
+      "url": "https://jurispage.com/blog/local-vs-national-seo-for-attorneys/",
+      "count": 2
+    },
+    {
+      "url": "https://jurispage.com/blog/spanish-website-for-law-firm/",
+      "count": 1
+    },
+    {
+      "url": "https://jurispage.com/jurispage-now-backed-by-juris-digital/",
+      "count": 1
+    },
+    {
+      "url": "https://jurispage.com/news/jurispage-acquired-by-juris-digital-2026/",
+      "count": 1
+    },
+    {
+      "url": "https://jurispage.com/secret-shop/",
+      "count": 1
+    },
+    {
+      "url": "https://jurispage.com/social-security-disability-lawyer-marketing/",
+      "count": 2
+    }
+  ],
+  "extraRoutes": [
+    {
+      "url": "https://jurispage.com/calculate-roi-law-firm-ppc-campaign/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/calculate-roi-law-firm-ppc-campaign/"
+    },
+    {
+      "url": "https://jurispage.com/free-market-report/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/see-my-market-gap/"
+    },
+    {
+      "url": "https://jurispage.com/growth-assessment/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/growth-assessment/"
+    },
+    {
+      "url": "https://jurispage.com/growth-path/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/growth-path/"
+    },
+    {
+      "url": "https://jurispage.com/growth-report/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/see-my-market-gap/"
+    },
+    {
+      "url": "https://jurispage.com/homepage-b/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/homepage-b/"
+    },
+    {
+      "url": "https://jurispage.com/privacy-policy/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/"
+    },
+    {
+      "url": "https://jurispage.com/terms/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "status": 404,
+      "finalUrl": "https://jurispage.com/terms/"
+    },
+    {
+      "url": "https://jurispage.com/thank-you-for-reaching-out/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jurispage.com/thank-you-for-reaching-out/"
+    }
+  ],
+  "linkChecks": [],
+  "similarPairs": [
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-los-angeles/",
+      "b": "https://jurispage.com/law-firm-marketing-los-angeles/",
+      "similarity": 0.612
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-new-york/",
+      "b": "https://jurispage.com/law-firm-marketing-new-york/",
+      "similarity": 0.611
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-san-francisco/",
+      "b": "https://jurispage.com/law-firm-marketing-san-francisco/",
+      "similarity": 0.611
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-los-angeles/",
+      "b": "https://jurispage.com/law-firm-website-design-los-angeles/",
+      "similarity": 0.609
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-las-vegas/",
+      "b": "https://jurispage.com/law-firm-marketing-las-vegas/",
+      "similarity": 0.608
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-new-york/",
+      "b": "https://jurispage.com/law-firm-website-design-new-york/",
+      "similarity": 0.608
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-san-francisco/",
+      "b": "https://jurispage.com/law-firm-website-design-san-francisco/",
+      "similarity": 0.608
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-san-antonio/",
+      "b": "https://jurispage.com/law-firm-marketing-san-antonio/",
+      "similarity": 0.607
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-san-diego/",
+      "b": "https://jurispage.com/law-firm-marketing-san-diego/",
+      "similarity": 0.606
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-san-jose/",
+      "b": "https://jurispage.com/law-firm-marketing-san-jose/",
+      "similarity": 0.606
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-washington-dc/",
+      "b": "https://jurispage.com/law-firm-marketing-washington-dc/",
+      "similarity": 0.605
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-las-vegas/",
+      "b": "https://jurispage.com/law-firm-website-design-las-vegas/",
+      "similarity": 0.605
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-san-antonio/",
+      "b": "https://jurispage.com/law-firm-website-design-san-antonio/",
+      "similarity": 0.604
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-san-diego/",
+      "b": "https://jurispage.com/law-firm-website-design-san-diego/",
+      "similarity": 0.603
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-san-jose/",
+      "b": "https://jurispage.com/law-firm-website-design-san-jose/",
+      "similarity": 0.603
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-washington-dc/",
+      "b": "https://jurispage.com/law-firm-website-design-washington-dc/",
+      "similarity": 0.603
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-philadelphia/",
+      "b": "https://jurispage.com/law-firm-marketing-philadelphia/",
+      "similarity": 0.601
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-chicago/",
+      "b": "https://jurispage.com/law-firm-marketing-chicago/",
+      "similarity": 0.6
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-dallas/",
+      "b": "https://jurispage.com/law-firm-marketing-dallas/",
+      "similarity": 0.6
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-phoenix/",
+      "b": "https://jurispage.com/law-firm-marketing-phoenix/",
+      "similarity": 0.6
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-austin/",
+      "b": "https://jurispage.com/law-firm-marketing-austin/",
+      "similarity": 0.599
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-houston/",
+      "b": "https://jurispage.com/law-firm-marketing-houston/",
+      "similarity": 0.599
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-indianapolis/",
+      "b": "https://jurispage.com/law-firm-marketing-indianapolis/",
+      "similarity": 0.599
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-minneapolis/",
+      "b": "https://jurispage.com/law-firm-marketing-minneapolis/",
+      "similarity": 0.599
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-los-angeles/",
+      "b": "https://jurispage.com/law-firm-website-design-los-angeles/",
+      "similarity": 0.598
+    },
+    {
+      "a": "https://jurispage.com/google-ads-lawyers-tampa/",
+      "b": "https://jurispage.com/law-firm-marketing-tampa/",
+      "similarity": 0.598
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-chicago/",
+      "b": "https://jurispage.com/law-firm-website-design-chicago/",
+      "similarity": 0.598
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-dallas/",
+      "b": "https://jurispage.com/law-firm-website-design-dallas/",
+      "similarity": 0.598
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-philadelphia/",
+      "b": "https://jurispage.com/law-firm-website-design-philadelphia/",
+      "similarity": 0.598
+    },
+    {
+      "a": "https://jurispage.com/law-firm-marketing-phoenix/",
+      "b": "https://jurispage.com/law-firm-website-design-phoenix/",
+      "similarity": 0.598
+    }
+  ],
+  "metroSimilarityPairs": 1341,
+  "claims68": 106
+}
