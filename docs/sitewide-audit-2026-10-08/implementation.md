@@ -1,6 +1,6 @@
 # Consolidation implementation — October 8, 2026
 
-Status: local changes on `codex/city-consolidation`; not merged or deployed. This supersedes the earlier audit's recommendation to pilot five metro pages. The user approved retirement of the metro network after reviewing actual traffic.
+Status: [PR #9](https://github.com/JurisDev/jurispage/pull/9) on `codex/city-consolidation`; Vercel preview built successfully, not merged or deployed to production. This supersedes the earlier audit's recommendation to pilot five metro pages. The user approved retirement of the metro network after reviewing actual traffic.
 
 ## Decisions and evidence
 
@@ -41,6 +41,10 @@ The October 7 browser-verified GSC/GA4 evidence is in [city-decision.md](../site
 - Existing local CRM fixes retained: pending delivery statuses stored before background work; Slack notification fields split to comply with section limits. This is **not** a durable delivery retry system. No new CRM test lead or customer communication sent.
 
 ## Verification and release
+
+Release preparation brought in `origin/main` at `a070de1`, preserving the newer host-scoped jurispage.io backlink migration. Its separate regression test passes 32 exact mappings across 126 host/slash variants. The preview runtime commit is `d24ca99ee5c277d74a867158b0eaf6f084bf03f2`: https://jurispage-ppeh3tgys-caseymeraz-gmailcoms-projects.vercel.app . Vercel reports READY, Next.js, approximately 31 seconds build time. Deployment protection remains enabled.
+
+Authenticated deployed-preview verification passed: **106 redirects, 79 sitemap pages, 79 internal targets, zero errors**. Results are saved in `preview-verification.json`. An initial checker run failed when reusing cached Response streams; the checker now caches immutable response content, and the complete rerun passed. No application fix was needed for that checker failure. Subsequent release-evidence commits change only documentation and verification scripts, not the tested application runtime.
 
 Production build and full TypeScript validation passed in a clean temporary checkout using the lockfile. The workspace's existing dependency reads stalled; fresh dependencies resolved that verification blocker. No production credentials or live database were used for the clean build.
 
