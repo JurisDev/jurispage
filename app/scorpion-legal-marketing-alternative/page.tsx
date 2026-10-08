@@ -3,6 +3,8 @@ import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
+import CaseStudyPreview from "@/components/CaseStudyPreview";
+import { caseStudies } from "@/data/caseStudies";
 import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -100,11 +102,26 @@ export default function ScorpionAlternativePage() {
         </div>
       </section>
 
+      <section className="py-12 px-6 bg-orange-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-extrabold text-2xl mb-4">A Switching Plan That Protects Your Existing Leads</h2>
+          <p className="text-gray-700 mb-4">Before changing agencies, document what already works. A new design is not a reason to discard pages that earn inquiries or links.</p>
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>Export Search Console landing pages, Analytics conversions, and your CRM&apos;s qualified leads and signed clients.</li>
+            <li>Confirm ownership and administrator access for your domain, website content, Google Business Profile, advertising, analytics, and call tracking.</li>
+            <li>Keep valuable URLs where possible. Map every changed URL to its closest relevant replacement with a permanent redirect.</li>
+            <li>Test forms, phone numbers, tracking, CRM delivery, and mobile navigation before launch. Compare qualified leads after launch—not just rankings.</li>
+          </ol>
+          <p className="text-gray-700 mt-6">For the budget conversation, compare <Link href="/law-firm-seo-cost/" className="underline">SEO costs and scope</Link> with our <Link href="/services/pricing/" className="underline">published pricing and engagement terms</Link>.</p>
+          <p className="text-sm text-gray-600 mt-4">The examples below show existing client work, not verified Scorpion-to-JurisPage migrations. Individual results are not a forecast for your firm.</p>
+        </div>
+      </section>
+      <CaseStudyPreview caseStudies={caseStudies.filter((study) => study.slug === "the-sands-law-group")} heading="See How SEO and Paid Search Work Together" />
       <FAQAccordion faqs={faqs} heading="Common Questions About Switching" />
 
       <CTASection
         heading="See Where You Stand"
-        subtext="Free market gap analysis with an instant snapshot in about 60 seconds. Tell us about your firm and we&apos;ll show you exactly what it would take to outperform your current agency."
+        subtext="Get an initial market-gap snapshot, then talk through your current results, ownership questions, and the scope of a potential move."
         primaryLabel="See Where You Stand"
         primaryHref="/see-my-market-gap/"
         secondaryLabel="See Pricing"

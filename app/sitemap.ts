@@ -1,7 +1,6 @@
 import { MetadataRoute } from "next";
 import { services } from "@/data/services";
 import { practiceAreas } from "@/data/practiceAreas";
-import { metroServiceCombos } from "@/data/metros";
 import { intersections } from "@/data/intersections";
 import { caseStudies } from "@/data/caseStudies";
 import { getAllPosts } from "@/lib/blog";
@@ -32,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL + "/see-my-market-gap/", changeFrequency: "monthly", priority: 0.9 },
     { url: BASE_URL + "/ai-search-report/", changeFrequency: "monthly", priority: 0.7 },
     { url: BASE_URL + "/secret-shop/", changeFrequency: "monthly", priority: 0.6 },
+    { url: BASE_URL + "/calculate-roi-law-firm-ppc-campaign/", changeFrequency: "monthly", priority: 0.6 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = services.map((s) => ({
@@ -44,12 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: BASE_URL + "/" + p.slug + "/",
     changeFrequency: "monthly",
     priority: 0.8,
-  }));
-
-  const metroPages: MetadataRoute.Sitemap = metroServiceCombos.map((m) => ({
-    url: BASE_URL + "/" + m.pageSlug + "/",
-    changeFrequency: "monthly",
-    priority: 0.6,
   }));
 
   const intersectionPages: MetadataRoute.Sitemap = intersections.map((i) => ({
@@ -81,5 +75,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...staticPages, ...servicePages, ...practiceAreaPages, ...metroPages, ...intersectionPages, ...blogPosts, ...newsPages, ...caseStudyPages];
+  return [...staticPages, ...servicePages, ...practiceAreaPages, ...intersectionPages, ...blogPosts, ...newsPages, ...caseStudyPages];
 }

@@ -20,7 +20,9 @@ const contentDir = path.join(process.cwd(), "content/blog");
 
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(contentDir)) return [];
-  const files = fs.readdirSync(contentDir).filter((f) => f.endsWith(".mdx"));
+  // Keep the original acquisition article in source history, but remove the
+  // retired URL from listings, related posts, static params, and the sitemap.
+  const files = fs.readdirSync(contentDir).filter((f) => f.endsWith(".mdx") && f !== "juris-digital-acquires-jurispage.mdx");
   return files
     .map((file) => {
       const slug = file.replace(".mdx", "");

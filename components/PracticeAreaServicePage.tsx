@@ -10,6 +10,8 @@ import FAQAccordion from "@/components/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import HeroForm from "@/components/HeroForm";
 import PortfolioShowcase from "@/components/PortfolioShowcase";
+import CaseStudyPreview from "@/components/CaseStudyPreview";
+import { caseStudies } from "@/data/caseStudies";
 import { ogBase } from "@/lib/og";
 
 interface PracticeAreaServicePageProps {
@@ -41,6 +43,11 @@ export default function PracticeAreaServicePage({
   service,
 }: PracticeAreaServicePageProps) {
   const pageUrl = `https://jurispage.com/${intersection.practiceAreaSlug}/${intersection.serviceSlug}/`;
+  // Only show proof relevant to both this practice and this service. A combined
+  // program is not evidence that any single tactic caused its entire result.
+  const relevantStudies = caseStudies.filter((study) =>
+    pa.relatedCaseStudies?.includes(study.slug) && study.relatedServices.includes(service.slug)
+  );
 
   // Schema markup
   const serviceSchema = {
@@ -412,6 +419,13 @@ export default function PracticeAreaServicePage({
             </div>
           </div>
         </section>
+      )}
+
+      {relevantStudies.length > 0 && (
+        <>
+          <CaseStudyPreview caseStudies={relevantStudies} heading="Relevant Law-Firm Experience" />
+          <p className="max-w-4xl mx-auto px-6 pb-8 text-sm text-gray-500">These are individual client experiences, not guaranteed or typical results. Read each case study for its market and combined service scope; a program&apos;s results cannot be attributed to one tactic alone.</p>
+        </>
       )}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}

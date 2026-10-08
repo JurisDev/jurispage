@@ -51,8 +51,8 @@ export default function PpcRoiCalculatorPage() {
           </h1>
           <p className="text-gray-400 text-lg leading-relaxed">
             See what a pay-per-click campaign could return for your firm.
-            Adjust your practice area, monthly budget, and average case value
-            to get a realistic projection based on industry benchmarks.
+            Adjust your practice area, monthly media budget, and collected legal fees per client.
+            These are illustrative scenarios, not a forecast or guaranteed result.
           </p>
         </div>
       </section>

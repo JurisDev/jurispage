@@ -369,6 +369,15 @@ export default function ServicePage({ service }: ServicePageProps) {
         />
       )}
 
+      {service.slug === "law-firm-seo" && (
+        <section className="py-12 px-6 bg-white border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-heading font-bold text-2xl mb-4">Plan the right SEO engagement</h2>
+            <p className="text-gray-600">This page covers hiring us to manage SEO. For planning, read the <Link href="/blog/law-firm-seo-guide-2026/" className="text-orange-700 underline">law firm SEO guide</Link> and <Link href="/law-firm-seo-cost/" className="text-orange-700 underline">SEO cost breakdown</Link>. If Maps visibility is your immediate priority, see <Link href="/local-seo-for-law-firms/" className="text-orange-700 underline">local SEO and Google Business Profile services</Link>. We scope the work around your practice, market, intake capacity, and budget—not a promised ranking.</p>
+          </div>
+        </section>
+      )}
+
       {/* This Service by Practice Area */}
       {(() => {
         const guides = getIntersectionsForService(service.slug);

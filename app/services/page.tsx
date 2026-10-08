@@ -79,6 +79,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-extrabold text-2xl mb-4">National Team, Market-Specific Planning</h2>
+          <p className="text-gray-700 leading-relaxed">We work remotely with law firms across the United States. Your plan should reflect your actual practice areas, cities served, competitors, budget, and intake capacity—not a generic checklist with a city name added. Start with a <Link href="/see-my-market-gap/" className="underline">market-gap assessment</Link>, then compare the services that address your firm&apos;s needs.</p>
+          <p className="text-gray-700 mt-4">Review <Link href="/case-studies/" className="underline">client case studies</Link> for examples of the work, and <Link href="/services/pricing/" className="underline">pricing and engagement terms</Link> to assess fit before a conversation.</p>
+        </div>
+      </section>
       <CTASection />
     </>
   );

@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+const out='docs/sitewide-audit-2026-10-07';
+const rows=JSON.parse(fs.readFileSync(out+'/crawl.json'));
+const live=rows.filter(r=>r.sitemap),base='https://jurispage.com';
+const metros=live.filter(r=>/^\/(law-firm-seo|google-ads-lawyers|law-firm-website-design|law-firm-marketing)-/.test(new URL(r.url).pathname)&&!r.url.endsWith('/law-firm-seo-cost/'));
+const shingle=t=>{const w=t.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/); return new Set(w.slice(0,-4).map((_,i)=>w.slice(i,i+5).join(' ')))};
+const sets=new Map(live.map(r=>[r.url,shingle(r.text)]));
+const pairs=[];
+for(let i=0;i<live.length;i++)for(let j=i+1;j<live.length;j++) {const a=sets.get(live[i].url),b=sets.get(live[j].url);let n=0;for(const v of a)if(b.has(v))n++;const score=n/(a.size+b.size-n); if(score>.48)pairs.push({a:live[i].url,b:live[j].url,similarity:+score.toFixed(3)});}
+pairs.sort((a,b)=>b.similarity-a.similarity);
+const inlinks=new Map(live.map(r=>[r.url,[]]));
+for(const r of live)for(const u of new Set(r.anchors.map(a=>a.url)))if(u!==r.url&&inlinks.has(u))inlinks.get(u).push(r.url);
+const known=new Set(rows.map(r=>r.url));
+const targets=[...new Set(live.flatMap(r=>r.anchors.map(a=>a.url)))].filter(u=>!known.has(u)&&new URL(u).origin===base);
+const checks=[];let ix=0;await Promise.all(Array.from({length:4},async()=>{while(ix<targets.length){const url=targets[ix++];try{const r=await fetch(url,{signal:AbortSignal.timeout(12000)});checks.push({url,status:r.status,finalUrl:r.url});await r.body?.cancel();}catch(e){checks.push({url,error:e.message})}}}));
+const dup=k=>{const m=new Map;for(const r of live){const v=JSON.stringify(r[k]);m.set(v,[...(m.get(v)||[]),r.url])}return [...m].filter(([k,v])=>v.length>1)};
+const summary={sitemap:live.length,metroPages:metros.length,intersectionPages:live.filter(r=>new URL(r.url).pathname.split('/').filter(Boolean).length===2&&!/\/(blog|news|case-studies|services)\//.test(r.url)).length,missingMetadata:live.filter(r=>!r.title||!r.description||!r.canonical||r.h1.length!==1).map(r=>r.url),duplicateTitles:dup('title'),duplicateDescriptions:dup('description'),noindex:live.filter(r=>JSON.stringify(r.robots).includes('noindex')).map(r=>r.url),orphanInCrawl:[...inlinks].filter(([u,a])=>!a.length).map(([u])=>u),fewInlinks:[...inlinks].filter(([u,a])=>a.length<3).map(([url,a])=>({url,count:a.length})),extraRoutes:rows.filter(r=>!r.sitemap).map(({url,robots,status,finalUrl})=>({url,robots,status,finalUrl})),linkChecks:checks,similarPairs:pairs.slice(0,30),metroSimilarityPairs:pairs.filter(p=>metros.some(m=>m.url===p.a)&&metros.some(m=>m.url===p.b)).length,claims68:live.filter(r=>r.text.includes('68%')).length};
+fs.writeFileSync(out+'/analysis.json',JSON.stringify(summary,null,2));
+fs.writeFileSync(out+'/overlap-pairs.csv','url_a,url_b,five_word_shingle_jaccard\n'+pairs.map(p=>`${p.a},${p.b},${p.similarity}`).join('\n'));
+console.log(JSON.stringify(summary,null,2));

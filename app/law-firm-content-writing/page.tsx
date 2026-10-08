@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SchemaOrg from "@/components/SchemaOrg";
+import CaseStudyPreview from "@/components/CaseStudyPreview";
+import { caseStudies } from "@/data/caseStudies";
 import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -551,6 +553,15 @@ export default function ContentWritingB() {
           </p>
         </div>
       </section>
+
+      <section className="py-10 px-6 bg-orange-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading font-extrabold text-2xl mb-4">Content as Part of a Complete SEO Program</h2>
+          <p className="text-gray-700 leading-relaxed">Wilson Criminal Defence&apos;s published story combines practice-specific content, site architecture, and local SEO. The reported traffic growth is a result of that combined program, not an isolated content-writing test or a guarantee. Read the work behind the numbers before comparing it with your own starting point.</p>
+          <p className="text-gray-700 mt-4">Planning your investment? Read our <Link href="/law-firm-seo-cost/" className="underline">law firm SEO cost guide</Link> and compare the <Link href="/law-firm-seo/" className="underline">full SEO service</Link>.</p>
+        </div>
+      </section>
+      <CaseStudyPreview caseStudies={caseStudies.filter((study) => study.slug === "wilson-criminal-defence")} heading="A Content-Led SEO Example" />
 
       {/* ═══════════════════════════════════════════════════════
           9. FAILURE / RISK

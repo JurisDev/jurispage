@@ -31,8 +31,8 @@ export const intersections: IntersectionData[] = [
         body: "For most PI searches, the Map Pack (Google's three local results above organic listings) drives more calls than position one organic. Your Google Business Profile, citation consistency, and locally relevant backlinks determine whether you appear there. If you're not in the Map Pack for 'personal injury lawyer [your city],' your competitors are getting those calls.",
       },
       {
-        title: "Settlement and Case-Result Schema",
-        body: "Your case results are your strongest credibility signal, but most PI sites bury them. Structured data markup on your settlements and verdicts helps Google surface them as rich snippets, and helps prospective clients see your track record before they click. This is one of the few areas where bar-compliant content and SEO incentives align perfectly.",
+        title: "Documented Case Results",
+        body: "Help prospective clients evaluate your experience with clearly explained case results, the work your team performed, and appropriate context and disclaimers. Have your attorneys review these pages for accuracy and applicable advertising requirements. Structured data should describe visible content accurately; it is not a promise of settlement or verdict rich snippets.",
       },
       {
         title: "Informational Content Funnel",
@@ -79,7 +79,7 @@ export const intersections: IntersectionData[] = [
       },
       {
         title: "Conversion-Optimized Landing Pages",
-        body: "Every ad group gets a dedicated landing page built around a single conversion action. We test headline variations, proof elements (settlements, reviews, badges), and form length to find the combination that converts at the highest rate. A 1% improvement in landing page conversion rate can halve your effective cost per lead.",
+        body: "Every ad group gets a dedicated landing page built around a single conversion action. We test headline variations, proof elements (settlements, reviews, badges), and form length. For illustration, increasing the conversion rate from 1% to 2% halves cost per lead if cost per click stays constant. That is a doubling of the conversion rate, not a universal result from any one-percentage-point improvement. Lead quality and signed clients still determine the value of that change.",
       },
       {
         title: "Negative Keyword Management",

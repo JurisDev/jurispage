@@ -120,7 +120,14 @@ export async function POST(req: NextRequest) {
           name: `${firstName} ${lastName || ""}`.trim(),
           email,
           phone,
-          data: submissionData,
+          data: {
+            ...submissionData,
+            delivery: {
+              email: { status: "pending" },
+              slack: { status: "pending" },
+              hubspot: { status: "pending" },
+            },
+          },
         },
       })
       .catch((dbError) => {

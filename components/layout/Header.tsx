@@ -69,15 +69,28 @@ export default function Header() {
               className="relative"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setServicesOpen(false);
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Escape") {
+                  setServicesOpen(false);
+                  event.currentTarget.querySelector("button")?.focus();
+                }
+              }}
             >
               <button
                 className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1 transition-colors"
                 aria-expanded={servicesOpen}
+                aria-controls="desktop-services"
+                onClick={(event) => setServicesOpen(event.detail === 0 ? !servicesOpen : true)}
               >
                 Services <span className="text-xs">▾</span>
               </button>
               {/* Mega-menu panel (always in DOM for SEO crawlability) */}
               <div
+                id="desktop-services"
+                inert={!servicesOpen}
                 className={`absolute top-full left-0 min-w-[740px] bg-white rounded-xl shadow-2xl border border-gray-100 pt-2 px-6 pb-6 z-50 transition-all duration-200 ease-out
                   ${servicesOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none"}`}
               >
@@ -142,15 +155,28 @@ export default function Header() {
               className="relative"
               onMouseEnter={() => setPracticeOpen(true)}
               onMouseLeave={() => setPracticeOpen(false)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setPracticeOpen(false);
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Escape") {
+                  setPracticeOpen(false);
+                  event.currentTarget.querySelector("button")?.focus();
+                }
+              }}
             >
               <button
                 className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1 transition-colors"
                 aria-expanded={practiceOpen}
+                aria-controls="desktop-practices"
+                onClick={(event) => setPracticeOpen(event.detail === 0 ? !practiceOpen : true)}
               >
                 Practice Areas <span className="text-xs">▾</span>
               </button>
               {/* Dropdown panel (always in DOM for SEO crawlability) */}
               <div
+                id="desktop-practices"
+                inert={!practiceOpen}
                 className={`absolute top-full left-0 min-w-[340px] bg-white rounded-xl shadow-xl border border-gray-100 pt-2 px-5 pb-5 z-50 transition-all duration-200 ease-out
                   ${practiceOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none"}`}
               >
@@ -201,6 +227,8 @@ export default function Header() {
             className="lg:hidden text-gray-700 hover:text-gray-900 p-2 flex flex-col justify-center"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
+            id="mobile-menu-toggle"
+            aria-controls="mobile-navigation"
             aria-expanded={mobileOpen}
           >
             <div className={`w-5 h-0.5 bg-gray-700 transition-transform duration-200 origin-center
@@ -222,6 +250,14 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       <div
+        id="mobile-navigation"
+        inert={!mobileOpen}
+        onKeyDown={(event) => {
+          if (event.key === "Escape") {
+            setMobileOpen(false);
+            document.getElementById("mobile-menu-toggle")?.focus();
+          }
+        }}
         className={`fixed top-0 right-0 h-full w-80 bg-white z-50 shadow-2xl overflow-y-auto
           transition-transform duration-300 ease-in-out lg:hidden
           ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
@@ -261,6 +297,8 @@ export default function Header() {
           <button
             className="flex items-center justify-between w-full px-5 py-4 text-sm font-semibold text-gray-900"
             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            aria-expanded={mobileServicesOpen}
+            aria-controls="mobile-services"
           >
             Services
             <svg
@@ -270,7 +308,7 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
-          <div className={`overflow-hidden transition-all duration-200 ${mobileServicesOpen ? "max-h-[800px]" : "max-h-0"}`}>
+          <div id="mobile-services" inert={!mobileServicesOpen} className={`overflow-hidden transition-all duration-200 ${mobileServicesOpen ? "max-h-[800px]" : "max-h-0"}`}>
             <div className="px-4 pb-3 space-y-1">
               {services.map((s) => (
                 <Link
@@ -292,6 +330,8 @@ export default function Header() {
           <button
             className="flex items-center justify-between w-full px-5 py-4 text-sm font-semibold text-gray-900"
             onClick={() => setMobilePracticeOpen(!mobilePracticeOpen)}
+            aria-expanded={mobilePracticeOpen}
+            aria-controls="mobile-practice-areas"
           >
             Practice Areas
             <svg
@@ -301,7 +341,7 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
-          <div className={`overflow-hidden transition-all duration-200 ${mobilePracticeOpen ? "max-h-[400px]" : "max-h-0"}`}>
+          <div id="mobile-practice-areas" inert={!mobilePracticeOpen} className={`overflow-hidden transition-all duration-200 ${mobilePracticeOpen ? "max-h-[400px]" : "max-h-0"}`}>
             <div className="px-4 pb-3 space-y-1">
               {practiceAreas.map((p) => (
                 <Link
