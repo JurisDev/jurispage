@@ -8,7 +8,7 @@ import ReviewRibbon from "@/components/ReviewRibbon";
 import { ogBase } from "@/lib/og";
 
 export const metadata: Metadata = {
-  title: "Law Firm Marketing Package From $2,500/mo",
+  title: "Law Firm Marketing Package From $5,000/mo",
   description: "Get instant JurisPage pricing: brand design, StoryBrand website, SEO, GBP, Yelp, and Apple Maps for small firms. No upfront fee. See your number now.",
   alternates: { canonical: "https://jurispage.com/launchpad/" },
   openGraph: { ...ogBase, url: "https://jurispage.com/launchpad/" },
@@ -18,14 +18,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How is JurisPage priced?", acceptedAnswer: { "@type": "Answer", text: "JurisPage starts at $2,500/month over a 24-month engagement, with a typical range of $2,500 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months so small and startup firms can afford the work without a large day-one check. Use the pricing calculator on this page to see your exact number in under a minute." } },
+    { "@type": "Question", name: "How is JurisPage priced?", acceptedAnswer: { "@type": "Answer", text: "JurisPage starts at $5,000/month over a 24-month engagement, with pricing based on firm size and market. There is no upfront setup fee: costs are spread across the 24 months so small and startup firms can afford the work without a large day-one check. Use the pricing calculator on this page to see your exact number in under a minute." } },
     { "@type": "Question", name: "How long is the engagement?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing." } },
     { "@type": "Question", name: "How can you offer this price and produce results quickly?", acceptedAnswer: { "@type": "Answer", text: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." } },
     { "@type": "Question", name: "How much customization can I expect?", acceptedAnswer: { "@type": "Answer", text: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." } },
     { "@type": "Question", name: "How much involvement will be required from me?", acceptedAnswer: { "@type": "Answer", text: "Roughly a 30-minute kickoff call plus a few hours spread across the first 45 days to sign off on design elements and content topics, and help verify your Google Business Profile and other local listings. We designed JurisPage to require as little of your time as possible." } },
     { "@type": "Question", name: "How quickly can my campaign launch?", acceptedAnswer: { "@type": "Answer", text: "Full setup is completed within the first 45 days: brand design, StoryBrand website, GBP, Yelp, Apple Maps, citations, and performance tracking." } },
     { "@type": "Question", name: "Will I own my website and content?", acceptedAnswer: { "@type": "Answer", text: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." } },
-    { "@type": "Question", name: "What if my firm's marketing budget is bigger than $4,000/month?", acceptedAnswer: { "@type": "Answer", text: "The standard JurisPage package is priced for small or startup law firms, with a typical budget of $2,500 to $4,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. Contact us and we'll scope a plan around your goals. Budgets above $20,000/month are best served by Juris Digital, our parent company." } },
+    { "@type": "Question", name: "What if my firm needs a custom marketing engagement?", acceptedAnswer: { "@type": "Answer", text: "The standard JurisPage package is priced for small or startup law firms, with pricing starting at $5,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. Contact us and we'll scope a plan around your goals. Budgets above $20,000/month are best served by Juris Digital, our parent company." } },
   ],
 };
 
@@ -69,7 +69,7 @@ const monthlyServices = [
 ];
 
 const faqs = [
-  { question: "How is JurisPage priced?", answer: "It starts at $2,500/month over a 24-month engagement, with a typical range of $2,500 to $4,000/month depending on firm size and market. There is no upfront setup fee: costs are spread across the 24 months. Use the pricing calculator on this page to get your exact number instantly." },
+  { question: "How is JurisPage priced?", answer: "It starts at $5,000/month over a 24-month engagement, with pricing based on firm size and market. There is no upfront setup fee: costs are spread across the 24 months. Use the pricing calculator on this page to get your exact number instantly." },
   { question: "How long is the engagement?", answer: "JurisPage is a 24-month engagement. We front-load the work (website, brand design, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing: costs are spread evenly across the engagement instead of charged up front." },
   { question: "How can you offer this price and produce results quickly?", answer: "Two reasons. First, we do not front-load costs. We spread them across your engagement instead of charging a large upfront fee. Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service." },
   { question: "How much customization can I expect?", answer: "JurisPage is not a bespoke service. That is how we keep the price competitive. Your website ships with custom imagery, colors, marketing copy, and content on top of a proven StoryBrand-driven design layout. Customization is limited to keep this service affordable for small and startup firms." },
@@ -77,7 +77,7 @@ const faqs = [
   { question: "Who will I be working with?", answer: "Your campaign is driven by one of our lead strategists. You have email access to them (responded to promptly), and you may always request a phone call." },
   { question: "Will I own my website and content?", answer: "Yes, always. All IP we create for you is owned by you. Your domain, your website, your content. If you ever leave JurisPage, everything transfers cleanly." },
   { question: "Can I add services later?", answer: "Yes. Many JurisPage clients add Google Ads, additional content writing, or GEO optimization once their foundation is established." },
-  { question: "What if my firm's marketing budget is bigger than $4,000/month?", answer: "The standard JurisPage package is priced for small or startup law firms, with a typical budget of $2,500 to $4,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. [Contact us](/contact/) and we'll scope a plan around your goals. Budgets above $20,000/month are best served by [Juris Digital](https://jurisdigital.com/services/ascend/), our parent company." },
+  { question: "What if my firm needs a custom marketing engagement?", answer: "The standard JurisPage package is priced for small or startup law firms, with pricing starting at $5,000/month. If your firm is established, already owns a website, and has a bigger budget, we build custom JurisPage engagements up to $20,000/month. [Contact us](/contact/) and we'll scope a plan around your goals. Budgets above $20,000/month are best served by [Juris Digital](https://jurisdigital.com/services/ascend/), our parent company." },
 ];
 
 export default function LaunchpadPage() {
@@ -184,7 +184,7 @@ export default function LaunchpadPage() {
             </div>
             <div className="space-y-4">
               {[
-                { problem: "Paid $5,000+/mo for minimal results", fix: "Transparent pricing starting at $2,500/mo, scaled to your firm size" },
+                { problem: "Paid $5,000+/mo for minimal results", fix: "Transparent pricing starting at $5,000/mo, scaled to your firm size" },
                 { problem: "Hit with a huge upfront setup fee", fix: "No upfront fee. Costs spread evenly across the 24-month engagement." },
                 { problem: "Lost the website when you switched agencies", fix: "You own your site, content, and all IP we create. Always." },
                 { problem: "Waited months just to find out the price", fix: "Instant, transparent pricing in under 60 seconds" },
@@ -261,7 +261,7 @@ export default function LaunchpadPage() {
               How We Keep the Price This Low
             </p>
             <p className="text-gray-800 text-base leading-relaxed mb-3">
-              Two things make $2,500/mo possible for a service that would cost five times as much at a traditional agency. First, we don&apos;t front-load costs. We spread them across your 24-month engagement instead of charging a large upfront fee, so you keep your cash when you need it most.
+              Two things make our $5,000/mo starting price possible. First, we don&apos;t front-load costs. We spread them across your 24-month engagement instead of charging a large upfront fee, so you keep your cash when you need it most.
             </p>
             <p className="text-gray-800 text-base leading-relaxed">
               Second, we have fully embraced automation and generative AI. By pairing that technology with 12 years of legal SEO expertise, we deliver highly effective marketing faster and cheaper than a bespoke service. Client time commitment: a 30-minute kickoff call plus a few hours spread across the first 45 days.
@@ -396,7 +396,7 @@ export default function LaunchpadPage() {
             Your Firm Is Ready for More Than a Foundation.
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            If your firm is established, already owns a website, and has a budget above $4,000/month, you don&apos;t need a foundation. You need a custom engagement scaled to your market and your growth goals. We build them up to $20,000/month.
+            If your firm is established and already owns a website, you don&apos;t need a foundation. You need a custom engagement scaled to your market and your growth goals. We build them up to $20,000/month.
           </p>
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 text-left max-w-lg mx-auto mb-10">
             <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">A Custom Engagement Delivers</p>

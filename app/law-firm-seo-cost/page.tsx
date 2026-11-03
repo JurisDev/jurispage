@@ -18,7 +18,7 @@ const faqs = [
   { question: "How much does law firm SEO cost per month?", answer: "Law firm SEO typically costs $2,000 to $10,000+ per month depending on market competitiveness, practice area, and scope. Most small and mid-market firms see solid results in the $2,000–$4,500/month range. Highly competitive markets like PI in Los Angeles or New York can require $7,000–$15,000+/month to compete seriously." },
   { question: "Why does law firm SEO cost more than regular SEO?", answer: "Legal is a YMYL (Your Money or Your Life) category. Google applies stricter quality standards to legal content, requiring higher E-E-A-T signals. The competitive landscape in legal is also more intense than most industries, and the content requirements (practice area pages, FAQ content, local pages) are more extensive." },
   { question: "What's included in a typical law firm SEO package?", answer: "A complete law firm SEO package typically includes: technical SEO audit and ongoing fixes, on-page optimization for all key pages, keyword research and competitive analysis, content creation (blog posts and practice area pages), link building from legal-relevant and local sources, Google Business Profile optimization, citation building, and monthly reporting tied to rankings and lead flow." },
-  { question: "Is there a setup fee for law firm SEO?", answer: "Many agencies charge a one-time setup fee (often thousands) that covers the initial audit, keyword research, and onboarding. JurisPage charges no upfront setup fee. Costs are spread across a 24-month engagement so small and startup firms can afford the work without a large day-one check. JurisPage starts at $2,500/month, with custom engagements up to $20,000/month for established firms. For budgets above that, [Juris Digital](https://jurisdigital.com/services/ascend/) provides full-service engagements at $20,000+/month with no upfront setup fees." },
+  { question: "Is there a setup fee for law firm SEO?", answer: "Many agencies charge a one-time setup fee (often thousands) that covers the initial audit, keyword research, and onboarding. JurisPage charges no upfront setup fee. Costs are spread across a 24-month engagement so small and startup firms can afford the work without a large day-one check. JurisPage starts at $5,000/month, with custom engagements up to $20,000/month for established firms. For budgets above that, [Juris Digital](https://jurisdigital.com/services/ascend/) provides full-service engagements at $20,000+/month with no upfront setup fees." },
   { question: "How do I know if I'm paying a fair price for law firm SEO?", answer: "Ask for a specific list of deliverables: what gets published each month, how many links are built, what technical work gets done, and exactly how results are measured. If an agency gives vague answers or only shows traffic graphs in reporting, you're likely not getting value for the cost." },
   { question: "Is law firm SEO worth the cost?", answer: "It depends on the qualified clients it brings, their collected fees, your margins, and the time required to acquire them. Compare total SEO investment with attributable signed clients, not traffic alone. Include the initial ramp-up period and intake costs. Rankings and returns are not guaranteed; review progress against agreed milestones before increasing investment." },
 ];
@@ -50,7 +50,7 @@ export default function LawFirmSEOCostPage() {
 
       <article className="py-12 px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">This guide uses a planning range of <strong>$2,000 to $10,000+ per month</strong>, not a verified industry-wide average. What you actually need depends on your market, your practice area, and your growth goals. Compare written proposals with the same scope; JurisPage&apos;s current plans start at $2,500/month.</p>
+          <p className="text-gray-700 text-lg leading-relaxed mb-6">This guide uses a planning range of <strong>$2,000 to $10,000+ per month</strong>, not a verified industry-wide average. What you actually need depends on your market, your practice area, and your growth goals. Compare written proposals with the same scope; JurisPage&apos;s current plans start at $5,000/month.</p>
 
           <h2 className="font-heading font-extrabold text-gray-900 text-2xl mt-10 mb-4">What Drives Law Firm SEO Costs</h2>
           <p className="text-gray-700 mb-5">Understanding the pricing drivers is more useful than any single number. Here are the factors that will determine what you should actually pay:</p>
@@ -218,12 +218,12 @@ export default function LawFirmSEOCostPage() {
           <div className="space-y-3 mb-4">
             <div className="flex gap-4 items-center bg-gray-50 border border-gray-200 rounded-xl p-4">
               <div className="flex-shrink-0 w-24 font-heading font-bold text-gray-900 text-sm">JurisPage</div>
-              <div className="font-heading font-bold text-xl" style={{ color: "#EE6C13" }}>$2,500+/mo</div>
+              <div className="font-heading font-bold text-xl" style={{ color: "#EE6C13" }}>$5,000+/mo</div>
               <div className="text-gray-600 text-sm">For small or startup firms with little to no online presence. 24-month engagement with no upfront setup fee. Full marketing foundation live in 45 days.</div>
             </div>
           </div>
           <p className="text-gray-600 text-sm">JurisPage costs are spread evenly across the 24-month engagement, not charged as a large day-one fee. <Link href="/services/pricing/" style={{ color: "#EE6C13" }}>See full JurisPage details and pricing →</Link></p>
-          <p className="text-gray-500 text-sm mt-4">Established firm with a budget above $4,000/mo? We build custom engagements up to $20,000/mo. <Link href="/contact/" style={{ color: "#EE6C13" }}>Contact us</Link> to scope yours. For $20,000+/mo budgets, see our parent company <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: "#EE6C13" }}>Juris Digital</a>.</p>
+          <p className="text-gray-500 text-sm mt-4">Established firm that needs a custom plan? We build custom engagements up to $20,000/mo. <Link href="/contact/" style={{ color: "#EE6C13" }}>Contact us</Link> to scope yours. For $20,000+/mo budgets, see our parent company <a href="https://jurisdigital.com/services/ascend/" target="_blank" rel="noopener noreferrer" style={{ color: "#EE6C13" }}>Juris Digital</a>.</p>
         </div>
       </article>
 

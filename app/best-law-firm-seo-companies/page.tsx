@@ -71,8 +71,8 @@ const agencies = [
     anchor: "jurispage",
     subtitle: "Best Overall for Small to Mid-Market Law Firms",
     meta: [
-      { label: "Best For", val: "Small or startup firms ($2,500 to $4,000/month)" },
-      { label: "Starting Price", val: "Starting at $2,500/month" },
+      { label: "Best For", val: "Small or startup firms (from $5,000/month)" },
+      { label: "Starting Price", val: "Starting at $5,000/month" },
       { label: "Specialization", val: "100% law firms only" },
       { label: "Cost Structure", val: "No upfront fee (costs spread across 24 months)" },
     ],
@@ -367,7 +367,7 @@ export default function BestLawFirmSEOPage() {
               </thead>
               <tbody>
                 {[
-                  { name: "JurisPage ⭐", price: "From $2,500/mo (no upfront fee)", legal: "Yes", contract: "24-month engagement, costs spread", best: "Small or startup firms", highlight: true },
+                  { name: "JurisPage ⭐", price: "From $5,000/mo (no upfront fee)", legal: "Yes", contract: "24-month engagement, costs spread", best: "Small or startup firms", highlight: true },
                   { name: "[Juris Digital](https://jurisdigital.com/services/ascend/) ⚠️ (parent co.)", price: "$20,000+/mo", legal: "Yes", contract: "Flexible", best: "Enterprise & market dominators", highlight: false },
                   { name: "Rankings.io", price: "~$5,000/mo", legal: "Yes", contract: "6-12 month", best: "PI firms", highlight: false },
                   { name: "Grow Law Firm", price: "~$3,000/mo", legal: "Yes", contract: "Varies", best: "Data-focused firms", highlight: false },

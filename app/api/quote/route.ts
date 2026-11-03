@@ -4,10 +4,10 @@ import { submitToHubSpot } from "@/lib/hubspot";
 import { notifySlack } from "@/lib/slack";
 import { prisma } from "@/lib/db";
 import { verifyTurnstile } from "@/lib/turnstile";
+import { JURISPAGE_MINIMUM_MONTHLY } from "@/lib/pricing";
 
 export async function POST(req: NextRequest) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await req.json();
     const {
       name,
@@ -25,9 +25,21 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    if (
+      !isCustom &&
+      (typeof monthlyTotal !== "number" || !Number.isFinite(monthlyTotal) || monthlyTotal < JURISPAGE_MINIMUM_MONTHLY)
+    ) {
+      return NextResponse.json(
+        { error: "JurisPage pricing starts at $5,000/month. Refresh the calculator to get an updated estimate." },
+        { status: 400 }
+      );
+    }
+
     if (!body.turnstileToken || !(await verifyTurnstile(body.turnstileToken))) {
       return NextResponse.json({ error: "Spam verification failed" }, { status: 403 });
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // ── Persist to database ──────────────────────────────────────────
     try {

@@ -2,8 +2,8 @@
 import { useState, useMemo } from "react";
 import { getHubSpotCookie } from "@/lib/hubspot-cookie";
 import TurnstileWidget from "@/components/TurnstileWidget";
+import { JURISPAGE_MINIMUM_MONTHLY as BASE_PRICE } from "@/lib/pricing";
 
-const BASE_PRICE = 2500;
 const PER_ATTORNEY = 500;
 const BIG_CITY_ADD = 1500;
 const PI_CITY_ADD = 1000;

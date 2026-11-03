@@ -1,0 +1,1 @@
+export const JURISPAGE_MINIMUM_MONTHLY = 5000;

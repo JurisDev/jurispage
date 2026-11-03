@@ -129,7 +129,7 @@ export const services: ServiceData[] = [
       },
       {
         question: "How much does law firm SEO cost?",
-        answer: "Typically $2,000-$10,000+ per month depending on market, practice area, and competition. A solo family law attorney in a mid-size city: $2,500-$3,500. A personal injury firm in a top-20 metro: proportionally more. Our pricing is published, and you can see exactly what is included without scheduling a call or sitting through a pitch. The real question is ROI (return on investment): if a signed case generates $8,000 in fees and SEO brings in 5 new cases per month at maturity, the math is straightforward. We model this out with every prospective client during the initial consultation so you make the decision on numbers, not promises.",
+        answer: "JurisPage starts at $5,000 per month, with pricing based on market, practice area, and competition. Our pricing is published, and you can see exactly what is included without scheduling a call or sitting through a pitch. The real question is ROI (return on investment): if a signed case generates $8,000 in fees and SEO brings in 5 new cases per month at maturity, the math is straightforward. We model this out with every prospective client during the initial consultation so you make the decision on numbers, not promises.",
       },
       {
         question: "How does AI search (ChatGPT, Perplexity, Google AI Overviews) affect law firm SEO?",
@@ -464,7 +464,7 @@ export const services: ServiceData[] = [
     tagline: "Everything you need to open your doors online. Fast.",
     primaryKeyword: "startup law firm marketing",
     description: "JurisPage is a complete marketing package for small or startup law firms with little to no online presence. Full setup in 45 days: StoryBrand-driven website, brand design, Google Business Profile, Yelp, Apple Maps, and tracking.",
-    intro: "When you open your own firm after years at a larger practice, you are starting from zero online. No Google Business Profile, no website, no reviews, and competitors who have been publishing content and building citations for a decade. JurisPage is built for that moment. Full setup lands in 45 days: a StoryBrand-driven website, complete brand design (logo, typography, photography, graphics, social assets, brand guidelines), verified Google Business Profile, listings on Yelp, Apple Maps, Bing, Avvo, and 30+ other directories, and performance tracking live from day one. Starting at $2,500/month over a 24-month engagement with no upfront fee. This is how we keep it affordable for small and startup firms: 12 years of legal SEO expertise paired with automation and generative AI to deliver rapid results without the front-loaded billing of a traditional agency.",
+    intro: "When you open your own firm after years at a larger practice, you are starting from zero online. No Google Business Profile, no website, no reviews, and competitors who have been publishing content and building citations for a decade. JurisPage is built for that moment. Full setup lands in 45 days: a StoryBrand-driven website, complete brand design (logo, typography, photography, graphics, social assets, brand guidelines), verified Google Business Profile, listings on Yelp, Apple Maps, Bing, Avvo, and 30+ other directories, and performance tracking live from day one. Starting at $5,000/month over a 24-month engagement with no upfront fee. This is how we keep it affordable for small and startup firms: 12 years of legal SEO expertise paired with automation and generative AI to deliver rapid results without the front-loaded billing of a traditional agency.",
     features: [
       "Brand Design (logo, typography, photography, graphics, social assets, brand guidelines)",
       "StoryBrand-driven WordPress website, live in 45 days",
@@ -474,7 +474,7 @@ export const services: ServiceData[] = [
       "Performance tracking live from day one",
     ],
     faqs: [
-      { question: "Who is JurisPage designed for?", answer: "Small or startup law firms with little to no online presence. Attorneys opening their first firm, lawyers leaving a larger firm to go independent, and smaller practices that have been running on referrals alone and need to build an online presence. Practice-agnostic, with a typical budget range of $2,500 to $4,000 per month." },
+      { question: "Who is JurisPage designed for?", answer: "Small or startup law firms with little to no online presence. Attorneys opening their first firm, lawyers leaving a larger firm to go independent, and smaller practices that have been running on referrals alone and need to build an online presence. Practice-agnostic, with pricing starting at $5,000 per month." },
       { question: "What's the difference between JurisPage and DIY website builders?", answer: "DIY builders like Squarespace or Wix can look fine but are SEO nightmares for law firms. JurisPage is built on WordPress with proper SEO structure, local optimization, and the same professional foundation that larger firms pay much more for." },
       { question: "Can I upgrade to a higher plan later?", answer: "Yes. JurisPage is designed as a foundation. Once your firm is established and ready to invest more, we scale your engagement with added SEO, content, and paid advertising, up to $20,000/month. There's no penalty and no restart needed." },
     ],

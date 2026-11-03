@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { question: "What's the main difference between JurisPage and Scorpion?", answer: "The biggest differences are agency scale, delivery model, pricing transparency, and fit. JurisPage publishes pricing, works exclusively in legal marketing, and packages the website and growth foundation into a defined 24-month engagement with no upfront setup fee. Scorpion is a much larger, multi-industry company with a legal marketing division and custom proposals." },
-  { question: "Is JurisPage cheaper than Scorpion?", answer: "JurisPage starts at $2,500/month over a 24-month engagement with no upfront setup fee. Scorpion does not publish standard legal-marketing pricing, so an accurate comparison requires a written proposal with the same scope, media spend, ownership terms, launch work, and contract period." },
+  { question: "Is JurisPage cheaper than Scorpion?", answer: "JurisPage starts at $5,000/month over a 24-month engagement with no upfront setup fee. Scorpion does not publish standard legal-marketing pricing, so an accurate comparison requires a written proposal with the same scope, media spend, ownership terms, launch work, and contract period." },
   { question: "Can I switch from Scorpion to JurisPage without losing my website?", answer: "Scorpion currently states that clients own their domain and content and that it will package site files when a client leaves. Because the underlying platform may differ, your next provider may still need to rebuild the site. Before switching, request a complete export, analytics access, domain and DNS access, ad-account access, call-tracking records, content files, and redirect map." },
   { question: "How long is the JurisPage engagement?", answer: "JurisPage is a 24-month engagement with no upfront setup fee. We front-load the work (brand design, StoryBrand website, GBP, Yelp, Apple Maps, citations, tracking) so your full marketing foundation is live in 45 days. We do not front-load the billing. Costs are spread evenly across the 24 months so small and startup firms can afford the work without a large day-one check." },
 ];
@@ -67,7 +67,7 @@ export default function ScorpionAlternativePage() {
                   ["Upfront setup fee", "$0 (costs spread over 24 months)", "Confirm in your written proposal"],
                   ["Full setup timeline", "45 days", "Confirm in your written proposal"],
                   ["Company focus", "100% legal", "Multi-industry company with a legal division"],
-                  ["Starting price", "$2,500/month (no upfront fee)", "Custom quote; standard pricing not published"],
+                  ["Starting price", "$5,000/month (no upfront fee)", "Custom quote; standard pricing not published"],
                   ["Team structure", "Dedicated point of contact from day one", "Confirm named team and escalation path"],
                 ].map(([feature, jp, sc], i) => (
                   <tr key={feature} style={{ background: i % 2 === 0 ? "#f9fafb" : "#fff" }}>
@@ -89,7 +89,7 @@ export default function ScorpionAlternativePage() {
               "You want to own your website and all assets, permanently",
               "You want to avoid a huge upfront setup fee and keep your cash for the first months of practice",
               "You want to see pricing before getting on a sales call",
-              "Your budget is $2,500 to $4,000/month and you want specialized legal SEO, not a generalist platform",
+              "Your budget starts at $5,000/month and you want specialized legal SEO, not a generalist platform",
               "You are a small or startup firm with little to no online presence and need the full marketing foundation live in 45 days",
               "You've been at Scorpion and felt like a small account inside a large agency",
             ].map((item) => (

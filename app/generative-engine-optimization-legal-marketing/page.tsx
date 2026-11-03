@@ -339,7 +339,7 @@ export default function GeoPage() {
             <div className="rounded-xl bg-white border border-gray-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-gray-100">
                 <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: O }}>JurisPage (Foundation)</div>
-                <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $2,500<span className="text-base font-normal text-gray-400">/mo</span></div>
+                <div className="font-heading font-extrabold text-gray-900 text-2xl">Starting at $5,000<span className="text-base font-normal text-gray-400">/mo</span></div>
                 <div className="text-xs text-gray-500 mt-1">Foundational GEO included with website and SEO</div>
               </div>
               <div className="px-6 py-5 space-y-3 text-sm">

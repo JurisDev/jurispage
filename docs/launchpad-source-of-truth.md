@@ -1,5 +1,7 @@
 # Launchpad — Source-of-Truth Product Spec
 
+> **Current operator decisions (2026-11-02):** JurisPage starts at **$5,000/month**. This supersedes the historical $2,000 floor in this source capture and the later $2,500 floor from 2026-08-25. Remove the old $2,500–$4,000 target range; no new typical range was specified. Apply the minimum to public copy, metadata, FAQ schema, the calculator, and prospect quotes. JurisPage custom engagements continue up to $20,000/month; Juris Digital starts at $20,000+/month. The 24-month engagement, no upfront fee, and 45-day setup remain current. The source capture below is historical; subsequent operator decisions in `CLAUDE.md`, including removal of social media services, take precedence.
+
 > **Naming note (2026-07-20):** This package is publicly marketed as **JurisPage** (the brand is the product) on BOTH jurispage.com and jurisdigital.com. "Launchpad" survives only internally: URLs (/services/launchpad/, /launchpad/), slugs, DB models, and this doc's filename. Never use "Launchpad" in prospect-visible copy on either site.
 
 > **Source:** https://jurisdigital.com/services/launchpad/
@@ -184,7 +186,7 @@ When auditing, flag any of the following as potential misalignment:
 
 For each page, answer:
 
-- [ ] **Pricing alignment:** Does every Launchpad $ figure on the page match $2,000/mo floor? Does it reference $2,000–$4,000 as the target range (or stay silent)?
+- [ ] **Pricing alignment:** Does every JurisPage starting price match the current $5,000/mo minimum, including metadata, FAQ schema, calculator output, and quotes? Remove obsolete lower price bands.
 - [ ] **Deliverable alignment:** Does any deliverable list match the Step-1 and Step-2 deliverables above? Missing ones (brand design, social media, Yelp/Apple Maps, weekly posting)?
 - [ ] **Contract terms:** Does the page claim month-to-month, or does it reflect the 24-month source commitment? (Conflict either way — flag.)
 - [ ] **Timeline:** Does the page cite 45 days for setup? Any conflicting numbers (30 days, 60 days)?
