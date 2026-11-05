@@ -56,6 +56,8 @@ One report product: the **Market Gap report** (`/see-my-market-gap/`). Delivery 
 
 ## Dev/ops notes
 
+- **Active webinar banner (2026-11-05):** `WebinarBanner` promotes the November 17, 2026 webinar at 3 PM ET. Remove or replace it after the event. It appears above the navigation on public pages and is hidden with the other public chrome on standalone reports.
+- **Webinar attribution:** Registration links use `utm_source=jurispage`, `utm_medium=referral`, `utm_campaign=law_firm_content_ai_citations_2026_11_17`, and `utm_content=top_banner`. `ConversionClickTracking` sends `webinar_registration_clicked` with `webinar_id`, `cta_location`, `destination`, and `page_path`; this measures clicks, while registrations are measured on the destination.
 - **Hosting:** Vercel (auto-deploys from `main`). Commit and push every edit — that's how changes go live.
 - **Stack:** Next.js 16, TypeScript, Tailwind.
 - **Build command:** `npm run build` — run this before commits if touching anything non-trivial.

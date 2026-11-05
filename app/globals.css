@@ -289,6 +289,7 @@ details > summary::marker {
 }
 
 /* Hide public chrome on standalone report pages */
+body:has([data-report-layout]) > [data-site-banner],
 body:has([data-report-layout]) > header,
 body:has([data-report-layout]) > footer,
 body:has([data-report-layout]) > div.fixed {

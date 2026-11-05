@@ -9,6 +9,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import AttributionCapture from "@/components/AttributionCapture";
 import ConversionClickTracking from "@/components/ConversionClickTracking";
+import WebinarBanner from "@/components/WebinarBanner";
 import { ogBase } from "@/lib/og";
 
 const quicksand = Quicksand({
@@ -98,6 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        <WebinarBanner />
         <Header />
         <main>{children}</main>
         <Footer />

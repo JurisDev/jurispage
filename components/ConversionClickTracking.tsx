@@ -13,6 +13,16 @@ export default function ConversionClickTracking() {
       const href = link.getAttribute("href") || "";
       const label = link.textContent?.trim().replace(/\s+/g, " ").slice(0, 80) || "link";
 
+      if (link.dataset.webinarBanner) {
+        trackClientEvent("webinar_registration_clicked", {
+          webinar_id: link.dataset.webinarBanner,
+          cta_location: "top_banner",
+          destination: href,
+          page_path: window.location.pathname,
+        });
+        return;
+      }
+
       if (href.startsWith("tel:")) {
         trackClientEvent("phone_clicked", {
           cta_label: label,
