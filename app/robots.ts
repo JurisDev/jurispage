@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/"],
+      disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://jurispage.com/sitemap.xml",
+    sitemap: "https://jurisdigital.com/sitemap_index.xml",
   };
 }
