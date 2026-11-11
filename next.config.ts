@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   serverExternalPackages: ["@sparticuz/chromium"],
+  experimental: {
+    agentUpgrade: "security",
+  },
   turbopack: {
     root: path.resolve(__dirname),
   },
