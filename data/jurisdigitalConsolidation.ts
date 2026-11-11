@@ -7,6 +7,7 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/": "https://jurisdigital.com/services/jurispage/",
   "/10-ways-differentiate-law-firm-examples": "https://jurisdigital.com/guides/law-firm-branding-important/",
   "/12-must-have-pages-on-your-law-firm-website": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/20-bizarre-law-firm-ads": "https://jurisdigital.com/resources/",
   "/2013/ethics/is-your-law-firm-website-legal-comply-with-new-york-state-ethics": "https://jurisdigital.com/guides/ethical-issues-online-marketing-attorneys/",
   "/2013/internet-marketing/how-do-google-adwords-and-search-engine-ads-work-a-walkthrough-for-beginners": "https://jurisdigital.com/services/ppc-law-firms/",
   "/2013/internet-marketing/two-of-the-six-most-expensive-google-keywords-are-lawyer-and-attorney": "https://jurisdigital.com/guides/keyword-research-for-attorneys/",
@@ -360,25 +361,35 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/about": "https://jurisdigital.com/services/jurispage/",
   "/about-us": "https://jurisdigital.com/services/jurispage/",
   "/admin": "https://jurisdigital.com/services/jurispage/",
+  "/advice-for-new-lawyers": "https://jurisdigital.com/resources/",
   "/ai-chatbot-for-law-firm-website": "https://jurisdigital.com/tools/jd-assistant/",
   "/ai-search-report": "https://jurisdigital.com/services/geo/",
+  "/anatomy-of-a-perfect-law-firm-landing-page": "https://jurisdigital.com/guides/landing-page-ppc-for-attorneys/",
   "/attorney-bio-pages": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/attorney-marketing": "https://jurisdigital.com/services/jurispage/",
   "/attorneys/federico-antich": "https://jurisdigital.com/services/jurispage/",
   "/attract-backlinks-law-firms-website": "https://jurisdigital.com/guides/linkable-assets-for-law-firms/",
   "/author/abe-dyck": "https://jurisdigital.com/team/",
+  "/author/andrewjurispage-com": "https://jurisdigital.com/resources/",
+  "/author/andrewjurispage-com/page/2": "https://jurisdigital.com/resources/",
+  "/author/andrewjurispage-com/page/5": "https://jurisdigital.com/resources/",
+  "/author/dennis-dimkauptimelegal-com": "https://jurisdigital.com/resources/",
   "/author/jordan-hobbs": "https://jurisdigital.com/team/",
   "/author/ryan-dahlen": "https://jurisdigital.com/team/",
   "/author/ryan-dahlen/page/2": "https://jurisdigital.com/team/",
   "/author/will-chan": "https://jurisdigital.com/team/",
-  "/avvo-lawyer-marketing-guide": "https://jurisdigital.com/guides/increase-avvo-rating/",
+  "/avvo-lawyer-marketing-guide": "https://jurisdigital.com/services/law-firm-seo/",
   "/bankruptcy-lawyer-marketing": "https://jurisdigital.com/guides/bankruptcy-lawyer-marketing/",
   "/bankruptcy-lawyer-websites": "https://jurisdigital.com/guides/bankruptcy-lawyer-marketing/",
+  "/best-apps-for-lawyers": "https://jurisdigital.com/best/best-software-lawyers-6-types-apps-attorneys-need-now/",
   "/best-books-for-lawyers": "https://jurisdigital.com/resources/",
   "/best-criminal-defense-lawyer-websites": "https://jurisdigital.com/best/website-designs-criminal-defense/",
   "/best-crm-law-firms": "https://jurisdigital.com/best/top-8-crms-for-law-firms-in-2025-streamline-your-practice-and-boost-client-relationships/",
   "/best-family-lawyer-websites": "https://jurisdigital.com/best/divorce-lawyer-websites/",
   "/best-form-advertising-lawyer": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
-  "/best-law-firm-logo-designs": "https://jurisdigital.com/best/50-awesome-logos-law-firms/",
+  "/best-gifts-lawyers-law-students": "https://jurisdigital.com/resources/",
+  "/best-law-firm-landing-pages": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/best-law-firm-logo-designs": "https://jurisdigital.com/services/law-firm-website-design/",
   "/best-law-firm-practice-management-software": "https://jurisdigital.com/best/top-10-case-management-software-programs-attorneys/",
   "/best-law-firm-seo-companies": "https://jurisdigital.com/best/law-firm-seo/",
   "/best-law-firm-websites": "https://jurisdigital.com/best/law-firm-websites/",
@@ -418,11 +429,14 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/category/video-marketing": "https://jurisdigital.com/resources/",
   "/category/website-development": "https://jurisdigital.com/services/law-firm-website-design/",
   "/category/websites": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/chatgpt-for-law-firm-marketing-a-blueprint": "https://jurisdigital.com/guides/ai-content-law-firms-accuracy-voice/",
+  "/chatgpt-for-lawyers": "https://jurisdigital.com/guides/chatgpt-for-law-firms-the-hype-uses/",
   "/client-testimonials": "https://jurisdigital.com/success-stories/",
   "/clio-grow-review": "https://jurisdigital.com/services/clio-law-firm-websites/",
   "/competitive-analysis-local-law-firm-seo": "https://jurisdigital.com/services/local-seo-for-lawyers/",
   "/contact": "https://jurisdigital.com/talk-to-a-strategist/",
   "/contact-us": "https://jurisdigital.com/talk-to-a-strategist/",
+  "/content-law-firm-website": "https://jurisdigital.com/services/legal-content-writing/",
   "/content-marketing-law-firms": "https://jurisdigital.com/services/legal-content-writing/",
   "/content-writing-law-firms": "https://jurisdigital.com/services/legal-content-writing/",
   "/criminal-defense-law-firm-website-statistics": "https://jurisdigital.com/research/criminal-defense-law-firm-website-statistics/",
@@ -434,8 +448,10 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/criminal-defense-lawyer-marketing/local-seo-for-law-firms": "https://jurisdigital.com/guides/web-design-seo-criminal-defense-lawyers/",
   "/criminal-defense-lawyer-seo": "https://jurisdigital.com/guides/web-design-seo-criminal-defense-lawyers/",
   "/design-portfolio": "https://jurisdigital.com/portfolio/",
+  "/direct-mail-for-lawyers": "https://jurisdigital.com/services/legal-content-writing/",
   "/divorce": "https://jurisdigital.com/guides/top-10-family-law-marketing-strategies/",
   "/divorce-lawyer-marketing": "https://jurisdigital.com/guides/seo-divorce-lawyers/",
+  "/divorce-lawyer-seo": "https://jurisdigital.com/guides/seo-divorce-lawyers/",
   "/dui-lawyer-marketing": "https://jurisdigital.com/guides/dui-attorney-marketing/",
   "/dui-lawyer-marketing/google-ads-for-law-firms": "https://jurisdigital.com/guides/dui-attorney-marketing/",
   "/dui-lawyer-marketing/law-firm-content-writing": "https://jurisdigital.com/guides/dui-attorney-marketing/",
@@ -444,6 +460,8 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/dui-lawyer-marketing/local-seo-for-law-firms": "https://jurisdigital.com/guides/dui-attorney-marketing/",
   "/elevate-law-firm-seo": "https://jurisdigital.com/services/law-firm-seo/",
   "/elevate-law-firm-seo/law-firm-copywriting": "https://jurisdigital.com/services/legal-content-writing/",
+  "/elevate-seo-for-criminal-defense": "https://jurisdigital.com/guides/web-design-seo-criminal-defense-lawyers/",
+  "/elevate-seo-for-criminal-defense/pricing": "https://jurisdigital.com/services/jurispage/",
   "/email-marketing-for-law-firms": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
   "/employment-lawyer-marketing": "https://jurisdigital.com/guides/employment-lawyer-marketing/",
   "/estate-planning-lawyer-marketing": "https://jurisdigital.com/guides/estate-planning-law-firm-marketing/",
@@ -455,6 +473,7 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/family-law-firm-marketing/law-firm-seo": "https://jurisdigital.com/services/law-firm-seo/family-law/",
   "/family-law-firm-marketing/law-firm-websites": "https://jurisdigital.com/best/divorce-lawyer-websites/",
   "/family-law-firm-marketing/local-seo-for-law-firms": "https://jurisdigital.com/services/law-firm-seo/family-law/",
+  "/family-law-marketing": "https://jurisdigital.com/digital-marketing-family-law/",
   "/family-lawyer-websites": "https://jurisdigital.com/services/law-firm-seo/family-law/",
   "/feature-client-reviews-on-your-law-firms-website": "https://jurisdigital.com/guides/reviews-pr-social-proof-growth/",
   "/feed": "https://jurisdigital.com/resources/",
@@ -462,9 +481,12 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/free-law-firm-website-analysis": "https://jurisdigital.com/free-digital-marketing-audit/",
   "/free-market-report": "https://jurisdigital.com/free-digital-marketing-audit/",
   "/free-seo-audit": "https://jurisdigital.com/free-digital-marketing-audit/",
+  "/generative-engine-optimization-for-law-firms": "https://jurisdigital.com/services/geo/",
   "/generative-engine-optimization-legal-marketing": "https://jurisdigital.com/services/geo/",
+  "/get-started": "https://jurisdigital.com/talk-to-a-strategist/",
   "/google-ads-for-law-firms": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-for-lawyers": "https://jurisdigital.com/services/ppc-law-firms/",
+  "/google-ads-lawyers-anaheim": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-lawyers-chicago": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-lawyers-dallas": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-lawyers-houston": "https://jurisdigital.com/services/ppc-law-firms/",
@@ -474,18 +496,27 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/google-ads-lawyers-nashville": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-lawyers-san-antonio": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-ads-lawyers-san-diego": "https://jurisdigital.com/services/ppc-law-firms/",
+  "/google-advertising-lawyers": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-adwords-lawyers": "https://jurisdigital.com/services/ppc-law-firms/",
   "/google-algorithm-updates-impact-on-law-firm-websites": "https://jurisdigital.com/services/law-firm-seo/",
   "/google-business-profile-law-firm": "https://jurisdigital.com/services/local-seo-for-lawyers/",
+  "/google-business-profile-optimization-lawyers": "https://jurisdigital.com/services/local-seo-for-lawyers/",
+  "/google-hangouts-for-lawyers-webinar": "https://jurisdigital.com/services/law-firm-seo/",
   "/google-local-services-ads-update-lawyers-october-2024": "https://jurisdigital.com/news/google-lsa-lead-dispute-update/",
+  "/google-my-business-law-firms": "https://jurisdigital.com/services/local-seo-for-lawyers/",
   "/google-reviews-law-firms": "https://jurisdigital.com/guides/reviews-pr-social-proof-growth/",
+  "/google-screened-for-lawyers": "https://jurisdigital.com/services/local-seo-for-lawyers/",
   "/growth-assessment": "https://jurisdigital.com/free-digital-marketing-audit/",
   "/growth-path": "https://jurisdigital.com/free-digital-marketing-audit/",
   "/growth-report": "https://jurisdigital.com/free-digital-marketing-audit/",
   "/homepage-b": "https://jurisdigital.com/services/jurispage/",
   "/how-many-hours-do-lawyers-work": "https://jurisdigital.com/research/how-many-hours-do-lawyers-work/",
   "/how-marketing-helps-law-firms-succeed": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
+  "/how-much-law-firm-seo-cost": "https://jurisdigital.com/guides/law-firm-seo-cost/",
+  "/how-to-build-criminal-law-practice": "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/",
+  "/how-to-get-clients-as-a-lawyer": "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/",
   "/how-to-get-more-clients-for-your-law-firm": "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/",
+  "/how-to-grow-a-law-firm": "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/",
   "/how-to-leave-findlaw": "https://jurisdigital.com/news/switching-from-findlaw-what-the-acquisition-means-and-better-alternatives/",
   "/how-to-reduce-friction-on-your-law-firms-website": "https://jurisdigital.com/services/law-firm-website-design/",
   "/how-to-sell-your-legal-services-ethically": "https://jurisdigital.com/guides/ethical-issues-online-marketing-attorneys/",
@@ -500,34 +531,45 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/insights": "https://jurisdigital.com/resources/",
   "/internal-links-law-firm-seo": "https://jurisdigital.com/research/boosting-your-law-firms-seo-mastering-internal-linking-strategies/",
   "/internet-marketing-for-estate-planning-lawyers": "https://jurisdigital.com/guides/estate-planning-law-firm-marketing/",
-  "/internet-marketing-for-personal-injury-lawyers": "https://jurisdigital.com/services/law-firm-seo/personal-injury-seo/",
+  "/internet-marketing-for-personal-injury-lawyers": "https://jurisdigital.com/guides/personal-injury-marketing/",
   "/is-it-worth-hiring-seo-company": "https://jurisdigital.com/services/law-firm-seo/",
   "/jurispage": "https://jurisdigital.com/services/jurispage/",
   "/jurispage-now-backed-by-juris-digital": "https://jurisdigital.com/news/juris-digital-acquires-jurispage/",
+  "/keyboard-shortcuts-legal-symbols-section-symbol": "https://jurisdigital.com/resources/",
   "/keyword-research-for-lawyers": "https://jurisdigital.com/guides/keyword-research-for-attorneys/",
   "/kickstart-legal-marketing": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
+  "/landing-page-design-for-lawyers": "https://jurisdigital.com/services/law-firm-website-design/",
   "/landing-page-portfolio": "https://jurisdigital.com/portfolio/",
   "/launchpad": "https://jurisdigital.com/services/launchpad/",
+  "/law-firm-accounting-bookkeeping": "https://jurisdigital.com/best/best-software-lawyers-6-types-apps-attorneys-need-now/",
   "/law-firm-awards": "https://jurisdigital.com/guides/putting-super-lawyers-website-tactic-tacky/",
   "/law-firm-billing": "https://jurisdigital.com/best/best-software-lawyers-6-types-apps-attorneys-need-now/",
   "/law-firm-blog-content": "https://jurisdigital.com/guides/blogging-for-attorneys/",
   "/law-firm-branding": "https://jurisdigital.com/guides/law-firm-branding-important/",
+  "/law-firm-business-cards": "https://jurisdigital.com/services/law-firm-website-design/",
   "/law-firm-content-writing": "https://jurisdigital.com/services/legal-content-writing/",
+  "/law-firm-content-writing-b": "https://jurisdigital.com/services/legal-content-writing/",
+  "/law-firm-copywriting": "https://jurisdigital.com/services/legal-content-writing/",
   "/law-firm-email-marketing": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
   "/law-firm-marketing": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
+  "/law-firm-marketing-brandon": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-marketing-budget": "https://jurisdigital.com/guides/law-firm-marketing-costs-2025/",
+  "/law-firm-marketing-clearwater": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-marketing-denver": "https://jurisdigital.com/services/",
+  "/law-firm-marketing-gresham": "https://jurisdigital.com/services/jurispage/",
+  "/law-firm-marketing-hillsboro": "https://jurisdigital.com/services/jurispage/",
   "/law-firm-marketing-las-vegas": "https://jurisdigital.com/services/",
   "/law-firm-marketing-los-angeles": "https://jurisdigital.com/services/",
   "/law-firm-marketing-minneapolis": "https://jurisdigital.com/services/",
   "/law-firm-marketing-nashville": "https://jurisdigital.com/services/",
   "/law-firm-marketing-phoenix": "https://jurisdigital.com/services/",
   "/law-firm-marketing-plan-pdf": "https://jurisdigital.com/guides/law-firm-marketing-plan/",
+  "/law-firm-marketing-plan-template": "https://jurisdigital.com/guides/law-firm-marketing-plan/",
   "/law-firm-marketing-portland": "https://jurisdigital.com/services/",
   "/law-firm-marketing-recession": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/law-firm-marketing-san-francisco": "https://jurisdigital.com/services/",
   "/law-firm-marketing-seattle": "https://jurisdigital.com/services/",
-  "/law-firm-marketing-services": "https://jurisdigital.com/services/",
+  "/law-firm-marketing-services": "https://jurisdigital.com/services/jurispage/",
   "/law-firm-marketing-software": "https://jurisdigital.com/guides/law-firm-marketing-technology-stack/",
   "/law-firm-marketing-strategy": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/law-firm-marketing-tampa": "https://jurisdigital.com/services/",
@@ -535,17 +577,23 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/law-firm-marketing/law-firm-marketing-plan": "https://jurisdigital.com/guides/law-firm-marketing-plan/",
   "/law-firm-marketing/law-firm-marketing-strategy": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/law-firm-marketing/law-firm-seo": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-ppc": "https://jurisdigital.com/services/ppc-law-firms/",
   "/law-firm-seo": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-cost": "https://jurisdigital.com/guides/law-firm-seo-cost/",
   "/law-firm-seo-dallas": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-seo-definitive-guide": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-seo-fremont": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-las-vegas": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-minneapolis": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-nashville": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-seo-plano": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-portland": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-san-francisco": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-san-jose": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-seo-santa-clara": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-tampa": "https://jurisdigital.com/services/law-firm-seo/",
   "/law-firm-seo-washington-dc": "https://jurisdigital.com/services/law-firm-seo/",
+  "/law-firm-social-media-marketing": "https://jurisdigital.com/services/legal-content-writing/",
   "/law-firm-website-design": "https://jurisdigital.com/services/law-firm-website-design/",
   "/law-firm-website-design-boston": "https://jurisdigital.com/services/law-firm-website-design/",
   "/law-firm-website-design-charlotte": "https://jurisdigital.com/services/law-firm-website-design/",
@@ -565,8 +613,13 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/law-firms-online-presence": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/law-marketing": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/lawmatics-review": "https://jurisdigital.com/best/top-8-crms-for-law-firms-in-2025-streamline-your-practice-and-boost-client-relationships/",
+  "/lawyer-advertising-rules": "https://jurisdigital.com/guides/ethical-issues-online-marketing-attorneys/",
+  "/lawyer-directories": "https://jurisdigital.com/services/law-firm-seo/",
+  "/lawyer-law-domain-names": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/lawyer-seo": "https://jurisdigital.com/services/law-firm-seo/",
   "/lawyer-statistics": "https://jurisdigital.com/research/lawyer-statistics/",
-  "/lawyer-website-case-studies": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/lawyer-web-design": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/lawyer-website-case-studies": "https://jurisdigital.com/success-stories/",
   "/lawyer-website-case-studies/building-traffic-and-clients": "https://jurisdigital.com/services/law-firm-website-design/",
   "/lawyer-website-case-studies/migrating-from-findlaw": "https://jurisdigital.com/guides/scorpion-marketing-review-law-firms/",
   "/lawyer-website-case-studies/newly-solo": "https://jurisdigital.com/services/law-firm-website-design/",
@@ -576,13 +629,16 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/lead-generation-for-lawyers": "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/",
   "/legal": "https://jurisdigital.com/terms-and-conditions/",
   "/legal-content": "https://jurisdigital.com/services/legal-content-writing/",
+  "/legal-content-writing": "https://jurisdigital.com/services/legal-content-writing/",
   "/legal-fonts": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/library": "https://jurisdigital.com/resources/",
   "/library/attorney-ppc-ebook": "https://jurisdigital.com/services/ppc-law-firms/",
   "/library/how-to-successfully-redesign-your-law-firm-website-white-paper": "https://jurisdigital.com/services/law-firm-website-design/",
   "/library/law-firm-case-management-comparison-chart-download": "https://jurisdigital.com/best/top-10-case-management-software-programs-attorneys/",
   "/link-building-for-lawyers": "https://jurisdigital.com/guides/link-building/",
   "/linkedin-marketing-lawyers": "https://jurisdigital.com/guides/linkedin-for-lawyers/",
   "/local-citations-law-firms": "https://jurisdigital.com/services/local-seo-for-lawyers/",
+  "/local-landing-pages-law-firms": "https://jurisdigital.com/services/local-seo-for-lawyers/",
   "/local-marketing-package": "https://jurisdigital.com/services/jurispage/",
   "/local-seo-benefit-law-firm": "https://jurisdigital.com/services/local-seo-for-lawyers/",
   "/local-seo-for-law-firms": "https://jurisdigital.com/services/local-seo-for-lawyers/",
@@ -595,7 +651,9 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/marketing-agency-for-law-firm": "https://jurisdigital.com/services/",
   "/marketing-for-bankruptcy-attorneys": "https://jurisdigital.com/guides/bankruptcy-lawyer-marketing/",
   "/marketing-for-criminal-defense-lawyers": "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/",
-  "/marketing-for-family-lawyers": "https://jurisdigital.com/guides/top-10-family-law-marketing-strategies/",
+  "/marketing-for-employment-law-firms": "https://jurisdigital.com/guides/employment-lawyer-marketing/",
+  "/marketing-for-family-lawyers": "https://jurisdigital.com/digital-marketing-family-law/",
+  "/marketing-for-immigration-lawyers": "https://jurisdigital.com/guides/immigration-lawyer-marketing/",
   "/mass-tort-law-firm-marketing": "https://jurisdigital.com/guides/mass-tort-law-firm-marketing/",
   "/medical-malpractice-lawyer-marketing": "https://jurisdigital.com/guides/medical-malpractice-lawyer-marketing/",
   "/news": "https://jurisdigital.com/resources/",
@@ -615,18 +673,24 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/portfolio": "https://jurisdigital.com/portfolio/",
   "/portfolio-jp-classic/law-office-of-mitchell-khosrova-jurispage-law-firm-website-design-portfolio": "https://jurisdigital.com/portfolio/",
   "/portfolio/immigration-desk": "https://jurisdigital.com/success-stories/immigration-desk/",
-  "/portfolio/kazarian-law": "https://jurisdigital.com/portfolio/",
+  "/portfolio/jennings-family-law": "https://jurisdigital.com/success-stories/",
+  "/portfolio/karen-a-schoenau": "https://jurisdigital.com/success-stories/",
+  "/portfolio/kazarian-law": "https://jurisdigital.com/success-stories/",
   "/portfolio/sands-law-group": "https://jurisdigital.com/success-stories/the-sands-law-group/",
   "/post-sitemap.xml": "https://jurisdigital.com/sitemap_index.xml",
   "/ppc-for-lawyers": "https://jurisdigital.com/services/ppc-law-firms/",
+  "/practice-area-guides": "https://jurisdigital.com/verticals/",
+  "/practice-area-power-pages": "https://jurisdigital.com/verticals/",
   "/practice-areas": "https://jurisdigital.com/verticals/",
   "/pricing": "https://jurisdigital.com/services/jurispage/",
   "/pricing/email-marketing": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
   "/pricing/seo": "https://jurisdigital.com/guides/law-firm-seo-cost/",
   "/privacy-policy": "https://jurisdigital.com/privacy-policy/",
+  "/prove-law-firm-marketing-roi": "https://jurisdigital.com/guides/measure-seo-qualified-inquiries/",
   "/radio-advertising-lawyers": "https://jurisdigital.com/best/best-worst-attorney-ads-2017/",
   "/real-estate-attorney-websites": "https://jurisdigital.com/guides/real-estate-lawyer-marketing/",
   "/real-estate-lawyer-marketing": "https://jurisdigital.com/guides/real-estate-lawyer-marketing/",
+  "/reputation-management-for-lawyers": "https://jurisdigital.com/services/",
   "/resources": "https://jurisdigital.com/resources/",
   "/resources/email-marketing-for-law-firms-proven-tips-for-success": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
   "/resources/email-marketing-for-lawyers": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
@@ -641,6 +705,7 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/resources/webinar-how-to-create-an-amazing-law-firm-marketing-plan": "https://jurisdigital.com/guides/law-firm-marketing-plan/",
   "/resources/webinar-secrets-of-legal-marketing": "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/",
   "/results": "https://jurisdigital.com/success-stories/",
+  "/schedule-a-call-with-kevin-pham": "https://jurisdigital.com/talk-to-a-strategist/",
   "/schema-law-firm-seo": "https://jurisdigital.com/guides/schema-markup-law-firms-benefits-limits/",
   "/scorpion-legal-marketing-alternative": "https://jurisdigital.com/guides/scorpion-marketing-review-law-firms/",
   "/secret-shop": "https://jurisdigital.com/services/revops/",
@@ -676,6 +741,7 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/services/branding-for-attorneys": "https://jurisdigital.com/guides/law-firm-branding-important/",
   "/services/clio-integrated-attorney-websites": "https://jurisdigital.com/services/clio-law-firm-websites/",
   "/services/email-marketing": "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/",
+  "/services/increase-attorney-website-traffic": "https://jurisdigital.com/services/law-firm-seo/",
   "/services/law-firm-boost-marketing": "https://jurisdigital.com/services/launchpad/",
   "/services/law-firm-ppc": "https://jurisdigital.com/services/ppc-law-firms/",
   "/services/law-firm-seo": "https://jurisdigital.com/services/law-firm-seo/",
@@ -693,6 +759,7 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/solo-attorney-marketing": "https://jurisdigital.com/guides/solo-attorney-marketing/",
   "/startup-law-firm-marketing": "https://jurisdigital.com/guides/starting-law-firm-marketing-playbook/",
   "/success-stories": "https://jurisdigital.com/success-stories/",
+  "/tax-lawyer-marketing": "https://jurisdigital.com/services/jurispage/",
   "/terms-of-service": "https://jurisdigital.com/terms-and-conditions/",
   "/thank-you-for-reaching-out": "https://jurisdigital.com/services/jurispage/",
   "/tiktok-for-lawyers": "https://jurisdigital.com/guides/tiktok-for-lawyers/",
@@ -700,8 +767,10 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
   "/types-of-keywords-law-firm-seo": "https://jurisdigital.com/guides/keyword-research-for-attorneys/",
   "/video-marketing-for-lawyers": "https://jurisdigital.com/guides/video-marketing-for-lawyers/",
   "/video-marketing-for-lawyers-goes-mainstream": "https://jurisdigital.com/services/performance-creative-for-law-firms/",
+  "/video-production": "https://jurisdigital.com/best/video-production-companies/",
   "/webinar-top-strategies-for-improving-your-firms-client-intake": "https://jurisdigital.com/guides/faster-better-law-firm-intake/",
   "/website-design-for-lawyers": "https://jurisdigital.com/services/law-firm-website-design/",
+  "/websites-for-criminal-lawyers": "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/",
   "/what-googles-ai-overviews-mean-for-law-firm-seo-in-2025": "https://jurisdigital.com/guides/the-law-firm-guide-to-generative-engine-optimization-geo/",
   "/what-is-a-legal-assistant": "https://jurisdigital.com/resources/",
   "/why-most-law-firm-websites-fail": "https://jurisdigital.com/guides/five-law-firm-website-mistakes-you-need-to-fix/",
@@ -739,44 +808,432 @@ export const EXACT_CONSOLIDATION_REDIRECTS: Record<string, string> = {
 
 export const PREFIX_CONSOLIDATION_REDIRECTS: ReadonlyArray<readonly [string, string]> = [
   [
+    "/how-to-use-reddit-for-law-firm-marketing-without-getting-burned",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/best-law-firm-websites-that-nail-design-trust-and-conversion",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/google-local-services-ads-update-lawyers-october-2024",
+    "https://jurisdigital.com/news/google-lsa-lead-dispute-update/"
+  ],
+  [
+    "/small-law-firms-can-use-digital-marketing-to-compete",
+    "https://jurisdigital.com/guides/marketing-small-law-firm/"
+  ],
+  [
+    "/why-some-google-ads-campaigns-fail-before-they-begin",
+    "https://jurisdigital.com/services/ppc-law-firms/"
+  ],
+  [
+    "/local-services-ads-automated-lead-crediting-system",
+    "https://jurisdigital.com/news/google-lsa-lead-dispute-update/"
+  ],
+  [
+    "/feature-client-reviews-on-your-law-firms-website",
+    "https://jurisdigital.com/guides/reviews-pr-social-proof-growth/"
+  ],
+  [
+    "/how-to-reduce-friction-on-your-law-firms-website",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/keyboard-shortcuts-legal-symbols-section-symbol",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
+    "/internet-marketing-for-estate-planning-lawyers",
+    "https://jurisdigital.com/guides/estate-planning-law-firm-marketing/"
+  ],
+  [
+    "/internet-marketing-for-personal-injury-lawyers",
+    "https://jurisdigital.com/guides/personal-injury-marketing/"
+  ],
+  [
     "/law-firm-marketing/law-firm-marketing-strategy",
     "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
+    "/generative-engine-optimization-for-law-firms",
+    "https://jurisdigital.com/services/geo/"
+  ],
+  [
+    "/12-must-have-pages-on-your-law-firm-website",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/chatgpt-for-law-firm-marketing-a-blueprint",
+    "https://jurisdigital.com/guides/ai-content-law-firms-accuracy-voice/"
   ],
   [
     "/law-firm-marketing/law-firm-marketing-plan",
     "https://jurisdigital.com/guides/law-firm-marketing-plan/"
   ],
   [
+    "/services/increase-attorney-website-traffic",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/lsas-versus-google-ads-legal-marketing",
+    "https://jurisdigital.com/guides/google-local-services-ads-get-top-spot-only-pay-for-leads/"
+  ],
+  [
+    "/marketing-for-criminal-defense-lawyers",
+    "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/"
+  ],
+  [
+    "/best-criminal-defense-lawyer-websites",
+    "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/"
+  ],
+  [
+    "/how-marketing-helps-law-firms-succeed",
+    "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
     "/seo-for-lawyers/measuring-seo-success",
     "https://jurisdigital.com/guides/measure-seo-qualified-inquiries/"
+  ],
+  [
+    "/services/law-firm-web-design-overview",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/how-to-build-criminal-law-practice",
+    "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/"
+  ],
+  [
+    "/marketing-for-bankruptcy-attorneys",
+    "https://jurisdigital.com/guides/bankruptcy-lawyer-marketing/"
+  ],
+  [
+    "/marketing-for-immigration-lawyers",
+    "https://jurisdigital.com/guides/immigration-lawyer-marketing/"
   ],
   [
     "/seo-for-lawyers/content-marketing",
     "https://jurisdigital.com/services/legal-content-writing/"
   ],
   [
+    "/seo-for-personal-injury-law-firms",
+    "https://jurisdigital.com/guides/personal-injury-marketing/"
+  ],
+  [
+    "/elevate-seo-for-criminal-defense",
+    "https://jurisdigital.com/verticals/"
+  ],
+  [
+    "/facebook-advertising-for-lawyers",
+    "https://jurisdigital.com/guides/facebook-for-lawyers/"
+  ],
+  [
+    "/law-firm-marketing-plan-template",
+    "https://jurisdigital.com/guides/law-firm-marketing-plan/"
+  ],
+  [
     "/seo-for-lawyers/keyword-research",
     "https://jurisdigital.com/guides/keyword-research-for-attorneys/"
+  ],
+  [
+    "/landing-page-design-for-lawyers",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/law-firm-accounting-bookkeeping",
+    "https://jurisdigital.com/best/best-software-lawyers-6-types-apps-attorneys-need-now/"
+  ],
+  [
+    "/law-firm-social-media-marketing",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/seo-for-estate-planning-lawyers",
+    "https://jurisdigital.com/guides/estate-planning-law-firm-marketing/"
+  ],
+  [
+    "/why-most-law-firm-websites-fail",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/how-many-hours-do-lawyers-work",
+    "https://jurisdigital.com/research/how-many-hours-do-lawyers-work/"
+  ],
+  [
+    "/blog/lawyer-seo-technical-seo",
+    "https://jurisdigital.com/guides/technical-seo-law-firms-guide/"
+  ],
+  [
+    "/email-marketing-for-law-firms",
+    "https://jurisdigital.com/guides/6-email-marketing-tips-law-firm/"
+  ],
+  [
+    "/marketing-agency-for-law-firm",
+    "https://jurisdigital.com/services/"
+  ],
+  [
+    "/portfolio/jennings-family-law",
+    "https://jurisdigital.com/success-stories/"
+  ],
+  [
+    "/seo-for-immigration-law-firms",
+    "https://jurisdigital.com/guides/immigration-lawyer-marketing/"
   ],
   [
     "/seo-for-lawyers/link-building",
     "https://jurisdigital.com/guides/link-building/"
   ],
   [
+    "/seo-for-real-estate-law-firms",
+    "https://jurisdigital.com/guides/real-estate-lawyer-marketing/"
+  ],
+  [
+    "/websites-for-criminal-lawyers",
+    "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/"
+  ],
+  [
+    "/marketing-for-family-lawyers",
+    "https://jurisdigital.com/digital-marketing-family-law/"
+  ],
+  [
+    "/online-marketing-for-lawyers",
+    "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
+    "/prove-law-firm-marketing-roi",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/seo-for-employment-law-firms",
+    "https://jurisdigital.com/guides/employment-lawyer-marketing/"
+  ],
+  [
+    "/avvo-lawyer-marketing-guide",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/best-family-lawyer-websites",
+    "https://jurisdigital.com/digital-marketing-family-law/"
+  ],
+  [
+    "/best-law-firm-landing-pages",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/content-marketing-law-firms",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/criminal-defense-lawyer-seo",
+    "https://jurisdigital.com/guides/criminal-defense-advertising-how-to-reach-potential-clients-and-grow-your-practice/"
+  ],
+  [
+    "/google-screened-for-lawyers",
+    "https://jurisdigital.com/services/local-seo-for-lawyers/"
+  ],
+  [
+    "/law-firm-marketing-strategy",
+    "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
     "/lawyer-website-case-studies",
     "https://jurisdigital.com/success-stories/"
+  ],
+  [
+    "/best-law-firm-logo-designs",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/google-ads-lawyers-anaheim",
+    "https://jurisdigital.com/services/ppc-law-firms/"
+  ],
+  [
+    "/google-advertising-lawyers",
+    "https://jurisdigital.com/services/ppc-law-firms/"
+  ],
+  [
+    "/how-much-law-firm-seo-cost",
+    "https://jurisdigital.com/guides/law-firm-seo-cost/"
+  ],
+  [
+    "/law-firm-content-writing-b",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/local-seo-benefit-law-firm",
+    "https://jurisdigital.com/services/local-seo-for-lawyers/"
+  ],
+  [
+    "/portfolio/karen-a-schoenau",
+    "https://jurisdigital.com/success-stories/"
+  ],
+  [
+    "/seo-for-bankruptcy-lawyers",
+    "https://jurisdigital.com/guides/bankruptcy-lawyer-marketing/"
+  ],
+  [
+    "/website-design-for-lawyers",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/kickstart-legal-marketing",
+    "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
+    "/local-service-ads-lawyers",
+    "https://jurisdigital.com/services/ppc-law-firms/"
   ],
   [
     "/portfolio/sands-law-group",
     "https://jurisdigital.com/success-stories/the-sands-law-group/"
   ],
   [
+    "/practice-area-power-pages",
+    "https://jurisdigital.com/verticals/"
+  ],
+  [
     "/seo-for-lawyers/local-seo",
     "https://jurisdigital.com/services/local-seo-for-lawyers/"
   ],
   [
+    "/content-law-firm-website",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/law-firm-seo-santa-clara",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/lawyer-advertising-rules",
+    "https://jurisdigital.com/guides/ethical-issues-online-marketing-attorneys/"
+  ],
+  [
+    "/seo-for-family-law-firms",
+    "https://jurisdigital.com/digital-marketing-family-law/"
+  ],
+  [
+    "/social-media-for-lawyers",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/20-bizarre-law-firm-ads",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
+    "/direct-mail-for-lawyers",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/how-to-start-a-law-firm",
+    "https://jurisdigital.com/guides/law-firm-startup-checklist/"
+  ],
+  [
+    "/law-firm-business-cards",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/lawyer-law-domain-names",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/advice-for-new-lawyers",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
+    "/best-books-for-lawyers",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
+    "/best-law-firm-websites",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/how-to-grow-a-law-firm",
+    "https://jurisdigital.com/guides/lead-generation-for-lawyers-and-law-firms-generating-consistent-cases/"
+  ],
+  [
+    "/landing-page-portfolio",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/best-apps-for-lawyers",
+    "https://jurisdigital.com/best/best-software-lawyers-6-types-apps-attorneys-need-now/"
+  ],
+  [
+    "/legal-content-writing",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/family-law-marketing",
+    "https://jurisdigital.com/digital-marketing-family-law/"
+  ],
+  [
+    "/how-to-leave-findlaw",
+    "https://jurisdigital.com/guides/scorpion-marketing-review-law-firms/"
+  ],
+  [
+    "/law-firm-copywriting",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/law-firm-seo-fremont",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
     "/portfolio-jp-classic",
     "https://jurisdigital.com/portfolio/"
+  ],
+  [
+    "/practice-area-guides",
+    "https://jurisdigital.com/verticals/"
+  ],
+  [
+    "/best-crm-law-firms",
+    "https://jurisdigital.com/best/top-8-crms-for-law-firms-in-2025-streamline-your-practice-and-boost-client-relationships/"
+  ],
+  [
+    "/divorce-lawyer-seo",
+    "https://jurisdigital.com/guides/seo-divorce-lawyers/"
+  ],
+  [
+    "/law-firm-marketing",
+    "https://jurisdigital.com/guides/online-marketing-strategies-lawyers/"
+  ],
+  [
+    "/law-firm-seo-plano",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/lawyer-directories",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/tiktok-for-lawyers",
+    "https://jurisdigital.com/services/legal-content-writing/"
+  ],
+  [
+    "/law-firm-branding",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/lawyer-statistics",
+    "https://jurisdigital.com/research/lawyer-statistics/"
+  ],
+  [
+    "/lawyer-web-design",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/clio-grow-review",
+    "https://jurisdigital.com/services/clio-law-firm-websites/"
+  ],
+  [
+    "/design-portfolio",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/ppc-for-lawyers",
+    "https://jurisdigital.com/services/ppc-law-firms/"
   ],
   [
     "/seo-for-lawyers",
@@ -787,6 +1244,26 @@ export const PREFIX_CONSOLIDATION_REDIRECTS: ReadonlyArray<readonly [string, str
     "https://jurisdigital.com/success-stories/"
   ],
   [
+    "/law-firm-ppc",
+    "https://jurisdigital.com/services/ppc-law-firms/"
+  ],
+  [
+    "/law-firm-seo",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
+    "/get-started",
+    "https://jurisdigital.com/talk-to-a-strategist/"
+  ],
+  [
+    "/legal-fonts",
+    "https://jurisdigital.com/services/law-firm-website-design/"
+  ],
+  [
+    "/lawyer-seo",
+    "https://jurisdigital.com/services/law-firm-seo/"
+  ],
+  [
     "/portfolio",
     "https://jurisdigital.com/portfolio/"
   ],
@@ -795,7 +1272,15 @@ export const PREFIX_CONSOLIDATION_REDIRECTS: ReadonlyArray<readonly [string, str
     "https://jurisdigital.com/resources/"
   ],
   [
+    "/category",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
     "/library",
+    "https://jurisdigital.com/resources/"
+  ],
+  [
+    "/author",
     "https://jurisdigital.com/resources/"
   ],
   [
@@ -869,6 +1354,11 @@ export function resolveConsolidationDestination(rawPathname: string): string {
     if (lower === prefix || lower.startsWith(prefix + "/")) {
       return target;
     }
+  }
+
+  // Legacy WordPress date-prefixed blog URLs -> Juris Digital resources hub
+  if (/^\/20(?:1[2-9]|2[0-5])\//.test(lower)) {
+    return "https://jurisdigital.com/resources/";
   }
 
   return CONSOLIDATION_FALLBACK_URL;
